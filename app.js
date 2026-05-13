@@ -174,6 +174,11 @@ function mostrarResultados() {
 
     const porc = (aciertos / preguntasActuales.length) * 100;
     mensajePuntuacion.textContent = porc >= 70 ? "¡Nivel de aprobado! Sigue así." : "Aún falta un poco de estudio. ¡Tú puedes!";
+
+    // --- NUEVO: Comprobamos si hemos superado el récord ---
+    // Extraemos el número de tema del título (ej: de "Tema 1" sacamos el "1")
+    const idTemaActual = tituloTest.textContent.replace('Tema ', '');
+    comprobarYGuardarRecord(idTemaActual, aciertos);
 }
 
 function salirAlMenu() {
@@ -182,3 +187,46 @@ function salirAlMenu() {
     seccionIntro.classList.remove('hidden');
     seccionGrid.classList.remove('hidden');
 }
+// --- LÓGICA DE LOCALSTORAGE (SISTEMA DE RÉCORDS) ---
+
+const CLAVE_RECORDS = 'oposjex_records';
+
+// 1. Función para cargar los récords al iniciar la página
+function cargarRecords() {
+    const recordsGuardados = JSON.parse(localStorage.getItem(CLAVE_RECORDS)) || {};
+    
+    // Recorremos todos los elementos HTML que muestran el récord
+    document.querySelectorAll('.topic-score').forEach(elemento => {
+        // Extraemos el número del ID (ej: de "record-1" sacamos el "1")
+        const idTema = elemento.id.split('-')[1]; 
+        
+        if (recordsGuardados[idTema] !== undefined) {
+            elemento.textContent = `Récord: ${recordsGuardados[idTema]}/${PREGUNTAS_POR_BLOQUE}`;
+            
+            // Si tiene un 30/30, le ponemos una medallita visual
+            if(recordsGuardados[idTema] === PREGUNTAS_POR_BLOQUE) {
+                elemento.textContent = `🥇 30/30`;
+                elemento.style.background = "#fbbf24"; // Color dorado
+                elemento.style.color = "#000";
+            }
+        }
+    });
+}
+
+// 2. Función para guardar o actualizar el récord
+function comprobarYGuardarRecord(idTema, aciertosConseguidos) {
+    const recordsGuardados = JSON.parse(localStorage.getItem(CLAVE_RECORDS)) || {};
+    const recordActual = recordsGuardados[idTema] || 0;
+
+    // Solo guardamos si la puntuación nueva es mayor que la anterior
+    if (aciertosConseguidos > recordActual) {
+        recordsGuardados[idTema] = aciertosConseguidos;
+        localStorage.setItem(CLAVE_RECORDS, JSON.stringify(recordsGuardados));
+        
+        // Refrescamos la vista de las tarjetas para que muestre el nuevo récord
+        cargarRecords(); 
+    }
+}
+
+// Inicializamos los récords nada más cargar el script
+cargarRecords();

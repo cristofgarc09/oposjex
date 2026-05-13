@@ -404,3 +404,18 @@ main {
     margin-bottom: 2rem;
     color: var(--text-light);
 }
+
+/* Estilos para el récord en las tarjetas */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* ... mantén el resto de estilos que ya tenías en .card-header ... */
+}
+
+.topic-score {
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+}

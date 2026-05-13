@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OposTest - Auxiliares de Informática Junta de Extremadura</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importamos una fuente limpia de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <h1>OposTest JEx</h1>
+            </div>
+            <p class="subtitle">Simulador de Test - Auxiliar de Informática</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Selecciona un bloque de repaso</h2>
+            <p>Elige el tema que deseas practicar hoy. Todos los test están configurados en <strong>bloques de 30 preguntas</strong> para optimizar tu estudio.</p>
+        </section>
+
+        <!-- Menú de selección de temas -->
+        <section class="topics-grid">
+            
+            <!-- Tema 1 -->
+            <article class="topic-card">
+                <div class="card-header color-1">
+                    <span class="topic-number">Tema 1</span>
+                </div>
+                <div class="card-body">
+                    <h3>Sistemas Operativos</h3>
+                    <p>Arquitectura, gestión de procesos, memoria y sistemas actuales como Windows 11 o Linux.</p>
+                    <button class="btn-start" data-tema="1">Iniciar Test</button>
+                </div>
+            </article>
+
+            <!-- Tema 2 -->
+            <article class="topic-card">
+                <div class="card-header color-2">
+                    <span class="topic-number">Tema 2</span>
+                </div>
+                <div class="card-body">
+                    <h3>Redes de Comunicaciones</h3>
+                    <p>Modelo OSI, TCP/IP, topologías de red y elementos de interconexión.</p>
+                    <button class="btn-start" data-tema="2">Iniciar Test</button>
+                </div>
+            </article>
+
+            <!-- Tema 3 -->
+            <article class="topic-card">
+                <div class="card-header color-3">
+                    <span class="topic-number">Tema 3</span>
+                </div>
+                <div class="card-body">
+                    <h3>Bases de Datos</h3>
+                    <p>Sistemas Gestores de Bases de Datos (SGBD), modelo relacional y lenguaje SQL.</p>
+                    <button class="btn-start" data-tema="3">Iniciar Test</button>
+                </div>
+            </article>
+
+            <!-- Tema 4 -->
+            <article class="topic-card">
+                <div class="card-header color-4">
+                    <span class="topic-number">Tema 4</span>
+                </div>
+                <div class="card-body">
+                    <h3>Seguridad Informática</h3>
+                    <p>Ciberseguridad, criptografía, malware y planes de contingencia.</p>
+                    <button class="btn-start" data-tema="4">Iniciar Test</button>
+                </div>
+            </article>
+
+        </section>
+		<!-- Contenedor del Test (Oculto por defecto) -->
+		<section id="test-container" class="hidden">
+			<div class="test-header">
+				<h2 id="test-title">Tema 1: Sistemas Operativos</h2>
+				
+				<!-- Nuevo Marcador en tiempo real -->
+				<div class="test-stats">
+					<span class="stat-badge stat-progress" id="question-counter">Pregunta 1 / 30</span>
+					<span class="stat-badge stat-correct">Aciertos: <strong id="score-correct">0</strong></span>
+					<span class="stat-badge stat-incorrect">Fallos: <strong id="score-incorrect">0</strong></span>
+				</div>
+			</div>
+			
+			<div class="question-box">
+				<p id="question-text">Cargando pregunta...</p>
+				<div id="options-container" class="options-grid">
+					<!-- Las opciones se inyectarán aquí con JavaScript -->
+				</div>
+			</div>
+			
+			<div class="test-footer">
+				<button id="btn-next" class="btn-primary" disabled>Siguiente Pregunta</button>
+				<button id="btn-exit" class="btn-secondary">Volver al Menú</button>
+			</div>
+		</section>
+		<!-- Contenedor de Resultados (Oculto por defecto) -->
+		<section id="results-container" class="hidden">
+			<div class="results-card">
+				<h2>Resultados del Simulacro</h2>
+				<div class="score-circle">
+					<span id="final-score">0</span>
+					<span class="score-divider">/</span>
+					<span id="total-score">30</span>
+				</div>
+				<p id="score-message" class="score-message">¡Sigue practicando!</p>
+				<button id="btn-restart" class="btn-primary">Volver al Menú Principal</button>
+			</div>
+		</section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Diseñado para afianzar tu plaza. ¡A por todas!</p>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>

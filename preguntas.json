@@ -1,0 +1,28 @@
+{
+  "1": [
+    {
+      "pregunta": "¿Qué protocolo se utiliza para la transferencia de archivos de forma segura?",
+      "opciones": [
+        "FTP",
+        "SFTP",
+        "HTTP",
+        "Telnet"
+      ],
+      "respuesta_correcta": 1,
+      "explicacion": "SFTP (Secure File Transfer Protocol) utiliza SSH para cifrar la transferencia de datos, a diferencia de FTP que viaja en texto plano."
+    }
+  ],
+  "2": [
+    {
+      "pregunta": "¿Cuál es la máscara de subred por defecto para una red de Clase C?",
+      "opciones": [
+        "255.0.0.0",
+        "255.255.0.0",
+        "255.255.255.0",
+        "255.255.255.255"
+      ],
+      "respuesta_correcta": 2,
+      "explicacion": "Las redes de Clase C utilizan los primeros 24 bits para la red, lo que corresponde a 255.255.255.0."
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+/* =========================================
+   VARIABLES Y RESETEO BÁSICO
+   ========================================= */
+:root {
+    --primary-color: #007A53; /* Verde institucional inspirado en JEx */
+    --secondary-color: #005c3e;
+    --bg-color: #f4f7f6;
+    --text-main: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    
+    /* Colores para diferenciar los bloques de temas */
+    --theme-1: #3b82f6; /* Azul */
+    --theme-2: #10b981; /* Verde esmeralda */
+    --theme-3: #f59e0b; /* Ámbar */
+    --theme-4: #8b5cf6; /* Púrpura */
+
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-hover: 0 10px 15px rgba(0,0,0,0.15);
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   CABECERA (HEADER)
+   ========================================= */
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    box-shadow: var(--shadow-md);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =========================================
+   CONTENIDO PRINCIPAL Y GRID DE TEMAS
+   ========================================= */
+main {
+    flex: 1;
+    padding: 3rem 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.intro p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CSS GRID para las tarjetas */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* =========================================
+   TARJETAS DE LOS TEMAS (CARDS)
+   ========================================= */
+.topic-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-header {
+    padding: 1rem;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Asignación de colores por tema */
+.color-1 { background-color: var(--theme-1); }
+.color-2 { background-color: var(--theme-2); }
+.color-3 { background-color: var(--theme-3); }
+.color-4 { background-color: var(--theme-4); }
+
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text-main);
+}
+
+.card-body p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex: 1; /* Empuja el botón hacia abajo */
+}
+
+/* Botones */
+.btn-start {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.btn-start:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================= */
+.main-footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #e2e8f0;
+    color: var(--text-light);
+    margin-top: 2rem;
+}
+
+/* =========================================
+   ESTILOS DEL TEST Y CORRECCIÓN
+   ========================================= */
+
+/* Clase para ocultar secciones (Menú vs Test) */
+.hidden {
+    display: none !important;
+}
+
+#test-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   CABECERA DEL TEST Y MARCADOR
+   ========================================= */
+.test-header {
+    display: flex;
+    flex-direction: column; /* Cambiado para apilar título y marcador */
+    gap: 1rem;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.test-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Para que en móviles bajen de línea si no caben */
+}
+
+.stat-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* Bordes redondeados estilo pastilla */
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Colores para las insignias */
+.stat-progress {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.stat-correct {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.stat-incorrect {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Hacemos que en escritorio se alinee mejor */
+@media (min-width: 768px) {
+    .test-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#question-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-option {
+    background: var(--bg-color);
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-main);
+}
+
+.btn-option:hover:not(:disabled) {
+    background: #e2e8f0;
+    border-color: #cbd5e1;
+}
+
+/* Clases dinámicas inyectadas por JS */
+.btn-option.correct {
+    background: #d1fae5;
+    border-color: #10b981;
+    color: #065f46;
+}
+
+.btn-option.incorrect {
+    background: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+}
+
+.btn-option:disabled {
+    cursor: default;
+}
+
+/* Caja de explicación */
+.explanation-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #e0f2fe;
+    border-left: 4px solid #0ea5e9;
+    color: #0c4a6e;
+    animation: fadeIn 0.5s ease;
+}
+
+.test-footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--bg-color);
+    padding-top: 1.5rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid #cbd5e1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* =========================================
+   PANTALLA DE RESULTADOS
+   ========================================= */
+#results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.results-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.results-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    border: 8px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.5rem auto;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.score-divider {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+.score-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}

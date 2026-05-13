@@ -22,6 +22,7 @@ const botonSalir = document.getElementById('btn-exit');
 const contadorPreguntas = document.getElementById('question-counter');
 const textoAciertosMarcador = document.getElementById('score-correct');
 const textoFallosMarcador = document.getElementById('score-incorrect');
+const botonTestGlobal = document.getElementById('btn-global-test');
 
 // Elementos de Resultados
 const contenedorResultados = document.getElementById('results-container');
@@ -41,6 +42,7 @@ document.querySelectorAll('.btn-start').forEach(boton => {
 botonSalir.addEventListener('click', salirAlMenu);
 botonSiguiente.addEventListener('click', avanzarPregunta);
 botonReiniciar.addEventListener('click', salirAlMenu);
+botonTestGlobal.addEventListener('click', iniciarTestGlobal);
 
 // --- LÓGICA DE CARGA DE DATOS (FETCH) ---
 
@@ -86,6 +88,45 @@ async function iniciarFlujoTest(idTema) {
     contenedorResultados.classList.add('hidden');
     contenedorTest.classList.remove('hidden');
     tituloTest.textContent = `Tema ${idTema}`;
+	tituloTest.dataset.temaActual = idTema;
+
+    cargarPregunta();
+}
+
+async function iniciarTestGlobal() {
+    const datos = await obtenerPreguntas();
+    
+    if (!datos) return;
+
+    // 1. Fusionamos todos los temas en un solo saco gigantesco
+    let todasLasPreguntas = [];
+    for (const tema in datos) {
+        todasLasPreguntas = todasLasPreguntas.concat(datos[tema]);
+    }
+
+    if (todasLasPreguntas.length === 0) {
+        alert("Aún no hay preguntas en la base de datos.");
+        return;
+    }
+
+    // 2. Mezclamos la piscina gigante y cortamos nuestro bloque estricto de 30
+    const mezcladas = mezclarArray(todasLasPreguntas);
+    preguntasActuales = mezcladas.slice(0, PREGUNTAS_POR_BLOQUE);
+
+    // 3. Reseteamos variables
+    indicePreguntaActual = 0;
+    aciertos = 0;
+    fallos = 0;
+
+    // 4. Preparamos la interfaz
+    seccionIntro.classList.add('hidden');
+    seccionGrid.classList.add('hidden');
+    contenedorResultados.classList.add('hidden');
+    contenedorTest.classList.remove('hidden');
+    
+    tituloTest.textContent = `Simulacro Global Aleatorio`;
+    // Usamos esta variable oculta para guardar el récord correctamente
+    tituloTest.dataset.temaActual = 'global'; 
 
     cargarPregunta();
 }
@@ -177,7 +218,7 @@ function mostrarResultados() {
 
     // --- NUEVO: Comprobamos si hemos superado el récord ---
     // Extraemos el número de tema del título (ej: de "Tema 1" sacamos el "1")
-    const idTemaActual = tituloTest.textContent.replace('Tema ', '');
+    const idTemaActual = tituloTest.dataset.temaActual;
     comprobarYGuardarRecord(idTemaActual, aciertos);
 }
 

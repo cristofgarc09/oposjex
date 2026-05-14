@@ -11,18 +11,7 @@
       "respuesta_correcta": 1,
       "explicacion": "SFTP (Secure File Transfer Protocol) utiliza SSH para cifrar la transferencia de datos, a diferencia de FTP que viaja en texto plano."
     },
-  {
-	"pregunta": "¿Qué componente de la arquitectura de Von Neumann se encarga de extraer las instrucciones de la memoria y decodificarlas?",
-	"opciones": ["La Unidad Aritmético-Lógica", "La Unidad de Control", "El Bus de Datos", "El Periférico de entrada"],
-	"respuesta_correcta": 1,
-	"explicacion": "La Unidad de Control (UC) es la encargada de la 'logística' de las instrucciones: las busca, las interpreta y ordena su ejecución."
-  },
-  {
-	"pregunta": "En la jerarquía de memoria, ¿cuál es la principal diferencia entre la memoria RAM y la memoria caché L1?",
-	"opciones": ["La RAM es más rápida que la caché", "La caché L1 está integrada en el procesador y es más rápida", "La RAM es no volátil y la caché sí", "No hay diferencia técnica"],
-	"respuesta_correcta": 1,
-	"explicacion": "La caché L1 es el nivel de memoria más cercano a los núcleos de la CPU, funcionando a velocidades muy superiores a la RAM principal."
-  },
+ 
   
 
   ],

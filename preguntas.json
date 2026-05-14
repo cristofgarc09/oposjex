@@ -11,6 +11,487 @@
       "respuesta_correcta": 1,
       "explicacion": "SFTP (Secure File Transfer Protocol) utiliza SSH para cifrar la transferencia de datos, a diferencia de FTP que viaja en texto plano."
     }
+  {
+	"pregunta": "¿Qué componente de la arquitectura de Von Neumann se encarga de extraer las instrucciones de la memoria y decodificarlas?",
+	"opciones": ["La Unidad Aritmético-Lógica", "La Unidad de Control", "El Bus de Datos", "El Periférico de entrada"],
+	"respuesta_correcta": 1,
+	"explicacion": "La Unidad de Control (UC) es la encargada de la 'logística' de las instrucciones: las busca, las interpreta y ordena su ejecución."
+  },
+  {
+	"pregunta": "En la jerarquía de memoria, ¿cuál es la principal diferencia entre la memoria RAM y la memoria caché L1?",
+	"opciones": ["La RAM es más rápida que la caché", "La caché L1 está integrada en el procesador y es más rápida", "La RAM es no volátil y la caché sí", "No hay diferencia técnica"],
+	"respuesta_correcta": 1,
+	"explicacion": "La caché L1 es el nivel de memoria más cercano a los núcleos de la CPU, funcionando a velocidades muy superiores a la RAM principal."
+  },
+  {
+	"pregunta": "¿Qué registro de la CPU guarda el resultado de la última operación realizada por la ALU?",
+	"opciones": ["Contador de Programa", "Registro de Instrucción", "Acumulador", "Registro de Direcciones"],
+	"respuesta_correcta": 2,
+	"explicacion": "El Acumulador es un registro de propósito general que recibe directamente los resultados de la Unidad Aritmético-Lógica."
+  },
+  {
+	"pregunta": "¿Qué bus se encarga de transportar la información que se está procesando o los códigos de las instrucciones?",
+	"opciones": ["Bus de Direcciones", "Bus de Control", "Bus de Datos", "Bus de Expansión"],
+	"respuesta_correcta": 2,
+	"explicacion": "El bus de datos es el 'camión' que transporta los bits reales de información entre la CPU, la memoria y los periféricos."
+  },
+  {
+	"pregunta": "¿Cuál es la función del registro Contador de Programa (PC)?",
+	"opciones": ["Contar cuántas instrucciones se han ejecutado hoy", "Almacenar la dirección de la siguiente instrucción a ejecutar", "Controlar la velocidad del reloj", "Sumar datos binarios"],
+	"respuesta_correcta": 1,
+	"explicacion": "El PC siempre 'apunta' a la memoria para saber qué es lo siguiente que el procesador debe hacer."
+  },
+  {
+	"pregunta": "¿Qué tipo de memoria ROM puede ser borrada y reprogramada eléctricamente byte a byte?",
+	"opciones": ["PROM", "EPROM", "EEPROM", "ROM pura"],
+	"respuesta_correcta": 2,
+	"explicacion": "La EEPROM (Electrically Erasable Programmable Read-Only Memory) permite cambios eléctricos sin necesidad de luz ultravioleta."
+  },
+  {
+	"pregunta": "¿Cómo se denomina al conjunto de líneas físicas que conectan los componentes internos de la CPU?",
+	"opciones": ["Bus Externo", "Bus de Sistema", "Bus Interno", "Bus de Direcciones"],
+	"respuesta_correcta": 2,
+	"explicacion": "El bus interno comunica los registros, la ALU y la UC dentro del propio chip del microprocesador."
+  },
+  {
+	"pregunta": "En una placa base moderna, ¿qué chip se encarga de la comunicación de alta velocidad entre la CPU y la memoria RAM?",
+	"opciones": ["Southbridge", "Northbridge", "Super I/O", "BIOS"],
+	"respuesta_correcta": 1,
+	"explicacion": "Tradicionalmente el Northbridge gestionaba la RAM y el vídeo. En CPUs actuales, esta función suele estar ya integrada en el propio procesador."
+  },
+  {
+	"pregunta": "¿Qué arquitectura permite acceder simultáneamente a las instrucciones y a los datos por tener buses separados?",
+	"opciones": ["Von Neumann", "Harvard", "CISC", "x86"],
+	"respuesta_correcta": 1,
+	"explicacion": "La arquitectura Harvard duplica los buses para evitar el 'cuello de botella' que ocurre cuando datos e instrucciones comparten camino."
+  },
+  {
+	"pregunta": "¿Qué es el 'ciclo de reloj' de un procesador?",
+	"opciones": ["El tiempo que tarda en arrancar", "La unidad mínima de tiempo en la que el procesador realiza una operación básica", "La hora que marca el sistema operativo", "El tiempo que tarda en cargar la RAM"],
+	"respuesta_correcta": 1,
+	"explicacion": "Es el pulso eléctrico que sincroniza todos los componentes; a más ciclos por segundo (Hz), más rápido procesa."
+  },
+  {
+	"pregunta": "¿Cuál es la función principal de la placa base (Motherboard)?",
+	"opciones": ["Almacenar los archivos del usuario", "Servir de soporte físico y conexión eléctrica para todos los componentes", "Procesar los gráficos de los juegos", "Suministrar 220V a los periféricos"],
+	"respuesta_correcta": 1,
+	"explicacion": "La placa base es el sistema nervioso central donde se conectan y comunican todos los elementos de hardware."
+  },
+  {
+	"pregunta": "¿Qué memoria se utiliza para compensar la diferencia de velocidad entre el procesador y la memoria RAM?",
+	"opciones": ["Memoria Virtual", "Memoria Caché", "Memoria de Video", "Memoria CMOS"],
+	"respuesta_correcta": 1,
+	"explicacion": "La caché guarda los datos más usados por la CPU para que no tenga que esperar a la RAM, que es mucho más lenta."
+  },
+  {
+	"pregunta": "¿Qué componente mantiene alimentado el reloj de tiempo real (RTC) cuando el ordenador está desenchufado?",
+	"opciones": ["El condensador de la fuente", "La pila de la placa base (CMOS)", "El transformador", "La memoria RAM"],
+	"respuesta_correcta": 1,
+	"explicacion": "Sin la pila (normalmente una CR2032), el ordenador perdería la hora y la configuración de la BIOS cada vez que se apaga."
+  },
+  {
+	"pregunta": "¿Qué tipo de ranura de expansión es la más común hoy en día para conectar una tarjeta gráfica dedicada?",
+	"opciones": ["PCI", "ISA", "PCI Express (PCIe)", "AGP"],
+	"respuesta_correcta": 2,
+	"explicacion": "PCIe es el estándar serie de alta velocidad que ha sustituido a todos los buses de expansión anteriores."
+  },
+  {
+	"pregunta": "¿Qué significan las siglas ALU?",
+	"opciones": ["Access Logical Unit", "Arithmetic Logic Unit", "Automatic Learning Unit", "Analogic Logical Universal"],
+	"respuesta_correcta": 1,
+	"explicacion": "Unidad Aritmético-Lógica. Es la encargada de hacer las matemáticas y las comparaciones binarias."
+  },
+  {
+	"pregunta": "¿Cuál es el propósito del registro de instrucciones (RI)?",
+	"opciones": ["Guardar las instrucciones que ya se han ejecutado", "Almacenar la instrucción que se está decodificando en ese momento", "Llevar la cuenta de los errores", "Guardar el nombre del programa"],
+	"respuesta_correcta": 1,
+	"explicacion": "El RI mantiene el código de operación de la instrucción actual mientras la Unidad de Control decide qué hacer con ella."
+  },
+  {
+	"pregunta": "¿A qué se refiere el término 'Ancho de Bus'?",
+	"opciones": ["A la longitud del cable", "Al número de bits que pueden circular simultáneamente", "A la velocidad en Megahertz", "Al color del bus"],
+	"respuesta_correcta": 1,
+	"explicacion": "Si un bus tiene un ancho de 64 bits, significa que puede mover 64 ceros y unos al mismo tiempo."
+  },
+  {
+	"pregunta": "¿Qué tecnología permite a la memoria RAM enviar datos dos veces en cada ciclo de reloj?",
+	"opciones": ["SDR", "DDR", "EDO", "ECC"],
+	"respuesta_correcta": 1,
+	"explicacion": "DDR (Double Data Rate) aprovecha tanto el flanco de subida como el de bajada de la señal de reloj."
+  },
+  {
+	"pregunta": "¿Qué es un 'microprocesador'?",
+	"opciones": ["Un ordenador muy pequeño", "Un circuito integrado que contiene todas las funciones de la CPU", "Una memoria RAM de bolsillo", "Un ventilador inteligente"],
+	"respuesta_correcta": 1,
+	"explicacion": "Es el chip principal de silicio que ejecuta el software y coordina el hardware."
+  },
+  {
+	"pregunta": "¿Cuál es el voltaje típico que suministra la fuente de alimentación para los motores de los discos duros y ventiladores?",
+	"opciones": ["3.3 V", "5 V", "12 V", "220 V"],
+	"respuesta_correcta": 2,
+	"explicacion": "La línea de 12 voltios es la encargada de alimentar los componentes mecánicos y de mayor consumo del PC."
+  },
+  {
+	"pregunta": "¿Qué característica define a la arquitectura CISC?",
+	"opciones": ["Instrucciones muy simples y rápidas", "Instrucciones complejas que pueden tardar varios ciclos de reloj", "Solo se usa en móviles", "No tiene unidad de control"],
+	"respuesta_correcta": 1,
+	"explicacion": "CISC (Complex Instruction Set Computer) utiliza instrucciones potentes que realizan muchas tareas internas, típicas de Intel y AMD."
+  },
+  {
+	"pregunta": "¿Cómo se llama la memoria intermedia que tienen los discos duros para agilizar las lecturas?",
+	"opciones": ["Memoria RAM", "Buffer o Caché de disco", "Memoria Flash", "Virtual RAM"],
+	"respuesta_correcta": 1,
+	"explicacion": "El buffer del disco almacena los datos que probablemente se pedirán a continuación para evitar la lentitud mecánica."
+  },
+  {
+	"pregunta": "¿Qué bus comunica la CPU con los periféricos de entrada y salida?",
+	"opciones": ["Bus de Direcciones", "Bus de E/S (o de expansión)", "Bus de Memoria", "Bus Local"],
+	"respuesta_correcta": 1,
+	"explicacion": "El bus de E/S permite la conexión de tarjetas, puertos USB y otros dispositivos externos al núcleo central."
+  },
+  {
+	"pregunta": "¿Qué componente se encarga de la refrigeración pasiva de un chip?",
+	"opciones": ["Ventilador", "Bomba de agua", "Disipador de calor (Heat sink)", "Carcasa"],
+	"respuesta_correcta": 2,
+	"explicacion": "El disipador es un bloque de metal (aluminio o cobre) con aletas que evacúa el calor por conducción."
+  },
+  {
+	"pregunta": "¿Cuál es la unidad de medida de la capacidad de la memoria RAM?",
+	"opciones": ["Gigahertz (GHz)", "Gigabytes (GB)", "Nanosegundos (ns)", "Megabits por segundo (Mbps)"],
+	"respuesta_correcta": 1,
+	"explicacion": "La RAM se mide en capacidad de almacenamiento de datos (GB), no en velocidad de ciclo."
+  },
+  {
+	"pregunta": "¿Qué tipo de bus transporta las señales de 'Lectura' o 'Escritura' desde la CPU a la memoria?",
+	"opciones": ["Bus de Datos", "Bus de Direcciones", "Bus de Control", "Bus USB"],
+	"respuesta_correcta": 2,
+	"explicacion": "El bus de control indica la operación que se debe realizar y sincroniza el momento exacto de la misma."
+  },
+  {
+	"pregunta": "¿A qué nivel de caché nos referimos si decimos que es compartida por todos los núcleos de un procesador?",
+	"opciones": ["Caché L1", "Caché L2", "Caché L3", "Caché L0"],
+	"respuesta_correcta": 2,
+	"explicacion": "La L3 es una memoria más grande y lenta que la L1/L2, pero sirve de puente común para todos los núcleos del chip."
+  },
+  {
+	"pregunta": "¿Cuál es el componente encargado de almacenar de forma permanente la BIOS/UEFI?",
+	"opciones": ["Memoria RAM", "Chip de memoria Flash/ROM", "Disco Duro", "Procesador"],
+	"respuesta_correcta": 1,
+	"explicacion": "La BIOS reside en un chip no volátil en la placa base para que el ordenador sepa cómo arrancar."
+  },
+  {
+	"pregunta": "¿Qué significa que una memoria sea 'no volátil'?",
+	"opciones": ["Que no puede salir volando", "Que mantiene la información aunque no tenga electricidad", "Que es muy rápida", "Que solo se puede leer una vez"],
+	"respuesta_correcta": 1,
+	"explicacion": "Memorias como la ROM o los discos son no volátiles porque guardan los datos de forma permanente."
+  },
+  {
+	"pregunta": "En el contexto de la CPU, ¿qué es un 'Registro'?",
+	"opciones": ["Un libro donde se anotan las averías", "Una memoria interna de muy alta velocidad y pequeña capacidad", "Un tipo de cable", "Un puerto de conexión"],
+	"respuesta_correcta": 1,
+	"explicacion": "Los registros son el primer nivel de la jerarquía; están pegados a la ALU y guardan los datos inmediatos del cálculo."
+  },
+  {
+	"pregunta": "¿Qué conector de la placa base se utiliza para conectar discos duros y unidades ópticas de forma interna?",
+	"opciones": ["Puerto Serie", "SATA", "HDMI", "PCIe"],
+	"respuesta_correcta": 1,
+	"explicacion": "El conector SATA (Serial ATA) es el estándar actual para almacenamiento interno."
+  },
+  {
+	"pregunta": "¿Qué componente de hardware realiza el autodiagnóstico inicial (POST) del ordenador?",
+	"opciones": ["El Sistema Operativo", "La BIOS/UEFI", "La Memoria RAM", "El Monitor"],
+	"respuesta_correcta": 1,
+	"explicacion": "La BIOS chequea que la CPU, la RAM y la gráfica estén bien antes de intentar cargar el sistema operativo."
+  },
+  {
+	"pregunta": "¿Qué unidad de medida indica la velocidad de acceso de una memoria RAM?",
+	"opciones": ["Milisegundos (ms)", "Nanosegundos (ns)", "Microsegundos (µs)", "Segundos"],
+	"respuesta_correcta": 1,
+	"explicacion": "Las memorias modernas son tan rápidas que su tiempo de respuesta se mide en la milmillonésima parte de un segundo (ns)."
+  },
+  {
+	"pregunta": "¿Qué es el zócalo o socket?",
+	"opciones": ["Donde se conecta el cable de red", "Donde se inserta el microprocesador en la placa base", "Donde se enchufa el monitor", "Donde se pone la pila"],
+	"respuesta_correcta": 1,
+	"explicacion": "El socket es la 'cuna' del procesador, con cientos de pines de contacto para comunicarse con la placa."
+  },
+  {
+	"pregunta": "¿Qué elemento del procesador se encarga de las operaciones lógicas (AND, OR, NOT)?",
+	"opciones": ["La Unidad de Control", "La ALU", "La Memoria Caché", "El Bus de Direcciones"],
+	"respuesta_correcta": 1,
+	"explicacion": "Además de sumas, la ALU realiza comparaciones lógicas fundamentales para la programación."
+  },
+  {
+	"pregunta": "¿Cuál es la función de la fuente de alimentación?",
+	"opciones": ["Guardar energía para cuando se va la luz", "Convertir la corriente alterna en continua y distribuirla", "Acelerar el procesador", "Refrigerar la caja"],
+	"respuesta_correcta": 1,
+	"explicacion": "Toma los 230V de la red y los convierte en bajos voltajes (12V, 5V, 3.3V) que el hardware puede soportar."
+  },
+  {
+	"pregunta": "¿Qué tecnología de bus permite la conexión de periféricos 'en caliente' sin apagar el equipo?",
+	"opciones": ["ISA", "USB", "IDE", "Parallel Port"],
+	"respuesta_correcta": 1,
+	"explicacion": "El USB (Universal Serial Bus) fue revolucionario por permitir conectar y desconectar dispositivos con el PC encendido."
+  },
+  {
+	"pregunta": "¿Cómo se llama el pequeño programa que permite al sistema operativo comunicarse con un hardware específico?",
+	"opciones": ["Kernel", "Driver o Controlador", "Firmware", "App"],
+	"respuesta_correcta": 1,
+	"explicacion": "Sin el driver, el sistema operativo no sabe cómo utilizar las funciones específicas de, por ejemplo, una tarjeta de sonido."
+  },
+  {
+	"pregunta": "¿Qué tipo de memoria es la caché L2?",
+	"opciones": ["SRAM (Estática)", "DRAM (Dinámica)", "SDRAM", "Flash"],
+	"respuesta_correcta": 0,
+	"explicacion": "La caché usa tecnología SRAM (Static RAM), que es mucho más rápida y cara que la DRAM usada en los módulos de memoria convencionales."
+  },
+  {
+	"pregunta": "¿Cuál es la función del bus de direcciones?",
+	"opciones": ["Llevar los datos", "Indicar el número de bits del procesador", "Indicar la celda de memoria o dispositivo que se quiere acceder", "Controlar la temperatura"],
+	"respuesta_correcta": 2,
+	"explicacion": "Es como el sobre de una carta: no lleva el contenido, pero dice exactamente a dónde tiene que llegar."
+  },
+  {
+	"pregunta": "¿Qué elemento evita que el calor del procesador se acumule en el interior de la torre?",
+	"opciones": ["El disipador", "El ventilador de chasis (extractor)", "La fuente de alimentación", "El disco duro"],
+	"respuesta_correcta": 1,
+	"explicacion": "Los ventiladores de la caja crean un flujo de aire que saca el aire caliente al exterior."
+  },
+  {
+	"pregunta": "¿Qué es el 'firmware'?",
+	"opciones": ["Software de oficina", "Software grabado en hardware que controla su funcionamiento básico", "Un antivirus", "Un programa de diseño"],
+	"respuesta_correcta": 1,
+	"explicacion": "Es el software 'firme' que viene de fábrica con los dispositivos (como la BIOS de la placa o el software de una grabadora)."
+  },
+  {
+	"pregunta": "¿Qué registro contiene la instrucción después de haber sido traída de la memoria?",
+	"opciones": ["MAR", "MBR", "RI (Registro de Instrucción)", "PC"],
+	"respuesta_correcta": 2,
+	"explicacion": "Una vez captada de la memoria, la instrucción se 'aloja' en el RI para que la Unidad de Control la diseccione."
+  },
+  {
+	"pregunta": "¿Cuál es la unidad de medida de la velocidad de transferencia de un bus?",
+	"opciones": ["Hz", "MB/s o GB/s", "Watts", "Ohmios"],
+	"respuesta_correcta": 1,
+	"explicacion": "La velocidad de un bus se mide por cuántos datos (Mega o Gigabytes) es capaz de mover en un segundo."
+  },
+  {
+	"pregunta": "¿Qué tipo de puerto se usaba antiguamente para las impresoras (conector grande de 25 pines)?",
+	"opciones": ["Puerto Serie", "Puerto Paralelo (LPT)", "PS/2", "VGA"],
+	"respuesta_correcta": 1,
+	"explicacion": "El puerto paralelo enviaba varios bits a la vez, siendo el estándar para impresión antes del USB."
+  },
+  {
+	"pregunta": "¿Qué arquitectura de CPU es más eficiente para dispositivos móviles por su bajo consumo?",
+	"opciones": ["x86", "CISC", "RISC (como ARM)", "Harvard"],
+	"respuesta_correcta": 2,
+	"explicacion": "RISC usa instrucciones tan sencillas que el chip necesita menos transistores y, por tanto, consume menos energía."
+  },
+  {
+	"pregunta": "¿A qué componente nos referimos si hablamos de 'DIMM' o 'SODIMM'?",
+	"opciones": ["Tipos de procesador", "Formatos de módulos de memoria RAM", "Tipos de discos duros", "Conectores de monitor"],
+	"respuesta_correcta": 1,
+	"explicacion": "DIMM es para ordenadores de sobremesa y SODIMM es la versión pequeña para portátiles."
+  },
+  {
+	"pregunta": "¿Cuál es la función del Southbridge en las arquitecturas clásicas?",
+	"opciones": ["Controlar la RAM", "Gestionar los periféricos de entrada/salida y buses lentos", "Realizar cálculos", "Alimentar la CPU"],
+	"respuesta_correcta": 1,
+	"explicacion": "El Southbridge (Puente Sur) se encarga de los USB, puertos SATA, sonido y red."
+  },
+  {
+	"pregunta": "¿Qué es la memoria CMOS?",
+	"opciones": ["Un disco duro invisible", "Una RAM de bajo consumo que guarda la configuración de la BIOS", "La memoria de la tarjeta gráfica", "Una memoria que solo sirve para fotos"],
+	"respuesta_correcta": 1,
+	"explicacion": "CMOS es la tecnología de fabricación de esa pequeña memoria que la pila mantiene encendida."
+  },
+  {
+	"pregunta": "¿Qué es el 'form factor' (factor de forma) de una placa base?",
+	"opciones": ["Su velocidad", "Sus dimensiones físicas y disposición de componentes (ej. ATX, ITX)", "El tipo de procesador que usa", "El color de la placa"],
+	"respuesta_correcta": 1,
+	"explicacion": "El factor de forma define si la placa cabe en una caja grande (ATX) o pequeña (Micro-ATX)."
+  },
+  {
+	"pregunta": "¿Para qué sirve la pasta térmica?",
+	"opciones": ["Para pegar el procesador y que no se caiga", "Para rellenar huecos de aire y mejorar la transferencia de calor entre CPU y disipador", "Para limpiar el polvo", "Para aislar la electricidad"],
+	"respuesta_correcta": 1,
+	"explicacion": "El aire es mal conductor del calor; la pasta térmica asegura que el calor pase eficientemente al metal del disipador."
+  },
+  {
+	"pregunta": "¿Qué significa que un sistema de información es 'escalable'?",
+	"opciones": ["Que tiene escaleras", "Que puede crecer para soportar más carga sin perder calidad", "Que es muy barato", "Que solo funciona en la nube"],
+	"respuesta_correcta": 1,
+	"explicacion": "La escalabilidad permite añadir más RAM o mejores CPUs al sistema conforme las necesidades aumentan."
+  },
+  {
+	"pregunta": "¿Cuál de estos es un componente interno puramente electrónico (sin partes móviles)?",
+	"opciones": ["Disco duro HDD", "Ventilador", "Memoria RAM", "Lector de DVD"],
+	"respuesta_correcta": 2,
+	"explicacion": "La RAM está basada en transistores y condensadores, no tiene ninguna pieza mecánica que se mueva."
+  },
+  {
+	"pregunta": "¿Qué registro contiene la dirección de memoria de donde se va a leer o escribir un dato?",
+	"opciones": ["MDR", "MAR (Memory Address Register)", "PC", "RI"],
+	"respuesta_correcta": 1,
+	"explicacion": "El MAR le dice a la memoria: 'prepárate, que voy a mirar en esta casilla concreta'."
+  },
+  {
+	"pregunta": "¿Qué es un 'bit'?",
+	"opciones": ["Un grupo de 8 bytes", "La unidad mínima de información (0 o 1)", "Un virus", "Un cable de cobre"],
+	"respuesta_correcta": 1,
+	"explicacion": "Es el lenguaje base de los ordenadores: encendido (1) o apagado (0)."
+  },
+  {
+	"pregunta": "¿Cuál es la función de la Unidad de Control?",
+	"opciones": ["Hacer sumas", "Suministrar electricidad", "Dirigir el flujo de datos y sincronizar el sistema", "Dibujar en la pantalla"],
+	"respuesta_correcta": 2,
+	"explicacion": "Es el 'director de orquesta' que da las órdenes para que cada componente actúe en su momento."
+  },
+  {
+	"pregunta": "¿Qué tipo de memoria es más rápida: la RAM o el Disco Duro?",
+	"opciones": ["El Disco Duro", "La RAM", "Son igual de rápidas", "Depende del sistema operativo"],
+	"respuesta_correcta": 1,
+	"explicacion": "La RAM es miles de veces más rápida que cualquier disco duro magnético o SSD."
+  },
+  {
+	"pregunta": "¿Qué bus conecta la CPU con el Northbridge?",
+	"opciones": ["FSB (Front Side Bus)", "USB", "SATA", "PCI"],
+	"respuesta_correcta": 0,
+	"explicacion": "El FSB era el canal de comunicación 'frontal' clave en el rendimiento del sistema clásico."
+  },
+  {
+	"pregunta": "¿Cuál es la principal ventaja de la arquitectura Harvard sobre la Von Neumann?",
+	"opciones": ["Es más barata de fabricar", "Evita colisiones entre datos e instrucciones al usar buses distintos", "Usa menos energía", "Es más pequeña"],
+	"respuesta_correcta": 1,
+	"explicacion": "Al no compartir bus, el procesador puede leer una instrucción mientras guarda un dato al mismo tiempo."
+  },
+  {
+	"pregunta": "¿Qué componente se encarga de convertir las señales digitales en imágenes para el monitor?",
+	"opciones": ["Tarjeta de Sonido", "Tarjeta Gráfica (GPU)", "Tarjeta de Red", "Chipset"],
+	"respuesta_correcta": 1,
+	"explicacion": "La gráfica procesa los datos visuales y los envía a través de conectores como HDMI o DisplayPort."
+  },
+  {
+	"pregunta": "¿Qué unidad de medida se usa para la frecuencia de un procesador?",
+	"opciones": ["Hertzios (Hz)", "Bytes", "Amperios", "Bits"],
+	"respuesta_correcta": 0,
+	"explicacion": "Se mide en Gigahertz (GHz), que son mil millones de ciclos por segundo."
+  },
+  {
+	"pregunta": "¿Qué es un registro de 'propósito general'?",
+	"opciones": ["Uno que solo usa el capitán", "Uno que puede ser usado por el programador para guardar cualquier dato temporal", "Uno que solo guarda errores", "Uno que controla el ventilador"],
+	"respuesta_correcta": 1,
+	"explicacion": "Son registros flexibles que la CPU usa como 'bloc de notas' para cálculos rápidos."
+  },
+  {
+	"pregunta": "¿Qué es el 'overclocking'?",
+	"opciones": ["Limpiar el reloj del PC", "Forzar al procesador a trabajar a una velocidad mayor a la de diseño", "Instalar dos sistemas operativos", "Poner más ventiladores"],
+	"respuesta_correcta": 1,
+	"explicacion": "Es una técnica para ganar rendimiento, aunque aumenta el calor y puede dañar el chip si no se controla."
+  },
+  {
+	"pregunta": "¿Cuál es la función de los buses de control?",
+	"opciones": ["Llevar los datos", "Llevar las direcciones", "Transmitir órdenes y señales de estado entre componentes", "Conectar con internet"],
+	"respuesta_correcta": 2,
+	"explicacion": "El bus de control transporta señales como 'RESET', 'INT' (interrupción) o 'ACK' (confirmación)."
+  },
+  {
+	"pregunta": "¿Qué memoria se borra completamente al apagar el ordenador?",
+	"opciones": ["ROM", "Disco Duro", "RAM", "Pendrive"],
+	"respuesta_correcta": 2,
+	"explicacion": "La RAM es volátil; necesita electricidad para mantener los estados de sus condensadores."
+  },
+  {
+	"pregunta": "¿Qué conector de video es puramente digital y soporta resoluciones muy altas y audio?",
+	"opciones": ["VGA", "S-Video", "DisplayPort", "RCA"],
+	"respuesta_correcta": 2,
+	"explicacion": "DisplayPort es, junto a HDMI, el estándar digital moderno para monitores de alta gama."
+  },
+  {
+	"pregunta": "¿Cómo se llama el proceso por el cual la CPU busca una instrucción en memoria?",
+	"opciones": ["Fetch (Captación)", "Decode (Decodificación)", "Execute (Ejecución)", "Writeback (Escritura)"],
+	"respuesta_correcta": 0,
+	"explicacion": "La fase de 'Fetch' es el primer paso de cada ciclo de instrucción."
+  },
+  {
+	"pregunta": "¿Qué es la 'palabra' de un ordenador?",
+	"opciones": ["Un mensaje de error", "El número de bits que el procesador maneja como una unidad", "El nombre del fabricante", "Un comando de voz"],
+	"respuesta_correcta": 1,
+	"explicacion": "En un sistema de 64 bits, la 'palabra' es de 64 bits. Es la capacidad de 'masticar' datos del procesador."
+  },
+  {
+	"pregunta": "¿Qué componente interno tiene platos magnéticos que giran a altas velocidades?",
+	"opciones": ["SSD", "RAM", "HDD (Disco Duro Convencional)", "Fuente de Alimentación"],
+	"respuesta_correcta": 2,
+	"explicacion": "Los HDD son dispositivos electromecánicos; los platos giran y un cabezal lee los datos."
+  },
+  {
+	"pregunta": "¿A qué nivel de la jerarquía de memoria pertenece un disco SSD?",
+	"opciones": ["Memoria Principal", "Memoria Secundaria", "Caché L4", "Registros"],
+	"respuesta_correcta": 1,
+	"explicacion": "Todo lo que sea almacenamiento permanente y masivo se considera memoria secundaria."
+  },
+  {
+	"pregunta": "¿Qué es un 'núcleo' (core) en un procesador?",
+	"opciones": ["Una batería interna", "Una unidad de procesamiento independiente capaz de ejecutar instrucciones", "Un tipo de cable de cobre", "El ventilador central"],
+	"respuesta_correcta": 1,
+	"explicacion": "Un procesador 'quad-core' tiene 4 unidades completas de procesamiento trabajando en paralelo."
+  },
+  {
+	"pregunta": "¿Qué significa el término 'Dual Channel' en la memoria RAM?",
+	"opciones": ["Que puedes ver la tele mientras trabajas", "Que el sistema accede a dos módulos de RAM simultáneamente duplicando el ancho de banda", "Que la RAM tiene dos colores", "Que la memoria es de dos gigas"],
+	"respuesta_correcta": 1,
+	"explicacion": "Es una tecnología que mejora mucho el rendimiento al crear un camino de datos el doble de ancho."
+  },
+  {
+	"pregunta": "¿Qué es el chipset?",
+	"opciones": ["Una bolsa de patatas fritas", "El conjunto de circuitos que gestiona el flujo de datos en la placa base", "Un tipo de monitor", "El programa de instalación de Windows"],
+	"respuesta_correcta": 1,
+	"explicacion": "El chipset es el 'administrativo' de la placa base: decide quién habla con quién y cuándo."
+  },
+  {
+	"pregunta": "¿Cuál es la función del ventilador del chasis?",
+	"opciones": ["Enfriar la habitación", "Mover el aire para crear una corriente que expulse el calor fuera de la caja", "Hacer ruido para saber que está encendido", "Limpiar los discos"],
+	"respuesta_correcta": 1,
+	"explicacion": "Sin flujo de aire, el calor se quedaría estancado dentro de la torre y los componentes fallarían."
+  },
+  {
+	"pregunta": "¿Qué es la 'latencia CAS' en una memoria RAM?",
+	"opciones": ["El precio de la memoria", "El número de ciclos de reloj que pasan desde que se pide un dato hasta que se entrega", "La altura del módulo", "El voltaje"],
+	"respuesta_correcta": 1,
+	"explicacion": "A menor latencia CAS, más rápida es la respuesta de la memoria."
+  },
+  {
+	"pregunta": "¿Qué tipo de conector se usa para alimentar la CPU directamente en la placa base?",
+	"opciones": ["Molex", "ATX 12V (4 u 8 pines)", "SATA Power", "USB"],
+	"respuesta_correcta": 1,
+	"explicacion": "Debido al alto consumo de los procesadores modernos, necesitan un cable de alimentación extra dedicado."
+  },
+  {
+	"pregunta": "¿Qué registro de la CPU indica si el resultado de una operación fue cero o negativo?",
+	"opciones": ["Acumulador", "Registro de Estado (Flags)", "Contador de Programa", "MAR"],
+	"respuesta_correcta": 1,
+	"explicacion": "Los 'flags' (banderas) son bits individuales que marcan condiciones especiales del resultado."
+  },
+  {
+	"pregunta": "¿Qué es el 'bussing' o arbitraje de bus?",
+	"opciones": ["Limpiar los cables", "El proceso de decidir qué componente puede usar el bus en cada momento", "Viajar en autobús al examen", "Un tipo de memoria"],
+	"respuesta_correcta": 1,
+	"explicacion": "Como el bus es compartido, alguien debe poner orden para que dos componentes no intenten enviar datos a la vez."
+  },
+  {
+	"pregunta": "¿Cuál de estos componentes es vital para el funcionamiento del 'Humanware'?",
+	"opciones": ["El procesador", "La interfaz de usuario y los manuales", "La fuente de alimentación", "El ratón"],
+	"respuesta_correcta": 1,
+	"explicacion": "El humanware necesita formación y herramientas adecuadas para poder operar el sistema de información."
+  },
+  {
+	"pregunta": "En la placa base, ¿qué es un 'jumper'?",
+	"opciones": ["Un programa de saltos", "Un pequeño puente metálico para configurar hardware físicamente", "Un tipo de procesador rápido", "Un error de sistema"],
+	"respuesta_correcta": 1,
+	"explicacion": "Los jumpers permiten cerrar circuitos para, por ejemplo, resetear la contraseña de la BIOS."
+  }
+
   ],
   "2": [
     {

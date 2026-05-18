@@ -109,6 +109,116 @@
     ],
     "respuesta_correcta": 1,
     "explicacion": "El Software de Sistema (cuyo máximo exponente es el Sistema Operativo) es aquel que desvincula adecuadamente al usuario y al programador de los detalles del sistema informático en particular que se use, aislándolo especialmente del procesamiento interno, memoria, discos, puertos, etc. La opción 0 se refiere al 'Software de Aplicación'."
+  },
+  {
+    "pregunta": "¿Qué ocurre con los datos almacenados en la memoria RAM (Random Access Memory) cuando se apaga o reinicia el equipo microinformático?",
+    "opciones": [
+      "Se guardan automáticamente en el disco duro para su posterior recuperación al encender.",
+      "Se comprimen y se envían a la memoria ROM para no perder el estado del sistema.",
+      "Se pierden de forma permanente, ya que la RAM es una memoria de tipo volátil.",
+      "Permanecen intactos gracias a la energía suministrada por la pila de la placa base (CMOS)."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "La memoria RAM es volátil, lo que significa que necesita energía eléctrica constante para retener la información. Al apagar el equipo, cualquier dato o programa cargado en ella se borra. La pila de la placa base mantiene únicamente los datos básicos de configuración de la BIOS/UEFI y el reloj en tiempo real."
+  },
+  {
+    "pregunta": "En el interior de un equipo informático de sobremesa, ¿cuál es la función principal de la Fuente de Alimentación (PSU)?",
+    "opciones": [
+      "Transformar la corriente alterna (CA) de la red eléctrica en las distintas tensiones de corriente continua (CC) que necesitan los componentes.",
+      "Refrigerar el interior de la caja absorbiendo el calor generado por el microprocesador.",
+      "Distribuir la señal de red de internet a través de los puertos RJ-45 de la placa base.",
+      "Proporcionar energía ininterrumpida (como un SAI/UPS) durante al menos 15 minutos si hay un corte de luz."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "La fuente de alimentación convierte la corriente alterna de nuestro enchufe (normalmente 230V en Europa) en corriente continua de menor voltaje (normalmente +3.3V, +5V y +12V) que es la que pueden utilizar y tolerar los componentes electrónicos del PC."
+  },
+  {
+    "pregunta": "Si necesitamos conectar un monitor actual y queremos transmitir tanto vídeo en alta definición como audio digital utilizando un único cable, ¿qué puerto utilizaremos preferentemente?",
+    "opciones": [
+      "VGA (Video Graphics Array).",
+      "HDMI (High-Definition Multimedia Interface).",
+      "Puerto Serie (COM).",
+      "PS/2."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El puerto HDMI permite la transmisión de vídeo y audio digital de alta definición en un solo cable. El puerto VGA (ya obsoleto en equipos nuevos) solo transmite vídeo analógico y no transmite audio. Los puertos COM y PS/2 se usaban para periféricos antiguos como ratones y teclados."
+  },
+  {
+    "pregunta": "Dentro de la estructura de un Sistema Operativo, ¿qué es exactamente el 'Kernel' o núcleo?",
+    "opciones": [
+      "El programa antivirus integrado que protege al sistema desde el arranque.",
+      "La parte central y más importante del sistema operativo, que interactúa directamente con el hardware y gestiona los recursos.",
+      "El explorador de archivos visual que permite al usuario gestionar sus carpetas.",
+      "El procesador de textos básico que viene preinstalado en el sistema."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El Kernel es el núcleo del sistema operativo. Es el primer programa que se carga (tras el gestor de arranque) y tiene control completo sobre todo el sistema. Gestiona la memoria, los procesos y hace de intermediario entre el software (las aplicaciones) y el hardware."
+  },
+  {
+    "pregunta": "¿Cuál es la finalidad de aplicar pasta térmica entre el microprocesador (CPU) y su correspondiente disipador de calor?",
+    "opciones": [
+      "Pegar de forma permanente el disipador a la CPU para que no se suelte con las vibraciones.",
+      "Mejorar la transferencia de calor rellenando las microimperfecciones entre las dos superficies metálicas.",
+      "Aislar eléctricamente el procesador para evitar cortocircuitos con el chasis.",
+      "Aumentar la velocidad del reloj (Overclock) mediante aditivos de plata."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Aunque a simple vista las superficies de la CPU y el disipador parecen lisas, microscópicamente tienen imperfecciones que dejan bolsas de aire (el aire es un mal conductor térmico). La pasta térmica rellena esos huecos, mejorando enormemente la transmisión de calor hacia el disipador."
+  },
+  {
+    "pregunta": "En un sistema informático, ¿qué es un 'controlador de dispositivo' (comúnmente llamado 'driver')?",
+    "opciones": [
+      "Un componente de hardware adicional que se instala en una ranura de expansión.",
+      "Un pequeño programa de software que enseña al Sistema Operativo cómo comunicarse y utilizar un componente de hardware específico.",
+      "El cable o bus físico que conecta un periférico con la placa base.",
+      "El usuario que tiene privilegios de administrador para hacer cambios en el sistema."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Un driver o controlador es el software específico proporcionado normalmente por el fabricante de un hardware. Su función es traducir las instrucciones genéricas del sistema operativo a las instrucciones específicas que ese dispositivo en concreto entiende y necesita para funcionar."
+  },
+  {
+    "pregunta": "Al encender un ordenador, la BIOS/UEFI realiza una comprobación de diagnóstico inicial para verificar que el hardware básico (RAM, teclado, discos, etc.) funciona correctamente antes de cargar el Sistema Operativo. ¿Cómo se denomina a este proceso?",
+    "opciones": [
+      "PING.",
+      "BOOT.",
+      "POST (Power-On Self-Test).",
+      "SWAP."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "El POST (Autocomprobación de Encendido) es la primera rutina que ejecuta la BIOS/UEFI. Si encuentra un error grave en la RAM o en la tarjeta gráfica, por ejemplo, el sistema se detendrá y emitirá unos pitidos o mostrará un código de error antes de intentar cargar cualquier sistema operativo."
+  },
+  {
+    "pregunta": "Al hablar de sistemas operativos modernos (como Windows, macOS o entornos de escritorio Linux), se suele decir que disponen de una GUI. ¿Qué significan estas siglas?",
+    "opciones": [
+      "General User Internet.",
+      "Graphical User Interface (Interfaz Gráfica de Usuario).",
+      "Gestor Unificado de Información.",
+      "Graphic Unit Integration (Integración de Unidad Gráfica)."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "GUI significa Graphical User Interface. Es la interfaz que permite al usuario interactuar con el sistema operativo utilizando elementos gráficos como ventanas, iconos, menús y un puntero de ratón, en contraposición a las clásicas interfaces de línea de comandos (CLI)."
+  },
+  {
+    "pregunta": "Cuando un Sistema Operativo permite cargar y ejecutar aparentemente varios programas a la vez, repartiendo el tiempo de uso del microprocesador entre ellos de forma muy rápida, se dice que es un sistema:",
+    "opciones": [
+      "Multiusuario.",
+      "Multitarea.",
+      "Multiprocesador.",
+      "De tiempo real."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La multitarea (multitasking) es la característica de los sistemas operativos modernos que permite ejecutar múltiples procesos 'simultáneamente'. Aunque haya una sola CPU, el SO asigna pequeñas fracciones de tiempo (cuantos) a cada programa tan rápidamente que al usuario le parece que funcionan a la vez."
+  },
+  {
+    "pregunta": "¿Qué estándar de bus de conexión se utiliza de forma mayoritaria en las placas base actuales para conectar internamente discos duros convencionales (HDD) y unidades de estado sólido (SSD) en formato de 2.5 pulgadas?",
+    "opciones": [
+      "SATA (Serial ATA).",
+      "AGP (Accelerated Graphics Port).",
+      "RJ-45.",
+      "Paralelo (LPT)."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "La interfaz SATA es el estándar de conexión interno para unidades de almacenamiento masivo como HDD, SSD (en su formato de 2,5\") o lectores ópticos. Sustituyó al antiguo IDE/PATA. AGP era para tarjetas gráficas, RJ-45 es de red e impresoras antiguas usaban LPT."
   }
  
   

@@ -10,7 +10,7 @@
       ],
       "respuesta_correcta": 1,
       "explicacion": "SFTP (Secure File Transfer Protocol) utiliza SSH para cifrar la transferencia de datos, a diferencia de FTP que viaja en texto plano."
-    },
+    }
  
   
 

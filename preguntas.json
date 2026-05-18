@@ -54,6 +54,61 @@
     ],
     "respuesta_correcta": 1,
     "explicacion": "El cambio de contexto es fundamental en sistemas operativos multitarea. Consiste en guardar el contexto (valores de los registros, contador de programa, etc.) del proceso que actualmente ocupa la CPU en su Bloque de Control de Proceso (PCB), y cargar el contexto del siguiente proceso que va a ejecutarse."
+  },
+  {
+    "pregunta": "Dentro de los componentes internos de un equipo microinformático, ¿cuál es la principal ventaja de un disco de estado sólido (SSD) frente a un disco duro tradicional (HDD) magnético?",
+    "opciones": [
+      "Su mayor capacidad de almacenamiento a un coste de fabricación mucho menor por gigabyte.",
+      "La carencia de partes mecánicas móviles, lo que reduce drásticamente el tiempo de acceso a los datos y el consumo eléctrico.",
+      "Que no requieren ser formateados con un sistema de archivos antes de la instalación del sistema operativo.",
+      "Su inmunidad total a la pérdida de datos en caso de un corte repentino del suministro eléctrico."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los discos SSD utilizan memoria flash (NAND) para almacenar los datos, por lo que no tienen platos giratorios ni cabezales mecánicos como los HDD. Esto los hace mucho más rápidos en lectura/escritura, silenciosos, resistentes a golpes y con menor consumo. Las otras opciones son falsas (el HDD sigue siendo más barato por GB y ambos necesitan sistema de archivos)."
+  },
+  {
+    "pregunta": "¿Qué nombre recibe el bloque de instrucciones o programa de propósito específico, grabado en una memoria de tipo no volátil (como una ROM o Flash), que establece la lógica de más bajo nivel para controlar los circuitos electrónicos de un dispositivo?",
+    "opciones": [
+      "Hardware.",
+      "Middleware.",
+      "Firmware.",
+      "Shareware."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "El Firmware (o soporte lógico inalterable) es el programa básico que controla los circuitos electrónicos de cualquier dispositivo (como la BIOS/UEFI de una placa base o el software interno de un router). Es el puente directo entre el hardware puro y el software general."
+  },
+  {
+    "pregunta": "En la placa base de un equipo microinformático, ¿qué elemento físico se encarga de alojar, sostener y conectar directamente el microprocesador (CPU) con el resto de componentes?",
+    "opciones": [
+      "El zócalo o socket.",
+      "El chipset principal.",
+      "La ranura de expansión PCIe (Peripheral Component Interconnect Express).",
+      "El bus frontal (FSB)."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "El zócalo (socket en inglés) es el conector cuadrado soldado a la placa base donde se instala el microprocesador. Dependiendo de la marca (Intel o AMD) y la generación del procesador, el tipo de socket varía (ej. LGA 1700, AM5)."
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes tareas NO es una de las funciones principales y propias de un Sistema Operativo?",
+    "opciones": [
+      "Gestionar la memoria principal, asignando espacio a los programas en ejecución.",
+      "Proporcionar una interfaz de usuario, ya sea gráfica (GUI) o de línea de comandos (CLI).",
+      "Administrar y estructurar los archivos y directorios en los discos de almacenamiento.",
+      "Compilar automáticamente el código fuente de los lenguajes de programación para crear ejecutables."
+    ],
+    "respuesta_correcta": 3,
+    "explicacion": "Compilar código es tarea de un programa específico llamado 'compilador' (o intérprete, según el lenguaje), que es un software de aplicación o desarrollo, no una función nativa de gestión del Sistema Operativo. El sistema operativo sí gestiona recursos (memoria, procesos, periféricos y archivos) y proporciona interfaz."
+  },
+  {
+    "pregunta": "Al hablar de los elementos constitutivos de un sistema de información, ¿a qué nos referimos concretamente con el término 'Software de Sistema' o 'Software de Base'?",
+    "opciones": [
+      "A los programas diseñados para facilitar a los usuarios la realización de tareas específicas, como un paquete ofimático.",
+      "Al conjunto de programas encargados del control y administración de los recursos del hardware y sobre los que se apoyan las demás aplicaciones.",
+      "Exclusivamente a los controladores (drivers) encargados del funcionamiento de la tarjeta gráfica y de red.",
+      "A los sistemas de información que utilizan bases de datos relacionales en la nube."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El Software de Sistema (cuyo máximo exponente es el Sistema Operativo) es aquel que desvincula adecuadamente al usuario y al programador de los detalles del sistema informático en particular que se use, aislándolo especialmente del procesamiento interno, memoria, discos, puertos, etc. La opción 0 se refiere al 'Software de Aplicación'."
   }
  
   

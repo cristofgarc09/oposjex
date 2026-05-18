@@ -1,16 +1,60 @@
 {
   "1": [
     {
-      "pregunta": "¿Qué protocolo se utiliza para la transferencia de archivos de forma segura?",
-      "opciones": [
-        "FTP",
-        "SFTP",
-        "HTTP",
-        "Telnet"
-      ],
-      "respuesta_correcta": 1,
-      "explicacion": "SFTP (Secure File Transfer Protocol) utiliza SSH para cifrar la transferencia de datos, a diferencia de FTP que viaja en texto plano."
-    }
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la clásica arquitectura de Von Neumann es CORRECTA?",
+    "opciones": [
+      "Separa físicamente la memoria de datos de la memoria de instrucciones, utilizando buses distintos para cada una.",
+      "La Unidad de Control (CU) y la Unidad Aritmético-Lógica (ALU) forman conjuntamente la Unidad Central de Proceso (CPU).",
+      "El bus de datos es exclusivamente unidireccional, mientras que el bus de direcciones es bidireccional.",
+      "Los registros internos de la CPU forman parte del subsistema de Entrada/Salida para agilizar la comunicación con los periféricos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "En la arquitectura de Von Neumann, la CPU está compuesta por la Unidad de Control (encargada de dirigir las operaciones) y la ALU (encargada de las operaciones matemáticas y lógicas). La opción 0 describe la arquitectura Harvard, no Von Neumann. La opción 2 es falsa porque el bus de datos es bidireccional y el de direcciones unidireccional."
+  },
+  {
+    "pregunta": "En un Sistema de Información, ¿qué elemento se considera el componente lógico que establece el vínculo fundamental entre la tecnología y los usuarios finales para asegurar la consecución de los objetivos?",
+    "opciones": [
+      "Los metadatos almacenados en el diccionario de datos de las bases de datos relacionales.",
+      "El middleware de integración de aplicaciones.",
+      "Los procedimientos y reglas de negocio.",
+      "El sistema operativo de red (NOS)."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Los componentes básicos de un SI son hardware, software, datos, personas y procedimientos. Los procedimientos (manuales, normas, reglas de negocio) son esenciales porque dictan cómo los usuarios (personas) interactúan con la tecnología (hardware/software) y los datos para producir información útil."
+  },
+  {
+    "pregunta": "Respecto a la jerarquía de memoria en la arquitectura de un ordenador microinformático, señale la afirmación correcta sobre la memoria caché:",
+    "opciones": [
+      "La caché L1 (Nivel 1) se comparte habitualmente entre todos los núcleos de un procesador multinúcleo para mantener la coherencia general del sistema.",
+      "Se implementa físicamente mediante memoria tipo DRAM (Dynamic RAM) debido a su alta capacidad y bajo coste de fabricación.",
+      "Su función principal es mitigar el 'cuello de botella' de Von Neumann reduciendo los tiempos de acceso de la CPU a la memoria principal.",
+      "Es una memoria de estado sólido no volátil que conserva los datos e instrucciones de uso frecuente tras un reinicio del sistema operativo."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "La caché actúa como un búfer muy rápido entre la CPU y la RAM para paliar la diferencia de velocidad entre ambas (el cuello de botella de Von Neumann). Es falsa la 0 porque la L1 es específica de cada núcleo (suele compartirse la L3). Es falsa la 1 porque se implementa con SRAM (Static RAM), no DRAM. Y es falsa la 3 porque la caché es memoria volátil."
+  },
+  {
+    "pregunta": "En el diseño de placas base modernas para equipos microinformáticos, ¿cuál es la tendencia arquitectónica predominante respecto a los clásicos 'Northbridge' (Puente Norte) y 'Southbridge' (Puente Sur)?",
+    "opciones": [
+      "El Southbridge ha absorbido las funciones del Northbridge para acercar la gestión de la memoria RAM a los puertos USB y SATA.",
+      "El Northbridge se ha integrado completamente en la CPU, quedando en la placa base un único chip (como el PCH de Intel) que asume las funciones del antiguo Southbridge.",
+      "Ambos controladores se han externalizado a tarjetas de expansión PCIe dedicadas para reducir el sobrecalentamiento general de la placa base.",
+      "Se ha recuperado la arquitectura de bus único integrando ambos puentes en el módulo de la memoria RAM principal."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "En las arquitecturas modernas, el controlador de memoria y el controlador PCIe principal (antiguo Northbridge) se han integrado directamente en el encapsulado del procesador (CPU) para reducir la latencia. En la placa base suele quedar un único chip, denominado PCH (Platform Controller Hub) por Intel o FCH por AMD, que gestiona las conexiones más lentas (antiguo Southbridge)."
+  },
+  {
+    "pregunta": "Dentro de las funciones de gestión de un Sistema Operativo, ¿qué define el concepto de 'Cambio de Contexto' (Context Switch)?",
+    "opciones": [
+      "El proceso de seguridad por el cual el sistema operativo pasa temporalmente del modo usuario al modo administrador (kernel) tras introducir credenciales válidas.",
+      "La acción de almacenar el estado de la CPU de un proceso o hilo en ejecución para poder restaurarlo y reanudar su ejecución más adelante, cediendo la CPU a otro proceso.",
+      "La migración automática de páginas de memoria desde la memoria física (RAM) al archivo de paginación en el disco duro cuando la memoria está saturada.",
+      "La reasignación de letras de unidad (C:, D:, etc.) que realiza el núcleo cuando se conecta un dispositivo de almacenamiento masivo en caliente."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El cambio de contexto es fundamental en sistemas operativos multitarea. Consiste en guardar el contexto (valores de los registros, contador de programa, etc.) del proceso que actualmente ocupa la CPU en su Bloque de Control de Proceso (PCB), y cargar el contexto del siguiente proceso que va a ejecutarse."
+  }
  
   
 

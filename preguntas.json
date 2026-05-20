@@ -996,15 +996,1894 @@
   
   "2": [
     {
-      "pregunta": "¿Cuál es la máscara de subred por defecto para una red de Clase C?",
-      "opciones": [
-        "255.0.0.0",
-        "255.255.0.0",
-        "255.255.255.0",
-        "255.255.255.255"
-      ],
-      "respuesta_correcta": 2,
-      "explicacion": "Las redes de Clase C utilizan los primeros 24 bits para la red, lo que corresponde a 255.255.255.0."
-    }
+		"pregunta": "En una impresora láser, ¿qué componente es el responsable directo de derretir el polvo de tóner y fijarlo permanentemente a la hoja de papel mediante presión y calor?",
+		"opciones": [
+		  "El tambor fotoconductor (OPC).",
+		  "El rodillo de transferencia.",
+		  "El fusor.",
+		  "La corona de carga."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El fusor (o unidad de fusión) consta de rodillos que aplican calor y presión al papel justo antes de que este salga de la impresora, derritiendo las partículas de plástico del tóner para que se adhieran permanentemente. El tambor es quien 'dibuja' la imagen previamente, pero si no pasa por el fusor, el polvo se caería al soplar la hoja."
+	  },
+	  {
+		"pregunta": "Si un usuario necesita conectar varios monitores en cadena (daisy-chaining) utilizando un único puerto de salida de vídeo desde el ordenador hacia el primer monitor, ¿qué interfaz de conexión está diseñada nativamente para soportar esta característica mediante la tecnología Multi-Stream Transport (MST)?",
+		"opciones": [
+		  "HDMI.",
+		  "VGA.",
+		  "DisplayPort.",
+		  "DVI-D."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El estándar DisplayPort es el que soporta de forma nativa la conexión en cadena (Daisy Chain) mediante MST. Permite conectar el PC al Monitor 1, y luego sacar un cable del Monitor 1 al Monitor 2, ahorrando cables largos y puertos en la tarjeta gráfica. HDMI no soporta esta característica directamente."
+	  },
+	  {
+		"pregunta": "Al configurar un monitor en el sistema operativo, nos encontramos con el parámetro 'Tasa de refresco' o 'Frecuencia de actualización', medido en Hercios (Hz). ¿Qué indica exactamente este valor?",
+		"opciones": [
+		  "La velocidad a la que el monitor procesa la señal analógica a digital.",
+		  "El número de veces por segundo que la pantalla dibuja o actualiza una nueva imagen.",
+		  "La cantidad de píxeles horizontales y verticales que conforman la resolución nativa.",
+		  "El tiempo de retraso (input lag) entre el movimiento del ratón y su visualización."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los Hercios (Hz) indican la frecuencia de actualización. Un monitor de 60 Hz dibuja la imagen en pantalla 60 veces por segundo. Una mayor tasa de refresco (por ejemplo, 120 Hz o 144 Hz) proporciona un movimiento mucho más fluido y reduce la fatiga visual."
+	  },
+	  {
+		"pregunta": "En el ámbito de la digitalización de documentos en la Administración, es muy común que los escáneres o equipos multifunción incorporen un elemento denominado ADF. ¿A qué se refiere este acrónimo?",
+		"opciones": [
+		  "Advanced Digital Formatting (Formateo Digital Avanzado).",
+		  "Automatic Document Feeder (Alimentador Automático de Documentos).",
+		  "Analog to Digital Filter (Filtro Analógico a Digital).",
+		  "Asynchronous Data Frame (Trama de Datos Asíncrona)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "ADF (Automatic Document Feeder) es la bandeja superior que tienen las fotocopiadoras y escáneres que permite colocar un taco de hojas para que la máquina las vaya "tragando" y escaneando de forma automática, sin que el usuario tenga que levantar la tapa para ponerlas de una en una."
+	  },
+	  {
+		"pregunta": "En relación a los discos de estado sólido (SSD) modernos, ¿qué ventaja fundamental ofrece el protocolo NVMe frente al estándar SATA III tradicional?",
+		"opciones": [
+		  "NVMe permite usar discos magnéticos además de memorias flash, unificando ambas tecnologías.",
+		  "NVMe no requiere de un sistema de archivos, el SO guarda los datos en bruto (raw).",
+		  "NVMe se comunica directamente a través del bus PCI Express (PCIe), reduciendo drásticamente la latencia y superando el límite de velocidad de 600 MB/s de SATA.",
+		  "NVMe cifra automáticamente todos los datos por hardware sin necesidad de software adicional."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "NVMe (Non-Volatile Memory Express) es un protocolo diseñado específicamente para las altas velocidades de la memoria flash. Al aprovechar las líneas PCIe de la placa base (habitualmente mediante conexiones M.2), elimina el cuello de botella del antiguo protocolo SATA (ideado para discos mecánicos), logrando velocidades de lectura/escritura muy superiores."
+	  },
+	  {
+		"pregunta": "¿Cuál de las siguientes afirmaciones sobre las conexiones de vídeo analógicas y digitales es CORRECTA?",
+		"opciones": [
+		  "El cable VGA transmite vídeo digital de alta definición y audio analógico simultáneamente.",
+		  "El puerto DVI-D transmite exclusivamente señal de vídeo digital, sin integrar audio ni señal analógica.",
+		  "HDMI es una conexión exclusivamente analógica diseñada originalmente para televisores CRT.",
+		  "DisplayPort requiere alimentación eléctrica externa conectada al enchufe de pared para funcionar."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El estándar DVI tiene varias versiones. El DVI-D ('Digital') transmite solo vídeo digital. El DVI-A transmite analógico y el DVI-I transmite ambos. Es importante recordar que el estándar DVI puro no transmite audio (a diferencia del HDMI o DisplayPort). VGA es 100% analógico y no transmite audio."
+	  },
+	  {
+		"pregunta": "Dentro de los elementos multimedia, ¿qué función realiza exactamente un componente DAC (Digital-to-Analog Converter) en una tarjeta de sonido?",
+		"opciones": [
+		  "Convierte la voz captada por el micrófono en datos binarios (0 y 1) para que el ordenador pueda procesarlos.",
+		  "Transforma los datos digitales generados por el equipo en ondas sonoras analógicas que pueden ser reproducidas por unos altavoces.",
+		  "Comprime el tamaño de los archivos de audio WAV a MP3 para que ocupen menos espacio en el disco duro.",
+		  "Amplifica la señal de radiofrecuencia para permitir la conexión de auriculares inalámbricos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "DAC significa Conversor Digital a Analógico. Como los ordenadores solo entienden ceros y unos, y nuestros oídos (y los altavoces) funcionan con ondas físicas analógicas, el DAC se encarga de traducir esa información digital en impulsos eléctricos variables que harán vibrar los altavoces."
+	  },
+	  {
+		"pregunta": "Al desplegar teléfonos IP, cámaras de vigilancia o puntos de acceso WiFi en la red de la Junta, es muy común utilizar la tecnología PoE a través del cableado RJ45. ¿Qué permite esta tecnología?",
+		"opciones": [
+		  "Priorizar el tráfico de voz sobre los datos comunes mediante etiquetado de paquetes.",
+		  "Enviar y recibir datos a velocidades simétricas superiores a 10 Gbps.",
+		  "Suministrar energía eléctrica al dispositivo a través del mismo cable de red Ethernet, eliminando la necesidad de un enchufe cercano.",
+		  "Cifrar las comunicaciones de extremo a extremo a nivel físico de la tarjeta de red."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "PoE (Power over Ethernet) permite que la corriente eléctrica necesaria para que funcione un dispositivo viaje por los mismos hilos de cobre del cable de red (RJ45) por los que viajan los datos. Esto facilita enormemente instalar cámaras o routers en techos donde no hay enchufes eléctricos."
+	  },
+	  {
+		"pregunta": "Las impresoras térmicas (como las utilizadas para imprimir tickets y recibos en terminales de punto de venta) tienen una particularidad muy importante a nivel de archivo físico que el Auxiliar debe conocer. ¿Cuál es?",
+		"opciones": [
+		  "Utilizan una cinta entintada de impacto que permite imprimir hasta 3 copias autocopiativas a la vez.",
+		  "La impresión se borra progresivamente con el paso del tiempo y es extremadamente sensible a fuentes de calor ambientales.",
+		  "La tinta inyectada se plastifica, haciendo el ticket totalmente resistente al agua y a los químicos químicos.",
+		  "Requieren un papel fotográfico especial de alto gramaje para que el láser pueda quemar la información en él."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La impresión térmica directa (la de los recibos de la compra) no usa tinta, sino un cabezal que aplica calor sobre un papel químico reactivo. El gran problema de este sistema es que la impresión no es permanente: se desvanece con el tiempo o si se expone a la luz del sol y fuentes de calor. Por eso en la Administración los justificantes térmicos suelen tener que fotocopiarse."
+	  },
+	  {
+		"pregunta": "En tecnología de monitores, ¿cuál es la principal diferencia técnica de un panel OLED frente a los paneles LCD (incluyendo los que comercialmente se llaman 'monitores LED')?",
+		"opciones": [
+		  "Los paneles OLED son más gruesos y pesados porque requieren una matriz de tubos catódicos en miniatura.",
+		  "Los monitores LCD ofrecen 'negros puros', mientras que los OLED sufren de fugas de luz constantes.",
+		  "En un panel OLED, cada píxel emite su propia luz individualmente y puede apagarse por completo, mientras que el LCD requiere un panel de retroiluminación (backlight) siempre encendido tras los píxeles.",
+		  "El OLED solo puede mostrar imágenes con una profundidad de color de 8 bits, mientras que el LCD llega a 32 bits."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "En la tecnología OLED (Organic Light-Emitting Diode), los píxeles son autoiluminados. Si hay que mostrar color negro, el píxel directamente se apaga, logrando un contraste infinito (negros puros) y un menor consumo. Las pantallas LCD/LED necesitan una luz trasera encendida constantemente, la cual es bloqueada por filtros para crear el negro (a menudo viéndose gris oscuro)."
+	  },
+	  {
+		"pregunta": "¿Cuál es la capacidad estándar de almacenamiento de un disco óptico Blu-Ray de una sola capa (Single Layer)?",
+		"opciones": [
+		  "700 MB.",
+		  "4.7 GB.",
+		  "8.5 GB.",
+		  "25 GB."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El Blu-Ray Disc (BD) estándar de una capa tiene una capacidad de 25 GB. Como repaso general para los test: un CD tiene 700 MB, un DVD de capa simple 4.7 GB, un DVD de doble capa 8.5 GB, y un Blu-Ray de doble capa 50 GB."
+	  },
+	  {
+		"pregunta": "Hablando de conectividad y estándares USB, ¿qué color de plástico aislante en la pestaña interna del conector USB Tipo A se estableció como estándar para identificar visualmente que se trata de un puerto USB 3.0 (SuperSpeed)?",
+		"opciones": [
+		  "Rojo.",
+		  "Negro.",
+		  "Azul.",
+		  "Verde."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El estándar USB 3.0 (que multiplicaba por 10 la velocidad del USB 2.0, pasando de 480 Mbps a 5 Gbps) se distingue fácilmente porque la lengüeta de plástico del interior del conector hembra (y del macho en los cables) es de color azul (oficialmente Pantone 300C). Los puertos USB 2.0 suelen ser negros o blancos."
+	  },
+	  {
+		"pregunta": "Si un usuario de la Administración quiere escanear un documento impreso en papel y convertirlo en un documento de texto editable en un procesador de textos (en lugar de una simple imagen o un PDF inalterable), ¿qué tecnología de software asociada al escáner deberá utilizar?",
+		"opciones": [
+		  "OMR (Optical Mark Recognition).",
+		  "OCR (Optical Character Recognition).",
+		  "MICR (Magnetic Ink Character Recognition).",
+		  "Gestor de Spooling de impresión."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El OCR (Reconocimiento Óptico de Caracteres) es el software que analiza la imagen capturada por el escáner, identifica la forma de las letras y las traduce a código de texto editable por el ordenador (ASCII o Unicode). El OMR es para leer casillas marcadas (como en los exámenes tipo test)."
+	  },
+	  {
+		"pregunta": "El conector de red RJ45, utilizado universalmente para redes de área local (LAN) Ethernet sobre cableado de pares trenzados, dispone en su interior de un número determinado de pines o contactos metálicos. ¿Cuántos pines tiene un conector RJ45 estándar?",
+		"opciones": [
+		  "4 pines.",
+		  "6 pines.",
+		  "8 pines.",
+		  "15 pines."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El conector RJ45 (Registered Jack 45) dispone de 8 pines (contactos dorados), que corresponden a los 8 hilos de cobre (agrupados en 4 pares trenzados) del interior de los cables de red UTP/FTP habituales. El RJ11, usado en telefonía, tiene 4 o 6 pines y es más estrecho."
+	  },
+	  {
+		"pregunta": "En el contexto del mantenimiento preventivo del hardware de almacenamiento, muchos discos duros (tanto HDD como SSD) incorporan una tecnología integrada a nivel de firmware que monitoriza constantemente la 'salud' de la unidad y advierte al sistema operativo o a la BIOS si prevé un fallo físico inminente. ¿Cómo se llama este sistema?",
+		"opciones": [
+		  "S.M.A.R.T.",
+		  "RAID.",
+		  "CHKDSK.",
+		  "TRIM."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology) monitoriza atributos del disco como la temperatura, sectores defectuosos, errores de lectura, etc. Si detecta valores anómalos, avisa al usuario para que pueda hacer una copia de seguridad antes de que el disco 'muera' por completo."
+	  },
+	  {
+		"pregunta": "Un proyector o monitor que un Auxiliar debe instalar dispone de un puerto VGA clásico. Si observamos físicamente la clavija hembra en el dispositivo, este conector (conocido técnicamente como DE-15) se caracteriza por tener:",
+		"opciones": [
+		  "15 orificios distribuidos en tres filas horizontales de 5.",
+		  "9 orificios distribuidos en dos filas horizontales.",
+		  "Una ranura rectangular plana sin pines visibles, similar al estándar USB.",
+		  "Un único orificio circular de conexión coaxial."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El puerto VGA estándar (DE-15 o HD-15) se identifica físicamente de forma muy clara por su forma trapezoidal y sus 15 pines (en el macho) u orificios (en la hembra) distribuidos exactamente en tres filas de cinco. El puerto que tiene 9 pines en dos filas es el Puerto Serie (COM/DB-9)."
+	  },
+	  {
+		"pregunta": "En los elementos multimedia para PC, las tarjetas de sonido tradicionales con conectores Jack de 3.5mm siguen un código de colores estandarizado (estándar PC99). Si un usuario necesita conectar un micrófono analógico de diadema, ¿a qué conector de color debe enchufar la clavija del micrófono?",
+		"opciones": [
+		  "Al conector verde lima.",
+		  "Al conector azul claro.",
+		  "Al conector negro.",
+		  "Al conector rosa."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Según el estándar PC99: el color Rosa (Mic-in) es exclusivo para la entrada de micrófono. El Verde Lima (Line-out) es la salida principal para altavoces estéreo o auriculares. El Azul Claro (Line-in) es la entrada de línea para conectar equipos de audio externos (como una cadena de música)."
+	  },
+	  {
+		"pregunta": "Para solucionar el problema frecuente de una impresora de inyección de tinta que presenta líneas blancas horizontales al imprimir un documento, ¿cuál es la acción de mantenimiento a nivel de usuario más adecuada?",
+		"opciones": [
+		  "Desmontar físicamente el cabezal de impresión y sumergirlo en alcohol isopropílico puro durante 24 horas.",
+		  "Utilizar la utilidad de mantenimiento del controlador (driver) de la impresora en el Sistema Operativo para ejecutar un ciclo de limpieza de cabezales.",
+		  "Frotar los inyectores de los cartuchos vigorosamente con un bastoncillo de algodón en seco para quitar los grumos de tinta solidificada.",
+		  "Aumentar la resolución de impresión al máximo (PPP) en las propiedades del documento para forzar la salida de más tinta a mayor presión."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las rayas blancas en las impresoras de tinta ocurren porque la tinta microscópica se seca y atasca los orificios del cabezal. La primera y más segura acción es usar el software de la impresora para que expulse a presión un poco de tinta fresca, lo que actúa como solvente y destapa los inyectores. Frotarlos o sumergirlos sin conocimientos técnicos suele dañar el cabezal."
+	  },
+	  {
+		"pregunta": "¿Qué conector estándar de conectividad introdujo un diseño simétrico reversible, y mediante perfiles adicionales (como el Alternate Mode y Power Delivery) se ha convertido en una solución universal capaz de cargar portátiles, transmitir datos masivos y enviar señal de vídeo a monitores simultáneamente?",
+		"opciones": [
+		  "Micro-USB Tipo B.",
+		  "Lightning.",
+		  "USB Tipo C.",
+		  "Mini DisplayPort."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El USB-C (USB Type-C) es el conector que revolucionó la conectividad por su forma reversible (se puede conectar por cualquier lado) y su capacidad, a través de distintos protocolos de las versiones de USB (como USB 3.1, USB4 o Thunderbolt 3/4), de transmitir hasta 100W/240W de energía eléctrica, vídeo (DisplayPort Alt Mode) y datos de altísima velocidad por un solo cable."
+	  },
+	  {
+		"pregunta": "En el ámbito del almacenamiento portátil mediante tarjetas de memoria Flash, el estándar original SD (Secure Digital) ha evolucionado en varias generaciones para superar sus límites. ¿Cuál es el límite teórico de capacidad máxima del formato conocido como SDXC (eXtended Capacity)?",
+		"opciones": [
+		  "2 GB.",
+		  "32 GB.",
+		  "2 TB.",
+		  "128 TB."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El formato SD original llegaba hasta 2 GB. Fue sucedido por el SDHC (High Capacity) que elevó el límite a 32 GB usando el sistema de archivos FAT32. Finalmente, el formato SDXC (eXtended Capacity), utilizando el sistema de archivos exFAT, tiene un límite teórico de capacidad de 2 Terabytes (2048 GB)."
+	  },
+	  {
+		"pregunta": "En el entorno de la impresión a color, tanto láser como de inyección, se utiliza habitualmente el modelo de color CMYK. ¿A qué colores corresponden estas siglas?",
+		"opciones": [
+		  "Carmesí, Mostaza, Amarillo y Caqui.",
+		  "Cian, Magenta, Amarillo (Yellow) y Negro (Key).",
+		  "Cian, Marrón, Amarillo (Yellow) y Kaki.",
+		  "Rojo (Crimson), Magenta, Amarillo (Yellow) y Negro (Key)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "CMYK corresponde a Cian, Magenta, Yellow (Amarillo) y Key (Negro). Se le llama 'Key' (clave) al negro porque en la impresión tradicional es la placa clave que añade el detalle y el contraste a la imagen. Es un modelo sustractivo, a diferencia del RGB (monitores), que es aditivo."
+	  },
+	  {
+		"pregunta": "En las tarjetas gráficas podemos encontrar distintos tipos de conectores DVI. Si vemos un conector etiquetado como 'DVI-I', ¿qué significa esa 'I' y qué característica tiene?",
+		"opciones": [
+		  "Integrado; significa que la tarjeta gráfica está integrada en la placa base y no es dedicada.",
+		  "Interlaced (Entrelazado); solo soporta resoluciones antiguas entrelazadas como 1080i.",
+		  "Integrated (Integrado); es capaz de transmitir tanto señal digital como señal analógica por el mismo conector.",
+		  "Intelligent (Inteligente); detecta automáticamente si el monitor está apagado para ahorrar energía."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "DVI-I (Integrated) transmite tanto señal digital como analógica. Esto es vital en el hardware, ya que a un puerto DVI-I se le puede poner un adaptador pasivo a VGA (analógico), pero a un puerto DVI-D (Digital) no se le puede poner un adaptador pasivo a VGA."
+	  },
+	  {
+		"pregunta": "Al organizar el almacenamiento corporativo o de un departamento, es habitual recurrir a un dispositivo NAS. ¿Qué lo diferencia de un disco duro externo USB convencional (DAS)?",
+		"opciones": [
+		  "El NAS no utiliza discos duros en su interior, sino cintas magnéticas.",
+		  "El NAS se conecta directamente a la red local (por ejemplo, mediante cable RJ45) y funciona como un servidor de archivos independiente, mientras que el USB requiere conectarse a un PC que esté encendido.",
+		  "El NAS solo puede ser formateado en sistema FAT32, mientras que el USB soporta NTFS.",
+		  "El NAS requiere una licencia mensual de pago de Microsoft para funcionar."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "NAS significa Network Attached Storage (Almacenamiento Conectado en Red). Es básicamente un pequeño ordenador con sus propios discos que se conecta al switch o router de la red. Cualquier usuario de la red puede acceder a él sin que otro ordenador específico tenga que estar encendido."
+	  },
+	  {
+		"pregunta": "A la hora de comprar monitores para la oficina, encontramos distintas tecnologías de paneles LED. ¿Cuál es la principal ventaja de un panel tipo IPS (In-Plane Switching) frente a un panel TN (Twisted Nematic)?",
+		"opciones": [
+		  "El panel IPS consume la mitad de energía eléctrica que el TN.",
+		  "El panel IPS ofrece ángulos de visión mucho más amplios (casi 178º) y una reproducción de color más fiel sin oscurecerse al mirarlo de lado.",
+		  "El panel IPS tiene un tiempo de respuesta de 0.1 milisegundos, ideal para videojuegos competitivos.",
+		  "El panel IPS no requiere de un cable de corriente, se alimenta por el puerto VGA."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los paneles IPS son el estándar en diseño gráfico y oficinas porque puedes mirar la pantalla desde un lado o desde arriba sin que los colores se inviertan o la pantalla se vuelva negra, ofreciendo colores muy precisos. Los TN son más baratos y rápidos (menor tiempo de respuesta), pero sus ángulos de visión son muy pobres."
+	  },
+	  {
+		"pregunta": "En la digitalización de imágenes (escáneres) y monitores, se habla de 'Profundidad de color'. Si un dispositivo soporta 'Color Verdadero' (True Color) de 24 bits, ¿qué significa exactamente a nivel técnico?",
+		"opciones": [
+		  "Que utiliza 24 bits por cada uno de los píxeles de la pantalla, divididos en 8 bits para el Rojo, 8 para el Verde y 8 para el Azul (RGB).",
+		  "Que el monitor tiene una paleta máxima de 24 colores puros disponibles.",
+		  "Que la tarjeta gráfica necesita 24 Gigabytes de memoria RAM de vídeo para funcionar.",
+		  "Que la imagen escaneada ocupará exactamente 24 Megabytes en el disco duro."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La profundidad de 24 bits (True Color) destina 8 bits ($2^8$ = 256 niveles) a cada uno de los 3 colores primarios (RGB). Si multiplicamos 256 x 256 x 256, obtenemos aproximadamente 16,7 millones de colores posibles, que es el estándar visual habitual en informática."
+	  },
+	  {
+		"pregunta": "En las especificaciones de los televisores y monitores con puertos HDMI, a menudo vemos un puerto etiquetado como 'HDMI ARC'. ¿Qué función especial proporciona ese puerto?",
+		"opciones": [
+		  "Analogue Reference Color, mejora el color de las películas antiguas.",
+		  "Audio Return Channel, permite que el audio viaje 'de vuelta' desde el televisor hacia una barra de sonido o receptor usando el mismo cable HDMI.",
+		  "Active Rendering Core, delega parte del procesamiento gráfico al propio monitor.",
+		  "Asymmetric Resolution Control, permite tener la pantalla dividida en dos ordenadores distintos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "ARC (Audio Return Channel) elimina la necesidad de usar un cable de audio óptico adicional. Si conectas una consola al televisor y el televisor a una barra de sonido por HDMI ARC, el televisor es capaz de enviar el sonido de la consola 'hacia atrás' por ese mismo cable a la barra de sonido."
+	  },
+	  {
+		"pregunta": "Hablando de elementos multimedia, el estándar para grabar un CD de Audio (CD-DA) sin pérdida de calidad establece una frecuencia de muestreo específica. ¿Cuál es esta frecuencia?",
+		"opciones": [
+		  "8.000 Hz.",
+		  "22.050 Hz.",
+		  "44.100 Hz (44.1 kHz).",
+		  "192.000 Hz (192 kHz)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La calidad de audio CD estándar utiliza una frecuencia de muestreo de 44.1 kHz y una profundidad de 16 bits en estéreo. Se eligió 44.1 kHz basándose en el teorema de Nyquist, ya que el oído humano escucha hasta unos 20 kHz, y para digitalizar sin pérdida se necesita al menos el doble de la frecuencia máxima (40 kHz + margen)."
+	  },
+	  {
+		"pregunta": "¿Qué interfaz de conectividad de altísima velocidad, desarrollada originalmente por Intel y Apple, utiliza en sus versiones 3 y 4 exactamente el mismo conector físico que el USB Tipo C?",
+		"opciones": [
+		  "FireWire 800.",
+		  "Thunderbolt.",
+		  "SATA Express.",
+		  "Lightning."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Thunderbolt 3 y Thunderbolt 4 utilizan el conector físico USB-C. Un puerto Thunderbolt puede funcionar como un USB normal, pero añade soporte para velocidades masivas (40 Gbps), conexión nativa a carriles PCIe (permite gráficas externas) y conexión de varios monitores de alta resolución."
+	  },
+	  {
+		"pregunta": "Dentro de los elementos de impresión, ¿para qué tipo de tareas se utiliza habitualmente de forma profesional un 'Plotter' (Trazador gráfico)?",
+		"opciones": [
+		  "Para la impresión masiva de folletos y tickets térmicos a gran velocidad.",
+		  "Para imprimir documentos confidenciales que requieren marca de agua en el papel.",
+		  "Para la impresión de gráficos vectoriales, mapas topográficos y planos de arquitectura (CAD) en papel de gran formato (ej. A1 o A0).",
+		  "Para plastificar documentos (DNI, tarjetas) e imprimir sobre tarjetas de PVC."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un plotter es una impresora de gran formato diseñada para trabajos de precisión (dibujo lineal, arquitectura, topografía, cartelería). Inicialmente usaban plumillas que se movían mecánicamente dibujando líneas (vectores); hoy en día suelen ser de inyección de tinta, pero su fin sigue siendo el gran formato."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe comprar tarjetas de memoria SD para las cámaras de fotos institucionales y elige tarjetas etiquetadas como 'Clase 10', ¿qué rendimiento mínimo le asegura esa clase?",
+		"opciones": [
+		  "Una velocidad de transferencia en ráfaga de 100 Megabytes por segundo.",
+		  "Una velocidad mínima garantizada de escritura secuencial de 10 Megabytes por segundo.",
+		  "Una capacidad máxima de almacenamiento inamovible de 10 Gigabytes.",
+		  "Garantía de funcionamiento continuo de 10 años sin pérdida de datos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En el estándar de las tarjetas SD, la 'Speed Class' (indicada con un número dentro de una letra 'C' casi cerrada) marca la velocidad mínima garantizada de escritura secuencial. Clase 10 significa que nunca escribirá a menos de 10 MB/s, lo que es necesario, por ejemplo, para grabar vídeo en Full HD sin tirones."
+	  },
+	  {
+		"pregunta": "El cableado de par trenzado UTP utilizado con conectores RJ45 se divide en categorías. ¿Cuál es la categoría mínima recomendada que soporta velocidades de red Gigabit Ethernet (1000 Mbps)?",
+		"opciones": [
+		  "Categoría 3.",
+		  "Categoría 5 (a secas).",
+		  "Categoría 5e (Enhanced).",
+		  "Categoría 2."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El cable Cat 5e (mejorado) es el estándar mínimo para lograr conexiones Gigabit Ethernet a distancias estándar de 100 metros. El Cat 5 original solo estaba certificado para 100 Mbps (Fast Ethernet). Actualmente se suele instalar Cat 6 o Cat 6a en edificios nuevos."
+	  },
+	  {
+		"pregunta": "En las especificaciones del estándar USB, la versión USB 2.0 (también conocida comercialmente como 'Hi-Speed') marcó un hito en la conectividad. ¿Cuál es su velocidad teórica máxima de transferencia de datos?",
+		"opciones": [
+		  "12 Mbps.",
+		  "480 Mbps.",
+		  "5 Gbps.",
+		  "10 Gbps."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "USB 2.0 introdujo la velocidad 'Hi-Speed' de 480 Megabits por segundo (aprox. 60 Megabytes por segundo en teoría). El USB 1.1 (Full Speed) era de 12 Mbps. El USB 3.0 (SuperSpeed) subió a 5 Gbps."
+	  },
+	  {
+		"pregunta": "Para la política de copias de seguridad a largo plazo (archiving) de los servidores de una Consejería de la Junta, el departamento de sistemas utiliza un formato de cartuchos de cinta magnética denominado LTO. ¿Cuál es la ventaja principal de este almacenamiento frente a tener todos los datos en discos duros SSD conectados?",
+		"opciones": [
+		  "La velocidad de lectura aleatoria (buscar un pequeño archivo suelto) es instantánea en las cintas.",
+		  "Las cintas no se ven afectadas en absoluto por imanes o campos electromagnéticos, al contrario que los SSD.",
+		  "El bajísimo coste económico por Gigabyte almacenado y su vida útil de décadas en frío (sin consumir electricidad).",
+		  "Las cintas LTO se conectan directamente a cualquier puerto USB sin necesidad de software de backup."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El estándar LTO (Linear Tape-Open) se utiliza para 'Cold Storage' (almacenamiento frío). Aunque buscar un dato concreto es lento porque la cinta debe desenrollarse (acceso secuencial), el coste de guardar Terabytes de datos es mínimo comparado con discos y la cinta guardada en un armario no consume luz y dura muchísimo tiempo."
+	  },
+	  {
+		"pregunta": "Físicamente, ¿qué característica mecánica posee el conector estándar DisplayPort que NO suele poseer el conector HDMI y que es de gran utilidad en entornos de oficina para evitar desconexiones accidentales?",
+		"opciones": [
+		  "Está fabricado enteramente de fibra óptica de plástico maleable.",
+		  "Incorpora unas pequeñas pestañas o ganchos de retención mecánica que requieren pulsar un botón en la clavija para poder extraer el cable del equipo.",
+		  "Dispone de roscas laterales con tornillos (como el VGA) para anclarlo firmemente al chasis del PC.",
+		  "Es magnético (tipo MagSafe) y se desconecta de un tirón para no arrastrar la torre."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La inmensa mayoría de los cables DisplayPort estándar incluyen un mecanismo de retención. Al insertarlo, dos pequeñas pestañas se anclan dentro del puerto, impidiendo que el cable se salga si se tira de él. Para sacarlo, hay que presionar un mecanismo en el capuchón de plástico del cable."
+	  },
+	  {
+		"pregunta": "En el contexto de la digitalización, un código QR es cada vez más utilizado en la Administración (por ejemplo, para enlazar a sedes electrónicas). Técnicamente, ¿qué es un código QR?",
+		"opciones": [
+		  "Un código de barras lineal 1D mejorado que solo admite números.",
+		  "Un código de barras de matriz bidimensional (2D) capaz de almacenar caracteres alfanuméricos, URLs y texto.",
+		  "Un chip RFID integrado en el papel que emite ondas de radio.",
+		  "Una marca de agua digital invisible al ojo humano incrustada en las imágenes."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "QR (Quick Response) es un tipo de código de barras bidimensional. Mientras que el código de barras clásico (1D) se lee en línea horizontal, el QR codifica la información tanto en horizontal como en vertical, lo que le permite almacenar mucha más información en un espacio pequeño."
+	  },
+	  {
+		"pregunta": "Las impresoras 3D, cada vez más presentes en institutos técnicos y algunos departamentos, funcionan habitualmente mediante la tecnología FDM (Modelado por Deposición Fundida). ¿Cuáles son los dos filamentos de material plástico más comunes utilizados en este tipo de impresoras?",
+		"opciones": [
+		  "Tóner en polvo y resina líquida fotosensible.",
+		  "PLA (Ácido Poliláctico) y ABS (Acrilonitrilo Butadieno Estireno).",
+		  "PVC y Fibra de vidrio.",
+		  "Silicona y Goma EVA fundida."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "PLA y ABS son los reyes del FDM. El PLA es biodegradable, fácil de imprimir y no requiere cama caliente. El ABS es más resistente mecánicamente y al calor (es el plástico de las piezas LEGO), pero es más difícil de imprimir y emite gases tóxicos al fundirse."
+	  },
+	  {
+		"pregunta": "Dentro de los soportes de almacenamiento óptico, existen distintas variantes regrabables. ¿Qué significa exactamente el sufijo 'RW' en un disco 'DVD-RW'?",
+		"opciones": [
+		  "Read While Write, permite grabar y leer datos al mismo tiempo sin esperas.",
+		  "ReWritable (Regrabable), indica que el disco puede ser borrado y vuelto a grabar múltiples veces.",
+		  "Red Warning, indica que es un disco con protección anticopia (DRM).",
+		  "Read Web, contiene un formato especial de hipertexto para la navegación offline."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "RW (ReWritable) indica que el disco utiliza una aleación de cambio de fase que permite que el láser cambie el estado del material de cristalino a amorfo y viceversa, permitiendo borrar el disco y grabar nuevos datos cientos de veces. El sufijo 'R' (ej. DVD-R) significa 'Recordable' y solo admite una única grabación."
+	  },
+	  {
+		"pregunta": "En multimedia, al configurar un micrófono para realizar videoconferencias, encontramos términos referentes al patrón polar o directividad. Si un micrófono capta el sonido principalmente por la parte frontal, rechazando gran parte del sonido que viene de atrás o los lados, decimos que es un micrófono:",
+		"opciones": [
+		  "Omnidireccional.",
+		  "Bidireccional (Figura en 8).",
+		  "Cardioide.",
+		  "Piezoeléctrico."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El patrón cardioide (en forma de corazón) es el más común en micrófonos direccionales (como los de podcasters o cantantes). Capta fuertemente el sonido que tiene delante (la voz), reduciendo la captación lateral y trasera (el ruido del teclado o los ventiladores del PC). El omnidireccional capta 360 grados por igual."
+	  },
+	  {
+		"pregunta": "Aunque el puerto VGA transmite vídeo analógico, ¿cuáles son las señales de colores primarios e información de sincronización exacta que viajan a través de sus pines hacia el monitor?",
+		"opciones": [
+		  "Cian, Magenta, Amarillo y Negro (CMYK).",
+		  "Rojo, Verde, Azul (RGB) y señales de sincronización Horizontal (H-Sync) y Vertical (V-Sync).",
+		  "Brillo (Luminancia), Contraste y Saturación.",
+		  "Únicamente una señal modulada de 0 y 1 empaquetada (Paquetes IP)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El VGA descompone la señal analógica separando los canales de color (Rojo, Verde y Azul) y enviando las señales de sincronismo horizontal y vertical por pines separados para que el monitor CRT sepa cómo 'dibujar' la imagen línea a línea. Si un pin de color se dobla (ej. el rojo), la pantalla se verá con un fuerte tono azul-verdoso (falta de rojo)."
+	  },
+	  {
+		"pregunta": "Al analizar la tecnología interna de un escáner plano de documentos, existen principalmente dos tipos de sensores de imagen: el CCD y el CIS. ¿Qué característica destaca del sensor CIS frente al CCD?",
+		"opciones": [
+		  "El CIS utiliza un sistema complejo de espejos y lentes, lo que lo hace mucho más grueso y pesado.",
+		  "El CIS es más compacto, consume mucha menos energía (se puede alimentar por USB) y no tiene partes ópticas complejas, aunque ofrece menor profundidad de campo.",
+		  "El CIS ofrece una calidad óptica muy superior, siendo el estándar en escáneres profesionales para fotografía de alta gama.",
+		  "El CIS solo puede escanear en blanco y negro (escala de grises), requiriendo un sensor CCD auxiliar para el color."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "CIS (Contact Image Sensor) se encuentra en los escáneres finos y baratos (multifunciones de hogar u oficina). Al no llevar espejos, es muy plano y no gasta batería. Sin embargo, el documento tiene que estar totalmente pegado al cristal; si el papel está arrugado o escaneas el lomo de un libro, esa parte se verá negra y borrosa. El CCD (Charge-Coupled Device) sí tiene espejos, mayor calidad y mayor profundidad de campo."
+	  },
+	  {
+		"pregunta": "Cuando enviamos a imprimir un documento complejo desde nuestro equipo a una impresora láser corporativa, el archivo se traduce a un 'lenguaje de descripción de página' que la impresora pueda entender. ¿Cuáles son los dos estándares más utilizados en la industria?",
+		"opciones": [
+		  "HTML5 y CSS3.",
+		  "PCL (Printer Command Language) y PostScript.",
+		  "C++ y Java.",
+		  "XML y JSON."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "PCL (creado por HP) y PostScript (creado por Adobe) son los dos lenguajes de descripción de página dominantes en impresoras láser profesionales. PCL depende más del sistema operativo para procesar el trabajo, mientras que PostScript es un lenguaje de programación completo interpretado por el procesador interno de la propia impresora (ideal para diseño gráfico)."
+	  },
+	  {
+		"pregunta": "Hoy en día, casi todos los teléfonos móviles y tabletas utilizan pantallas táctiles 'Capacitivas', mientras que en el pasado (y en algunos cajeros o terminales industriales) se usaban las 'Resistivas'. ¿Cuál es la diferencia fundamental de la tecnología capacitiva?",
+		"opciones": [
+		  "La pantalla capacitiva requiere de una fuerte presión física con un lápiz o el dedo para unir dos mallas metálicas internas y registrar el toque.",
+		  "La pantalla capacitiva detecta la alteración del campo electrostático de la pantalla al entrar en contacto con un objeto conductor, como la piel humana, por lo que no funciona con guantes normales de lana.",
+		  "La pantalla capacitiva utiliza cámaras infrarrojas en los bordes del monitor para triangular la posición del dedo.",
+		  "La pantalla capacitiva solo reconoce un toque a la vez (Single-Touch), impidiendo gestos como pellizcar para hacer zoom."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las pantallas capacitivas funcionan midiendo el cambio en la capacitancia (electricidad estática) cuando algo conductor (nuestro dedo) toca el cristal. Por eso responden al más leve roce pero no funcionan si llevas guantes gruesos no conductores. Las resistivas (antiguas) requerían presión física real."
+	  },
+	  {
+		"pregunta": "Un usuario de la Junta te pide que le formatees un pendrive USB de 64 GB. Necesita poder leerlo y escribirlo tanto en equipos con Windows como con macOS (Apple), y va a guardar en él vídeos que ocupan más de 10 GB cada uno. ¿Qué sistema de archivos debes elegir obligatoriamente?",
+		"opciones": [
+		  "FAT32.",
+		  "NTFS.",
+		  "exFAT.",
+		  "ext4."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "exFAT es la respuesta correcta. FAT32 es compatible con Windows y Mac, pero no admite archivos mayores de 4 GB (el vídeo no cabría). NTFS admite archivos gigantes, pero macOS solo puede leerlo, no escribir en él de forma nativa. exFAT soluciona ambos problemas: admite archivos inmensos y es 100% compatible en lectura/escritura con Windows y Mac."
+	  },
+	  {
+		"pregunta": "En las tarjetas gráficas y monitores orientados al entorno ofimático y corporativo, el estándar DisplayPort suele ser preferido por los fabricantes frente al popular HDMI. A nivel de estandarización industrial, ¿cuál es uno de los motivos principales?",
+		"opciones": [
+		  "DisplayPort incluye un antivirus por hardware en el propio conector.",
+		  "DisplayPort es un estándar libre de la VESA y libre de royalties (regalías), mientras que por cada puerto HDMI que monta un fabricante, este debe pagar una licencia a los creadores de HDMI.",
+		  "DisplayPort es el único que permite transmitir audio además de vídeo.",
+		  "HDMI es un estándar analógico obsoleto y DisplayPort es digital."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Una de las grandes ventajas de DisplayPort en la industria informática es que es un estándar desarrollado por VESA (Video Electronics Standards Association) libre de royalties. Montar HDMI implica pagar licencias por dispositivo vendido, lo que encarece los equipos a nivel masivo."
+	  },
+	  {
+		"pregunta": "Al crimpar y cablear tomas de red RJ45 en una oficina con mucha maquinaria industrial, motores o cableado eléctrico cercano, el técnico no debería usar cable UTP normal. ¿Qué tipo de cable de pares trenzados, que incluye un recubrimiento de papel de aluminio bajo la cubierta, debería utilizar para evitar interferencias?",
+		"opciones": [
+		  "Cable coaxial RG-59.",
+		  "Cable FTP (Foiled Twisted Pair) o STP (Shielded Twisted Pair).",
+		  "Cable UTP de Categoría 3.",
+		  "Fibra óptica multimodo OM1."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El cable UTP (Unshielded) no lleva apantallamiento. Si hay muchas interferencias electromagnéticas (EMI), se usan variantes como FTP (lleva una lámina de aluminio global) o STP (cada par de cables va en su propia malla). Esto 'blinda' los datos frente al ruido exterior."
+	  },
+	  {
+		"pregunta": "Dentro de los elementos multimedia, es común encontrar en los estudios de sonido o conservatorios el acrónimo MIDI. ¿Qué es exactamente un archivo o conexión MIDI?",
+		"opciones": [
+		  "Un formato de vídeo de altísima resolución utilizado antes del MP4.",
+		  "Un protocolo de comunicación que no transmite sonido grabado, sino instrucciones musicales (qué nota tocar, con qué fuerza, cuánto tiempo) que un sintetizador debe interpretar.",
+		  "El cable que conecta la tarjeta de red a la tarjeta gráfica para sincronizar el audio de internet.",
+		  "Un formato de compresión de voz utilizado exclusivamente en telefonía IP (VoIP)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "MIDI (Musical Instrument Digital Interface) es como una partitura digital. Un archivo MIDI no pesa casi nada porque no contiene ondas de audio grabadas, sino metadatos ('Toca un Do central', 'Volumen al 80', 'Instrumento Piano'). Es el ordenador o teclado el que genera el sonido real basándose en esas instrucciones."
+	  },
+	  {
+		"pregunta": "Aunque los SSD dominan hoy el mercado, los discos duros mecánicos (HDD) siguen usándose para almacenamiento masivo de bajo coste. ¿Cuáles son las dos velocidades de rotación (RPM) estándar más comunes en las que giran los platos de estos discos de 3.5 pulgadas?",
+		"opciones": [
+		  "100 y 200 RPM.",
+		  "5.400 y 7.200 RPM.",
+		  "15.000 y 30.000 RPM.",
+		  "144 y 240 RPM."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La velocidad de los discos HDD tradicionales de consumo y oficina se estandarizó en 5.400 RPM (modelos más lentos, silenciosos y de bajo consumo) y 7.200 RPM (modelos de mayor rendimiento). Los de 10.000 y 15.000 RPM existieron, pero estaban reservados a servidores empresariales (SCSI/SAS)."
+	  },
+	  {
+		"pregunta": "Si un departamento de la Administración te solicita comprar una impresora con el requisito indispensable de que pueda imprimir formularios autocopiativos (el clásico papel de calco con hoja blanca, amarilla y rosa), ¿qué tecnología de impresión es la ÚNICA válida?",
+		"opciones": [
+		  "Láser color.",
+		  "Inyección de tinta continua (CISS).",
+		  "Térmica directa.",
+		  "Matricial o de impacto."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Las impresoras matriciales funcionan golpeando físicamente (impacto) una cinta entintada contra el papel, como las máquinas de escribir antiguas. Esa fuerza física es la única manera de que el papel autocopiativo marque las copias inferiores. Ni el láser ni la tinta ejercen presión sobre el papel."
+	  },
+	  {
+		"pregunta": "En los elementos de visualización actuales, la resolución estándar conocida como 'Full HD' (1920 x 1080 píxeles) responde a una relación de aspecto (proporción entre la anchura y la altura) específica. ¿Cuál es esta proporción panorámica?",
+		"opciones": [
+		  "4:3.",
+		  "16:9.",
+		  "21:9.",
+		  "1:1."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La resolución 1920x1080 tiene una relación de aspecto de 16:9 (por cada 16 píxeles a lo ancho, hay 9 a lo alto), que es el estándar panorámico (widescreen) en monitores y televisiones. El 4:3 era el de los monitores cuadrados antiguos (CRT) y el 21:9 es el formato UltraWide."
+	  },
+	  {
+		"pregunta": "Si vas a adquirir un videoproyector para una sala de reuniones que recibe bastante luz natural, ¿en qué unidad de medida técnica te debes fijar para asegurar que el proyector emitirá el suficiente brillo para que la imagen se vea nítida?",
+		"opciones": [
+		  "En los Hercios (Hz).",
+		  "En los ANSI Lúmenes.",
+		  "En los Vatios (W) del ventilador.",
+		  "En el índice de contraste dinámico."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El brillo o flujo luminoso de un proyector se mide en ANSI Lúmenes (un estándar del American National Standards Institute). A mayor cantidad de luz en la sala (luz ambiental), mayor cantidad de ANSI Lúmenes requerirá el proyector para evitar que la imagen se vea lavada o invisible."
+	  },
+	  {
+		"pregunta": "En los ordenadores portátiles y de sobremesa modernos, es común encontrar que la pestaña de plástico interna de uno de los puertos USB Tipo A es de color AMARILLO o ROJO (a diferencia del azul de USB 3.0 o el negro de USB 2.0). ¿Qué característica especial suele indicar este color?",
+		"opciones": [
+		  "Que es un puerto defectuoso de fábrica que solo debe usarse para el ratón.",
+		  "Que es un puerto de solo lectura, por lo que no se pueden guardar datos en los pendrives conectados ahí.",
+		  "Que es un puerto 'Sleep-and-Charge' (o Always On), capaz de suministrar energía eléctrica para cargar dispositivos incluso cuando el ordenador está apagado o suspendido.",
+		  "Que soporta directamente la conexión de un cable de fibra óptica."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los fabricantes (como Lenovo con el amarillo o HP/Asus con el rojo) utilizan estos colores para marcar los puertos USB 'Always On'. Aunque el equipo esté apagado (pero enchufado a la red o con batería), ese puerto sigue dando corriente, permitiendo cargar un móvil o conectar una lámpara USB."
+	  },
+	  {
+		"pregunta": "Al revisar las especificaciones de un escáner plano, vemos que indica 'Resolución Óptica: 600 ppp' y 'Resolución Interpolada: 4800 ppp'. ¿A qué se refiere exactamente la resolución interpolada?",
+		"opciones": [
+		  "A la calidad de la lente de cristal fabricada mediante láser.",
+		  "A una resolución simulada por software, donde el programa analiza los píxeles reales escaneados e inventa píxeles intermedios para hacer la imagen más grande, sin añadir detalle real.",
+		  "A la resolución que se consigue únicamente si se imprime el documento después de escanearlo.",
+		  "A la capacidad del escáner para escanear ambas caras del folio a la vez en una sola pasada."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La Resolución Óptica es la real, la cantidad de sensores físicos que tiene la máquina. La Resolución Interpolada es un truco matemático del software (driver) que amplía la imagen creando píxeles falsos basándose en el color de los píxeles vecinos. Para fines técnicos y legales, solo importa la resolución óptica."
+	  },
+	  {
+		"pregunta": "En el almacenamiento óptico, al grabar un CD-R o DVD-R multisesión mediante software (como Nero o CDBurnerXP), ¿qué ocurre técnicamente si ejecutamos la acción de 'Cerrar sesión' o 'Finalizar el disco'?",
+		"opciones": [
+		  "El disco se borra completamente, devolviéndolo a su estado de fábrica.",
+		  "Se inyecta un código de cifrado AES de 256 bits para que solo el propietario pueda leerlo.",
+		  "Se escribe la tabla de contenidos (TOC) final (Lead-out), impidiendo que se puedan añadir más datos al disco en el futuro, pero maximizando la compatibilidad de lectura con otros reproductores.",
+		  "El disco expulsa automáticamente la bandeja del lector tras estar 5 minutos sin uso."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Finalizar un disco (escribir el 'Lead-out' o cierre) marca físicamente en el soporte que no hay más datos. Esto bloquea el disco para futuras escrituras de forma permanente, pero es absolutamente necesario para que lectores de CD/DVD de salón antiguos o radios de coche reconozcan la estructura de archivos y puedan leerlo."
+	  },
+	  {
+		"pregunta": "¿Cuál es la función principal de un programa de tipo 'Slicer' (fileteador, como Ultimaker Cura o PrusaSlicer) dentro del flujo de trabajo de la impresión 3D?",
+		"opciones": [
+		  "Modelar la pieza desde cero usando figuras geométricas básicas como cubos y esferas.",
+		  "Tomar el modelo 3D virtual, cortarlo en finas capas horizontales 2D y generar el código G (G-Code) que contiene las coordenadas y temperaturas exactas para que la impresora sepa cómo moverse.",
+		  "Limpiar automáticamente el cabezal de extrusión de restos de plástico fundido tras la impresión.",
+		  "Calcular el precio de venta al público de la pieza impresa en euros."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Una impresora 3D no entiende de modelos 3D (.STL o .OBJ). El 'Slicer' es el programa que traduce ese volumen a trayectorias mecánicas (código G). 'Filetea' el modelo en cientos de capas, y le dice al motor paso a paso exactamente hacia qué coordenadas X, Y, Z debe moverse, y a qué velocidad debe extruir el plástico."
+	  },
+	  {
+		"pregunta": "Las tecnologías como AMD FreeSync o NVIDIA G-Sync, incorporadas en muchos monitores modernos conectados por DisplayPort o HDMI, están diseñadas para sincronizar la frecuencia de refresco del monitor con los fotogramas de la gráfica. ¿Qué molesto problema visual intentan solucionar?",
+		"opciones": [
+		  "El 'Burn-in' o imagen quemada (fantasma) por dejar una imagen fija durante meses.",
+		  "El 'Screen Tearing' (desgarro de pantalla), donde la imagen aparece cortada horizontalmente porque el monitor muestra trozos de dos fotogramas distintos al mismo tiempo.",
+		  "Los píxeles muertos (puntos negros que no cambian de color).",
+		  "El exceso de luz azul que provoca fatiga visual (Blue Light Filter)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Tearing (desgarro) ocurre cuando la tarjeta gráfica envía fotogramas más rápido de lo que el monitor (con sus Hz fijos) puede dibujarlos. El monitor se queda a medias de dibujar un fotograma y empieza con el siguiente, creando una línea de corte horizontal visible. FreeSync/G-Sync hacen que el monitor varíe sus Hz en tiempo real para coincidir con la gráfica."
+	  },
+	  {
+		"pregunta": "Tanto los discos duros de estado sólido (SSD) como los pendrives USB utilizan memoria tipo Flash NAND. Todos ellos sufren un desgaste físico irreversible con el tiempo. ¿Qué acción informática concreta es la que degrada las celdas de este tipo de memoria?",
+		"opciones": [
+		  "El ciclo de borrar y escribir nuevos datos en la celda repetidas veces (ciclos P/E).",
+		  "Leer el mismo archivo de forma continuada, como ver una película larga.",
+		  "Mantener el dispositivo conectado permanentemente a un puerto USB alimentado.",
+		  "Exponer el dispositivo al frío invernal por debajo de 5 grados."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La memoria flash tiene una vida útil medida en Ciclos de Programación/Borrado (P/E cycles). Escribir datos requiere aplicar un alto voltaje para forzar a los electrones a cruzar una capa de óxido aislante. Con cada borrado y nueva escritura, esa capa microscópica se daña un poco, hasta que eventualmente la celda falla y el SSD muere (o se bloquea en modo solo lectura)."
+	  },
+	  {
+		"pregunta": "¿Cuál es la resolución máxima típica que un cable analógico VGA de calidad estándar puede transmitir hacia un monitor de oficina moderno sin que el usuario empiece a notar la imagen borrosa, fantasmas (ghosting) o letras desenfocadas debido a la degradación de la señal?",
+		"opciones": [
+		  "Resolución 4K UHD (3840 x 2160).",
+		  "Resolución 8K (7680 x 4320).",
+		  "Alrededor de 1920 x 1080 (Full HD) o 1920 x 1200 (WUXGA).",
+		  "Solo admite resoluciones de 800 x 600 o inferiores."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El cable VGA transmite señales analógicas continuas, muy sensibles a interferencias y longitud del cable. Aunque teóricamente puede empujarse más allá, en el mundo real, intentar sacar más de 1920x1080 (1080p) o 1200p por un VGA produce una imagen inaceptable. Para 2K o 4K es obligatorio usar interfaces digitales (HDMI, DisplayPort o DVI Dual-Link)."
+	  },
+	  {
+		"pregunta": "En el equipamiento de multimedia o salones de actos institucionales, la conexión de los micrófonos profesionales (los que requieren alimentación Phantom) no se realiza mediante un jack fino de 3.5mm, sino mediante un conector robusto de 3 pines, balanceado, que evita interferencias a largas distancias. ¿De qué conector estamos hablando?",
+		"opciones": [
+		  "Conector RCA.",
+		  "Conector Toslink óptico.",
+		  "Conector XLR (también conocido coloquialmente como Canon).",
+		  "Conector BNC."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El XLR es el estándar absoluto en audio profesional y micrófonos de escenario/podio. Tiene 3 pines: positivo, negativo y masa. Al llevar la señal duplicada e invertida en fase (audio balanceado), es capaz de anular cualquier ruido eléctrico que se cuelgue en el cable, por muy largo que sea."
+	  },
+	  {
+		"pregunta": "En la Junta es muy habitual la instalación de lectores de DNI electrónico (tarjetas inteligentes) o lectores de huella dactilar para el control de presencia y firma. Según la clasificación arquitectónica de periféricos, ¿qué tipo de dispositivo es un lector de huellas o smartcard?",
+		"opciones": [
+		  "Periférico de salida, ya que saca un certificado digital.",
+		  "Periférico de almacenamiento de bloque, al igual que un pendrive.",
+		  "Periférico de entrada estricto, encargado de introducir datos o credenciales al sistema operativo.",
+		  "Dispositivo multimedia interactivo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un lector de huellas, un lector de código de barras o un lector de DNIe envían información (las minucias de tu huella o los datos de tu chip) desde el mundo exterior hacia el ordenador. No muestran, imprimen ni emiten nada hacia el usuario, por lo que son periféricos de entrada puros (E)."
+	  },
+	  {
+		"pregunta": "En los servidores NAS utilizados para almacenar las copias de seguridad de un departamento, es muy común configurar los discos en RAID 5. Esta configuración ofrece un gran equilibrio entre almacenamiento disponible, velocidad y tolerancia a fallos (paridad distribuida). ¿Cuál es el número MINIMO de discos duros físicos idénticos requeridos para montar un RAID 5?",
+		"opciones": [
+		  "2 discos.",
+		  "3 discos.",
+		  "4 discos.",
+		  "5 discos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un RAID 5 requiere un mínimo absoluto de 3 discos. Los datos se intercalan en todos los discos, y un bloque de 'paridad' se distribuye rotativamente entre ellos. Esto permite que si CUALQUIERA de los discos físicos se rompe, el sistema pueda reconstruir la información perdida usando los otros dos."
+	  },
+	  {
+		"pregunta": "Cuando se instala un escáner en un equipo informático, es habitual instalar un controlador que permite a programas de terceros (como un editor fotográfico) comunicarse directamente con el dispositivo para capturar la imagen. ¿Cómo se llama el estándar o interfaz de software más histórico y común para esta función?",
+		"opciones": [
+		  "TWAIN.",
+		  "MIDI.",
+		  "Spooler.",
+		  "DirectX."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "TWAIN es el estándar de interfaz de software y comunicaciones (API) que regula la comunicación entre las aplicaciones de software y los dispositivos de adquisición de imágenes (escáneres y cámaras digitales). Gracias a TWAIN, puedes abrir Photoshop o GIMP y escanear directamente desde allí."
+	  },
+	  {
+		"pregunta": "Al conectar monitores de muy alta resolución o alta tasa de refresco, nos encontramos con cables etiquetados como 'DVI Dual-Link'. ¿En qué se diferencia físicamente y funcionalmente de un cable 'DVI Single-Link'?",
+		"opciones": [
+		  "El Dual-Link incluye un cable de audio coaxial en el mismo conector.",
+		  "El Dual-Link duplica el número de pines de datos transmisores (carriles), ofreciendo el doble de ancho de banda para soportar mayores resoluciones (ej. 2560x1600).",
+		  "El Dual-Link permite conectar dos monitores al mismo puerto simultáneamente sin pérdida de calidad mediante un adaptador en Y.",
+		  "No existe diferencia física; es solo una certificación de software para Windows."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El DVI Dual-Link añade 6 pines extra en el centro del conector. Esto le permite utilizar un segundo enlace de datos (transmisor TMDS), doblando el ancho de banda del Single-Link. Es fundamental para monitores que superan la resolución 1920x1200 a 60 Hz."
+	  },
+	  {
+		"pregunta": "En el almacenamiento óptico, hemos visto que un DVD estándar de una capa alberga unos 4.7 GB. Sin embargo, existen discos de doble capa (marcados habitualmente como DVD+R DL). ¿Cuál es la capacidad estándar teórica de un DVD de doble capa?",
+		"opciones": [
+		  "7.4 GB.",
+		  "8.5 GB.",
+		  "12 GB.",
+		  "15 GB."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un DVD de doble capa (Dual Layer) tiene una capacidad aproximada de 8.5 GB. Utiliza dos capas de tinte de grabación separadas por un reflector semitransparente, lo que permite al láser enfocar en la primera capa o atravesarla para grabar en la segunda."
+	  },
+	  {
+		"pregunta": "Si las especificaciones técnicas de una impresora indican que dispone de impresión 'Dúplex automática', ¿a qué característica se refieren?",
+		"opciones": [
+		  "A la capacidad de imprimir utilizando simultáneamente el cartucho de tinta negra y el de color para ahorrar tiempo.",
+		  "A la función que permite a la impresora dar la vuelta al papel de forma interna y automática para imprimir por ambas caras de la hoja.",
+		  "A la capacidad de la impresora de conectarse por USB y por Wi-Fi al mismo tiempo.",
+		  "A un sistema redundante de inyectores que evita atascos de tinta."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La impresión Dúplex automática significa que la impresora posee un mecanismo físico en su recorrido de rodillos que voltea la hoja. Así, imprime una cara, la recoge, la gira, e imprime la otra, sin que el usuario tenga que sacar el taco de folios y volverlo a meter a mano."
+	  },
+	  {
+		"pregunta": "Para conectar DOS ordenadores directamente entre sí mediante sus tarjetas de red y un cable RJ45, sin utilizar ningún switch, hub o router intermedio, tradicionalmente era obligatorio utilizar un tipo de cableado específico. ¿Cuál es?",
+		"opciones": [
+		  "Cable directo (Straight-through).",
+		  "Cable de consola (Rollover).",
+		  "Cable cruzado (Crossover).",
+		  "Cable coaxial BNC."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El cable cruzado tiene cruzados los pares de transmisión y recepción en uno de los extremos (el pin de emisión de un PC va al pin de recepción del otro). Hoy en día, casi todas las tarjetas de red modernas son 'Auto-MDIX' y detectan y cruzan la señal electrónicamente aunque uses un cable directo, pero en teoría de redes clásicas, el cruzado es la respuesta correcta."
+	  },
+	  {
+		"pregunta": "Dentro del rendimiento de un disco duro magnético (HDD), ¿a qué concepto se le denomina 'Latencia rotacional'?",
+		"opciones": [
+		  "Al tiempo que tarda el disco duro en despertar desde el modo de suspensión profunda.",
+		  "Al tiempo que el cabezal de lectura/escritura tarda en moverse desde su pista actual hasta la pista donde está el dato (Seek Time).",
+		  "Al tiempo medio que tarda el sector deseado del plato magnético en girar hasta colocarse justo debajo del cabezal de lectura, una vez que este ya está en la pista correcta.",
+		  "A la velocidad a la que los datos viajan por el cable SATA hacia la placa base."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El acceso a un HDD tiene dos tiempos de espera mecánicos principales: el tiempo de búsqueda (Seek Time), que es mover el brazo a la pista (movimiento horizontal), y la latencia rotacional, que es esperar a que el disco gire hasta que el dato pase por debajo del cabezal. A más RPM, menor latencia rotacional."
+	  },
+	  {
+		"pregunta": "En las tarjetas de sonido de equipos de gama media/alta y sistemas multimedia, a veces encontramos un puerto cuadrado con una pequeña tapa protectora que emite una luz roja en su interior. ¿Cómo se llama este estándar de conexión de audio digital?",
+		"opciones": [
+		  "S/PDIF Óptico (Toslink).",
+		  "Jack 3.5mm Balanceado.",
+		  "XLR Digital.",
+		  "FireWire 400."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El puerto Toslink (desarrollado por Toshiba) transmite la señal de audio digital estéreo o multicanal (como Dolby Digital) en forma de pulsos de luz (fibra óptica) bajo el protocolo S/PDIF. Es inmune a las interferencias eléctricas."
+	  },
+	  {
+		"pregunta": "Cuando analizamos las especificaciones de un monitor de PC, encontramos el valor 'Tiempo de respuesta', medido en milisegundos (ms). ¿Qué indica exactamente este parámetro en los paneles modernos?",
+		"opciones": [
+		  "El retraso entre que movemos el ratón y vemos el cursor moverse en la pantalla (Input lag).",
+		  "El tiempo que tarda un píxel en cambiar de un color a otro (habitualmente medido de gris a gris o GtG).",
+		  "El tiempo que el monitor permanece encendido sin recibir señal antes de entrar en ahorro de energía.",
+		  "La cantidad de hercios (Hz) que puede procesar por segundo."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Tiempo de Respuesta (Response Time) mide lo rápido que los cristales líquidos de un píxel pueden cambiar de estado. Un tiempo muy alto (ej. 15 ms) provocará 'estelas' o imágenes borrosas en movimientos rápidos de pantalla (Ghosting). Un tiempo bajo (1 ms) da imágenes en movimiento muy nítidas."
+	  },
+	  {
+		"pregunta": "¿Qué tecnología de impresión funciona calentando instantáneamente diminutas resistencias o usando cristales piezoeléctricos para crear una burbuja que expande y expulsa gotas microscópicas de líquido sobre el papel?",
+		"opciones": [
+		  "Térmica directa.",
+		  "Inyección de tinta.",
+		  "Sublimación de tinta.",
+		  "Láser."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es la definición exacta de los cabezales de inyección de tinta (Inkjet). Existen dos tecnologías principales para empujar la gota fuera del cartucho: térmica (crear una burbuja de calor, como hace HP o Canon) o piezoeléctrica (un cristal que se deforma con electricidad, como hace Epson)."
+	  },
+	  {
+		"pregunta": "En el entorno de los periféricos de entrada, ¿qué tipo de teclado utiliza un interruptor físico individual con un resorte y contactos metálicos bajo cada tecla, siendo muy apreciado por su precisión, retroalimentación táctil y durabilidad?",
+		"opciones": [
+		  "Teclado de membrana.",
+		  "Teclado mecánico.",
+		  "Teclado tipo tijera (chiclet).",
+		  "Teclado de proyección láser."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El teclado mecánico utiliza 'switches' (interruptores mecánicos, como los famosos Cherry MX) bajo cada tecla. A diferencia de los teclados de membrana (que usan una cúpula de goma sobre un circuito impreso completo), los mecánicos registran la pulsación a mitad de recorrido y duran decenas de millones de pulsaciones."
+	  },
+	  {
+		"pregunta": "El puerto USB Tipo C es extremadamente versátil y no solo transfiere datos o energía. ¿Cómo se denomina técnicamente a la capacidad del puerto USB-C para reasignar dinámicamente sus pines internos para transmitir una señal de vídeo nativa (como la que iría por un cable de monitor normal)?",
+		"opciones": [
+		  "USB Video Class (UVC).",
+		  "Alternate Mode (Modo Alternativo).",
+		  "USB over Ethernet.",
+		  "Picture in Picture (PiP)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Alternate Mode (o Modo Alt) permite que el USB-C transmita protocolos no USB de forma nativa. El más famoso es el 'DisplayPort Alternate Mode', que permite conectar un monitor directamente al puerto USB-C del portátil como si fuera un puerto de vídeo dedicado, sin usar compresión."
+	  },
+	  {
+		"pregunta": "Para leer una tarjeta de memoria en formato Micro-SD (muy usada en teléfonos móviles o Raspberry Pi) en un ordenador portátil que dispone únicamente de una ranura para tarjetas SD de tamaño estándar, ¿qué componente es necesario?",
+		"opciones": [
+		  "Un convertidor activo con chip de procesado de señal.",
+		  "Un software emulador de sistema de archivos Android.",
+		  "Un adaptador pasivo de plástico que solo redistribuye los pines de conexión.",
+		  "Un disco duro virtual montado en red."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las tarjetas SD y Micro-SD utilizan eléctricamente el mismo protocolo y distribución de señales. Por ello, solo se necesita un adaptador pasivo (esa funda de plástico del tamaño de una SD grande donde se introduce la pequeña) para que los contactos metálicos coincidan mecánicamente con la ranura del ordenador."
+	  },
+	  {
+		"pregunta": "Muchos periféricos inalámbricos actuales (teclados, ratones, auriculares) utilizan la tecnología estándar Bluetooth para comunicarse con el equipo microinformático. ¿En qué banda de frecuencias de radio industrial, científica y médica (ISM) opera el Bluetooth?",
+		"opciones": [
+		  "900 MHz.",
+		  "1.2 GHz.",
+		  "2.4 GHz.",
+		  "5.0 GHz."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Bluetooth opera en la banda de frecuencia no licenciada de los 2.4 GHz (concretamente entre 2.402 y 2.480 GHz). Al compartir esta misma banda de radio con las redes Wi-Fi 2.4 GHz, los microondas y teléfonos inalámbricos, históricamente ha habido problemas de interferencias en oficinas saturadas."
+	  },
+	  {
+		"pregunta": "Antes de la estandarización del USB-C y el Thunderbolt 3, los ordenadores portátiles de Apple (MacBook) y muchas tarjetas gráficas profesionales utilizaban un conector cuadrado con esquinas recortadas para la salida de vídeo, que era básicamente una versión reducida del estándar DisplayPort. ¿Cómo se llama este conector?",
+		"opciones": [
+		  "Mini-VGA.",
+		  "Micro-HDMI.",
+		  "Mini DisplayPort (mDP).",
+		  "FireWire 800."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Mini DisplayPort (mDP) fue introducido por Apple pero licenciado gratuitamente para que todos los fabricantes lo usaran. Es eléctricamente igual al DisplayPort estándar, pero mucho más pequeño. Las versiones antiguas de Thunderbolt (1 y 2) también utilizaban este mismo conector físico mDP."
+	  },
+	  {
+		"pregunta": "A la hora de configurar una impresora compartida en red TCP/IP directamente desde Windows (y no mediante un servidor intermedio), es muy común que el asistente cree un puerto estándar 'Standard TCP/IP Port'. ¿Qué número de puerto de red utiliza este protocolo por defecto (conocido como RAW o JetDirect)?",
+		"opciones": [
+		  "Puerto 80.",
+		  "Puerto 21.",
+		  "Puerto 9100.",
+		  "Puerto 3389."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El puerto 9100 es el puerto estándar (RAW protocol o HP JetDirect) al que se envían directamente los trabajos de impresión por red hacia la impresora. El 80 es HTTP (web), el 21 es FTP y el 3389 es Escritorio Remoto (RDP)."
+	  },
+	  {
+		"pregunta": "Para prolongar la vida útil y mantener el rendimiento máximo de escritura en un Disco de Estado Sólido (SSD), el sistema operativo debe comunicarle al controlador interno del disco qué bloques de datos ya no contienen información válida y pueden ser borrados en segundo plano. ¿Cómo se llama este comando esencial?",
+		"opciones": [
+		  "S.M.A.R.T.",
+		  "TRIM.",
+		  "NCQ (Native Command Queuing).",
+		  "Desfragmentación."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "TRIM es vital en los SSD. Cuando tú borras un archivo en Windows, el SO solo borra la referencia, pero no vacía físicamente el chip de memoria. Sin TRIM, cuando el SSD quiera guardar algo nuevo en ese sitio, primero tendrá que borrarlo y luego escribirlo (perdiendo mucha velocidad). Con TRIM, el SO le avisa al SSD de que esos archivos están borrados, y el SSD vacía las celdas en sus ratos libres (Garbage Collection)."
+	  },
+	  {
+		"pregunta": "Los ratones ópticos modernos utilizan un LED o un láser y un diminuto sensor CMOS (una cámara) para fotografiar la superficie debajo de ellos miles de veces por segundo y calcular el desplazamiento. Teniendo en cuenta esta tecnología, ¿qué superficie les resulta más problemática o casi imposible de rastrear?",
+		"opciones": [
+		  "Un folio blanco mate sin imprimir.",
+		  "Una alfombrilla de tela negra opaca.",
+		  "Una mesa de madera barnizada con vetas.",
+		  "Una mesa de cristal transparente o un espejo."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El sensor del ratón necesita 'ver' imperfecciones o texturas en la superficie para notar que se ha movido. El cristal transparente no refleja la luz del sensor de vuelta a la lente, y un espejo lo refleja perfectamente sin textura que rastrear, por lo que el ratón se vuelve loco o no se mueve. Solo algunos ratones láser muy avanzados (como el Darkfield de Logitech) pueden leer cristal."
+	  },
+	  {
+		"pregunta": "En las especificaciones técnicas de visualización de un monitor, ¿qué nos indica el parámetro 'Relación de contraste' o 'Contrast Ratio' (por ejemplo, 1000:1)?",
+		"opciones": [
+		  "La proporción entre la anchura y la altura física de la pantalla.",
+		  "La cantidad de colores que puede reproducir la pantalla.",
+		  "La diferencia de luminancia entre el blanco más brillante y el negro más oscuro que el monitor es capaz de producir de forma estática.",
+		  "El número de veces que se actualiza la imagen por cada milisegundo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Una relación de contraste de 1000:1 (típica de un panel IPS) significa que el blanco máximo es 1000 veces más brillante que el negro máximo de la pantalla. A mayor contraste (como el infinito de las pantallas OLED), mejor calidad de imagen, pues los negros se ven negros de verdad y no grises iluminados."
+	  },
+	  {
+		"pregunta": "¿Qué periférico, utilizado ampliamente en los departamentos de diseño y arquitectura, se compone principalmente de una superficie plana interactiva sensible a la presión y un lápiz o estilete especial sin batería, permitiendo digitalizar el trazo a mano alzada de forma natural?",
+		"opciones": [
+		  "Un Touchpad multicontacto.",
+		  "Una Tableta gráfica (digitalizadora).",
+		  "Un Escáner de tambor.",
+		  "Un Plotter de corte."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La tableta gráfica (como las de la marca Wacom) es el periférico rey para el dibujo digital y el retoque fotográfico. El lápiz (stylus) suele usar resonancia electromagnética, por lo que no necesita batería, y transmite a la pantalla no solo la posición X e Y, sino cientos de niveles de presión e incluso la inclinación de la mano."
+	  },
+	  {
+		"pregunta": "Para finalizar el Tema 2: Si conectas a un equipo moderno un periférico con conector azul claro y observas que su interior tiene exactamente 9 pines metálicos (5 en una fila y 4 debajo) envueltos en un chasis metálico en forma de 'D', te encuentras ante un puerto heredado o 'Legacy' destinado a comunicaciones en serie. ¿Cuál es su nombre técnico?",
+		"opciones": [
+		  "RJ11.",
+		  "VGA / DE-15.",
+		  "Puerto Serie / DB-9 (RS-232).",
+		  "Puerto Paralelo / DB-25 (LPT)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El conector D-sub de 9 pines (habitualmente conocido como DB-9) es el clásico Puerto Serie (COM) utilizado bajo el estándar RS-232. Hoy en día casi no se usa a nivel de usuario (desplazado por el USB), pero es fundamental en administración de redes para conectarse por cable de consola a switches industriales y routers Cisco."
+	  }
+  ],
+  
+  
+  "3": [
+  {
+		"pregunta": "En una BIOS clásica (tipo AMI o Award), si al pulsar el botón de encendido el equipo no muestra vídeo y el altavoz interno emite una secuencia de pitidos largos y continuos que no cesan, ¿qué avería de hardware suele indicar habitualmente?",
+		"opciones": [
+		  "Que el microprocesador se ha sobrecalentado y ha entrado en protección térmica.",
+		  "Que existe un problema con la memoria RAM (no está pinchada, está sucia o está defectuosa).",
+		  "Que el disco duro principal no tiene el sector de arranque (MBR) configurado.",
+		  "Que la pila de la placa base (CMOS) está completamente agotada."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los códigos acústicos (beep codes) varían ligeramente según el fabricante de la BIOS, pero por convención general, los pitidos largos continuos o un patrón repetitivo constante sin arranque de vídeo apuntan a que la placa base no detecta o no puede comunicarse con los módulos de memoria RAM."
+	  },
+	  {
+		"pregunta": "Al encender un equipo de escritorio de la oficina, la pantalla se detiene en el POST de la BIOS mostrando el mensaje 'CMOS Checksum Error - Defaults Loaded'. ¿Cuál es la causa más probable de este mensaje?",
+		"opciones": [
+		  "Un virus ha corrompido el sector cero del disco duro.",
+		  "La fuente de alimentación está entregando un voltaje superior a 12V al procesador.",
+		  "La pila de botón de la placa base está agotada, provocando que la memoria volátil de la BIOS pierda la configuración personalizada y la hora.",
+		  "La memoria caché L3 del procesador está defectuosa y requiere un reemplazo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El 'CMOS Checksum Error' significa que la suma de verificación de los datos guardados en el chip CMOS no coincide (los datos se han corrompido o borrado). Esto ocurre casi siempre cuando la pila CR2032 de la placa base se agota, dejando al chip sin energía al apagar el PC y obligando a cargar los ajustes de fábrica (Defaults)."
+	  },
+	  {
+		"pregunta": "Un usuario se queja de que su ordenador va muy lento y al arrancar aparece un mensaje de advertencia del sistema S.M.A.R.T. informando de un 'Status BAD'. Como Auxiliar de Informática, ¿cuál debe ser tu primera acción?",
+		"opciones": [
+		  "Realizar una copia de seguridad inmediata de los datos críticos del usuario, ya que el disco duro está a punto de fallar físicamente.",
+		  "Ejecutar la herramienta de desfragmentación de Windows para reordenar los sectores defectuosos.",
+		  "Formatear el disco duro a bajo nivel desde la BIOS para borrar la advertencia S.M.A.R.T.",
+		  "Sustituir la memoria RAM, ya que S.M.A.R.T. es el sistema de gestión de memoria de la placa base."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "S.M.A.R.T. monitoriza la salud física del disco duro (o SSD). Si da una advertencia de 'Status BAD' o 'Backup and Replace', significa que el controlador interno ha detectado que el disco está muriendo (por sectores reasignados, fallos de lectura, etc.). Lo prioritario es salvar los datos antes de que el disco deje de girar por completo."
+	  },
+	  {
+		"pregunta": "En las pruebas de rendimiento y detección de averías (troubleshooting), si sospechamos que el equipo sufre reinicios aleatorios o pantallazos azules (BSOD) debidos a un módulo de memoria RAM defectuoso, ¿qué tipo de software es el más adecuado para confirmar el diagnóstico?",
+		"opciones": [
+		  "Un programa de testeo de RAM que se ejecute desde un USB arrancable independiente del Sistema Operativo, como MemTest86.",
+		  "El desfragmentador de discos integrado en las Herramientas Administrativas de Windows.",
+		  "Un software de monitorización de red, como Wireshark, para ver si se pierden paquetes de memoria.",
+		  "La consola del símbolo del sistema mediante el comando 'ping localhost'."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Para probar la RAM a fondo, no se recomienda hacerlo desde dentro de Windows, ya que Windows está ocupando gran parte de esa RAM para funcionar y no se puede testear la memoria en uso. Herramientas como MemTest86 se ejecutan desde el arranque (Live USB), pudiendo estresar y leer/escribir en toda la capacidad de los módulos."
+	  },
+	  {
+		"pregunta": "Al examinar un PC que presenta problemas gráficos, el usuario afirma que mientras trabaja aparecen cuadrados de colores, líneas extrañas o distorsiones poligonales en la pantalla que cambian al mover el ratón (conocidos como 'Artifacts'). ¿Cuál es la avería más probable?",
+		"opciones": [
+		  "El monitor tiene configurada una tasa de refresco muy superior a la que soporta el panel LCD.",
+		  "El cable VGA o HDMI tiene la malla de apantallamiento rota.",
+		  "La tarjeta gráfica está fallando, frecuentemente por un sobrecalentamiento excesivo o por fallos en sus chips de memoria de vídeo (VRAM).",
+		  "El disco duro magnético está muy fragmentado, ralentizando la carga de las imágenes."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los 'Artifacts' (artefactos visuales) son síntomas clásicos de agonía de una tarjeta gráfica (GPU). Suelen producirse cuando los chips de memoria VRAM están defectuosos o cuando la tarjeta sufre sobrecalentamiento extremo porque su ventilador se ha atascado de polvo."
+	  },
+	  {
+		"pregunta": "Al revisar la parte trasera de un equipo para solucionar un problema de conectividad, observamos el conector RJ45 de la tarjeta de red. Si al conectar el cable de red comprobado (que viene de un switch encendido), ambos LEDs de la tarjeta de red permanecen totalmente apagados, ¿qué indica esto?",
+		"opciones": [
+		  "Que la conexión funciona perfectamente a velocidad de 1 Gbps en modo 'sigilo'.",
+		  "Que no existe enlace físico (Link) en la Capa 1, lo cual puede deberse a un cable roto, switch apagado o la propia tarjeta de red quemada.",
+		  "Que el equipo está conectado, pero el servidor DHCP no ha asignado todavía ninguna dirección IP.",
+		  "Que el Firewall de Windows está bloqueando el tráfico entrante de forma estricta."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los LEDs del RJ45 indican estado físico. Si están apagados, es que no hay electricidad circulando ('Link') entre la tarjeta y el switch. Un problema de IP (DHCP) o de Firewall son problemas lógicos (capa 3 en adelante); en esos casos, las luces físicas del conector sí parpadearían."
+	  },
+	  {
+		"pregunta": "Un Auxiliar monta un equipo nuevo tras sustituir la placa base. Al darle al botón de encendido, los ventiladores giran y los discos hacen ruido, pero no hay pitidos de BIOS, la pantalla se queda negra y el ratón USB no enciende su luz óptica. Revisando las conexiones, ¿qué olvido de montaje causa este comportamiento exacto de forma muy habitual?",
+		"opciones": [
+		  "No haber conectado el cable SATA de datos del disco duro.",
+		  "Haber olvidado conectar el cable de alimentación auxiliar de 4 u 8 pines de la fuente de alimentación (conector EPS) destinado al procesador (CPU).",
+		  "Haber conectado el cable del monitor a la tarjeta gráfica dedicada en lugar de a la integrada.",
+		  "Olvidar colocar la chapita metálica (I/O Shield) trasera de la placa base."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Si olvidas conectar el conector EPS de 12V (el de 4 u 8 pines que va cerca del socket), la placa base recibe energía (los ventiladores giran), pero el procesador no recibe corriente. Sin procesador, la BIOS no puede ni siquiera iniciar el POST ni pitar; el equipo queda en estado 'zombi'."
+	  },
+	  {
+		"pregunta": "En el contexto de las pruebas de rendimiento o 'Benchmarks', ¿qué define a un Benchmark de tipo 'Sintético'?",
+		"opciones": [
+		  "Es una prueba que simula tareas reales del día a día, como abrir hojas de cálculo, navegar por internet o reproducir vídeo, y cronometra el tiempo que tarda el equipo.",
+		  "Es una herramienta de diagnóstico físico que mide con un polímetro la temperatura y el voltaje real de los componentes.",
+		  "Es un programa diseñado para estresar y llevar al límite absoluto las capacidades teóricas de un componente (CPU, GPU, discos) mediante algoritmos artificiales o cargas de trabajo extremas que rara vez ocurren en el uso normal.",
+		  "Es una prueba de rendimiento exclusiva para redes inalámbricas (Wi-Fi) bajo estándares IEEE."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los benchmarks sintéticos (como FurMark, Prime95 o Cinebench) utilizan cálculos matemáticos muy complejos o gráficos extremos (algoritmos artificiales) para poner el hardware al 100% de carga constante. Su objetivo es medir la potencia bruta teórica máxima y probar la estabilidad térmica, a diferencia de los benchmarks del 'Mundo Real' (como PCMark) que imitan el uso ofimático diario."
+	  },
+	  {
+		"pregunta": "A diferencia de los discos duros mecánicos (HDD) que avisan de un fallo mecánico inminente emitiendo chasquidos continuos ('clic de la muerte'), ¿qué síntoma acústico o físico suele predecir un fallo físico inminente en un disco de estado sólido (SSD)?",
+		"opciones": [
+		  "Un silbido agudo y constante debido a los condensadores de alta frecuencia.",
+		  "Ninguno, los SSD carecen por completo de partes móviles mecánicas y mueren de forma completamente silenciosa.",
+		  "Un sonido de fricción o rozamiento metálico cada vez que el Sistema Operativo accede a la unidad C:.",
+		  "Una fuerte vibración del chasis debido a la descompensación del motor NAND interno."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los SSD (Solid State Drives) usan chips de memoria flash soldados a una placa. Al no tener motores, platos ni cabezales lectores, son 100% silenciosos tanto funcionando como al fallar. El problema es que a veces fallan de forma repentina sin avisos sonoros previos, haciendo más importante el uso del software S.M.A.R.T."
+	  },
+	  {
+		"pregunta": "Si al ampliar la memoria RAM de un equipo de escritorio, el Auxiliar de Informática instala un módulo nuevo de memoria DDR4 a 3200 MHz junto con el módulo antiguo original que era DDR4 a 2666 MHz, ¿qué ocurrirá durante el funcionamiento general del equipo?",
+		"opciones": [
+		  "El equipo no arrancará y la BIOS emitirá un pitido de error por incompatibilidad de frecuencias.",
+		  "El procesador sumará ambas frecuencias para obtener un rendimiento dual de 5866 MHz.",
+		  "Ambos módulos funcionarán correctamente, pero la BIOS igualará forzosamente la velocidad del módulo más rápido a la velocidad del más lento (2666 MHz).",
+		  "El módulo rápido de 3200 MHz se quemará al recibir el voltaje regulado para el de 2666 MHz."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Por arquitectura de hardware, el controlador de memoria no puede manejar dos velocidades distintas al mismo tiempo en el mismo canal. Por defecto, la BIOS detectará la velocidad máxima soportada por el módulo más lento, e impondrá esa velocidad a todos los módulos instalados para asegurar la estabilidad."
+	  },
+	  {
+		"pregunta": "Tras sustituir la tarjeta gráfica básica de un PC por una de diseño 3D muy potente (que requiere dos cables PCIe de alimentación), el usuario nota que el equipo funciona en el escritorio, pero al abrir un programa de renderizado pesado, el PC se reinicia o se apaga de golpe. ¿Cuál es el principal sospechoso?",
+		"opciones": [
+		  "La placa base tiene los zócalos PCIe sucios de polvo.",
+		  "El procesador está haciendo un 'cuello de botella' grave.",
+		  "El monitor no soporta el gran ancho de banda que envía la nueva tarjeta.",
+		  "La fuente de alimentación no tiene la potencia suficiente (Vatios) o falla al entregar los picos de amperaje que demanda la nueva gráfica a máxima carga."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Es una de las averías por sustitución más comunes. Las tarjetas gráficas potentes disparan su consumo eléctrico al entrar en carga 3D. Si la fuente de alimentación no soporta ese pico de potencia repentino, el sistema de seguridad eléctrico (OCP/OPP) apaga el equipo instantáneamente para evitar quemar los componentes."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe sustituir un disco duro mecánico antiguo (HDD) por un SSD nuevo sin perder los programas ni la configuración exacta de Windows de un usuario, ¿qué procedimiento técnico es el más eficiente y correcto?",
+		"opciones": [
+		  "Copiar la carpeta 'Windows' y 'Archivos de Programa' al SSD utilizando un Pendrive.",
+		  "Utilizar un software de clonación (como Clonezilla o Acronis) para realizar una copia a nivel de bloques o sectores desde el HDD al SSD.",
+		  "Comprimir todo el disco C: en un archivo ZIP e instalar Windows de cero en el SSD, descomprimiendo el ZIP después.",
+		  "Copiar el archivo boot.ini y el Registro de Windows manualmente con un cable USB al disco nuevo."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La única forma de migrar un Sistema Operativo tal cual a otro disco sin reinstalar, manteniendo particiones ocultas, sector de arranque (MBR/GPT) y permisos, es mediante la clonación. El software de clonación copia los ceros y unos exactos de un disco a otro, haciendo que el nuevo disco sea idéntico y arrancable."
+	  },
+	  {
+		"pregunta": "Un usuario enciende su ordenador y se encuentra con una pantalla negra y letras blancas que dicen: 'Missing Operating System' o 'No Bootable Device Found'. A nivel de BIOS/UEFI y averías, ¿qué situación NO podría causar jamás este mensaje?",
+		"opciones": [
+		  "El orden de arranque (Boot Order) en la BIOS está desconfigurado y el PC intenta arrancar desde una memoria USB no booteable olvidada conectada.",
+		  "El disco duro que contenía Windows se ha estropeado físicamente o su cable SATA se ha soltado.",
+		  "El sector de arranque (MBR o partición EFI) se ha borrado o corrompido debido a un mal apagado.",
+		  "La tarjeta de red ha perdido su dirección IP estática debido a un fallo en el router de la oficina."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El mensaje 'No Bootable Device' ocurre cuando la placa base termina su test de hardware (POST) e intenta buscar un Sistema Operativo para cargar en la memoria, pero no encuentra nada en la unidad especificada (disco roto, cable suelto, partición rota, o prioridad cambiada). Un problema de red IP ocurre a un nivel superior, una vez que el sistema ya ha arrancado (salvo que sea arranque PXE remoto)."
+	  },
+	  {
+		"pregunta": "Existen numerosas suites de pruebas de rendimiento (Benchmarks). ¿Cuál de las siguientes es famosísima en el entorno informático para poner a prueba y puntuar el rendimiento bruto 3D de las Tarjetas Gráficas (GPU)?",
+		"opciones": [
+		  "3DMark.",
+		  "CrystalDiskInfo.",
+		  "Prime95.",
+		  "MemTest86."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "3DMark (desarrollado por UL Solutions, antes Futuremark) es el estándar de la industria para benchmark de tarjetas gráficas, generando complejas escenas 3D ('Time Spy', 'Fire Strike') y devolviendo una puntuación de rendimiento. Prime95 es para CPU, CrystalDisk para discos y MemTest86 para RAM."
+	  },
+	  {
+		"pregunta": "Como Auxiliar, sustituyes la tarjeta de red interna (o la placa base completa) del ordenador del mostrador de registro. Al arrancar, descubres que el ordenador ya no recibe la misma Dirección IP estática por DHCP que tenía reservada en el servidor de la Junta. ¿A qué se debe esto?",
+		"opciones": [
+		  "A que la nueva tarjeta de red es Gigabit, por lo que el servidor DHCP rechaza la conexión por exceso de velocidad.",
+		  "A que la nueva tarjeta de red tiene grabada de fábrica una Dirección MAC (física) diferente, y la reserva del servidor DHCP apuntaba a la dirección MAC de la tarjeta estropeada.",
+		  "A que el cable RJ45 ha modificado su resistencia eléctrica al desconectarse.",
+		  "A que es necesario formatear obligatoriamente Windows para limpiar la caché del adaptador de red antiguo."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las reservas IP en los servidores DHCP corporativos se asocian a la Dirección MAC de la tarjeta de red del equipo. Si cambias la tarjeta (o la placa base, si la tarjeta va integrada), la MAC cambia. El servidor DHCP ve un dispositivo 'desconocido' y le asigna una IP dinámica aleatoria, no la reservada."
+	  },
+	  {
+		"pregunta": "Durante una de las tareas de mantenimiento más delicadas en un equipo microinformático, se produce un corte de luz general y el equipo se apaga. Si esto ocurre justo mientras se estaba realizando una actualización de la BIOS/UEFI (Flasheo), ¿cuál es el resultado técnico más habitual?",
+		"opciones": [
+		  "El sistema revierte automáticamente a la versión anterior de la BIOS sin ningún daño.",
+		  "El Sistema Operativo Windows se corromperá, pero se soluciona ejecutando un disco de reparación de inicio.",
+		  "La placa base quedará 'brickeada' (inutilizable o como un ladrillo), ya que su firmware básico estará a medio escribir y no sabrá ni cómo encender los componentes, salvo que disponga de sistemas dual-BIOS de rescate.",
+		  "El disco duro conectado se formateará a bajo nivel por seguridad."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Actualizar la BIOS (flashear) implica borrar el chip EEPROM y escribir el nuevo código de instrucciones base. Si se interrumpe, el chip queda vacío o con código basura. La placa base pierde su 'cerebro', por lo que no puede iniciar, hacer el POST, ni mandar señal a la pantalla. Se dice que se ha convertido en un ladrillo (bricked)."
+	  },
+	  {
+		"pregunta": "Un usuario alerta de que el PC va extremadamente lento desde hace meses, y el ventilador hace mucho ruido. Revisas el Administrador de Tareas y, aunque el procesador está trabajando al 100%, su velocidad de reloj (Gigahercios) es bajísima, muy inferior a su frecuencia base teórica. ¿Qué avería física estás diagnosticando?",
+		"opciones": [
+		  "Un ataque de denegación de servicio (DDoS) en la tarjeta de red.",
+		  "Thermal Throttling (Estrangulamiento Térmico) por un sobrecalentamiento crítico, causado por polvo excesivo, fallo del ventilador o pasta térmica petrificada.",
+		  "Desgaste físico de los núcleos de silicio del procesador por los años de uso.",
+		  "La fuente de alimentación está suministrando más voltios de los necesarios."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Thermal Throttling' es un mecanismo de autodefensa de los procesadores modernos. Si la temperatura alcanza el límite crítico de seguridad (generalmente 95-100 ºC), la CPU baja drásticamente su velocidad de reloj para reducir el calor generado y evitar fundirse o apagarse, provocando un bajón de rendimiento tremendo."
+	  },
+	  {
+		"pregunta": "A diferencia de los benchmarks sintéticos que estresan componentes de forma artificial, existen pruebas de rendimiento orientadas al 'Mundo Real'. ¿Cuál de estos programas es un ejemplo clásico de benchmark general de sistema que simula tareas ofimáticas, creación de contenido web y videollamadas?",
+		"opciones": [
+		  "PCMark (de UL Solutions).",
+		  "FurMark.",
+		  "AIDA64 Memory & Cache Benchmark.",
+		  "IntelBurnTest."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "PCMark es el estándar para medir el rendimiento de un PC completo para uso diario de oficina u hogar. A diferencia de Furmark o IntelBurnTest (que queman la GPU/CPU con cálculos absurdos), PCMark abre hojas de cálculo, comprime archivos, carga páginas web reales y renderiza vídeo para ver cómo rinde el equipo en su día a día."
+	  },
+	  {
+		"pregunta": "Al sustituir componentes internos delicados como la Memoria RAM o la Tarjeta Gráfica, existe un enemigo invisible que puede destruir los chips de forma irreversible (incluso sin que nos demos cuenta en el momento). Para evitar las descargas electrostáticas (ESD), ¿qué precaución básica debe tomar SIEMPRE el Auxiliar antes de manipular el interior del chasis?",
+		"opciones": [
+		  "Lavar las manos con jabón de glicerina para eliminar el magnetismo estático del cuerpo.",
+		  "Desenchufar el cable de corriente y utilizar una pulsera antiestática conectada a tierra, o tocar una parte metálica sin pintar del chasis del equipo para descargar su propia estática corporal.",
+		  "Frotar los componentes nuevos con un paño de lana seca antes de insertarlos en sus ranuras.",
+		  "Mantener el equipo encendido durante la sustitución para que los condensadores deriven la corriente a tierra automáticamente."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El cuerpo humano acumula miles de voltios de electricidad estática. Aunque nosotros apenas sentimos un ligero 'chispazo', esa energía descargada sobre un pin de una memoria RAM puede freír el circuito. La pulsera antiestática o descargarse tocando el chasis del equipo antes de operar es una regla de oro en el taller informático."
+	  },
+	  {
+		"pregunta": "Para analizar una sospecha de bajada de rendimiento o desgaste en un disco de estado sólido (SSD) en el puesto de trabajo, el Auxiliar utiliza un programa muy popular (Benchmark de almacenamiento) que arroja los resultados de lectura y escritura Secuencial y Aleatoria (Random) en Megabytes por segundo. ¿Qué herramienta gratuita suele utilizarse para este fin?",
+		"opciones": [
+		  "CPU-Z.",
+		  "CrystalDiskMark.",
+		  "HWMonitor.",
+		  "Windows Defender."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "CrystalDiskMark es probablemente la herramienta más utilizada a nivel mundial para testear de forma rápida y visual la velocidad real de lectura y escritura de discos HDD, SSD y NVMe. CPU-Z da información del procesador, HWMonitor mide temperaturas/voltajes, y Defender es el antivirus."
+	  },
+	  {
+		"pregunta": "Si al intentar encender un equipo de la oficina este no hace absolutamente nada (ni giran los ventiladores ni se enciende ningún LED en el frontal), y sospechamos que la Fuente de Alimentación (PSU) ha muerto, ¿qué prueba básica (test del clip) se puede hacer puenteando dos pines del conector ATX de 24 pines para comprobar si la fuente arranca en vacío?",
+		"opciones": [
+		  "Puenteando el cable Rojo (5V) con el cable Amarillo (12V).",
+		  "Puenteando el cable Verde (PS_ON) con cualquier cable Negro (Masa/COM).",
+		  "Puenteando el cable Naranja (3.3V) con el cable Azul (-12V).",
+		  "Puenteando el cable Blanco (-5V) con el cable Gris (Power Good)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'test del clip' es un clásico en el taller. Desconectando la fuente de la placa base y puenteando el cable verde (Power On) con cualquier cable negro (Tierra), le estamos dando a la fuente la señal de encendido. Si el ventilador de la fuente gira, sabemos que al menos no está completamente muerta."
+	  },
+	  {
+		"pregunta": "Al arrancar un PC, la BIOS detiene el inicio y muestra el mensaje 'CPU Fan Error! Press F1 to Resume'. El usuario abre la caja y ve que el ventilador del procesador está girando perfectamente. ¿Cuál es la causa habitual de este error?",
+		"opciones": [
+		  "El ventilador está girando en sentido contrario al flujo de aire diseñado.",
+		  "Se ha conectado el cable del ventilador de la CPU en un conector de ventilador de chasis (ej. CHA_FAN o SYS_FAN) en lugar de en el conector específico CPU_FAN.",
+		  "La pasta térmica se ha secado y la BIOS detecta falta de conductividad.",
+		  "El procesador es incompatible con las revoluciones por minuto del ventilador."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las placas base monitorizan las revoluciones del ventilador del procesador por seguridad a través del cabezal marcado como 'CPU_FAN'. Si conectas el ventilador a otro cabezal (como el de la caja, SYS_FAN), el ventilador girará, pero la placa base pensará que el de la CPU no existe o está parado, lanzando la advertencia."
+	  },
+	  {
+		"pregunta": "Un usuario reporta que su equipo sufre Pantallazos Azules (BSOD) continuos en Windows. Tras arrancar el equipo en 'Modo Seguro', el ordenador funciona perfectamente sin colgarse durante horas. ¿Qué diagnóstico inicial es el más acertado?",
+		"opciones": [
+		  "La placa base tiene los condensadores hinchados.",
+		  "El disco duro tiene daño mecánico en los platos.",
+		  "El problema está causado por un controlador (driver) defectuoso, software de terceros o malware, ya que el Modo Seguro carga solo los drivers genéricos y básicos.",
+		  "La memoria RAM está físicamente quemada."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Modo Seguro de Windows es la herramienta clave para distinguir un fallo físico (hardware) de un fallo lógico (software/drivers). Si en Modo Seguro no hay pantallazos, casi con total seguridad el hardware está bien y el culpable es un driver de la gráfica, un antivirus problemático o un virus que se carga en el inicio normal."
+	  },
+	  {
+		"pregunta": "En el contexto de la detección de averías y sustitución de hardware, ¿qué utilidad tiene la conocida herramienta gratuita DDU (Display Driver Uninstaller)?",
+		"opciones": [
+		  "Reparar píxeles muertos en pantallas LCD mediante parpadeo de alta frecuencia.",
+		  "Eliminar por completo y sin dejar rastro los controladores de tarjetas gráficas (NVIDIA, AMD, Intel) y sus claves de registro, ideal antes de instalar una tarjeta gráfica nueva.",
+		  "Desinstalar el sistema operativo Windows para instalar Linux.",
+		  "Acelerar (Overclock) la frecuencia de los monitores para obtener más hercios."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "DDU (Display Driver Uninstaller) es la herramienta estándar en el mundo del soporte técnico para limpiar el sistema de drivers gráficos antiguos. Al cambiar de una gráfica NVIDIA a una AMD (o viceversa), los restos de drivers viejos suelen causar conflictos y pantallas azules; DDU limpia el sistema dejándolo como nuevo."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar va a ampliar la memoria RAM de un equipo instalando dos módulos idénticos de 8GB en una placa base que tiene cuatro ranuras (generalmente de dos colores intercalados), ¿cómo debe instalarlos para activar la tecnología 'Dual Channel' y maximizar el rendimiento?",
+		"opciones": [
+		  "En las dos primeras ranuras juntas (ej. ranura 1 y ranura 2).",
+		  "En las ranuras intercaladas del mismo color o canal (ej. ranura 2 y ranura 4, o A2 y B2, según el manual de la placa).",
+		  "En la primera ranura y en la última (ranura 1 y ranura 4).",
+		  "El Dual Channel se activa por software en la BIOS, no importa físicamente dónde se pinchen."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Para aprovechar el ancho de banda del Doble Canal (Dual Channel), los módulos de memoria deben poblar canales distintos. Los fabricantes suelen colorear las ranuras de forma alterna (ej. negro-gris-negro-gris). Para activarlo, se deben pinchar en las ranuras del mismo color (habitualmente las ranuras 2 y 4 son las recomendadas como primarias)."
+	  },
+	  {
+		"pregunta": "Tras un corte de suministro eléctrico, un ordenador enciende y lanza el mensaje de error 'BOOTMGR is missing' o 'Falta NTLDR' (en sistemas antiguos). ¿Qué significa esto?",
+		"opciones": [
+		  "Que la BIOS se ha borrado y hay que flashearla.",
+		  "Que el procesador no encuentra la memoria RAM.",
+		  "Que el sistema no encuentra el gestor de arranque en el disco duro, ya sea porque el sector de arranque (MBR/BCD) se ha corrompido o porque se ha cambiado el orden de arranque en la BIOS.",
+		  "Que la tarjeta de red no encuentra el servidor de dominio."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Este mensaje indica que la BIOS ha hecho su chequeo y ha ido al disco duro a buscar el Sistema Operativo, pero el archivo encargado de iniciar la carga de Windows (BOOTMGR) no está, está dañado o el equipo está intentando arrancar desde un pendrive que no tiene Windows."
+	  },
+	  {
+		"pregunta": "Para diagnosticar problemas en la pila de red local (TCP/IP) y comprobar si la tarjeta de red física de un equipo funciona correctamente a nivel interno, un técnico ejecuta un 'ping' a una dirección IP especial conocida como 'Loopback' (bucle local). ¿Cuál es esa dirección IPv4 estándar?",
+		"opciones": [
+		  "192.168.1.1",
+		  "127.0.0.1",
+		  "255.255.255.0",
+		  "8.8.8.8"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Hacer ping a 127.0.0.1 (localhost) envía paquetes de red a la propia tarjeta de red del equipo, sin salir al router. Si este ping falla, significa que los controladores de red del sistema operativo están corruptos o que la tarjeta de red (hardware) está averiada."
+	  },
+	  {
+		"pregunta": "Un usuario enciende el equipo, los ventiladores giran, no hay pitidos de error, pero la pantalla dice 'No Signal' (Sin señal). Revisas por detrás y ves que el equipo tiene una Tarjeta Gráfica dedicada instalada, pero el usuario conectó ayer el cable HDMI en el puerto HDMI de la Placa Base. ¿Qué está ocurriendo?",
+		"opciones": [
+		  "El cable HDMI está defectuoso y debe usar VGA.",
+		  "Al detectar una gráfica dedicada en el puerto PCIe, la BIOS deshabilita automáticamente los gráficos integrados de la placa base, por lo que el puerto HDMI de la placa no emite señal.",
+		  "El monitor necesita instalar los drivers mediante USB antes de mostrar imagen.",
+		  "La memoria RAM está sucia."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Es uno de los errores de usuario más comunes. Cuando se instala una tarjeta gráfica dedicada, la placa base anula su propia salida de vídeo. El cable del monitor debe ir conectado SIEMPRE a los puertos horizontales de la tarjeta gráfica dedicada, no a los verticales de la placa base."
+	  },
+	  {
+		"pregunta": "Si sospechas que unos módulos de Memoria RAM antiguos están causando fallos porque tienen suciedad u óxido microscópico en los pines de conexión dorados, ¿cuál es el método recomendado en el taller para limpiarlos de forma segura sin dañar los contactos?",
+		"opciones": [
+		  "Frotarlos suavemente con una goma de borrar de tipo milán o de nata.",
+		  "Limpiarlos con un estropajo de aluminio.",
+		  "Sumergirlos en agua destilada caliente durante 10 minutos.",
+		  "Aplicarles limpiacristales y secarlos con un secador de pelo."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Pasar una goma de borrar blanca y suave por los contactos dorados de la RAM (y luego quitar las virutas de goma) es el método tradicional y más seguro para eliminar la suciedad superficial y la oxidación ligera sin rayar los pines. También se puede usar un paño con alcohol isopropílico."
+	  },
+	  {
+		"pregunta": "Dentro de los programas de 'Benchmarking' (pruebas de rendimiento), ¿qué software está centrado específicamente en estresar y puntuar la potencia bruta del procesador (CPU) mediante el renderizado hiperrealista de una escena 3D, sin involucrar a la tarjeta gráfica?",
+		"opciones": [
+		  "CrystalDiskMark.",
+		  "Cinebench.",
+		  "MSI Afterburner.",
+		  "Wireshark."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Cinebench (desarrollado por Maxon) es el benchmark de referencia mundial para medir el rendimiento de los procesadores (CPU). Pone a trabajar todos los núcleos del procesador al 100% para generar una imagen 3D fotorrealista. A mayor puntuación, mayor potencia de cálculo del procesador."
+	  },
+	  {
+		"pregunta": "Al conectar un cable de red a la tarjeta Ethernet de un ordenador, observamos los LEDs del puerto RJ45. Normalmente hay uno que parpadea indicando actividad, y otro fijo que indica la velocidad del enlace. Si este LED de velocidad se enciende en color NARANJA (o amarillo) en lugar de VERDE, ¿qué suele indicar de forma estandarizada?",
+		"opciones": [
+		  "Que hay un conflicto de direcciones IP en la red.",
+		  "Que el cable está transmitiendo a velocidad Gigabit (1000 Mbps).",
+		  "Que el cable está transmitiendo a velocidad Fast Ethernet (10/100 Mbps), posiblemente por un cable defectuoso (Cat5) o un switch antiguo.",
+		  "Que la red no tiene acceso a internet, solo a intranet local."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Aunque depende del fabricante, el estándar de facto indica que la luz verde fija en el RJ45 significa enlace a 1 Gbps (Gigabit). Si la luz es naranja o amarilla, el equipo ha negociado a 100 Mbps (o 10 Mbps). Esto suele pasar si el cable de red está dañado o tiene solo 4 hilos en lugar de 8."
+	  },
+	  {
+		"pregunta": "Si debes diagnosticar un disco duro mecánico (HDD) que hace un ruido metálico repetitivo ('clic, clic, clic') nada más encender el PC, impidiendo que el sistema lo reconozca o arranque, estás ante:",
+		"opciones": [
+		  "Un fallo del motor de rotación de estado sólido.",
+		  "El conocido como 'Clic de la muerte', una avería física catastrófica en el cabezal de lectura/escritura o el brazo actuador, que golpea los topes internamente.",
+		  "Una desfragmentación programada en segundo plano por la BIOS.",
+		  "Un error lógico del sistema de archivos NTFS reparable con el comando chkdsk."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Click of death' (clic de la muerte) es el sonido más temido en los discos mecánicos. Ocurre cuando el brazo lector no consigue calibrarse ni leer el firmware en los platos magnéticos, golpeando repetidamente el tope de su recorrido. Los datos solo se pueden recuperar en laboratorios especializados (cámara limpia)."
+	  },
+	  {
+		"pregunta": "Un usuario no recuerda la contraseña de la BIOS/UEFI de su equipo de sobremesa, impidiendo que el Auxiliar pueda cambiar el orden de arranque para formatearlo. Si no disponemos de contraseñas maestras, ¿cuál es la forma física de resetear la BIOS y eliminar esa contraseña?",
+		"opciones": [
+		  "Conectar un teclado por puerto PS/2 y pulsar Alt + F4 durante el arranque.",
+		  "Retirar el procesador de su zócalo y volverlo a poner.",
+		  "Desconectar el equipo de la red eléctrica y extraer la pila de botón (CR2032) de la placa base durante unos minutos, o hacer un puente en los pines 'Clear CMOS' (CLR_CMOS).",
+		  "Sustituir el módulo de la memoria RAM principal."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las contraseñas y ajustes de la BIOS se guardan en la memoria volátil CMOS, la cual se mantiene viva gracias a la pila de la placa base. Al quitar la corriente y la pila (o puentear los pines Clear CMOS), la memoria se borra, devolviendo la BIOS a su estado de fábrica y eliminando contraseñas."
+	  },
+	  {
+		"pregunta": "En entornos Windows, si un equipo sufre bloqueos o reinicios esporádicos y queremos investigar a posteriori qué módulo de software o hardware registró un error crítico justo antes del reinicio, ¿qué herramienta administrativa integrada debemos consultar obligatoriamente?",
+		"opciones": [
+		  "El Desfragmentador de Discos.",
+		  "El Visor de Eventos (Event Viewer).",
+		  "El Administrador de Dispositivos.",
+		  "El Editor del Registro (regedit)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Visor de Eventos (eventvwr.msc) es la 'caja negra' de Windows. Registra cada servicio que falla, errores de disco, cuelgues de drivers y pantallazos azules. Para diagnosticar un reinicio aleatorio, buscaremos los errores 'Críticos' (como el famoso Kernel-Power ID 41) en el registro de Sistema."
+	  },
+	  {
+		"pregunta": "Si necesitamos sustituir un disco duro NVMe estropeado en un ordenador portátil moderno, debemos fijarnos muy bien en las muescas (claves o 'Keys') del conector físico. ¿Qué tipo de conector y clave utilizan casi todos los SSD NVMe PCIe de alto rendimiento actuales?",
+		"opciones": [
+		  "Conector SATA con clave B.",
+		  "Conector M.2 con clave M (M-Key).",
+		  "Conector PCIe x16 estándar.",
+		  "Conector mSATA."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los SSD NVMe modernos usan el formato M.2 con clave M (M-Key), que tiene una sola muesca en el lado derecho, permitiendo el uso de 4 líneas PCIe. Los SSD M.2 más antiguos y lentos (que funcionan por bus SATA, no NVMe) suelen usar claves B+M (dos muescas)."
+	  },
+	  {
+		"pregunta": "Durante un test de estrés (Benchmark extremo como Prime95 o AIDA64) para comprobar la estabilidad térmica de un PC recién reparado, observamos que pasados 5 minutos, el equipo se apaga bruscamente como si le hubieran quitado el cable de la luz. ¿Qué ha ocurrido?",
+		"opciones": [
+		  "El programa de estrés ha finalizado satisfactoriamente.",
+		  "El equipo ha entrado en hibernación profunda para ahorrar batería.",
+		  "Se ha disparado el sistema de protección térmica del procesador al superar la temperatura crítica (ej. 105ºC) o la Fuente de Alimentación ha cortado por sobrecarga de amperaje (OPP).",
+		  "El sistema operativo ha bloqueado el test por considerarlo un virus."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un apagón repentino bajo estrés máximo se debe a protecciones de hardware. Si el procesador no logra enfriarse haciendo 'throttling', ordenará un apagado inmediato para no fundir el silicio (Thermal Trip). Si la gráfica y CPU exigen más energía de la que la fuente puede dar, esta cortará la corriente por seguridad."
+	  },
+	  {
+		"pregunta": "Al sustituir un disco duro defectuoso en un servidor o equipo de altas prestaciones que utiliza una configuración de almacenamiento en RAID 1 (Espejo), ¿qué acción manual debe realizar normalmente el técnico en la controladora tras insertar el disco físico nuevo?",
+		"opciones": [
+		  "Reinstalar el sistema operativo desde cero, pues los RAIDs se rompen al quitar un disco.",
+		  "Marcar el disco nuevo como 'Hot Spare' y esperar a que termine el proceso de Reconstrucción (Rebuild) que volcará todos los datos del disco sano al disco nuevo.",
+		  "Formatear ambos discos en FAT32 para unificarlos.",
+		  "Ninguna, el sistema operativo asume el disco nuevo instantáneamente en 2 segundos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En un RAID 1 tolerante a fallos, si cambias un disco roto, debes inicializar el nuevo y decirle a la controladora (por hardware o software) que inicie el 'Rebuild'. Este proceso copia bit a bit el disco sano al disco nuevo para recuperar la redundancia. Puede tardar horas durante las cuales el equipo puede seguir usándose, aunque más lento."
+	  },
+	  {
+		"pregunta": "Al diagnosticar sospechas de avería en la Memoria RAM desde el propio Windows 10/11 sin necesidad de usar programas de terceros o un USB arrancable, podemos teclear un comando en Inicio que reiniciará el equipo y pasará un test a la memoria. ¿Cómo se llama esta herramienta nativa?",
+		"opciones": [
+		  "Diagnóstico de memoria de Windows (mdsched.exe).",
+		  "Comprobador de archivos de sistema (sfc /scannow).",
+		  "Monitor de rendimiento (perfmon.exe).",
+		  "Liberador de espacio en disco (cleanmgr.exe)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El 'Diagnóstico de memoria de Windows' (mdsched.exe) es una herramienta muy útil incorporada en Windows. Te pide reiniciar el equipo y, antes de cargar el sistema operativo completo, ejecuta un test de memoria básico con una pantalla azul (similar a Memtest) avisando si hay problemas de hardware."
+	  },
+	  {
+		"pregunta": "Una tarjeta gráfica de gama alta tiene un comportamiento extraño: en tareas de escritorio el ventilador no gira (está a 0 RPM), pero al ejecutar un Benchmark 3D intenso, los ventiladores se encienden a gran velocidad. El usuario piensa que está averiada. ¿Qué le indicará el Auxiliar?",
+		"opciones": [
+		  "Que el cable del ventilador está suelto y a veces hace contacto por las vibraciones.",
+		  "Que la placa base no está suministrando 12V estables.",
+		  "Que es el comportamiento normal y deseado (tecnología 'Zero Frozr' o '0 dB'), donde los ventiladores permanecen apagados para evitar ruido hasta que el chip gráfico alcanza cierta temperatura (ej. 60ºC).",
+		  "Que los drivers están corruptos y deshabilitan el ventilador en 2D."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Hoy en día, casi todas las gráficas dedicadas modernas incorporan la tecnología Zero RPM. Esto apaga completamente los ventiladores mientras el usuario navega o usa Word (haciendo el PC ultra silencioso) y solo los enciende cuando se le exige rendimiento y el chip genera calor de verdad."
+	  },
+	  {
+		"pregunta": "Al revisar el informe de estado S.M.A.R.T. de un disco duro en uso, ¿cuál de los siguientes atributos es el indicador más crítico y alarmante de que el disco tiene daños en la superficie magnética y va a fallar de forma inminente?",
+		"opciones": [
+		  "Power-On Hours (Horas de encendido).",
+		  "Power Cycle Count (Número de encendidos/apagados).",
+		  "Temperature (Temperatura).",
+		  "Reallocated Sector Count (Recuento de sectores reasignados)."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El 'Reallocated Sector Count' indica que el disco ha encontrado un sector físicamente dañado, ha movido (reasignado) los datos a un sector de reserva y ha tachado el malo. Si este número empieza a subir, significa que la superficie del disco se está degradando rápidamente y perderá datos pronto."
+	  },
+	  {
+		"pregunta": "En el taller de informática, tras ensamblar un equipo y encenderlo por primera vez, el altavoz interno de la placa base (buzzer) emite un único pitido corto y, a continuación, aparece el logotipo del fabricante en pantalla. ¿Qué significa este único pitido en la mayoría de las BIOS estándar (como AMI o Award)?",
+		"opciones": [
+		  "Que existe un error leve en la pila CMOS.",
+		  "Que no se ha detectado el teclado y la secuencia se detendrá.",
+		  "Que el proceso POST (Power-On Self-Test) ha finalizado con éxito y todo el hardware básico funciona correctamente.",
+		  "Que el procesador está alcanzando su límite térmico."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un único pitido corto es el sonido más tranquilizador para un técnico. En casi todas las BIOS clásicas, significa que el test automático de encendido (POST) ha superado las pruebas de CPU, RAM y vídeo sin encontrar errores graves, y procede a cargar el sistema operativo."
+	  },
+	  {
+		"pregunta": "Un usuario reporta que su equipo no arranca. Al encenderlo, la pantalla muestra el mensaje clásico 'Invalid system disk' o 'Non-System disk or disk error'. El Auxiliar comprueba que el disco duro interno funciona bien. ¿Cuál es la causa más común y banal de este mensaje?",
+		"opciones": [
+		  "La tarjeta de red ha entrado en modo de suspensión profunda.",
+		  "Hay un pendrive USB no arrancable (o un disco externo) conectado al equipo, y la BIOS está configurada para intentar arrancar desde el USB antes que desde el disco duro interno.",
+		  "El monitor no es compatible con la resolución del gestor de arranque.",
+		  "La memoria RAM está insertada en los canales incorrectos (no dual-channel)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Es uno de los 'sustos' más habituales. Si la BIOS tiene configurado el arranque desde USB como primera opción (muy común tras una instalación) y el usuario deja un pendrive con fotos o documentos conectado, la BIOS intenta arrancar desde ahí, no encuentra Windows y lanza ese error."
+	  },
+	  {
+		"pregunta": "Al analizar un pantallazo azul (BSOD) en Windows, el código de detención indica 'PAGE_FAULT_IN_NONPAGED_AREA'. Este error crítico suele apuntar casi siempre a un fallo físico o de controladores de un componente concreto. ¿Cuál es?",
+		"opciones": [
+		  "La tarjeta de sonido.",
+		  "La memoria RAM (o un archivo de paginación corrupto en el disco duro).",
+		  "La pila de la placa base.",
+		  "El ventilador de la fuente de alimentación."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Este es uno de los pantallazos azules más famosos. Ocurre cuando el sistema operativo solicita datos que supuestamente estaban guardados en la memoria RAM, pero al ir a buscarlos, no están o la dirección de memoria es inválida. Suele ser síntoma de un módulo de RAM defectuoso o un disco duro fallando al gestionar el archivo de paginación."
+	  },
+	  {
+		"pregunta": "A la hora de realizar pruebas de rendimiento y diagnóstico en redes locales (para comprobar si un cable largo, una roseta o una tarjeta de red están perdiendo paquetes o van lentos), existe una herramienta de línea de comandos muy famosa en modo cliente-servidor para inyectar tráfico y medir el ancho de banda real. ¿Cómo se llama?",
+		"opciones": [
+		  "iperf (o iperf3).",
+		  "chkdsk.",
+		  "Diskpart.",
+		  "MemTest86."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Iperf (su versión moderna es iperf3) es el estándar en benchmarks de red. Colocas el programa en un PC como servidor ('iperf -s'), te vas a otro PC como cliente ('iperf -c') y el programa inyecta datos masivos durante 10 segundos, devolviéndote exactamente los Megabits por segundo reales que soporta ese tramo de red."
+	  },
+	  {
+		"pregunta": "Tras clonar un disco duro HDD antiguo de 500 GB a un disco SSD nuevo de 1 TB usando una herramienta de clonación sector a sector, el Auxiliar entra en Windows y observa que el nuevo disco (C:) marca que solo tiene 500 GB de capacidad total en lugar de 1 TB. ¿Qué ha ocurrido y cómo se soluciona?",
+		"opciones": [
+		  "El SSD está defectuoso de fábrica y debe ser devuelto mediante garantía RMA.",
+		  "El programa de clonación copió también la tabla de particiones antigua; los otros 500 GB son 'Espacio no asignado' y deben extenderse usando el Administrador de Discos de Windows.",
+		  "Windows detecta automáticamente que es un clon y bloquea el espacio sobrante por seguridad antipiratería.",
+		  "El cable SATA utilizado es versión 2.0 y solo admite discos de hasta 500 GB de direccionamiento."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Al clonar de forma estricta, se copia exactamente la estructura del disco origen. Si el origen tenía una partición de 500 GB, el destino de 1 TB tendrá una partición de 500 GB idéntica. El espacio restante del SSD queda como 'no asignado' o vacío. La solución es ir al Administrador de Discos (diskmgmt.msc) y hacer clic derecho en C: para 'Extender volumen'."
+	  },
+	  {
+		"pregunta": "Un ordenador de sobremesa se reinicia aleatoriamente de forma brusca, sin pantallazo azul. El Auxiliar nota que esto ocurre especialmente cuando el usuario conecta su teléfono móvil a cargar en los puertos USB frontales de la caja. ¿Cuál es el diagnóstico más probable?",
+		"opciones": [
+		  "El teléfono móvil tiene un virus de macro que reinicia Windows al conectarse por USB.",
+		  "Los puertos frontales tienen un cortocircuito físico en su cableado hacia la placa base o la fuente de alimentación no soporta la demanda de corriente (5V) repentina.",
+		  "El puerto USB es versión 2.0 y el teléfono requiere obligatoriamente 3.0.",
+		  "El disco duro pierde la conexión SATA por la vibración de conectar el cable."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los reinicios espontáneos al enchufar dispositivos USB ocurren cuando hay un problema eléctrico. A menudo los puertos del chasis frontal tienen contactos doblados que hacen un 'corto' (cortocircuito) al meter el cable, o la línea de 5 voltios de la fuente de alimentación está tan degradada que la carga del móvil provoca un bajón de tensión que resetea la placa base."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe recuperar datos de un disco duro mecánico que el Sistema Operativo no detecta en absoluto, pero al conectarlo a la corriente se escucha claramente que los platos giran con normalidad y no hay ruidos de 'clics' metálicos (los cabezales parecen moverse bien), ¿dónde suele estar la avería?",
+		"opciones": [
+		  "En el motor de rotación del eje (Spindle motor).",
+		  "En la placa de circuito impreso externa del disco (la PCB), donde se ubica el firmware y el chip controlador.",
+		  "En los discos magnéticos (platos) que se han desmagnetizado por completo.",
+		  "En el brazo lector que se ha doblado."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Si el disco gira, no hace ruidos raros y simplemente el PC hace como que no existe, la mecánica está viva pero la 'lógica' ha muerto. Esto suele ocurrir porque la placa electrónica (PCB) que va atornillada debajo del disco ha sufrido un pico de tensión, quemando el controlador SATA que 'habla' con el ordenador."
+	  },
+	  {
+		"pregunta": "El usuario de diseño gráfico avisa de que, tras actualizar los drivers de su tarjeta gráfica, la pantalla ha parpadeado en negro un par de veces durante la instalación. ¿Qué debe indicarle el Auxiliar de Informática?",
+		"opciones": [
+		  "Que debe apagar el equipo inmediatamente, ya que la tarjeta se está sobrecalentando.",
+		  "Que el cable del monitor se ha aflojado por accidente y debe apretarlo.",
+		  "Que es un comportamiento completamente normal; el sistema operativo está descargando el controlador antiguo de la memoria y cargando el nuevo, perdiendo la señal de vídeo temporalmente.",
+		  "Que la tarjeta gráfica no es compatible con su versión de Windows y ha sufrido daños."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Es una reacción estándar en Windows. Cuando se instalan o actualizan controladores de vídeo, el servicio de visualización se reinicia. El monitor pierde la señal durante un par de segundos y vuelve, a menudo haciendo el sonido de desconexión y conexión de hardware."
+	  },
+	  {
+		"pregunta": "Al intentar instalar Windows 10 en un disco duro de 4 Terabytes recién comprado, la instalación avisa de que el disco tiene un estilo de partición MBR y solo permite utilizar 2 Terabytes, dejando el resto inservible. ¿Qué debe hacer el Auxiliar para aprovechar toda la capacidad?",
+		"opciones": [
+		  "Dividir el disco físicamente en dos cajas de 2 TB.",
+		  "Convertir el estilo de partición del disco de MBR a GPT (Tabla de particiones GUID).",
+		  "Actualizar la BIOS usando un disquete.",
+		  "Formatear el disco en FAT32 y usar la compresión de archivos de Windows."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El formato Master Boot Record (MBR) clásico tiene un límite matemático que impide direccionar discos de más de 2.2 Terabytes. Para discos modernos de gran capacidad, es absolutamente obligatorio utilizar el estándar GPT (GUID Partition Table) junto con una BIOS tipo UEFI."
+	  },
+	  {
+		"pregunta": "Un ordenador portátil extremadamente fino (Ultrabook) sufre bloqueos por exceso de calor y el técnico observa que la pasta térmica está totalmente endurecida (como cemento). ¿Cuál es la forma correcta de retirar esta pasta vieja del procesador antes de aplicar la nueva?",
+		"opciones": [
+		  "Rasparla con un destornillador plano con mucha fuerza hasta ver el metal.",
+		  "Utilizar un bastoncillo o papel absorbente ligeramente humedecido en alcohol isopropílico (o un producto específico) para ablandarla y disolverla con suavidad.",
+		  "Sumergir toda la placa base en agua caliente con jabón desengrasante.",
+		  "No debe retirarse, hay que poner la pasta nueva encima de la vieja para sumar conductividad térmica."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Jamás se debe usar una herramienta metálica dura (como un destornillador) para raspar el procesador, ya que se rayaría la superficie, empeorando el contacto térmico o destruyendo el silicio si está al descubierto. El alcohol isopropílico disuelve la pasta seca sin dejar residuos ni provocar cortocircuitos eléctricos, ya que se evapora rápidamente."
+	  },
+	  {
+		"pregunta": "En entornos de servidores y estaciones de trabajo (Workstations), encontramos tarjetas de memoria RAM que llevan las siglas 'ECC'. Si un usuario compra esta memoria por error para un PC de escritorio estándar de la oficina, ¿qué sucederá probablemente?",
+		"opciones": [
+		  "Que el equipo funcionará mucho más rápido al corregir los errores de escritura del usuario en Word.",
+		  "Que la BIOS pitará y el equipo no arrancará, ya que la memoria ECC (Error Correcting Code) requiere placas base y procesadores específicos compatibles (ej. procesadores Intel Xeon o AMD Epyc).",
+		  "Que el sistema operativo se bloqueará a los 30 minutos por exceso de calor.",
+		  "Que los módulos explotarán, ya que la memoria ECC funciona a 220 voltios directos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "ECC (Error Correcting Code) es una tecnología de memoria que incluye un chip adicional para detectar y corregir errores de bits sobre la marcha, algo vital en servidores que no pueden colgarse nunca. Sin embargo, estas memorias suelen ser incompatibles con placas base y procesadores domésticos (como los Intel Core i3/i5/i7), provocando que el equipo no dé vídeo."
+	  },
+	  {
+		"pregunta": "Durante una prueba de conectividad en una nueva toma de red, el Auxiliar hace 'ping' desde el ordenador a la dirección IP 127.0.0.1 (Loopback) y responde correctamente. Luego hace 'ping' a su propia dirección IP (192.168.1.50) y también responde. Pero al hacer 'ping' a la Puerta de Enlace (192.168.1.1) falla dando 'Tiempo de espera agotado'. ¿Qué se puede deducir de estas pruebas?",
+		"opciones": [
+		  "Que la tarjeta de red del equipo está físicamente quemada.",
+		  "Que los controladores TCP/IP de Windows están corruptos y requieren reinstalación.",
+		  "Que el ordenador funciona bien internamente y el problema está de la roseta hacia fuera (cable roto, toma desconectada, switch apagado o mal configurado).",
+		  "Que el disco duro está saturado y retrasa los paquetes de red."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El ping al 127.0.0.1 verifica que la pila TCP/IP del sistema operativo funciona. El ping a la propia IP verifica que la tarjeta de red (NIC) sabe cuál es su identidad y procesa la señal. Si ambos van bien, el hardware y software locales del PC están sanos. Si no llega a la puerta de enlace (el router/switch), el fallo es físico en el cableado externo o en la configuración de la red (VLANs, etc.)."
+	  },
+	  {
+		"pregunta": "En las pruebas de estrés extremo (Benchmark) de Tarjetas Gráficas (GPU), existe un programa gratuito muy conocido, representado por el icono de una 'Rosquilla peluda', que pone la tarjeta al máximo consumo eléctrico posible casi instantáneamente. ¿Cómo se llama este software?",
+		"opciones": [
+		  "Cinebench.",
+		  "FurMark.",
+		  "CrystalDiskMark.",
+		  "PassMark."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "FurMark es el test de tortura por excelencia para GPUs. Su algoritmo de renderizado de pelo (fur) satura todos los núcleos de cálculo de la gráfica. Se utiliza principalmente por técnicos para comprobar rápidamente si el disipador está bien montado o si la fuente de alimentación colapsa por exceso de consumo. Si un PC sobrevive a 15 minutos de FurMark sin apagarse ni incendiarse, está térmicamente sano."
+	  },
+	  {
+		"pregunta": "Si tras realizar un cambio de hardware crítico (ej. Tarjeta de red o Placa base), Windows no logra navegar por internet porque la caché de nombres de dominio ha quedado corrupta tras las pruebas, ¿qué comando debe ejecutar el Auxiliar en la consola (CMD) para vaciar esa memoria de resoluciones?",
+		"opciones": [
+		  "ipconfig /release",
+		  "ipconfig /flushdns",
+		  "netsh wlan show profiles",
+		  "ping -t google.es"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El comando 'ipconfig /flushdns' borra la caché de resolución de DNS que guarda Windows temporalmente. Es la 'mano de santo' cuando una web no carga a pesar de tener conexión a internet, o cuando han cambiado equipos en la red interna de la Junta y el PC sigue intentando ir a la IP antigua."
+	  },
+	  {
+		"pregunta": "Al intentar arrancar un equipo de la oficina, la pantalla muestra 'Non-system disk or disk error'. Tras comprobar la BIOS, el Auxiliar ve que el disco duro no aparece listado en los dispositivos conectados (SATA). El disco no emite ningún ruido y está 'muerto'. ¿Qué avería rápida de voltaje de la fuente de alimentación suele provocar este 'asesinato' de los discos mecánicos o SSD?",
+		"opciones": [
+		  "Un fallo en el raíl de +3.3V de la placa base.",
+		  "Una avería en el ventilador de la fuente.",
+		  "Un pico de sobretensión, a menudo provocado por conectar cables de alimentación modular (SATA Power) de una marca de fuente en una fuente distinta, enviando 12V por el pin de 5V.",
+		  "Una caída temporal de la frecuencia eléctrica de 50 Hz a 45 Hz en la red de Iberdrola."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Aunque parezca mentira, mezclar cables de fuentes de alimentación modulares es una de las mayores causas de destrucción masiva de discos en los talleres. Aunque los enchufes SATA son universales, el extremo que va a la fuente NO lo es. Si pones un cable de otra marca, puedes cruzar pines y meter 12 Voltios en la línea de 5 Voltios del disco, friendo instantáneamente su placa lógica."
+	  },
+	  {
+		"pregunta": "Al sustituir un procesador en un equipo de la administración, es crucial una manipulación perfecta. Si observas que el procesador tiene decenas de pequeños pines dorados sobresaliendo de él (tipo PGA) en lugar de estar lisos (tipo LGA), ¿a qué fabricante o diseño pertenece muy probablemente?",
+		"opciones": [
+		  "A Intel (sockets LGA 1151, LGA 1700, etc.).",
+		  "A AMD (sockets más antiguos como AM3 o el popular AM4).",
+		  "A IBM PowerPC.",
+		  "A ARM Cortex para móviles."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Históricamente, y hasta el socket AM4 (Ryzen 5000), AMD utilizaba formato PGA (Pin Grid Array), donde los pines frágiles están en el procesador y los agujeros en la placa base. Intel, desde hace muchos años (LGA 775), usa LGA (Land Grid Array), donde el procesador es liso con contactos, y los pines hiperdelicados están en el zócalo de la placa base (actualmente AMD en su zócalo AM5 también ha pasado a LGA)."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe sustituir un disco duro de 3.5 pulgadas por uno de formato 2.5 pulgadas (SSD SATA) en una torre de ordenador antigua que no dispone de anclajes modernos, ¿cómo debe proceder físicamente?",
+		"opciones": [
+		  "Dejándolo suelto colgando de los cables, los SSD no tienen partes móviles y no les afecta.",
+		  "Utilizando un marco adaptador (bracket) metálico o plástico de 2.5\" a 3.5\" atornillado a la bahía.",
+		  "Pegándolo con pegamento térmico a la fuente de alimentación.",
+		  "Instalándolo en la bahía de la unidad de CD/DVD (5.25\") directamente con tornillos largos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Aunque la opción de 'dejarlo colgando' es tristemente común en la vida real porque a los SSD no les afectan las vibraciones mecánicas, la respuesta técnica y profesional en una oposición o en la Administración es utilizar siempre un adaptador de 2.5 a 3.5 pulgadas para atornillarlo correctamente al chasis y evitar que un tirón rompa el conector SATA."
+	  },
+	  {
+		"pregunta": "En un entorno corporativo donde varios discos duros se han montado en configuración 'RAID 0' (Striping) para conseguir la máxima velocidad de lectura y escritura. ¿Qué ocurre si uno solo de los 4 discos del volumen se estropea físicamente?",
+		"opciones": [
+		  "El sistema sigue funcionando, pero al 75% de velocidad.",
+		  "El sistema entra en modo de recuperación y utiliza los datos de paridad del disco 2.",
+		  "Toda la información del volumen completo se pierde de forma irrecuperable, ya que los archivos estaban divididos en fragmentos repartidos entre los 4 discos sin tolerancia a fallos.",
+		  "Solo se pierden los datos que estuvieran guardados concretamente en ese disco averiado; los demás están a salvo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "RAID 0 no es tolerante a fallos (no hay redundancia). Divide los archivos en trozos pequeños (stripes) y escribe un trozo en el disco 1, otro en el disco 2, etc., para ir más rápido. Si un archivo está dividido en 4 discos y se rompe uno de ellos, todos los archivos del sistema quedan corruptos e inservibles. Se pierde el 100% de la información."
+	  },
+	  {
+		"pregunta": "Un ordenador sufre reinicios esporádicos y pantallas azules, y el usuario menciona que la caja 'da calambre' si se toca una parte metálica sin pintar. ¿Qué procedimiento de seguridad y detección de averías debe revisar el Auxiliar prioritariamente?",
+		"opciones": [
+		  "Que el cable HDMI del monitor está derivando la señal al chasis.",
+		  "Revisar que la toma de corriente de la pared tenga una correcta conexión a 'Tierra' y que la placa base esté montada sobre sus separadores de latón, sin hacer contacto directo con la chapa del chasis.",
+		  "Cambiar el sistema de archivos del disco duro a exFAT para aislar la carga.",
+		  "Aumentar la velocidad de los ventiladores de la fuente al 100%."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Si el chasis da calambre (corriente de fuga) y causa reinicios, significa que el equipo no está derivando la electricidad estática/sobrante por la toma de tierra del enchufe (a menudo porque el enchufe de la pared es viejo y no tiene tierra), o porque la placa base se ha atornillado directamente a la caja metálica sin los tornillos separadores, provocando cortocircuitos intermitentes."
+	  },
+	  {
+		"pregunta": "A nivel de software, al diagnosticar fallos en una tarjeta gráfica en Windows, existe un atajo de teclado maestro que reinicia el controlador de vídeo de emergencia si la pantalla se ha quedado congelada o en negro temporalmente. ¿Cuál es esta combinación de teclas?",
+		"opciones": [
+		  "Ctrl + Alt + Supr.",
+		  "Windows + D.",
+		  "Windows + Shift + Ctrl + B.",
+		  "Alt + F4."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La combinación 'Windows + Shift + Ctrl + B' (B de Beep) es un comando interno de Windows que resetea el driver de la tarjeta de vídeo. Si la pantalla se congela o se queda en negro, al pulsar esto la pantalla parpadea, suena un pitido y el driver se reinicia, lo que a menudo salva al técnico de tener que hacer un reinicio forzado del PC."
+	  },
+	  {
+		"pregunta": "En las BIOS tradicionales de marcas como AMI (American Megatrends) o Award, si al encender el equipo el altavoz emite un pitido largo seguido de dos o tres pitidos cortos, y la pantalla permanece en negro, ¿qué avería se está reportando?",
+		"opciones": [
+		  "Fallo en la comprobación de la memoria RAM.",
+		  "Error en el teclado (no detectado).",
+		  "Fallo en el adaptador de vídeo (Tarjeta gráfica no detectada o memoria de vídeo defectuosa).",
+		  "Sobrecalentamiento crítico de la CPU."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El patrón de 1 pitido largo y 2 o 3 cortos es el código estándar casi universal en el mundo de las BIOS para indicar un problema con la salida de vídeo. Si escuchas esto, la gráfica está mal pinchada, le falta el cable de corriente PCIe o está averiada."
+	  },
+	  {
+		"pregunta": "Al ampliar la memoria RAM, vimos que si mezclamos frecuencias (ej. 2666 MHz y 3200 MHz), el sistema funciona a la velocidad del más lento. ¿Pero qué ocurre matemáticamente si mezclamos módulos con la misma frecuencia pero distintas latencias (por ejemplo, un módulo CL15 y otro CL18)?",
+		"opciones": [
+		  "El sistema no arrancará bajo ningún concepto.",
+		  "La placa base ajustará todos los módulos a la latencia más alta (CL18, que es más lenta) para mantener la estabilidad del sistema.",
+		  "La placa base ajustará todos los módulos a la latencia más baja (CL15) forzando un overclocking automático.",
+		  "El sistema promediará las latencias, funcionando a CL16.5."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Al igual que con la frecuencia, el controlador de memoria siempre aplica el 'mínimo común denominador' de rendimiento para que el equipo no se cuelgue. Una latencia mayor (CL18) significa que tarda más ciclos de reloj en responder. El sistema obligará al módulo rápido (CL15) a esperar y trabajar a CL18."
+	  },
+	  {
+		"pregunta": "Un usuario reporta un ruido muy molesto en su tarjeta gráfica nueva. Dice que los ventiladores giran despacio, pero cuando abre un juego o programa 3D pesado, la tarjeta emite un zumbido o chillido eléctrico muy agudo que cambia de tono según lo que pase en la pantalla. ¿Cómo se conoce a este fenómeno?",
+		"opciones": [
+		  "Thermal Throttling.",
+		  "Artifacting de memoria.",
+		  "Coil Whine (Lloriqueo de bobina).",
+		  "Spindle Crash (Choque de motor)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El 'Coil Whine' es un ruido eléctrico agudo producido por la vibración microscópica de las bobinas (inductores) en los VRM de la tarjeta gráfica (o placa base/fuente) cuando pasa mucha corriente por ellas. No es peligroso ni indica que la tarjeta se vaya a romper, pero puede ser muy molesto."
+	  },
+	  {
+		"pregunta": "Al reparar ordenadores a nivel de software y particiones, los técnicos suelen llevar un 'Live USB' que contiene un entorno de preinstalación de Windows (WinPE) lleno de utilidades de diagnóstico, clonación, testeo de RAM y recuperación de contraseñas. ¿Cuál es el nombre de la suite gratuita más famosa e histórica de este tipo?",
+		"opciones": [
+		  "Hiren's BootCD.",
+		  "Adobe Creative Cloud.",
+		  "Microsoft Office Diagnostic Tool.",
+		  "Wireshark Live."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Hiren's BootCD (y su versión moderna Hiren's BootCD PE) es la 'navaja suiza' de todo técnico informático. Se arranca desde un pendrive y carga un mini-Windows independiente del disco duro, permitiendo usar programas para testear discos, recuperar archivos borrados o resetear la contraseña de Windows del usuario."
+	  },
+	  {
+		"pregunta": "El comando de consola 'chkdsk' es fundamental en Windows. Si queremos que, además de buscar errores lógicos en el sistema de archivos, el comando analice la superficie física del disco duro en busca de sectores defectuosos e intente recuperar la información legible de ellos, ¿qué modificador debemos añadir?",
+		"opciones": [
+		  "chkdsk /f",
+		  "chkdsk /r",
+		  "chkdsk /scan",
+		  "chkdsk /x"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El parámetro /f solo corrige errores del sistema de archivos (lógicos). El parámetro /r (Recover) hace lo mismo que /f pero además escanea toda la superficie magnética sector a sector. Si encuentra un sector malo (bad sector), intenta recuperar sus datos y lo marca para que el SO no vuelva a guardar nada ahí."
+	  },
+	  {
+		"pregunta": "En el mantenimiento de unidades de almacenamiento, hemos explicado que los SSD no deben desfragmentarse porque desgasta su memoria flash inútilmente. En Windows 10/11, si abres la herramienta 'Desfragmentar y optimizar unidades' y seleccionas un SSD, ¿qué acción realizará el sistema al darle a 'Optimizar'?",
+		"opciones": [
+		  "Desfragmentará el SSD a la fuerza, ignorando el desgaste.",
+		  "No hará nada, el botón está deshabilitado para los SSD.",
+		  "Enviará el comando TRIM al controlador del SSD para que la unidad realice su recolección de basura interna y marque las celdas borradas.",
+		  "Formateará el SSD a bajo nivel en segundo plano."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Windows es inteligente. Si detecta que la unidad es mecánica (HDD), el botón 'Optimizar' realiza una desfragmentación reordenando bloques físicos. Si detecta que es de estado sólido (SSD), el botón 'Optimizar' no desfragmenta; envía el comando RETRIM para mantener la velocidad de escritura de la unidad alta."
+	  },
+	  {
+		"pregunta": "Al arrancar un equipo con un USB booteable de Linux (como Ubuntu) o una herramienta de clonación antigua para diagnosticar el equipo, la BIOS/UEFI bloquea el arranque mostrando un mensaje de advertencia rojo de seguridad. ¿Qué característica de la UEFI está impidiendo el arranque de este USB?",
+		"opciones": [
+		  "Fast Boot (Arranque rápido).",
+		  "Secure Boot (Arranque seguro).",
+		  "TPM 2.0.",
+		  "Intel Virtualization Technology (VT-x)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Secure Boot (Arranque Seguro) es una función de la UEFI que impide que se cargue cualquier sistema operativo o driver que no tenga una firma digital criptográfica aprobada por el fabricante de la placa. Está pensado para evitar virus de sector de arranque (rootkits), pero a menudo bloquea herramientas de diagnóstico o distribuciones Linux que no poseen dicha firma."
+	  },
+	  {
+		"pregunta": "En las pruebas de rendimiento (Benchmarks) para juegos o aplicaciones 3D, el resultado principal se mide en FPS (Frames Per Second). Sin embargo, un benchmark excelente no solo da la media de FPS, sino que también indica el '1% Low' o percentil 1. ¿Qué nos indica este dato?",
+		"opciones": [
+		  "El porcentaje de batería consumido durante la prueba.",
+		  "La calidad del color en el 1% de la pantalla.",
+		  "El promedio de FPS en el 1% de los fotogramas que más tardaron en renderizarse, indicando si hay 'tirones' graves (stuttering) a pesar de tener una buena media general.",
+		  "El ancho de banda mínimo de la tarjeta gráfica."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Puedes tener un juego con una media estupenda de 60 FPS, pero si de vez en cuando la imagen se congela durante medio segundo (tirones), la experiencia es horrible. El '1% Low' te muestra los FPS de esos momentos críticos; si el 1% Low es de 15 FPS, el equipo sufre tirones importantes de rendimiento."
+	  },
+	  {
+		"pregunta": "Al intentar encender un equipo tras una limpieza, el Auxiliar pulsa el botón de la caja y el ordenador amaga con arrancar (los ventiladores giran un cuarto de vuelta o se encienden las luces medio segundo) y se apaga de golpe. Si lo vuelve a pulsar, no hace nada. Solo vuelve a amagar si desconecta el cable de la pared y espera un rato. ¿Qué ocurre?",
+		"opciones": [
+		  "El disco duro no tiene Windows instalado.",
+		  "La placa base no detecta el monitor.",
+		  "Hay un cortocircuito franco en la placa o componentes. La Fuente de Alimentación detecta el corto y activa su protección (SCP) apagando todo al instante.",
+		  "La memoria RAM está en el canal incorrecto."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Este es el síntoma clásico de la Protección contra Cortocircuitos (SCP) de la fuente de alimentación. Al darle corriente, la fuente detecta que algo está derivando a masa (un tornillo suelto, un cable de 12V tocando chapa, un conector al revés), 'salta' la protección y se apaga sola. Para que vuelva a intentar arrancar, hay que vaciar los condensadores quitando el cable de la pared."
+	  },
+	  {
+		"pregunta": "Al sustituir el disipador o el procesador de un equipo, la aplicación de pasta térmica es crucial. ¿Qué avería catastrófica puede causar aplicar una cantidad excesiva de una pasta térmica que esté basada en componentes metálicos (como partículas de plata o metal líquido) si esta rebosa por los bordes del procesador?",
+		"opciones": [
+		  "Que el procesador funcione demasiado frío y el ventilador se apague.",
+		  "Que los componentes metálicos oxiden el disipador de aluminio.",
+		  "Que la pasta, al ser eléctricamente conductora, caiga sobre los pequeños condensadores del propio procesador o el zócalo de la placa, provocando un cortocircuito irreversible.",
+		  "Que la placa base no pueda leer el número de serie del procesador."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las pastas térmicas estándar (cerámicas) no conducen la electricidad, por lo que si echas demasiada solo ensuciarás la placa. Pero las pastas de alto rendimiento ('Arctic Silver' o metal líquido) sí son conductoras. Si echas mucha y rebosa aplastada por el disipador, conectará eléctricamente las soldaduras que toque, quemando el equipo."
+	  },
+	  {
+		"pregunta": "Un portátil llega al departamento de informática con problemas de conexión Wi-Fi: se desconecta constantemente o la señal es mínima, incluso estando cerca del router. El Auxiliar lo abre y recuerda que hace poco se le cambió la pantalla a ese equipo. ¿Qué fallo físico es el más probable?",
+		"opciones": [
+		  "La nueva pantalla consume demasiados vatios, dejando sin energía a la tarjeta Wi-Fi.",
+		  "El Auxiliar olvidó conectar los pequeños cables coaxiales de antena (Main y Aux) que bajan desde la pantalla hasta la tarjeta de red inalámbrica M.2 de la placa base.",
+		  "El cristal de la pantalla nueva bloquea las ondas electromagnéticas de 2.4 GHz.",
+		  "La dirección MAC de la tarjeta Wi-Fi se ha borrado al desconectar la batería."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las antenas Wi-Fi de los portátiles no están en la placa base, están escondidas detrás del marco de la pantalla (para tener mejor cobertura). Para cambiar la pantalla, a menudo hay que desconectar esos diminutos cables coaxiales de la tarjeta Wi-Fi. Si olvidas volver a 'cliparlos', la tarjeta se queda sin antena y la cobertura cae casi a cero."
+	  },
+	  {
+		"pregunta": "Si al encender el PC aparece un mensaje de la BIOS similar a 'Keyboard error or no keyboard present' pero a continuación añade el texto 'Press F1 to continue, DEL to enter Setup', ¿qué nos indica a nivel lógico este mensaje contradictorio (pulsar una tecla si no hay teclado)?",
+		"opciones": [
+		  "Es un error de traducción de la BIOS UEFI de chino a inglés.",
+		  "El sistema te pide que enchufes un teclado en ese momento. Una vez enchufado (siendo USB plug & play), podrás pulsar F1 sin necesidad de reiniciar el equipo.",
+		  "El procesador ha entrado en modo de suspensión profunda y no puede leer los puertos USB.",
+		  "La placa base ha quemado su controlador de E/S SuperIO."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Aunque históricamente era un chiste ('si no tengo teclado, cómo pulso F1'), en las BIOS/UEFI modernas y puertos USB, el sistema detiene el arranque porque no ve un dispositivo de entrada esencial. Está esperando a que físicamente vayas a por un teclado, lo conectes a un puerto USB, la BIOS lo detectará en caliente (hot-plug) y entonces podrás pulsar F1 para continuar."
+	  },
+	  {
+		"pregunta": "Al inspeccionar físicamente una placa base antigua que sufre cuelgues aleatorios e inestabilidad en los voltajes, el técnico observa que la parte superior metálica de unos pequeños cilindros negros (condensadores electrolíticos) está abombada hacia arriba, e incluso algunos han supurado un líquido marrón. ¿Qué indica esto?",
+		"opciones": [
+		  "Que el equipo tiene un virus que altera los voltajes (Overvolting).",
+		  "Que los condensadores están hinchados o 'reventados', una avería física grave muy común provocada por el desgaste, el exceso de calor o una fuente de alimentación de mala calidad.",
+		  "Que el usuario ha derramado café o refresco dentro de la torre.",
+		  "Que la placa base ha entrado en modo de rendimiento extremo, expandiendo los condensadores para almacenar más energía."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los condensadores hinchados o reventados ('bulging capacitors') son una de las causas físicas más comunes de muerte en placas base antiguas. Su función es estabilizar y filtrar la corriente. Si revientan por calor, mala calidad (como en la 'plaga de los condensadores' de los años 2000) o por el 'ruido' de una fuente de alimentación barata, el PC se vuelve totalmente inestable."
+	  },
+	  {
+		"pregunta": "Cuando hablamos de 'Cuello de botella' (Bottleneck) en el rendimiento de un equipo, especialmente visible en videojuegos o simulaciones 3D, ¿cómo sabrá el técnico que el procesador (CPU) está haciendo cuello de botella a la Tarjeta Gráfica (GPU)?",
+		"opciones": [
+		  "Monitorizando el uso de ambos: La CPU estará trabajando casi al 100% de uso, mientras que la GPU estará infrautilizada (por ejemplo, al 40% de carga).",
+		  "Monitorizando el uso de ambos: La GPU estará trabajando al 100% de uso y la CPU al 20%.",
+		  "Observando si el disco duro hace mucho ruido al cargar el juego.",
+		  "Comprobando si la temperatura de la gráfica supera los 80ºC."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Un cuello de botella se produce cuando el componente más lento no deja trabajar al componente más rápido. Si la gráfica es potentísima y capaz de procesar datos a toda velocidad, pero la CPU es vieja y lenta, la gráfica procesa sus fotogramas y se queda 'esperando' sin hacer nada a que la CPU le envíe los datos siguientes. Por eso la CPU estará a tope (saturada) y la gráfica medio dormida."
+	  },
+	  {
+		"pregunta": "Un disco duro SATA no puede formatearse porque Windows dice que 'está protegido contra escritura' o contiene una estructura rebelde de particiones GPT y Recuperación de otra marca de ordenador. ¿Qué herramienta de línea de comandos incluida en Windows utilizará un técnico experimentado para 'limpiar' y borrar de forma bruta todas las particiones del disco?",
+		"opciones": [
+		  "format C: /q",
+		  "chkdsk /f",
+		  "diskpart (usando los comandos 'select disk' y 'clean').",
+		  "sfc /scannow"
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Cuando el Administrador de discos gráfico de Windows no te deja borrar ciertas particiones de sistema ocultas (OEM, Recuperación, EFI), la herramienta de consola 'Diskpart' es la solución. Seleccionas el disco correcto (select disk X) y ejecutas 'clean'. Esto borra toda la información de particionado del disco de un plumazo, dejándolo en blanco (No asignado)."
+	  },
+	  {
+		"pregunta": "En un entorno empresarial, el técnico debe diagnosticar la placa base tras varios apagones. Extrae un módulo de memoria RAM y comprueba a trasluz las ranuras de la memoria y la ranura larga de la Tarjeta Gráfica (PCIe). ¿Cómo se limpian las ranuras de conexión (slots) de la placa base por dentro si sospechamos que hay polvo denso interfiriendo?",
+		"opciones": [
+		  "Con un bastoncillo humedecido en alcohol rebajado con agua del grifo.",
+		  "Aplicando aire comprimido en spray o un soplador, y opcionalmente rociando un limpiador de contactos eléctricos de residuo cero (Contact Cleaner).",
+		  "Introduciendo un clip metálico raspando los laterales internos de la ranura.",
+		  "Conectando y desconectando la memoria 50 veces seguidas muy rápido."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El polvo en las ranuras puede provocar que el PC no arranque ('falsos contactos'). La forma profesional de limpiarlo es soplando el polvo con aire a presión y, si la suciedad es pegajosa, usar un spray dieléctrico 'limpiacontactos' (Zero residue contact cleaner) que se evapora al instante sin dañar plásticos ni cortocircuitar componentes."
+	  },
+	  {
+		"pregunta": "Un Auxiliar observa que una de las luces del frontal de la torre del PC de un usuario (generalmente de color rojo o amarillo y con el icono de un cilindro) se queda permanentemente encendida sin parpadear, y el ordenador se ha quedado completamente congelado (no responde el ratón ni el teclado). ¿Qué está indicando físicamente esta luz en ese preciso momento?",
+		"opciones": [
+		  "Que el disco duro/SSD está en un estado de 'colapso', intentando leer o escribir continuamente al 100% sin éxito (por avería o fallo de paginación crítico).",
+		  "Que la placa base ha perdido el acceso a internet.",
+		  "Que el procesador ha entrado en modo Turbo Boost (máximo rendimiento).",
+		  "Que se está ejecutando una actualización del antivirus en segundo plano de forma normal."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El LED de actividad del disco de la caja del PC está conectado a la placa base y parpadea cuando hay lectura/escritura en el almacenamiento. Si se queda fijo ininterrumpidamente y el PC se congela, significa que el sistema operativo está esperando a que el disco duro le devuelva una información vital, pero el disco se ha quedado trabado y no responde, provocando un cuelgue general del sistema."
+	  },
+	  {
+		"pregunta": "Al intentar diagnosticar un equipo, el técnico debe probar otra fuente de alimentación, pero la torre (chasis) es de formato ultra-compacto ('SFF' o Small Form Factor) como las que usa la Junta de Extremadura en las mesas. Si intenta meter una fuente ATX estándar de su taller, verá que no cabe físicamente. ¿Qué formato de fuente de alimentación más pequeña necesita buscar?",
+		"opciones": [
+		  "SFX o TFX.",
+		  "Micro-ATX.",
+		  "PCI-E Power.",
+		  "USB-C Power Delivery."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Las cajas pequeñas (SFF) o cubos requieren fuentes de alimentación diseñadas específicamente para espacios reducidos. Los formatos estandarizados más comunes para sustituir fuentes en equipos pequeños son SFX (más cuadrado pero pequeño) y TFX (alargado y estrecho). ATX y Micro-ATX son tamaños de placa base, aunque ATX también designa a la fuente grande estándar."
+	  },
+	  {
+		"pregunta": "Al diagnosticar la estabilidad de la Memoria RAM con un programa de testeo intensivo (como MemTest86 ejecutado desde USB), ¿cómo sabe el técnico cuándo dar la prueba por buena y confiar en que los módulos de memoria RAM y la placa no tienen defectos?",
+		"opciones": [
+		  "Si el programa no encuentra fallos durante los primeros 2 minutos de la prueba.",
+		  "Si el equipo no se apaga repentinamente al pulsar iniciar.",
+		  "Se debe dejar el test realizando múltiples 'pasadas' (Passes) completas; si tras 3 o 4 pasadas (lo que puede llevar varias horas) el recuento de errores (Errors) sigue a 0, la memoria está sana.",
+		  "Si la temperatura de los módulos no supera los 35ºC medidos con el láser."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las pruebas de memoria a nivel de hardware son muy lentas porque escriben y leen patrones complejos (ceros, unos, datos aleatorios) en cada rincón de los gigabytes de la RAM. Un error puede aparecer en el gigabyte número 15. Por ello, en el soporte técnico profesional, MemTest se suele dejar funcionando un mínimo de 2 a 4 pasadas completas (o toda la noche) para garantizar la estabilidad al 100%."
+	  },
+	  {
+		"pregunta": "Para concluir el Tema 3 de Averías y Benchmarks: Un Auxiliar repara el ordenador de un usuario sustituyendo el cable SATA de la unidad de DVD-ROM por uno nuevo. Al encender, de repente sale un humo denso y olor a plástico quemado desde la placa base, justo donde conectó un cable interno de la caja a unos pines marcados como 'IEEE 1394'. ¿Qué error de novato ha cometido?",
+		"opciones": [
+		  "Ha conectado el cable USB frontal de la caja en el cabezal Firewire (IEEE 1394).",
+		  "Ha encendido el equipo con la caja abierta, perdiendo la presión atmosférica.",
+		  "Ha conectado el cable del disco duro SATA al puerto de la unidad DVD.",
+		  "Ha configurado mal los voltios en la BIOS."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Es un error clásico de taller que arruina placas base. Los cables internos del panel frontal de la caja para los USB 2.0 y los cables para el antiguo puerto Firewire (IEEE 1394) utilizan exactamente el mismo bloque de plástico negro de 9 pines (con un pin ciego). Si metes el cable del USB frontal en el conector Firewire de la placa base (que envía 12 Voltios en lugar de los 5V del USB), en el instante que enciendas, quemarás los puertos, los pendrives conectados y parte de la placa."
+	  }
+  
+  ],
+  
+  "4": [
+  
+  ],
+  
+  
+  
+   "5": [
+  
+  ],
+  
+  
+
+  "6": [
+  
+  ], 
+
+
+  
+	"7": [
+  
+  ],
+  
+  
+  
+   "8": [
+  
+  ],
+  
+  
+
+  "9": [
+  
+  ], 
+  
+  
+    "10": [
+  
+  ],
+  
+  
+  
+   "11": [
+  
+  ],
+  
+  
+
+  "12": [
+  
+  ], 
+  
+  
+    "13": [
+  
+  ],
+  
+  
+  
+   "14": [
+  
+  ],
+  
+  
+
+  "15": [
+  
+  ], 
+  
+  
+    "16": [
+  
+  ],
+  
+  
+  
+   "17": [
+  
+  ],
+  
+  
+
+  "18": [
+  
+  ], 
+  
+  
+    "19": [
+  
+  ],
+  
+  
+  
+   "20": [
+  
+  ],
+  
+  
+
+  "21": [
+  
+  ], 
+  
+  
+    "22": [
+  
+  ],
+  
+  
+  
+   "23": [
+  
+  ],
+  
+  
+
+  "24": [
+  
+  ], 
+  
+  
+    "25": [
+  
   ]
+  
 }

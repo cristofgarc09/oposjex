@@ -1037,7 +1037,7 @@
 		  "Asynchronous Data Frame (Trama de Datos Asíncrona)."
 		],
 		"respuesta_correcta": 1,
-		"explicacion": "ADF (Automatic Document Feeder) es la bandeja superior que tienen las fotocopiadoras y escáneres que permite colocar un taco de hojas para que la máquina las vaya "tragando" y escaneando de forma automática, sin que el usuario tenga que levantar la tapa para ponerlas de una en una."
+		"explicacion": "ADF (Automatic Document Feeder) es la bandeja superior que tienen las fotocopiadoras y escáneres que permite colocar un taco de hojas para que la máquina las vaya 'tragando' y escaneando de forma automática, sin que el usuario tenga que levantar la tapa para ponerlas de una en una."
 	  },
 	  {
 		"pregunta": "En relación a los discos de estado sólido (SSD) modernos, ¿qué ventaja fundamental ofrece el protocolo NVMe frente al estándar SATA III tradicional?",

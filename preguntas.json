@@ -2763,6 +2763,886 @@
   ],
   
   "4": [
+		{
+		"pregunta": "En un disco duro mecánico tradicional (HDD), la superficie de los platos magnéticos se divide en pistas concéntricas. A su vez, estas pistas se dividen en la unidad mínima de asignación física de almacenamiento del disco. ¿Cómo se llama esta unidad?",
+		"opciones": [
+		  "Clúster.",
+		  "Cilindro.",
+		  "Sector.",
+		  "Bloque lógico."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El 'Sector' es la unidad mínima física de almacenamiento en un disco duro (tradicionalmente de 512 bytes, hoy en día de 4096 bytes o 4K). El 'Clúster' (o unidad de asignación) es una agrupación lógica de sectores gestionada por el Sistema de Archivos del Sistema Operativo, no por el hardware físico."
+	  },
+	  {
+		"pregunta": "¿Cuál es la diferencia fundamental en la forma de entregar los datos entre una red de almacenamiento SAN (Storage Area Network) y un dispositivo NAS (Network Attached Storage)?",
+		"opciones": [
+		  "El NAS utiliza cables de fibra óptica exclusivamente, mientras que la SAN usa Wi-Fi.",
+		  "La SAN entrega almacenamiento a nivel de 'bloques' (como si fuera un disco duro local físico conectado al servidor), mientras que el NAS entrega almacenamiento a nivel de 'archivos' a través de la red.",
+		  "El NAS requiere un sistema operativo de servidor como Windows Server, mientras que la SAN no tiene sistema operativo.",
+		  "La SAN solo se puede formatear en FAT32 y el NAS en NTFS."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es LA pregunta estrella del tema. SAN funciona a nivel de bloques (Block-level); el servidor que se conecta a la SAN se encarga de dar formato a esos bloques (NTFS, VMFS...). NAS funciona a nivel de archivos (File-level); el propio NAS tiene su sistema de archivos interno y te comparte los archivos ya estructurados mediante protocolos como SMB o NFS."
+	  },
+	  {
+		"pregunta": "Dentro de la tecnología de celdas de memoria flash NAND utilizadas en los Discos de Estado Sólido (SSD), ¿qué tipo de celda ofrece mayor capacidad de almacenamiento al guardar 4 bits por celda, pero sufre de una menor durabilidad (ciclos de escritura) y menor velocidad?",
+		"opciones": [
+		  "SLC (Single-Level Cell).",
+		  "MLC (Multi-Level Cell).",
+		  "TLC (Triple-Level Cell).",
+		  "QLC (Quad-Level Cell)."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "QLC almacena 4 bits por celda. Esto permite fabricar SSDs de mucha capacidad y muy baratos, pero al tener que distinguir 16 niveles de voltaje diferentes en una celda microscópica, son más lentos y su vida útil (TBW) es considerablemente inferior a las memorias SLC, MLC o TLC."
+	  },
+	  {
+		"pregunta": "En el software de copias de seguridad (Backup), un usuario realiza una copia completa (Full) el domingo. El lunes, martes y miércoles realiza copias que guardan ÚNICAMENTE los archivos que han cambiado desde el domingo (la última copia completa). ¿Qué tipo de copia de seguridad está realizando?",
+		"opciones": [
+		  "Copia de seguridad Incremental.",
+		  "Copia de seguridad Diferencial.",
+		  "Copia de seguridad en Espejo.",
+		  "Copia de seguridad Sintética."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La copia Diferencial guarda todos los cambios realizados desde la ÚLTIMA copia COMPLETA. Cada día que pasa, la copia diferencial ocupa más. La copia Incremental guarda solo los cambios desde la última copia realizada (sea del tipo que sea), ocupando menos espacio pero siendo más lenta de restaurar."
+	  },
+	  {
+		"pregunta": "Cuando un usuario vacía la Papelera de Reciclaje en un equipo con un disco duro mecánico (HDD), ¿qué sucede a nivel físico con los archivos eliminados en ese mismo instante?",
+		"opciones": [
+		  "El disco duro escribe ceros sobre los sectores donde estaban los archivos para destruirlos permanentemente.",
+		  "El sistema operativo envía el archivo a una partición oculta de recuperación en la nube.",
+		  "El sistema operativo elimina los apuntadores en la tabla maestra de archivos (MFT), marcando el espacio como 'libre', pero los datos reales siguen físicamente en los platos hasta que sean sobrescritos por un archivo nuevo.",
+		  "El cabezal de lectura/escritura aplica un campo magnético inverso para desmagnetizar esa pista."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Al 'borrar' un archivo, Windows no se molesta en borrar físicamente los gigabytes de datos (sería muy lento). Simplemente borra el índice que dice dónde está el archivo y le dice al sistema: 'este espacio está libre para usarse'. Por eso herramientas como Recuva pueden recuperar archivos borrados, siempre y cuando no hayamos guardado cosas nuevas encima."
+	  },
+	  {
+		"pregunta": "En los entornos corporativos con almacenamiento SAN, se suele utilizar un protocolo específico diseñado para encapsular los comandos de almacenamiento SCSI tradicionales y enviarlos a través de una red estándar TCP/IP (Ethernet) en lugar de utilizar costosas redes de Fibre Channel. ¿Cuál es este protocolo?",
+		"opciones": [
+		  "iSCSI (Internet Small Computer Systems Interface).",
+		  "SMTP (Simple Mail Transfer Protocol).",
+		  "FTP (File Transfer Protocol).",
+		  "HTTP (Hypertext Transfer Protocol)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "iSCSI permite crear redes de área de almacenamiento (SAN) utilizando el cableado y los switches Ethernet estándar (RJ45) de la empresa. Engaña al sistema operativo encapsulando los comandos SCSI dentro de paquetes de red TCP/IP, haciéndole creer que el disco está pinchado localmente."
+	  },
+	  {
+		"pregunta": "En las herramientas software de compresión de datos (como WinRAR o 7-Zip), ¿qué tipo de compresión se utiliza por definición para los documentos ofimáticos, bases de datos o ejecutables, garantizando que al descomprimir se recupere el archivo exacto original, bit a bit?",
+		"opciones": [
+		  "Compresión Asimétrica.",
+		  "Compresión con pérdida (Lossy).",
+		  "Compresión sin pérdida (Lossless).",
+		  "Compresión Cuántica."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Para documentos, programas y datos críticos, es obligatorio usar algoritmos 'Sin pérdida' (Lossless, como DEFLATE o LZMA). Cada coma y cada punto deben restaurarse intactos. La compresión 'Con pérdida' (Lossy) solo se usa en archivos multimedia (MP3, JPEG, MP4) donde perder algo de detalle no arruina el archivo."
+	  },
+	  {
+		"pregunta": "Para prolongar la vida útil de las memorias Flash NAND en pendrives y SSDs, el controlador interno del dispositivo distribuye de forma inteligente e intencionada las operaciones de escritura/borrado por todos los bloques disponibles de la memoria, evitando reescribir siempre en el mismo sitio. ¿Cómo se denomina esta técnica?",
+		"opciones": [
+		  "Defragmentación dinámica.",
+		  "Wear Leveling (Nivelación de desgaste).",
+		  "Over-provisioning (Sobre-aprovisionamiento).",
+		  "TRIM en cascada."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Wear Leveling' es un algoritmo del firmware del controlador flash. Como las celdas de memoria mueren al cabo de miles de escrituras, el controlador se asegura de que todas las celdas se desgasten por igual, moviendo los datos estáticos de sitio para usar sus celdas 'frescas' con los archivos dinámicos."
+	  },
+	  {
+		"pregunta": "La mejor política proactiva para que una organización pueda recuperarse de un ataque de ransomware (virus que cifra los datos) que haya infectado la red local y los discos conectados, es seguir la regla '3-2-1' del backup. ¿Qué significa el '1' en esta regla?",
+		"opciones": [
+		  "Realizar el backup en 1 solo clic.",
+		  "Mantener al menos 1 copia en un formato de archivo sin comprimir.",
+		  "Mantener al menos 1 de las copias de seguridad fuera de las instalaciones (Offsite) o totalmente desconectada (Offline) de la red.",
+		  "Hacer backup de 1 solo servidor a la vez para no saturar la red."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La regla 3-2-1 indica: mantener 3 copias de los datos, usar 2 soportes o medios diferentes (ej. disco y cinta), y guardar 1 de ellas fuera de la oficina o 'Air-gapped' (desconectada). Esta última es la única que sobrevive a un ransomware, ya que el virus no puede alcanzar un disco que está apagado y guardado en un cajón o en otro edificio."
+	  },
+	  {
+		"pregunta": "En entornos Windows, si los usuarios necesitan compartir carpetas y acceder a archivos almacenados centralmente en un NAS corporativo, ¿cuál es el protocolo de red estándar y nativo que utilizarán sus equipos para acceder a esos archivos?",
+		"opciones": [
+		  "NFS (Network File System).",
+		  "SMB / CIFS (Server Message Block).",
+		  "SNMP (Simple Network Management Protocol).",
+		  "Telnet."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "SMB (Server Message Block), también conocido antiguamente como CIFS, es el protocolo por excelencia de Microsoft Windows para compartir archivos, impresoras y rutas de red. NFS es el equivalente clásico en entornos Unix/Linux."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe clonar un disco duro viejo que está empezando a fallar y tiene múltiples 'sectores defectuosos' (bad sectors) ilegibles, hacia un disco nuevo, ¿qué precaución o ajuste debe tener en el software de clonación (como Clonezilla o ddrescue)?",
+		"opciones": [
+		  "Configurar la clonación a nivel de archivos, no de sectores.",
+		  "Configurar la clonación 'Sector a Sector' habilitando la opción para ignorar/saltar los errores de lectura y continuar el proceso.",
+		  "Aplicar compresión ZIP al vuelo para evitar copiar los sectores dañados.",
+		  "Formatear el disco nuevo a FAT32 antes de lanzar la copia MBR."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Si usamos clonación normal y el programa choca con un sector físico dañado, se bloqueará o cancelará la copia con error. Herramientas avanzadas como 'ddrescue' o el modo experto de Clonezilla permiten activar el salto automático de errores: clonan lo sano, rellenan de ceros lo que no pueden leer, y siguen adelante para salvar lo máximo posible."
+	  },
+	  {
+		"pregunta": "Un compañero de la Administración ha borrado accidentalmente una tabla de una base de datos crítica. Afortunadamente, el sistema de copias de seguridad de Windows Server estaba configurado para usar la tecnología VSS, que permite hacer copias de archivos incluso mientras están abiertos o bloqueados por el usuario. ¿Qué significan las siglas VSS?",
+		"opciones": [
+		  "Virtual Storage System.",
+		  "Volume Shadow Copy Service.",
+		  "Versatile Security Software.",
+		  "Virus Scan & Save."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Volume Shadow Copy Service (VSS o Instantáneas de volumen) es un servicio crítico de Windows. Permite a los programas de backup tomar una 'fotografía' (snapshot) del disco en un instante exacto y copiarla, sin necesidad de pedirle a todos los usuarios que cierren sus archivos de Word o bases de datos para no dar error de 'archivo en uso'."
+	  },
+	  {
+		"pregunta": "En el contexto de la recuperación de datos forense, cuando el sistema de archivos (NTFS, FAT) está totalmente destruido o el disco ha sido formateado a bajo nivel, los técnicos utilizan una técnica llamada 'File Carving' (Talla de archivos) con herramientas como PhotoRec. ¿En qué se basa esta técnica?",
+		"opciones": [
+		  "En leer el registro de Windows buscando la última fecha de modificación.",
+		  "En adivinar la contraseña de cifrado mediante fuerza bruta.",
+		  "En buscar patrones de datos conocidos (cabeceras o 'números mágicos' y pies de archivo) directamente en los bloques brutos del disco para reconstruir archivos sin importar su nombre o carpeta original.",
+		  "En recuperar los archivos desde la memoria RAM del ordenador."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Al destruirse el índice, el ordenador no sabe dónde empiezan ni acaban los archivos. El File Carving lee el disco a nivel bruto buscando las firmas hexadécimales conocidas (por ejemplo, los archivos JPEG siempre empiezan por 'FF D8 FF E0'). Cuando la encuentra, 'talla' o recorta ese trozo de datos asumiendo que es una foto, aunque haya perdido su nombre original."
+	  },
+	  {
+		"pregunta": "Entre las herramientas clásicas de recuperación de particiones y reparación de sectores de arranque perdidos desde la línea de comandos, existe una utilidad de código abierto, muy ligera e incluida en casi todos los LiveCD de rescate (como Hiren's o SystemRescueCd), desarrollada por CGSecurity. ¿Cuál es su nombre?",
+		"opciones": [
+		  "TestDisk.",
+		  "Piriform Recuva.",
+		  "Acronis True Image.",
+		  "Norton Ghost."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "TestDisk es el estándar de oro en software libre para recuperar particiones borradas por accidente, reconstruir tablas de particiones y reparar sectores de arranque fat. Recuva es para recuperar archivos borrados simples. Acronis y Ghost son software comercial de clonación/backup."
+	  },
+	  {
+		"pregunta": "Para aumentar el rendimiento y abaratar costes, muchos SSD modernos de tipo TLC o QLC incorporan un truco en su firmware: utilizan una porción de su capacidad configurada para escribir un solo bit por celda (muy rápido) antes de pasar los datos a su estado final más lento. ¿Cómo se llama esta tecnología de almacenamiento en caché?",
+		"opciones": [
+		  "Caché L3 de silicio.",
+		  "Caché pseudo-SLC (SLC Caching).",
+		  "Memoria Optane.",
+		  "Paginación de Windows."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La caché SLC (Single-Level Cell) es vital en los SSD baratos actuales. Cuando copias un archivo, el SSD lo escribe rapidísimo en esta caché SLC. Si el archivo es gigantesco y la caché se llena, el SSD tiene que empezar a escribir directamente en la memoria TLC/QLC pura, provocando un bajón de velocidad drástico en la transferencia (a veces cayendo a velocidades de disco mecánico)."
+	  },
+	  {
+		"pregunta": "¿Qué nombre recibe el sistema de almacenamiento externo de altísimo rendimiento, muy habitual en centros de datos, que no es un único dispositivo aislado (NAS) sino una red entera dedicada exclusivamente a interconectar servidores con matrices de discos (Disk Arrays) y librerías de cintas magnéticas?",
+		"opciones": [
+		  "Cloud público distribuido.",
+		  "LAN (Local Area Network).",
+		  "SAN (Storage Area Network).",
+		  "DAS (Direct Attached Storage)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La Red de Área de Almacenamiento (SAN) es una red paralela a la red de usuarios (LAN), construida con hardware especializado (switches Fibre Channel, HBAs) y diseñada exclusivamente para mover enormes bloques de datos entre servidores y cabinas de almacenamiento a velocidades de vértigo, sin saturar la red de las oficinas."
+	  },
+	  {
+		"pregunta": "El formato de compresión 7z (del programa 7-Zip) se ha vuelto extremadamente popular en la administración de sistemas debido a su alto ratio de compresión en comparación con el formato ZIP clásico. ¿Qué potente algoritmo de compresión utiliza el formato 7z por defecto?",
+		"opciones": [
+		  "Algoritmo RSA-2048.",
+		  "Algoritmo LZMA (Lempel-Ziv-Markov chain-Algorithm).",
+		  "Algoritmo Huffman estático.",
+		  "Algoritmo SHA-256."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "LZMA (y su mejora LZMA2) es el motor matemático detrás de la enorme capacidad de compresión de 7-Zip. RSA es cifrado asimétrico, Huffman es una parte de muchos algoritmos (incluido zip) pero no el motor principal moderno, y SHA-256 es una función Hash para verificar integridad, no para comprimir."
+	  },
+	  {
+		"pregunta": "Para mejorar la velocidad o la redundancia en los dispositivos NAS que tienen varias tarjetas de red físicas (varios puertos RJ45), se puede configurar el software para que agrupe esas tarjetas y actúen como un único enlace lógico de mayor ancho de banda. ¿Cómo se denomina técnicamente esta agrupación?",
+		"opciones": [
+		  "Port Forwarding.",
+		  "Spanning Tree Protocol (STP).",
+		  "Link Aggregation (Agregación de enlaces, como LACP).",
+		  "Network Address Translation (NAT)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La agregación de enlaces (Link Aggregation, NIC Teaming, o el protocolo LACP 802.3ad) permite unir 2 cables de red de 1 Gigabit para crear una 'tubería' lógica de 2 Gigabits hacia el switch. Además de dar más velocidad cuando varios usuarios acceden al NAS, proporciona tolerancia a fallos si uno de los cables se rompe."
+	  },
+	  {
+		"pregunta": "Si vas a realizar una clonación de seguridad del disco duro completo de un usuario de la Junta hacia un disco duro externo USB, creando un archivo de imagen (ej. un archivo .tib o .mrimg), ¿qué limitación crucial debes recordar sobre el disco externo de destino si este está formateado en FAT32?",
+		"opciones": [
+		  "Que no podrás acceder a él desde puertos USB 3.0.",
+		  "Que FAT32 no puede almacenar archivos individuales que superen los 4 Gigabytes de tamaño, por lo que el archivo de imagen deberá dividirse (partirse) automáticamente en trozos más pequeños.",
+		  "Que FAT32 corrompe automáticamente las imágenes de discos de 64 bits.",
+		  "Que la clonación tardará un 50% más de tiempo por la fragmentación de FAT32."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Es un problema muy clásico. Una imagen de un disco C: de un usuario puede pesar 80 GB perfectamente. Si el disco duro externo del Auxiliar está en FAT32, el archivo chocará contra el límite de 4 GB. Los programas de clonación modernos (Acronis, Macrium) detectan esto y 'trocean' la copia en múltiples archivos (imagen.001, imagen.002...), o lo ideal es formatear el disco externo en NTFS/exFAT."
+	  },
+	  {
+		"pregunta": "Dentro del ecosistema de las memorias Flash en formato tarjeta, habitualmente usadas en dispositivos portátiles, ¿qué estándar se desarrolló específicamente para ofrecer altas velocidades sostenidas de lectura y escritura exigidas en la grabación de vídeo profesional, utilizando una interfaz basada en PCI Express?",
+		"opciones": [
+		  "CompactFlash (CF).",
+		  "MicroSDHC.",
+		  "CFexpress (y XQD).",
+		  "Memory Stick PRO Duo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "CFexpress (la evolución del XQD) es el formato actual para cámaras y equipos de grabación de alta gama. Al basarse en el protocolo NVMe/PCIe, alcanza velocidades masivas de Gigabytes por segundo. Las SD o MicroSD normales no llegan a esas tasas de transferencia."
+	  },
+	  {
+		"pregunta": "Cuando un Auxiliar de Informática necesita recuperar un archivo de Word borrado por error usando un software de recuperación (como Recuva o TestDisk), ¿cuál es la 'Regla de Oro' absoluta que debe cumplir para no destruir el archivo para siempre?",
+		"opciones": [
+		  "Instalar el software de recuperación y guardar el archivo recuperado en la misma partición donde estaba el archivo borrado original.",
+		  "Formatear la unidad en formato FAT32 antes de pasar el software de recuperación para agilizar la lectura.",
+		  "Ejecutar el software en modo 'Solo Lectura' y guardar los datos recuperados obligatoriamente en un disco duro o pendrive diferente al averiado.",
+		  "Reiniciar el ordenador al menos 3 veces seguidas para vaciar la memoria RAM antes de recuperar."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Al borrar un archivo, su espacio queda marcado como 'libre'. Si instalas el programa de recuperación en ese disco, o si guardas el archivo rescatado en ese mismo disco, corres el riesgo altísimo de sobrescribir físicamente los datos de tu propio archivo perdido, destruyéndolo para siempre."
+	  },
+	  {
+		"pregunta": "En entornos de almacenamiento empresarial (SAN), el espacio físico de los discos se agrupa y se presenta a los servidores conectados a través de la red de fibra óptica como si fueran discos duros locales independientes. ¿Qué siglas en inglés definen a cada uno de estos volúmenes lógicos asignados a un servidor?",
+		"opciones": [
+		  "LAN (Local Area Network).",
+		  "LUN (Logical Unit Number).",
+		  "VLAN (Virtual LAN).",
+		  "SSD (Solid State Drive)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En una SAN (Storage Area Network), a los 'trozos' de almacenamiento que se recortan de la cabina y se asignan a un servidor específico se les denomina LUNs (Número de Unidad Lógica). Para el sistema operativo del servidor, una LUN aparece exactamente igual que un disco duro físico local recién pinchado."
+	  },
+	  {
+		"pregunta": "En las especificaciones técnicas de un Disco de Estado Sólido (SSD), ¿qué indica el valor conocido como TBW (Terabytes Written)?",
+		"opciones": [
+		  "La velocidad máxima de transferencia sostenida al grabar archivos de vídeo.",
+		  "La capacidad total de almacenamiento formateado de la unidad.",
+		  "La resistencia o vida útil garantizada del SSD, expresada en la cantidad total de Terabytes que se pueden escribir en él antes de que las celdas de memoria fallen.",
+		  "El ancho de banda consumido por el SSD en una red NAS."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "TBW (Terabytes Escritos) es la medida de resistencia de un SSD. Dado que las memorias Flash se degradan con cada ciclo de escritura y borrado, los fabricantes garantizan que el disco sobrevivirá al menos a 'X' Terabytes escritos. Un TBW típico para un SSD de 1TB ofimático suele ser de unos 600 TBW."
+	  },
+	  {
+		"pregunta": "Si un departamento adquiere un lote de 20 ordenadores idénticos, el procedimiento estándar es instalar Windows y los programas en uno solo (equipo maestro) y luego clonar su disco al resto. Para evitar conflictos de red y problemas con el dominio debido a identificadores duplicados (SID), ¿qué herramienta de Microsoft debe ejecutarse en el equipo maestro justo antes de clonarlo?",
+		"opciones": [
+		  "Diskpart.",
+		  "Sysprep (System Preparation Tool).",
+		  "Chkdsk.",
+		  "Regedit."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Sysprep es indispensable al clonar Windows de forma masiva. Esta herramienta elimina la información específica del sistema (como el SID, el nombre del equipo y los drivers específicos) y prepara el equipo. Al encender las copias clonadas, Windows pasará por una mini-instalación (OOBE) creando un ID nuevo y único para cada PC."
+	  },
+	  {
+		"pregunta": "Dentro de las estrategias de copias de seguridad, ¿cuál es la principal desventaja de realizar un esquema basado en 'Copias Incrementales' frente a uno basado en 'Copias Diferenciales'?",
+		"opciones": [
+		  "La copia incremental tarda mucho más tiempo en realizarse cada noche.",
+		  "La copia incremental ocupa muchísimo más espacio en el disco duro del servidor de backups.",
+		  "En caso de desastre, el proceso de restauración es más lento y frágil, ya que requiere restaurar la última copia Completa y, posteriormente, todas y cada una de las copias incrementales sucesivas en estricto orden.",
+		  "Las copias incrementales no permiten guardar archivos en uso (bloqueados)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El backup incremental guarda solo lo modificado respecto al día anterior. Es muy rápido de hacer y ocupa poco. Pero para restaurar un viernes, necesitas la Completa del domingo + el incremento del lunes + el del martes + miércoles + jueves + viernes. Si el archivo del miércoles está corrupto, no podrás restaurar los días siguientes."
+	  },
+	  {
+		"pregunta": "Es común en la Administración pública encontrarse con pendrives de usuarios que, al insertarlos en el equipo, parecen estar vacíos o solo muestran accesos directos (.lnk) en lugar de las carpetas originales debido a un virus. Si el antivirus ya ha limpiado el bicho, ¿qué comando de consola desoculta masivamente los archivos recuperando sus atributos originales?",
+		"opciones": [
+		  "format F: /fs:ntfs",
+		  "attrib -h -r -s /s /d F:\\*.*",
+		  "sfc /scannow",
+		  "chkdsk F: /f"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El clásico virus de los accesos directos oculta tus carpetas dándoles atributo de 'Oculto' (h) y 'Sistema' (s), por lo que Windows no las muestra aunque actives 'Ver archivos ocultos'. El comando 'attrib' con los parámetros '-h -r -s /s /d' elimina esos atributos a todos los archivos y carpetas del pendrive (F:), volviéndolos visibles."
+	  },
+	  {
+		"pregunta": "Los servidores y sistemas NAS modernos en la Junta suelen utilizar la tecnología de 'Deduplicación de datos' (Data Deduplication) en sus volúmenes de almacenamiento. ¿Cuál es su objetivo principal?",
+		"opciones": [
+		  "Aumentar la velocidad del procesador al leer archivos pesados.",
+		  "Duplicar automáticamente todos los datos en dos discos distintos (RAID 1).",
+		  "Ahorrar espacio de almacenamiento al analizar los archivos a nivel de bloques y eliminar las copias redundantes, guardando solo una copia física del bloque y creando punteros para el resto.",
+		  "Cifrar los archivos con una clave AES de 256 bits para evitar el robo de datos."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La deduplicación es magia para ahorrar espacio. Si 50 usuarios guardan el mismo PDF de 10 MB del BOE en sus carpetas personales del servidor, en lugar de ocupar 500 MB, la deduplicación guarda el PDF una sola vez (10 MB) y crea 49 accesos directos invisibles a ese mismo bloque físico."
+	  },
+	  {
+		"pregunta": "A la hora de borrar de forma segura un Disco de Estado Sólido (SSD) antes de enviarlo a reciclaje o a otro departamento, no se debe utilizar el clásico método de sobrescribir el disco con ceros 7 veces (estándar DoD), ya que esto degrada enormemente la memoria flash. ¿Qué comando interno deben invocar las herramientas de borrado seguro para los SSD?",
+		"opciones": [
+		  "Defrag /optimize.",
+		  "ATA Secure Erase (o NVMe Format).",
+		  "Fdisk.",
+		  "Chkdsk /f /r."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El comando ATA Secure Erase envía una instrucción eléctrica directamente al controlador del SSD. Este aplica un pico de voltaje simultáneo a todos los bloques de memoria flash, borrando los electrones de las celdas en pocos segundos, o simplemente destruye la clave de cifrado interna (borrado criptográfico), inutilizando los datos sin desgastar la unidad."
+	  },
+	  {
+		"pregunta": "En la gestión de planes de recuperación ante desastres (Disaster Recovery), se manejan dos métricas de tiempo cruciales: RTO y RPO. ¿A qué hace referencia el RPO (Recovery Point Objective)?",
+		"opciones": [
+		  "Al tiempo máximo que el servicio puede estar caído antes de que la administración se paralice.",
+		  "A la cantidad máxima de datos (medida en tiempo) que la organización está dispuesta a perder desde el último backup hasta que se produce el desastre.",
+		  "Al presupuesto económico asignado al departamento de TI para recuperar los datos.",
+		  "Al número de copias de seguridad guardadas en una ubicación remota."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "RPO (Recovery Point Objective) es el 'Punto de Recuperación'. Si tu RPO es de 24 horas, haces un backup diario por la noche. Si el servidor arde a las 17:00h, perderás todo el trabajo hecho ese día. Si tu RPO es de 1 hora, tendrás que hacer copias (o instantáneas) cada hora para no perder más de 60 minutos de datos."
+	  },
+	  {
+		"pregunta": "Para la compresión de bases de datos antiguas o expedientes masivos de texto, los programas como 7-Zip o WinRAR ofrecen la opción de crear un archivo 'Sólido' (Solid Archive). ¿Qué característica técnica tiene un archivo comprimido sólido?",
+		"opciones": [
+		  "Está protegido mediante encriptación por hardware para evitar la modificación de su contenido.",
+		  "Comprime todos los archivos juntos como si fueran un único flujo de datos continuo, logrando un ratio de compresión mucho mayor, pero haciendo más lenta la extracción de un archivo individual.",
+		  "Garantiza que el archivo no se fragmentará en el disco duro al guardarse.",
+		  "Es un formato que no utiliza algoritmos matemáticos, sino que elimina las vocales de los textos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La compresión sólida junta mil pequeños archivos de Word en uno solo gigante antes de comprimirlos. Como hay muchas palabras repetidas entre los distintos documentos, el algoritmo ahorra muchísimo espacio. La pega es que si luego quieres extraer solo el Word nº 999, el programa tiene que descomprimir secuencialmente los 998 anteriores para llegar a él."
+	  },
+	  {
+		"pregunta": "Al diseñar un plan de continuidad de negocio para servidores críticos de la Junta, a menudo se exige que las herramientas de copia de seguridad permitan 'Restauración Bare-Metal' (BMR). ¿En qué consiste esta capacidad?",
+		"opciones": [
+		  "En restaurar únicamente los archivos de Word, Excel y PDF, ignorando los programas instalados.",
+		  "En recuperar los datos en un servidor Linux, aunque el original fuera un servidor Windows.",
+		  "En poder restaurar la imagen completa del sistema operativo, aplicaciones, configuraciones y datos directamente sobre un ordenador o servidor físico totalmente vacío, sin necesidad de instalar Windows previamente.",
+		  "En poder restaurar un disco duro sacando físicamente sus platos magnéticos en una cámara limpia."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Bare-Metal (Metal desnudo) significa hardware sin software. Una copia Bare-Metal es una imagen de bloque completo (normalmente en formato ISO o arranque por red PXE) que permite coger un servidor recién sacado de la caja de la tienda, y en 30 minutos dejarlo exactamente igual que el que se acaba de quemar, incluyendo el sistema operativo."
+	  },
+	  {
+		"pregunta": "Ciertos ordenadores portátiles de gama baja y tablets 2 en 1 que se entregan en el ámbito educativo utilizan almacenamiento interno soldado a la placa base que NO es un SSD NVMe ni SATA, sino un chip de memoria más lento y barato, derivado de las tarjetas SD. ¿Cómo se llama este estándar de almacenamiento?",
+		"opciones": [
+		  "eMMC (Embedded MultiMediaCard).",
+		  "Optane.",
+		  "SCSI.",
+		  "CompactFlash."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El eMMC es muy común en portátiles baratos de 32GB o 64GB (tipo Chromebooks). Es básicamente un chip de memoria Flash y su controlador integrados en un solo paquete soldado a la placa. Es más rápido que un HDD mecánico, pero considerablemente más lento que un SSD SATA o NVMe, y no se puede ampliar."
+	  },
+	  {
+		"pregunta": "En los dispositivos de almacenamiento conectado en red (NAS) empresariales que deben estar operativos 24/7, las bahías de los discos duros permiten su sustitución sin necesidad de apagar el servidor. ¿Cómo se denomina técnicamente a esta capacidad?",
+		"opciones": [
+		  "Overclocking.",
+		  "Hot-Swap (Extracción e Inserción en caliente).",
+		  "Cold-Boot.",
+		  "Daisy Chaining."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Hot-Swap permite extraer un disco duro averiado y meter uno nuevo mientras el NAS o el servidor sigue encendido y dando servicio a los usuarios. La controladora SATA/SAS o el Backplane del servidor están diseñados para tolerar la conexión eléctrica repentina sin colgar el sistema operativo."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe recuperar datos vitales de un disco duro mecánico que ha sufrido un 'Head Crash' (aterrizaje de los cabezales, rayando la superficie magnética de los platos y generando polvo metálico), ¿qué puede hacer en su taller mediante software?",
+		"opciones": [
+		  "Utilizar Clonezilla con el parámetro 'rescue' activado.",
+		  "Usar el comando chkdsk /r para reasignar los sectores rotos.",
+		  "Absolutamente nada; el disco debe ser apagado inmediatamente y enviado a un laboratorio especializado con 'Cámara Limpia' (Clean Room) para el trasplante de platos y lectura forense.",
+		  "Usar la herramienta Recuva en modo de escaneo profundo (Deep Scan)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un daño físico estructural en los platos (Head Crash) es una avería física catastrófica. Cualquier intento de encender el disco o usar software hará que el cabezal roto siga rayando los platos, destruyendo más datos. La única solución (que cuesta miles de euros) es un laboratorio con atmósfera purificada (Clase 100/ISO 5) donde abren el disco sin que entre ni una mota de polvo."
+	  },
+	  {
+		"pregunta": "La mayoría de las herramientas populares y gratuitas de clonación de discos (como Clonezilla) se distribuyen como una imagen ISO. ¿Por qué el técnico debe grabar esta ISO en un pendrive USB y arrancar el ordenador desde dicho USB, en lugar de instalar el programa como una aplicación normal dentro del Windows que quiere clonar?",
+		"opciones": [
+		  "Porque los programas de clonación tienen virus y es más seguro ejecutarlos fuera de Windows.",
+		  "Porque es imposible clonar la partición C: (sistema operativo) a nivel de bloque mientras Windows se está ejecutando desde ella, ya que cientos de archivos del sistema están bloqueados y en constante cambio.",
+		  "Para evitar que la herramienta consuma memoria RAM de Windows.",
+		  "Porque Clonezilla no es compatible con el sistema de archivos NTFS."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Clonar requiere copiar el disco bit a bit. Si Windows está encendido y copiando su propio disco C:, el registro, archivos de paginación y logs están cambiando cada milisegundo. La copia sería inconsistente (corrupta). Al arrancar desde un USB (Live OS), el disco de Windows queda 'congelado' e inactivo, permitiendo una copia perfecta y estática."
+	  },
+	  {
+		"pregunta": "En las configuraciones de formato de los discos duros, ¿cuál es la diferencia principal entre marcar la casilla de 'Formato Rápido' o desmarcarla (Formato Completo) en Windows?",
+		"opciones": [
+		  "El Formato Rápido instala el sistema FAT32, y el Completo instala NTFS.",
+		  "El Formato Completo escribe ceros en todo el disco y analiza sector a sector la superficie en busca de errores físicos, mientras que el Formato Rápido solo borra el índice de archivos (FAT/MFT), haciendo que el espacio parezca vacío en pocos segundos.",
+		  "El Formato Rápido no borra virus, el Completo sí.",
+		  "El Formato Completo fragmenta el disco para hacerlo más seguro frente a la clonación."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Formato Rápido es equivalente a arrancar el índice de un libro: el libro parece vacío y Windows escribirá encima, pero los datos antiguos siguen ahí (recuperables con Recuva). El Formato Completo, además de borrar el índice, pasa por todos los sectores del disco (por lo que tarda horas en discos grandes) verificando que están sanos."
+	  },
+	  {
+		"pregunta": "Uno de los ciberataques más devastadores para las Administraciones Públicas ocurre cuando un usuario abre un correo malicioso, y un virus comienza a cifrar en segundo plano todos los documentos de su ordenador y los del NAS compartido, cambiando las extensiones de los archivos y exigiendo el pago en criptomonedas para descifrarlos. ¿Cómo se denomina este ataque?",
+		"opciones": [
+		  "Phishing.",
+		  "Ransomware (Secuestro de datos).",
+		  "Ataque DDoS (Denegación de servicio distribuido).",
+		  "Troyano Keylogger."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Ransomware (Ransom = rescate, Software = programa) cifra (encripta) los archivos usando claves militares inaccesibles (AES o RSA). Te piden dinero para darte la clave que los descifra. La única salvaguarda efectiva para una institución no es pagar (nunca te garantizan la clave), sino borrar todo y restaurar una copia de seguridad."
+	  },
+	  {
+		"pregunta": "Para la compresión de archivos multimedia, la informática distingue entre algoritmos 'con pérdida' (lossy) y 'sin pérdida' (lossless). Si el departamento de prensa de la Junta nos envía un audio en formato FLAC y unas fotos en formato RAW, estamos ante archivos que utilizan algoritmos:",
+		"opciones": [
+		  "Con pérdida masiva para ocupar muy poco espacio, ideal para la web.",
+		  "Sin pérdida (lossless), donde el archivo conserva el 100% de los datos y la calidad de la grabación original del sensor o micrófono, aunque ocupen mucho más espacio en el almacenamiento.",
+		  "Cifrados mediante tecnología Blockchain.",
+		  "Comprimidos mediante el protocolo de red iSCSI."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Formatos como FLAC (audio), RAW (fotos) o ALAC son 'Lossless'. Al comprimirlos, funcionan como un ZIP: no se tira ningún dato a la basura, solo se reordenan para ahorrar algo de espacio. Formatos como MP3, JPEG o MP4 son 'Lossy': eliminan frecuencias de sonido inaudibles o reducen la paleta de colores para conseguir archivos muy pequeños (con pérdida de calidad)."
+	  },
+	  {
+		"pregunta": "Las tarjetas de memoria SD para uso profesional (ej. cámaras réflex institucionales) vienen marcadas con clases de velocidad UHS. Si una tarjeta SDXC tiene una segunda fila de pines dorados en su parte posterior que la tarjeta SD normal no tiene, estamos ante una tarjeta:",
+		"opciones": [
+		  "MicroSD con adaptador.",
+		  "UHS-II (o superior), donde la segunda fila de pines permite una transmisión de datos mucho mayor operando en modo Full Duplex (lee y escribe a la vez).",
+		  "eMMC integrada.",
+		  "Tarjeta inteligente (SmartCard) del DNIe."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El estándar UHS-II fue un rediseño de las tarjetas SD clásicas para superar sus límites de velocidad. Al añadir una fila extra de contactos eléctricos, multiplica el ancho de banda. Si insertas una UHS-II en un lector antiguo (UHS-I), funcionará igual, pero solo usará la primera fila de pines, bajando su velocidad."
+	  },
+	  {
+		"pregunta": "Al organizar el sistema de archivos de un almacenamiento en red (NAS) o servidor Windows (NTFS), se utiliza un mecanismo que mantiene un registro oculto de todos los cambios de metadatos (borrados, creaciones, permisos) antes de escribirlos definitivamente en el disco, lo que evita que el disco se corrompa si se va la luz a mitad de una escritura. ¿Cómo se llama esta característica de los sistemas de archivos modernos?",
+		"opciones": [
+		  "Wear Leveling.",
+		  "TRIM.",
+		  "Journaling (Sistema de archivos transaccional o por bitácora).",
+		  "Hot-Swapping."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El 'Journaling' (Bitácora) es la gran diferencia entre el antiguo FAT32 y el moderno NTFS, ext4 o APFS. El SO anota en el 'Journal' lo que va a hacer. Si hay un corte de luz, al encender, el SO lee el Journal, ve qué escritura se quedó a medias, y la cancela o la completa, evitando los temidos sectores cruzados y corrupciones."
+	  },
+	  {
+		"pregunta": "Al intentar recuperar un archivo borrado accidentalmente por un usuario, el Auxiliar utiliza un software de recuperación (como Recuva). Si el archivo estaba en un disco duro magnético (HDD) antiguo, se recupera sin problemas. Pero si estaba en un SSD moderno con Windows 10/11, el programa encuentra el archivo, pero al recuperarlo está totalmente vacío o lleno de ceros. ¿Por qué ocurre esto?",
+		"opciones": [
+		  "Porque los SSD cifran automáticamente todos los archivos borrados por seguridad.",
+		  "Porque el comando TRIM del sistema operativo ha avisado al controlador del SSD del borrado, y este ha vaciado físicamente las celdas de memoria en segundo plano para mantener el rendimiento.",
+		  "Porque el software de recuperación no tiene privilegios de Administrador.",
+		  "Porque la memoria Flash NAND requiere un voltaje especial de 12V para permitir la lectura en bruto."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es la gran pesadilla de la recuperación de datos moderna. En un HDD, los datos se quedan ahí hasta que se sobrescriben. En un SSD, el comando TRIM (activado por defecto) le dice al disco que borre físicamente esas celdas en sus ratos libres para que la próxima vez que haya que escribir, estén vacías y vaya más rápido. Una vez que TRIM actúa, los datos desaparecen para siempre."
+	  },
+	  {
+		"pregunta": "En las estrategias clásicas de rotación de cintas o discos para copias de seguridad, existe un esquema muy famoso denominado 'GFS' (Grandfather-Father-Son o Abuelo-Padre-Hijo). En este esquema, ¿qué tipo de copia representa habitualmente el 'Hijo'?",
+		"opciones": [
+		  "La copia de seguridad Anual, que se guarda indefinidamente.",
+		  "La copia de seguridad Mensual, que se guarda en una caja fuerte.",
+		  "La copia de seguridad Semanal completa.",
+		  "La copia de seguridad Diaria (normalmente incremental o diferencial), que es la que rota con mayor frecuencia."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "En el esquema GFS: los 'Hijos' son las copias diarias (rotan cada semana). Los 'Padres' son las copias completas semanales (rotan cada mes). Los 'Abuelos' son las completas mensuales (se suelen guardar un año o permanentemente). Es un sistema jerárquico perfecto para no quedarse sin espacio guardando copias."
+	  },
+	  {
+		"pregunta": "Para la clonación masiva de equipos en una red de la Junta, los técnicos utilizan a menudo un entorno de ejecución previo al arranque (Preboot eXecution Environment). ¿Cómo se conocen las siglas de este sistema que permite arrancar el PC desde la tarjeta de red para cargar una imagen de disco desde un servidor?",
+		"opciones": [
+		  "WOL (Wake On LAN).",
+		  "PXE.",
+		  "DHCP.",
+		  "VSS."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "PXE (se pronuncia 'Pixie') es el estándar que permite a un ordenador arrancar a través de la red local. La tarjeta de red pide una IP al DHCP, localiza el servidor de imágenes (ej. Windows Deployment Services o Clonezilla Server) y descarga el sistema operativo o el programa de clonación directamente en la RAM sin necesidad de USB ni CD."
+	  },
+	  {
+		"pregunta": "En una Red de Área de Almacenamiento (SAN) basada en la tecnología tradicional Fibre Channel (FC), los servidores necesitan una tarjeta de expansión específica para conectarse a los cables de fibra óptica de la cabina de discos. ¿Cuál es el nombre técnico de esta tarjeta?",
+		"opciones": [
+		  "NIC (Network Interface Card).",
+		  "GPU (Graphics Processing Unit).",
+		  "HBA (Host Bus Adapter).",
+		  "RAID Controller."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Mientras que para conectarse a una red LAN normal (Ethernet) usamos una NIC (tarjeta de red), para conectarse a una SAN por Fibre Channel utilizamos una HBA (Host Bus Adapter). Esta tarjeta descarga a la CPU del pesado procesamiento de los protocolos de almacenamiento y maneja las conexiones ópticas."
+	  },
+	  {
+		"pregunta": "Los programas de compresión de archivos (como 7-Zip, WinRAR o WinZip) no solo reducen el tamaño de los datos, sino que ofrecen una capa de seguridad vital para enviar documentos confidenciales por correo electrónico. ¿Qué estándar de cifrado robusto utilizan actualmente por defecto la mayoría de estas herramientas para proteger el archivo con contraseña?",
+		"opciones": [
+		  "WEP de 64 bits.",
+		  "AES de 256 bits (Advanced Encryption Standard).",
+		  "MD5 Hashing.",
+		  "Cifrado César."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "AES-256 es el estándar de cifrado militar adoptado a nivel mundial. Cuando le pones contraseña a un ZIP o un 7z moderno, el programa cifra el contenido utilizando este algoritmo. A día de hoy, sin la contraseña, es matemáticamente inviable romper un cifrado AES-256 por fuerza bruta en un tiempo útil."
+	  },
+	  {
+		"pregunta": "Al analizar la avería de un disco duro mecánico (HDD), un Auxiliar detecta que la placa de circuito impreso externa (PCB) está quemada por una subida de tensión. Consigue comprar un disco idéntico de la misma marca y modelo para intercambiarle la placa. ¿Por qué este intercambio ('PCB Swap') suele fracasar en los discos modernos si no se realiza un paso adicional con soldador?",
+		"opciones": [
+		  "Porque los platos magnéticos se bloquean al detectar luz exterior.",
+		  "Porque la PCB original contiene un chip ROM/BIOS único con los parámetros de calibración mecánica y defectos de fábrica específicos de ESE disco exacto, que debe ser desoldado y transferido a la PCB donante.",
+		  "Porque los tornillos de la PCB están magnetizados de fábrica y al quitarlos se borran los datos.",
+		  "Porque el sistema operativo Windows marca la PCB con una firma digital en el Registro."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En los discos duros de hace 20 años podías cambiar la placa verde (PCB) por otra idéntica y funcionaba. Hoy en día, cada disco se calibra en fábrica y sus parámetros de vuelo del cabezal y micro-defectos se guardan en un pequeño chip ROM en la PCB. Si pones la placa de otro disco, el cabezal intentará leer con los parámetros equivocados y no entenderá nada (o rayará los platos). Hay que transferir ese chip."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar intenta utilizar una herramienta de compresión (como WinRAR) para reducir el tamaño de una carpeta que contiene 10 Gigabytes de películas en formato MP4 y fotografías en formato JPEG de alta calidad, ¿qué resultado obtendrá previsiblemente?",
+		"opciones": [
+		  "El tamaño se reducirá al menos a la mitad (unos 5 GB).",
+		  "El tamaño resultante del archivo comprimido será prácticamente el mismo que el de la carpeta original (apenas se reducirán unos pocos Megabytes).",
+		  "El programa dará un error de desbordamiento de búfer, ya que no puede comprimir archivos multimedia.",
+		  "Los archivos de vídeo perderán resolución y se verán pixelados al extraerlos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los formatos como JPEG, MP4 o MP3 ya están altamente comprimidos internamente (mediante algoritmos con pérdida). Intentar comprimir con ZIP o RAR datos que ya están comprimidos es inútil, el algoritmo no encuentra redundancias o espacio vacío que eliminar. El tamaño final será casi idéntico."
+	  },
+	  {
+		"pregunta": "En el contexto de la protección contra el malware tipo Ransomware, los administradores de sistemas buscan implementar almacenamientos inmutables para las copias de seguridad. ¿Qué significa el término 'WORM' en este ámbito del almacenamiento?",
+		"opciones": [
+		  "Wait On RAM Memory (Espera en la memoria RAM).",
+		  "Windows Object Recovery Manager (Administrador de recuperación de objetos de Windows).",
+		  "Write Once, Read Many (Escribe una vez, lee muchas).",
+		  "Wired Optical Routing Mechanism (Mecanismo de enrutamiento óptico cableado)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El almacenamiento WORM garantiza que, una vez que se escriben los datos en él, estos NO pueden ser modificados, cifrados, ni borrados por nadie (ni siquiera por un administrador o un virus) durante un periodo de retención fijado. Es la defensa definitiva para que un Ransomware no pueda destruir las copias de seguridad."
+	  },
+	  {
+		"pregunta": "Las tarjetas MicroSD utilizadas en dispositivos móviles o Raspberry Pi, además de su clase de velocidad general (como Clase 10 o U3), llevan un logotipo con 'A1' o 'A2'. ¿Qué característica técnica específica certifican estas clases 'A' (Application Performance Class)?",
+		"opciones": [
+		  "Su resistencia al Agua (Waterproof).",
+		  "Su capacidad para mantener una altísima tasa de Operaciones de Entrada/Salida por Segundo (IOPS), crucial para instalar y ejecutar aplicaciones de sistema operativo fluido, y no solo para grabación de vídeo secuencial.",
+		  "Su compatibilidad exclusiva con dispositivos Apple (iOS).",
+		  "Su formato de archivo predeterminado en Android (ext4)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Históricamente, las tarjetas SD estaban pensadas para cámaras de fotos: grabar archivos grandes de forma secuencial muy rápido. Pero al usarlas en teléfonos para instalar Apps, iban lentísimas porque las Apps leen y escriben miles de archivos minúsculos aleatoriamente. La clase A1/A2 certifica unos mínimos de IOPS (lectura/escritura aleatoria), garantizando que las aplicaciones no se queden trabadas."
+	  },
+	  {
+		"pregunta": "En las soluciones corporativas de NAS, es habitual configurar los puertos de red agregados (Link Aggregation) y conectar el NAS a un switch de red de alto rendimiento utilizando un protocolo que admite 'Jumbo Frames'. ¿Para qué sirven los Jumbo Frames en el almacenamiento de red?",
+		"opciones": [
+		  "Para que el NAS ocupe más unidades en el armario Rack.",
+		  "Para cifrar los paquetes de red impidiendo ataques de Man-in-the-Middle.",
+		  "Para aumentar el tamaño máximo de la carga útil (MTU) de cada paquete Ethernet (por ejemplo, de 1500 bytes a 9000 bytes), reduciendo la sobrecarga de la CPU al procesar menos paquetes durante transferencias de archivos grandes.",
+		  "Para permitir la copia de archivos de más de 4 GB."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "En una red normal, la unidad máxima de transferencia (MTU) es de 1500 bytes. Enviar un archivo de 10GB implica partirlo en millones de paquetitos, haciendo que la CPU del NAS y del switch trabajen muchísimo procesando cabeceras de red. Al activar 'Jumbo Frames' (ej. 9000 bytes), el tamaño del paquete se multiplica por 6, reduciendo drásticamente el esfuerzo de las CPUs y mejorando la velocidad."
+	  },
+	  {
+		"pregunta": "Para realizar copias de seguridad (Backups) del estado del sistema operativo en servidores Windows, existe una herramienta nativa por línea de comandos, heredera del antiguo NTBackup, que permite automatizar copias a recursos compartidos o discos externos. ¿Cuál es su comando?",
+		"opciones": [
+		  "robocopy.",
+		  "wbadmin.",
+		  "diskpart.",
+		  "vssadmin."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El comando 'wbadmin' es la interfaz de línea de comandos para el sistema 'Copias de seguridad de Windows Server' (Windows Server Backup). Permite iniciar, detener, programar o recuperar copias del estado del sistema, discos enteros o volúmenes (ej: wbadmin start backup -backupTarget:D: -include:C:)."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe sustituir un disco SSD en formato M.2 y las instrucciones de la placa base indican que la ranura solo soporta discos M.2 con interfaz SATA, ¿qué ocurrirá si instala un disco M.2 moderno con interfaz NVMe PCIe?",
+		"opciones": [
+		  "Que el disco funcionará perfectamente a las altísimas velocidades del protocolo NVMe.",
+		  "Que el disco funcionará, pero su velocidad quedará estrangulada (limitada) al máximo que permite SATA III (unos 550 MB/s).",
+		  "Que el disco no será detectado por la BIOS en absoluto, ya que los protocolos de comunicación SATA y PCIe son eléctricamente incompatibles, e incluso puede que las muescas físicas (keys) impidan insertarlo.",
+		  "Que el sistema operativo tendrá que instalar un driver especial para convertir SATA a PCIe."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El factor de forma 'M.2' es solo la forma del conector. Por debajo, puede estar cableado a la controladora SATA (lenta) o a los carriles PCIe (rápida/NVMe). Si la ranura de la placa es exclusivamente SATA (común en portátiles antiguos), pinchar un disco NVMe hará que el equipo ni se entere de que hay un disco, por falta de pistas PCIe."
+	  },
+	  {
+		"pregunta": "Dentro de la arquitectura de la seguridad en sistemas de almacenamiento en red (NAS), ¿cuál de los siguientes métodos es la forma más efectiva y drástica de proteger las copias de seguridad de un departamento frente a un ciberataque de encriptación propagado por la red local?",
+		"opciones": [
+		  "Cambiar la contraseña del usuario Administrador del NAS cada mes.",
+		  "Mantener el almacenamiento de las copias en modo 'Air-Gapped' (Aislado de la red, como un disco USB desconectado físicamente o cintas extraídas).",
+		  "Activar el Firewall de Windows en las estaciones de trabajo.",
+		  "Configurar el NAS con discos SSD en lugar de HDD mecánicos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Air-Gapping' (aislamiento físico o salto de aire) significa que el soporte de la copia de seguridad no tiene NINGUNA conexión física ni de red con el sistema principal. Un Ransomware avanzado puede adivinar contraseñas, escalar privilegios y borrar el NAS, pero no puede saltar por el aire e infectar una cinta LTO o un disco duro que está desconectado y guardado en un cajón."
+	  },
+	  {
+		"pregunta": "En relación a las herramientas de compresión, ¿qué significa que un archivo ZIP se haya creado como un 'Archivo Autoextraíble' (SFX - Self-Extracting Archive)?",
+		"opciones": [
+		  "Que el archivo se descomprime automáticamente en cuanto se detecta que tiene un virus.",
+		  "Que el archivo de compresión se ha empaquetado junto a un pequeño módulo ejecutable (.exe), permitiendo al usuario final descomprimir su contenido sin necesidad de tener instalado previamente un programa como WinRAR o 7-Zip.",
+		  "Que el archivo borrará su contenido original (se autodestruirá) 24 horas después de su creación.",
+		  "Que el archivo se comprime a sí mismo continuamente en segundo plano para ahorrar más espacio."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un archivo autoextraíble (SFX) es muy útil en entornos corporativos. En lugar de crear un archivo 'documentos.zip', la herramienta crea un 'documentos.exe'. Cuando el usuario hace doble clic, el propio archivo contiene las instrucciones para descomprimirse, por lo que no importa si el usuario receptor tiene o no instalado un programa descompresor en su equipo."
+	  },
+	  {
+		"pregunta": "Para evaluar la fiabilidad estadística de los sistemas de almacenamiento corporativos en un centro de datos, los fabricantes proporcionan un valor métrico teórico de durabilidad electromecánica medido en horas. ¿Cuáles son las siglas de este valor?",
+		"opciones": [
+		  "SMART.",
+		  "RPM (Revolutions Per Minute).",
+		  "MTBF (Mean Time Between Failures / Tiempo Medio Entre Fallos).",
+		  "IOPS (Input/Output Operations Per Second)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "MTBF (Tiempo Medio Entre Fallos) es una cifra estadística (por ejemplo, 1.500.000 horas) que indica la fiabilidad de una serie de discos duros. No significa que un disco concreto vaya a durar 170 años, sino que, en una sala con un millón de discos, fallará uno por cada hora que pase. Es clave para calcular el mantenimiento en centros de datos."
+	  },
+	  {
+		"pregunta": "A la hora de clonar discos duros que contienen el sistema operativo Windows 10/11 utilizando software libre (como Clonezilla), es frecuente que el programa lance un error y se niegue a montar la partición NTFS si el Windows origen fue apagado de forma normal. ¿Qué característica nativa de Windows causa este bloqueo de lectura externa y obliga al técnico a apagar el equipo manteniendo pulsada la tecla Shift o reiniciarlo completamente?",
+		"opciones": [
+		  "El antivirus Windows Defender bloquea la clonación por precaución.",
+		  "El Inicio Rápido (Fast Startup / Hiberboot), que no apaga el equipo realmente sino que hiberna el núcleo cerrando la sesión de usuario, dejando el disco NTFS 'marcado como en uso' o sucio.",
+		  "El BitLocker, que cifra el disco aunque no se le haya puesto contraseña.",
+		  "El sistema de cuotas de disco."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Inicio Rápido de Windows (activado por defecto) engaña al usuario. Al dar a 'Apagar', Windows no se apaga, cierra las apps pero hiberna el Kernel en el disco. Linux (el corazón de Clonezilla) detecta que el sistema de archivos NTFS no se ha desmontado limpiamente (dirty bit), y por seguridad se niega a tocarlo para no corromperlo. Reiniciar el PC o apagarlo con Shift lo apaga de verdad."
+	  },
+	  {
+		"pregunta": "Un servidor NAS de un centro educativo sufre un ataque de red y su tabla de particiones resulta dañada. El hardware está intacto y los discos funcionan, pero el volumen no aparece. Si intentamos usar software de recuperación avanzado, ¿qué ventaja ofrece el uso de la técnica de 'Clonación Inversa' (Reverse Cloning) o creación de imagen bit a bit antes de escanear el disco dañado?",
+		"opciones": [
+		  "Desencripta automáticamente los ataques de Ransomware.",
+		  "Evita el estrés mecánico sobre el disco original que podría estar a punto de fallar. Trabajar y escanear sobre la copia clonada en lugar del disco original garantiza que no se empeorará la avería inicial.",
+		  "Comprime los datos recuperados al 50%.",
+		  "Permite recuperar datos de discos que han sido destrozados con un martillo."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La regla número uno de la informática forense y recuperación de datos es: NUNCA trabajes sobre la evidencia original. Si un disco está fallando o corrupto, un escaneo intensivo de recuperación (que tarda horas) puede darle la puntilla final y matarlo. Primero se hace una clonación a bajo nivel (imagen bit a bit a otro disco sano) y luego se utilizan los programas de recuperación sobre ese clon."
+	  },
+	  {
+		"pregunta": "En las configuraciones de seguridad de una cabina de almacenamiento SAN (Fibre Channel o iSCSI), se utiliza una técnica para asignar, ocultar y restringir qué servidores físicos pueden ver y acceder a qué discos virtuales específicos (LUNs), evitando que el servidor de correo intente acceder al disco del servidor de bases de datos. ¿Cómo se denomina esta técnica?",
+		"opciones": [
+		  "Port Forwarding.",
+		  "LUN Masking (Enmascaramiento de LUN) o Zoning.",
+		  "VLAN Tagging.",
+		  "MAC Filtering."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'LUN Masking' o 'Zoning' son mecanismos de seguridad y segmentación de las redes SAN. La cabina tiene 50 discos lógicos, pero configura la autorización para que el Servidor 1 (reconocido por su WWN o IQN) SOLO vea el LUN 1, como si le pusieran unas anteojeras. Esto evita corrupción de datos si dos servidores intentaran dar formato al mismo disco a la vez."
+	  },
+	  {
+		"pregunta": "En el ecosistema de los discos mecánicos corporativos, existe una gama de discos duros diseñada específicamente para soportar vibraciones intensas al trabajar codo con codo en chasis de 8 o 12 discos, girando 24 horas al día sin descanso. ¿Para qué uso están certificados habitualmente estos discos (cuyo color de gama comercial suele ser Rojo o Dorado)?",
+		"opciones": [
+		  "Para equipos portátiles (Laptops).",
+		  "Para sistemas de videovigilancia y dispositivos NAS (Network Attached Storage).",
+		  "Específicamente para videoconsolas de videojuegos.",
+		  "Para Archivo Frío (Cold Storage) sin conexión eléctrica."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los discos etiquetados para NAS (como la gama WD Red o Seagate IronWolf) no son discos normales de escritorio. Tienen firmware optimizado para RAID (TLER - para no desconectarse si tardan en leer un sector), sensores de vibración rotacional (para compensar el temblor de tener 8 discos al lado) y componentes preparados para girar años sin apagarse nunca."
+	  },
+	  {
+		"pregunta": "En un incidente de seguridad, un Auxiliar necesita utilizar la herramienta de recuperación de datos 'TestDisk' ejecutada desde un USB. Su objetivo no es recuperar fotos sueltas (File Carving), sino un nivel estructural mayor. ¿Para qué tarea específica está diseñada principalmente esta herramienta?",
+		"opciones": [
+		  "Para desfragmentar el disco duro.",
+		  "Para adivinar la contraseña de inicio de Windows.",
+		  "Para buscar particiones perdidas o borradas en el disco y reescribir la tabla de particiones (MBR/GPT) y los sectores de arranque, reviviendo el disco entero.",
+		  "Para clonar el sistema operativo a un servidor remoto mediante FTP."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "TestDisk es la herramienta por excelencia para reparar la 'geografía' del disco. Si un virus o un mal particionado borra la tabla de particiones, el disco aparece como 'No asignado' en Windows. TestDisk escanea los cilindros, localiza dónde empezaban las antiguas particiones NTFS/FAT, y reescribe la tabla maestra, haciendo que Windows vuelva a ver el disco con todos sus archivos intactos al instante."
+	  },
+	  {
+		"pregunta": "Para alargar la vida útil y el rendimiento de un Disco de Estado Sólido (SSD), los fabricantes dejan un porcentaje del espacio total de la memoria flash (normalmente un 7% o 10%) oculto e inaccesible para el usuario y el sistema operativo. ¿Cómo se llama esta técnica?",
+		"opciones": [
+		  "Paginación de reserva.",
+		  "Over-provisioning (Sobre-aprovisionamiento).",
+		  "TRIM en caché.",
+		  "S.M.A.R.T. allocation."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Over-provisioning reserva un espacio oculto de celdas flash 'frescas'. Cuando el SSD necesita hacer recolección de basura (Garbage Collection) o nivelación de desgaste, utiliza este espacio libre para mover datos rápidamente, o para sustituir celdas que se vayan estropeando sin que el usuario note pérdida de capacidad."
+	  },
+	  {
+		"pregunta": "En entornos de administración de sistemas mixtos (como los servidores de la Junta), una de las herramientas de clonación y copia a bajo nivel más antiguas, potentes y peligrosas es el comando de consola de Linux 'dd'. Si un técnico ejecuta 'dd if=/dev/sda of=/dev/sdb', ¿qué está haciendo exactamente?",
+		"opciones": [
+		  "Borrando la partición 'sdb' y formateándola en ext4.",
+		  "Comprimiendo la carpeta 'sda' y guardándola dentro de 'sdb'.",
+		  "Haciendo una clonación exacta, bit a bit y sector a sector, del disco entero 'sda' (origen) hacia el disco 'sdb' (destino).",
+		  "Descifrando el disco sda mediante la clave almacenada en sdb."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El comando 'dd' (Dataset Definition, apodado a veces 'Disk Destroyer' por su peligrosidad si te equivocas de letra) copia datos a muy bajo nivel. 'if' significa Input File (disco origen) y 'of' significa Output File (disco destino). Clona ceros y unos sin importar si es Windows, Linux o si está vacío."
+	  },
+	  {
+		"pregunta": "Para evitar tener que tender una red paralela y costosa de cables de fibra óptica dedicada exclusivamente al almacenamiento SAN (Fibre Channel), existe un protocolo que permite encapsular las tramas de Fibre Channel directamente dentro de redes Ethernet estándar de 10 o 40 Gbps. ¿Cuál es este protocolo?",
+		"opciones": [
+		  "iSCSI.",
+		  "FCoE (Fibre Channel over Ethernet).",
+		  "SMB 3.0.",
+		  "NFSv4."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "FCoE (Fibre Channel over Ethernet) permite que el tráfico de almacenamiento SAN y el tráfico de datos normal LAN viajen por el mismo cable de red Ethernet convergente. No debe confundirse con iSCSI (que encapsula comandos SCSI sobre TCP/IP). FCoE encapsula tramas Fibre Channel puras sobre Ethernet sin usar TCP/IP."
+	  },
+	  {
+		"pregunta": "En el diseño de políticas de Backup, una organización realiza una copia Completa el domingo y copias Incrementales de lunes a viernes. Para evitar tener que restaurar seis cintas distintas en caso de caída el sábado, el software de backup se configura para crear los viernes una nueva copia Completa automática combinando el archivo del domingo y los incrementales, sin cargar de trabajo al servidor de producción. ¿Cómo se llama esta copia?",
+		"opciones": [
+		  "Copia de seguridad Diferencial.",
+		  "Copia de seguridad en Espejo (Mirror).",
+		  "Copia de seguridad Sintética Completa (Synthetic Full).",
+		  "Copia Bare-Metal."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La Copia Sintética Completa se genera en el propio servidor de backups. El software 'une' matemáticamente la copia Completa anterior y todos los incrementos para 'fabricar' una nueva Completa. Esto ahorra horas de lectura en el servidor real y ancho de banda en la red, facilitando una restauración muy rápida."
+	  },
+	  {
+		"pregunta": "En entornos Linux y servidores web de la administración, es habitual encontrar archivos de copia de seguridad con la extensión '.tar.gz' (conocidos coloquialmente como tarballs). ¿Qué proceso técnico han seguido los datos para llegar a ese formato?",
+		"opciones": [
+		  "Han sido cifrados con algoritmo TAR y comprimidos con algoritmo GZ.",
+		  "El comando 'tar' ha empaquetado todos los archivos y carpetas en un solo archivo continuo (sin comprimirlos), y posteriormente 'gzip' ha comprimido ese archivo resultante para reducir su tamaño.",
+		  "El comando 'tar' comprime los archivos con pérdida, y 'gz' los divide en volúmenes pequeños para enviarlos por correo.",
+		  "Es un formato instalable exclusivo de RedHat, similar a los paquetes MSI de Windows."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "A diferencia de ZIP, que empaqueta y comprime en un solo paso, la filosofía Unix separa las tareas. 'Tar' (Tape Archive) solo 'pega' miles de archivos en un único archivo grande (empaquetado). Luego, utilidades como 'gzip' o 'bzip2' se encargan de reducir el tamaño de ese archivo único mediante matemáticas (compresión)."
+	  },
+	  {
+		"pregunta": "A diferencia de los disquetes y discos antiguos que usaban motores paso a paso muy ruidosos para mover las cabezas de lectura, los discos duros mecánicos (HDD) modernos utilizan un sistema magnético mucho más rápido, silencioso y preciso para mover el brazo actuador. ¿Cómo se denomina este componente?",
+		"opciones": [
+		  "Voice Coil Motor (Motor de bobina móvil).",
+		  "Piezoeléctrico lineal.",
+		  "Servomotor de engranajes.",
+		  "Cilindro neumático."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El Voice Coil Motor (VCM) funciona igual que un altavoz. Una bobina de cobre unida al brazo lector se sitúa entre dos potentes imanes de neodimio. Al variar la corriente eléctrica en la bobina, el campo magnético hace que el brazo 'flote' y se mueva por los platos a velocidades extremas sin fricción mecánica de engranajes."
+	  },
+	  {
+		"pregunta": "Uno de los métodos más efectivos que utiliza el Ransomware moderno (como Ryuk o WannaCry) para asegurarse de que la víctima tenga que pagar, es ejecutar sigilosamente un comando de consola que borra las instantáneas del sistema de Windows antes de empezar a cifrar. ¿Cuál es ese comando letal?",
+		"opciones": [
+		  "format C: /fs:ntfs",
+		  "vssadmin delete shadows /all /quiet",
+		  "del /f /s /q C:\\Windows\\System32",
+		  "cipher /w:C:\\"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las instantáneas de volumen (VSS) de Windows permiten restaurar versiones anteriores de los archivos dando clic derecho -> Propiedades. Los hackers lo saben, por lo que su virus ejecuta `vssadmin delete shadows /all /quiet` (borrar todas las sombras sin preguntar). Si el usuario no tiene backups externos, pierde todo recurso de recuperación."
+	  },
+	  {
+		"pregunta": "Al diseñar el almacenamiento para una base de datos crítica en un servidor, el administrador decide implementar un RAID 10 para maximizar el rendimiento (Striping) y la seguridad (Mirroring). ¿Cuál es el número mínimo de discos físicos que necesita instalar en el servidor?",
+		"opciones": [
+		  "2 discos.",
+		  "3 discos.",
+		  "4 discos.",
+		  "6 discos."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El RAID 10 (también conocido como RAID 1+0) requiere un mínimo de 4 discos. Crea dos grupos de discos en espejo (RAID 1 para seguridad) y luego divide los datos a lo largo de esos dos grupos (RAID 0 para velocidad). Es muy seguro y rápido, pero se pierde el 50% del espacio bruto total."
+	  },
+	  {
+		"pregunta": "Un pendrive USB de 64 GB nuevo comprado para un directivo debe poder conectarse a ordenadores Windows, televisores Smart TV modernos y portátiles macOS, soportando almacenar vídeos promocionales de 12 GB sin problemas. ¿Cuál es el formato de sistema de archivos estándar de la industria que viene de fábrica para cumplir todo esto?",
+		"opciones": [
+		  "FAT32.",
+		  "NTFS.",
+		  "ext4.",
+		  "exFAT."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "exFAT (Extended File Allocation Table) fue diseñado por Microsoft específicamente para memorias flash de gran tamaño. Elimina el cuello de botella de los 4GB por archivo del antiguo FAT32, y a diferencia de NTFS, es compatible de forma nativa para lectura y escritura en casi todos los ecosistemas (Windows, macOS, Linux modernos, Smart TVs, cámaras)."
+	  },
+	  {
+		"pregunta": "Un equipo Windows de la oficina sufre un apagón y al arrancar muestra un mensaje de 'BOOTMGR Is Missing' u otro error en el sector de arranque. Utilizando un pendrive de instalación de Windows, el Auxiliar entra al Entorno de Recuperación (WinRE) y abre la consola de comandos (CMD). ¿Qué herramienta de línea de comandos sirve específicamente para intentar reparar estos sectores lógicos?",
+		"opciones": [
+		  "bootrec (con parámetros como /fixmbr o /fixboot).",
+		  "diskpart.",
+		  "chkdsk /f.",
+		  "sysprep /generalize."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La herramienta `bootrec.exe` es el salvavidas para problemas de arranque en Windows. `bootrec /fixmbr` repara el Master Boot Record sin tocar la tabla de particiones, `bootrec /fixboot` escribe un nuevo sector de arranque, y `bootrec /rebuildbcd` reconstruye el menú de sistemas operativos (Boot Configuration Data)."
+	  },
+	  {
+		"pregunta": "Muchos NAS y servidores Linux actuales utilizan sistemas de archivos avanzados de próxima generación (como ZFS o Btrfs) que permiten crear 'Snapshots' (Instantáneas) en milisegundos sin ocupar apenas espacio adicional en el disco al momento de crearlas. ¿En qué mecanismo se basa esta magia?",
+		"opciones": [
+		  "Compresión cuántica de datos al vuelo.",
+		  "Deduplicación agresiva de archivos ZIP.",
+		  "Copy-on-Write (CoW).",
+		  "Cifrado de disco por hardware."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Copy-on-Write (Copiar al Escribir) significa que cuando tomas una instantánea, el sistema no copia los archivos (por eso es instantáneo y no ocupa espacio). Simplemente hace una 'foto' de los bloques. Si un usuario modifica un archivo, el sistema escribe el archivo modificado en un bloque NUEVO, manteniendo el bloque viejo intacto para la instantánea."
+	  },
+	  {
+		"pregunta": "En una infraestructura SAN crítica, los servidores están conectados a la cabina de almacenamiento mediante dos switches de fibra óptica independientes y dos tarjetas HBA, de modo que hay múltiples cables desde el servidor hasta el disco virtual. ¿Cómo se llama la tecnología por software que evita que el sistema operativo vea el mismo disco dos veces y balancee la carga de datos entre todos los cables?",
+		"opciones": [
+		  "MPIO (Multipath I/O).",
+		  "VLAN Trunking.",
+		  "STP (Spanning Tree Protocol).",
+		  "LUN Masking."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "MPIO (Multipath Input/Output o E/S de múltiples rutas) es crucial en SAN. Sin MPIO, si un servidor llega a un disco por dos caminos físicos distintos, Windows se vuelve loco y cree que hay dos discos duros. MPIO unifica esos caminos, sumando sus velocidades y garantizando que si un switch se quema, los datos sigan fluyendo por el otro cable sin corte."
+	  },
+	  {
+		"pregunta": "Al igual que vimos el parámetro TBW para medir la resistencia de un SSD, existe otra nomenclatura muy usada en entornos empresariales (SSD para centros de datos) que mide cuántas veces se puede reescribir la capacidad TOTAL del disco diariamente durante su período de garantía. ¿Cuáles son las siglas?",
+		"opciones": [
+		  "IOPS (Input/Output Operations per Second).",
+		  "DWPD (Drive Writes Per Day).",
+		  "MTBF (Mean Time Between Failures).",
+		  "RPM (Revolutions Per Minute)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "DWPD (Escrituras de unidad por día). Si un SSD de 1 Terabyte para servidores tiene una certificación de '3 DWPD' durante 5 años, significa que el fabricante garantiza que puedes escribir 3 Terabytes de datos CADA DÍA durante 5 años seguidos antes de que el disco agote su vida útil."
+	  },
+	  {
+		"pregunta": "Si vas a realizar la clonación de un disco duro mecánico antiguo de 1 Terabyte de capacidad hacia un SSD nuevo más pequeño de 500 GB de capacidad. ¿Es posible realizar la clonación utilizando herramientas tipo Acronis o Macrium?",
+		"opciones": [
+		  "No, es matemáticamente imposible; el disco destino debe ser siempre igual o mayor.",
+		  "Solo si se realiza una clonación 'Sector a Sector' desactivando la compresión.",
+		  "Sí, pero únicamente si el espacio 'realmente ocupado' por los datos en el disco de 1 TB es inferior a la capacidad del disco de 500 GB, y el software soporta el encogimiento automático (Shrinking) de la partición.",
+		  "Sí, el software comprimirá todos los programas automáticamente a formato ZIP para que quepan."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las herramientas de clonación lógicas modernas permiten clonar a discos más pequeños, pero con una condición innegociable: la suma de gigas reales que ocupan Windows y los datos debe caber en el nuevo SSD. Si el disco de 1TB solo tiene 200GB ocupados, el programa reduce (encoge) la partición al vuelo y la encaja en el SSD de 500GB."
+	  },
+	  {
+		"pregunta": "En un Plan de Recuperación ante Desastres (DRP) de la Junta, se establece un RTO (Recovery Time Objective) de 4 horas. ¿Qué obliga a cumplir esta métrica al departamento de informática?",
+		"opciones": [
+		  "Que no pueden perderse más de 4 horas de datos introducidos por los usuarios.",
+		  "Que en caso de desastre total (incendio, ransomware), los sistemas críticos deben estar restaurados y funcionando, dando servicio a los ciudadanos, en un tiempo máximo de 4 horas.",
+		  "Que los discos de respaldo deben cambiarse cada 4 horas.",
+		  "Que la velocidad de la red de fibra óptica debe sincronizar copias cada 4 horas."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El RTO (Tiempo Objetivo de Recuperación) mide el tiempo que el negocio o administración puede soportar estar 'parado'. Si el RTO es de 4 horas, el equipo de TI debe tener herramientas rápidas (como imágenes Bare-Metal o réplicas en la nube) que permitan levantar toda la infraestructura desde cero antes de que pasen esas 4 horas de reloj."
+	  },
+	  {
+		"pregunta": "Un usuario decide comprimir una carpeta con herramientas como 7-Zip para ahorrar espacio. La carpeta contiene una película, unos PDFs normales y un disco duro virtual (.vhdx) cifrado con BitLocker. ¿Qué ocurrirá con la compresión del disco cifrado con BitLocker?",
+		"opciones": [
+		  "El programa pedirá la contraseña de BitLocker para poder comprimirlo.",
+		  "Se comprimirá enormemente, reduciendo su tamaño en más de un 80%.",
+		  "El programa dará error y cerrará la compresión, dañando la película.",
+		  "Prácticamente no se comprimirá nada; su tamaño seguirá siendo casi el mismo que el original, ya que los datos cifrados carecen de patrones matemáticos reconocibles."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Los algoritmos de compresión buscan redundancias (repeticiones de bits) para reducirlas. El cifrado militar (como AES/BitLocker) funciona precisamente destruyendo cualquier patrón y convirtiendo los datos en 'ruido blanco' o pseudoaleatorio perfecto. Al no haber patrones, el compresor no puede reducir absolutamente nada."
+	  },
+	  {
+		"pregunta": "Entre las tecnologías de discos mecánicos para servidores y cabinas de almacenamiento de alto rendimiento, el estándar SAS (Serial Attached SCSI) supera al clásico SATA en muchos aspectos. A nivel de comunicación física de datos, ¿cuál es una diferencia técnica clave entre ambos conectores?",
+		"opciones": [
+		  "SAS utiliza fibra de vidrio, SATA utiliza cobre.",
+		  "SAS permite la comunicación Full-Duplex (leer y escribir datos simultáneamente por carriles separados), mientras que SATA es Half-Duplex (solo puede leer o escribir a la vez).",
+		  "SAS requiere una fuente de alimentación trifásica especial.",
+		  "SATA no admite cifrado por hardware, SAS sí."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El conector SATA es Half-Duplex; por el mismo 'carril' el disco debe esperar a terminar de leer para poder recibir órdenes de escritura. El estándar SAS (para servidores) es Full-Duplex, teniendo pines de transmisión y recepción independientes, lo que reduce la latencia cuando miles de usuarios atacan la base de datos a la vez."
+	  },
+	  {
+		"pregunta": "Un Auxiliar conecta un pendrive de un usuario o un disco duro externo USB al equipo. Windows lo detecta en el Administrador de Dispositivos, pero al intentar abrirlo en 'Este equipo', lanza un mensaje diciendo 'El volumen no contiene un sistema de archivos reconocido' y pregunta si desea formatearlo. En el Administrador de Discos, la partición aparece como 'RAW'. ¿Qué ha ocurrido habitualmente?",
+		"opciones": [
+		  "El disco duro tiene daños físicos catastróficos en los motores y no gira.",
+		  "El usuario ha sacado el pendrive sin utilizar la extracción segura mientras se escribían datos, corrompiendo la tabla de particiones o el sector de arranque lógico del sistema de archivos.",
+		  "El pendrive está formateado en un sistema Linux ext4 y Windows lo ha formateado automáticamente.",
+		  "El disco se ha quedado sin espacio de almacenamiento disponible."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El sistema de archivos 'RAW' (crudo/bruto) en Windows significa que el Sistema Operativo no encuentra la tabla maestra de archivos (MFT) o la tabla de particiones válida. Los datos (fotos, documentos) probablemente siguen ahí intactos, pero Windows ha perdido el 'mapa' para encontrarlos, casi siempre por desenchufar a la brava. Se soluciona con TestDisk o similares."
+	  },
+	  {
+		"pregunta": "En servidores empresariales que utilizan sistemas de almacenamiento en RAID, para minimizar el tiempo que el volumen pasa en estado degradado tras la rotura de un disco físico, se suele instalar en el chasis un disco duro adicional que está encendido, pero vacío e inactivo. Si la controladora detecta una rotura, automáticamente activa este disco y comienza la reconstrucción sin intervención humana. ¿Cómo se denomina a este disco?",
+		"opciones": [
+		  "Disco Cache SSD.",
+		  "Hot Spare (Repuesto en caliente).",
+		  "Parity Drive (Disco de paridad).",
+		  "Boot Drive (Disco de arranque)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Hot Spare' es un disco de reserva conectado y listo. Si tienes un RAID 5 de 4 discos y se rompe uno, el RAID queda degradado (si se rompe otro, lo pierdes todo). Con un 'Hot Spare' asignado, la controladora saca a jugar al suplente automáticamente a las 3 de la mañana, reconstruyendo los datos y volviendo a poner el sistema seguro sin esperar al informático."
+	  },
+	  {
+		"pregunta": "Para terminar el Tema 4: La Administración ha decidido dar de baja y reciclar varios ordenadores. Para asegurar que los datos de los ciudadanos contenidos en los discos mecánicos (HDD) no puedan ser recuperados ni siquiera por empresas forenses, se opta por un software destructivo de Wipe (Borrado seguro) en lugar de la destrucción física. ¿Qué proceso realiza el software para garantizar este borrado?",
+		"opciones": [
+		  "Envía pulsos de microondas al cabezal.",
+		  "Realiza un formateo rápido en formato exFAT y cifra el índice.",
+		  "Realiza múltiples pasadas de sobrescritura de toda la superficie del disco con patrones de ceros, unos y datos pseudoaleatorios (como el estándar DoD 5220.22-M o el método Gutmann) para destruir los rastros magnéticos remanentes.",
+		  "Elimina físicamente la partición en el Administrador de discos de Windows."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "En los discos magnéticos, escribir un '0' sobre un '1' a veces deja un rastro magnético muy tenue en los bordes de la pista que un microscopio de fuerza magnética podría leer. Los algoritmos de borrado seguro (como el del Departamento de Defensa de EE.UU. de 3 o 7 pasadas, o Gutmann de 35 pasadas) sobrescriben la información con 'ruido' aleatorio una y otra vez hasta que es físicamente imposible recuperar el rastro original."
+	  }  
   
   ],
   

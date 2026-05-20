@@ -10,10 +10,31 @@
     --white: #ffffff;
     
     /* Colores para diferenciar los bloques de temas */
-    --theme-1: #3b82f6; /* Azul */
-    --theme-2: #10b981; /* Verde esmeralda */
-    --theme-3: #f59e0b; /* Ámbar */
-    --theme-4: #8b5cf6; /* Púrpura */
+	--theme-1: #3b82f6;  /* Azul */
+    --theme-2: #10b981;  /* Verde esmeralda */
+    --theme-3: #f59e0b;  /* Ámbar */
+    --theme-4: #8b5cf6;  /* Púrpura */
+    --theme-5: #f43f5e;  /* Rosa fuerte */
+    --theme-6: #06b6d4;  /* Cian */
+    --theme-7: #84cc16;  /* Lima */
+    --theme-8: #f97316;  /* Naranja */
+    --theme-9: #6366f1;  /* Índigo */
+    --theme-10: #ec4899; /* Rosa */
+    --theme-11: #14b8a6; /* Verde azulado (Teal) */
+    --theme-12: #eab308; /* Amarillo */
+    --theme-13: #d946ef; /* Fucsia */
+    --theme-14: #0ea5e9; /* Azul cielo */
+    --theme-15: #ef4444; /* Rojo */
+    --theme-16: #22c55e; /* Verde brillante */
+    --theme-17: #7c3aed; /* Violeta */
+    --theme-18: #64748b; /* Pizarra */
+    --theme-19: #78716c; /* Piedra */
+    --theme-20: #a855f7; /* Púrpura claro */
+    --theme-21: #059669; /* Esmeralda oscuro */
+    --theme-22: #ea580c; /* Naranja oscuro */
+    --theme-23: #2563eb; /* Azul rey */
+    --theme-24: #be123c; /* Carmesí */
+    --theme-25: #0f766e; /* Teal oscuro */
 
     --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
     --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
@@ -138,6 +159,27 @@ main {
 .color-2 { background-color: var(--theme-2); }
 .color-3 { background-color: var(--theme-3); }
 .color-4 { background-color: var(--theme-4); }
+.color-5 { background-color: var(--theme-5); }
+.color-6 { background-color: var(--theme-6); }
+.color-7 { background-color: var(--theme-7); }
+.color-8 { background-color: var(--theme-8); }
+.color-9 { background-color: var(--theme-9); }
+.color-10 { background-color: var(--theme-10); }
+.color-11 { background-color: var(--theme-11); }
+.color-12 { background-color: var(--theme-12); }
+.color-13 { background-color: var(--theme-13); }
+.color-14 { background-color: var(--theme-14); }
+.color-15 { background-color: var(--theme-15); }
+.color-16 { background-color: var(--theme-16); }
+.color-17 { background-color: var(--theme-17); }
+.color-18 { background-color: var(--theme-18); }
+.color-19 { background-color: var(--theme-19); }
+.color-20 { background-color: var(--theme-20); }
+.color-21 { background-color: var(--theme-21); }
+.color-22 { background-color: var(--theme-22); }
+.color-23 { background-color: var(--theme-23); }
+.color-24 { background-color: var(--theme-24); }
+.color-25 { background-color: var(--theme-25); }
 
 .card-body {
     padding: 1.5rem;

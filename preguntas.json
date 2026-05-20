@@ -1,229 +1,999 @@
 {
   "1": [
-    {
-    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la clásica arquitectura de Von Neumann es CORRECTA?",
-    "opciones": [
-      "Separa físicamente la memoria de datos de la memoria de instrucciones, utilizando buses distintos para cada una.",
-      "La Unidad de Control (CU) y la Unidad Aritmético-Lógica (ALU) forman conjuntamente la Unidad Central de Proceso (CPU).",
-      "El bus de datos es exclusivamente unidireccional, mientras que el bus de direcciones es bidireccional.",
-      "Los registros internos de la CPU forman parte del subsistema de Entrada/Salida para agilizar la comunicación con los periféricos."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "En la arquitectura de Von Neumann, la CPU está compuesta por la Unidad de Control (encargada de dirigir las operaciones) y la ALU (encargada de las operaciones matemáticas y lógicas). La opción 0 describe la arquitectura Harvard, no Von Neumann. La opción 2 es falsa porque el bus de datos es bidireccional y el de direcciones unidireccional."
-  },
-  {
-    "pregunta": "En un Sistema de Información, ¿qué elemento se considera el componente lógico que establece el vínculo fundamental entre la tecnología y los usuarios finales para asegurar la consecución de los objetivos?",
-    "opciones": [
-      "Los metadatos almacenados en el diccionario de datos de las bases de datos relacionales.",
-      "El middleware de integración de aplicaciones.",
-      "Los procedimientos y reglas de negocio.",
-      "El sistema operativo de red (NOS)."
-    ],
-    "respuesta_correcta": 2,
-    "explicacion": "Los componentes básicos de un SI son hardware, software, datos, personas y procedimientos. Los procedimientos (manuales, normas, reglas de negocio) son esenciales porque dictan cómo los usuarios (personas) interactúan con la tecnología (hardware/software) y los datos para producir información útil."
-  },
-  {
-    "pregunta": "Respecto a la jerarquía de memoria en la arquitectura de un ordenador microinformático, señale la afirmación correcta sobre la memoria caché:",
-    "opciones": [
-      "La caché L1 (Nivel 1) se comparte habitualmente entre todos los núcleos de un procesador multinúcleo para mantener la coherencia general del sistema.",
-      "Se implementa físicamente mediante memoria tipo DRAM (Dynamic RAM) debido a su alta capacidad y bajo coste de fabricación.",
-      "Su función principal es mitigar el 'cuello de botella' de Von Neumann reduciendo los tiempos de acceso de la CPU a la memoria principal.",
-      "Es una memoria de estado sólido no volátil que conserva los datos e instrucciones de uso frecuente tras un reinicio del sistema operativo."
-    ],
-    "respuesta_correcta": 2,
-    "explicacion": "La caché actúa como un búfer muy rápido entre la CPU y la RAM para paliar la diferencia de velocidad entre ambas (el cuello de botella de Von Neumann). Es falsa la 0 porque la L1 es específica de cada núcleo (suele compartirse la L3). Es falsa la 1 porque se implementa con SRAM (Static RAM), no DRAM. Y es falsa la 3 porque la caché es memoria volátil."
-  },
-  {
-    "pregunta": "En el diseño de placas base modernas para equipos microinformáticos, ¿cuál es la tendencia arquitectónica predominante respecto a los clásicos 'Northbridge' (Puente Norte) y 'Southbridge' (Puente Sur)?",
-    "opciones": [
-      "El Southbridge ha absorbido las funciones del Northbridge para acercar la gestión de la memoria RAM a los puertos USB y SATA.",
-      "El Northbridge se ha integrado completamente en la CPU, quedando en la placa base un único chip (como el PCH de Intel) que asume las funciones del antiguo Southbridge.",
-      "Ambos controladores se han externalizado a tarjetas de expansión PCIe dedicadas para reducir el sobrecalentamiento general de la placa base.",
-      "Se ha recuperado la arquitectura de bus único integrando ambos puentes en el módulo de la memoria RAM principal."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "En las arquitecturas modernas, el controlador de memoria y el controlador PCIe principal (antiguo Northbridge) se han integrado directamente en el encapsulado del procesador (CPU) para reducir la latencia. En la placa base suele quedar un único chip, denominado PCH (Platform Controller Hub) por Intel o FCH por AMD, que gestiona las conexiones más lentas (antiguo Southbridge)."
-  },
-  {
-    "pregunta": "Dentro de las funciones de gestión de un Sistema Operativo, ¿qué define el concepto de 'Cambio de Contexto' (Context Switch)?",
-    "opciones": [
-      "El proceso de seguridad por el cual el sistema operativo pasa temporalmente del modo usuario al modo administrador (kernel) tras introducir credenciales válidas.",
-      "La acción de almacenar el estado de la CPU de un proceso o hilo en ejecución para poder restaurarlo y reanudar su ejecución más adelante, cediendo la CPU a otro proceso.",
-      "La migración automática de páginas de memoria desde la memoria física (RAM) al archivo de paginación en el disco duro cuando la memoria está saturada.",
-      "La reasignación de letras de unidad (C:, D:, etc.) que realiza el núcleo cuando se conecta un dispositivo de almacenamiento masivo en caliente."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "El cambio de contexto es fundamental en sistemas operativos multitarea. Consiste en guardar el contexto (valores de los registros, contador de programa, etc.) del proceso que actualmente ocupa la CPU en su Bloque de Control de Proceso (PCB), y cargar el contexto del siguiente proceso que va a ejecutarse."
-  },
-  {
-    "pregunta": "Dentro de los componentes internos de un equipo microinformático, ¿cuál es la principal ventaja de un disco de estado sólido (SSD) frente a un disco duro tradicional (HDD) magnético?",
-    "opciones": [
-      "Su mayor capacidad de almacenamiento a un coste de fabricación mucho menor por gigabyte.",
-      "La carencia de partes mecánicas móviles, lo que reduce drásticamente el tiempo de acceso a los datos y el consumo eléctrico.",
-      "Que no requieren ser formateados con un sistema de archivos antes de la instalación del sistema operativo.",
-      "Su inmunidad total a la pérdida de datos en caso de un corte repentino del suministro eléctrico."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "Los discos SSD utilizan memoria flash (NAND) para almacenar los datos, por lo que no tienen platos giratorios ni cabezales mecánicos como los HDD. Esto los hace mucho más rápidos en lectura/escritura, silenciosos, resistentes a golpes y con menor consumo. Las otras opciones son falsas (el HDD sigue siendo más barato por GB y ambos necesitan sistema de archivos)."
-  },
-  {
-    "pregunta": "¿Qué nombre recibe el bloque de instrucciones o programa de propósito específico, grabado en una memoria de tipo no volátil (como una ROM o Flash), que establece la lógica de más bajo nivel para controlar los circuitos electrónicos de un dispositivo?",
-    "opciones": [
-      "Hardware.",
-      "Middleware.",
-      "Firmware.",
-      "Shareware."
-    ],
-    "respuesta_correcta": 2,
-    "explicacion": "El Firmware (o soporte lógico inalterable) es el programa básico que controla los circuitos electrónicos de cualquier dispositivo (como la BIOS/UEFI de una placa base o el software interno de un router). Es el puente directo entre el hardware puro y el software general."
-  },
-  {
-    "pregunta": "En la placa base de un equipo microinformático, ¿qué elemento físico se encarga de alojar, sostener y conectar directamente el microprocesador (CPU) con el resto de componentes?",
-    "opciones": [
-      "El zócalo o socket.",
-      "El chipset principal.",
-      "La ranura de expansión PCIe (Peripheral Component Interconnect Express).",
-      "El bus frontal (FSB)."
-    ],
-    "respuesta_correcta": 0,
-    "explicacion": "El zócalo (socket en inglés) es el conector cuadrado soldado a la placa base donde se instala el microprocesador. Dependiendo de la marca (Intel o AMD) y la generación del procesador, el tipo de socket varía (ej. LGA 1700, AM5)."
-  },
-  {
-    "pregunta": "¿Cuál de las siguientes tareas NO es una de las funciones principales y propias de un Sistema Operativo?",
-    "opciones": [
-      "Gestionar la memoria principal, asignando espacio a los programas en ejecución.",
-      "Proporcionar una interfaz de usuario, ya sea gráfica (GUI) o de línea de comandos (CLI).",
-      "Administrar y estructurar los archivos y directorios en los discos de almacenamiento.",
-      "Compilar automáticamente el código fuente de los lenguajes de programación para crear ejecutables."
-    ],
-    "respuesta_correcta": 3,
-    "explicacion": "Compilar código es tarea de un programa específico llamado 'compilador' (o intérprete, según el lenguaje), que es un software de aplicación o desarrollo, no una función nativa de gestión del Sistema Operativo. El sistema operativo sí gestiona recursos (memoria, procesos, periféricos y archivos) y proporciona interfaz."
-  },
-  {
-    "pregunta": "Al hablar de los elementos constitutivos de un sistema de información, ¿a qué nos referimos concretamente con el término 'Software de Sistema' o 'Software de Base'?",
-    "opciones": [
-      "A los programas diseñados para facilitar a los usuarios la realización de tareas específicas, como un paquete ofimático.",
-      "Al conjunto de programas encargados del control y administración de los recursos del hardware y sobre los que se apoyan las demás aplicaciones.",
-      "Exclusivamente a los controladores (drivers) encargados del funcionamiento de la tarjeta gráfica y de red.",
-      "A los sistemas de información que utilizan bases de datos relacionales en la nube."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "El Software de Sistema (cuyo máximo exponente es el Sistema Operativo) es aquel que desvincula adecuadamente al usuario y al programador de los detalles del sistema informático en particular que se use, aislándolo especialmente del procesamiento interno, memoria, discos, puertos, etc. La opción 0 se refiere al 'Software de Aplicación'."
-  },
-  {
-    "pregunta": "¿Qué ocurre con los datos almacenados en la memoria RAM (Random Access Memory) cuando se apaga o reinicia el equipo microinformático?",
-    "opciones": [
-      "Se guardan automáticamente en el disco duro para su posterior recuperación al encender.",
-      "Se comprimen y se envían a la memoria ROM para no perder el estado del sistema.",
-      "Se pierden de forma permanente, ya que la RAM es una memoria de tipo volátil.",
-      "Permanecen intactos gracias a la energía suministrada por la pila de la placa base (CMOS)."
-    ],
-    "respuesta_correcta": 2,
-    "explicacion": "La memoria RAM es volátil, lo que significa que necesita energía eléctrica constante para retener la información. Al apagar el equipo, cualquier dato o programa cargado en ella se borra. La pila de la placa base mantiene únicamente los datos básicos de configuración de la BIOS/UEFI y el reloj en tiempo real."
-  },
-  {
-    "pregunta": "En el interior de un equipo informático de sobremesa, ¿cuál es la función principal de la Fuente de Alimentación (PSU)?",
-    "opciones": [
-      "Transformar la corriente alterna (CA) de la red eléctrica en las distintas tensiones de corriente continua (CC) que necesitan los componentes.",
-      "Refrigerar el interior de la caja absorbiendo el calor generado por el microprocesador.",
-      "Distribuir la señal de red de internet a través de los puertos RJ-45 de la placa base.",
-      "Proporcionar energía ininterrumpida (como un SAI/UPS) durante al menos 15 minutos si hay un corte de luz."
-    ],
-    "respuesta_correcta": 0,
-    "explicacion": "La fuente de alimentación convierte la corriente alterna de nuestro enchufe (normalmente 230V en Europa) en corriente continua de menor voltaje (normalmente +3.3V, +5V y +12V) que es la que pueden utilizar y tolerar los componentes electrónicos del PC."
-  },
-  {
-    "pregunta": "Si necesitamos conectar un monitor actual y queremos transmitir tanto vídeo en alta definición como audio digital utilizando un único cable, ¿qué puerto utilizaremos preferentemente?",
-    "opciones": [
-      "VGA (Video Graphics Array).",
-      "HDMI (High-Definition Multimedia Interface).",
-      "Puerto Serie (COM).",
-      "PS/2."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "El puerto HDMI permite la transmisión de vídeo y audio digital de alta definición en un solo cable. El puerto VGA (ya obsoleto en equipos nuevos) solo transmite vídeo analógico y no transmite audio. Los puertos COM y PS/2 se usaban para periféricos antiguos como ratones y teclados."
-  },
-  {
-    "pregunta": "Dentro de la estructura de un Sistema Operativo, ¿qué es exactamente el 'Kernel' o núcleo?",
-    "opciones": [
-      "El programa antivirus integrado que protege al sistema desde el arranque.",
-      "La parte central y más importante del sistema operativo, que interactúa directamente con el hardware y gestiona los recursos.",
-      "El explorador de archivos visual que permite al usuario gestionar sus carpetas.",
-      "El procesador de textos básico que viene preinstalado en el sistema."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "El Kernel es el núcleo del sistema operativo. Es el primer programa que se carga (tras el gestor de arranque) y tiene control completo sobre todo el sistema. Gestiona la memoria, los procesos y hace de intermediario entre el software (las aplicaciones) y el hardware."
-  },
-  {
-    "pregunta": "¿Cuál es la finalidad de aplicar pasta térmica entre el microprocesador (CPU) y su correspondiente disipador de calor?",
-    "opciones": [
-      "Pegar de forma permanente el disipador a la CPU para que no se suelte con las vibraciones.",
-      "Mejorar la transferencia de calor rellenando las microimperfecciones entre las dos superficies metálicas.",
-      "Aislar eléctricamente el procesador para evitar cortocircuitos con el chasis.",
-      "Aumentar la velocidad del reloj (Overclock) mediante aditivos de plata."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "Aunque a simple vista las superficies de la CPU y el disipador parecen lisas, microscópicamente tienen imperfecciones que dejan bolsas de aire (el aire es un mal conductor térmico). La pasta térmica rellena esos huecos, mejorando enormemente la transmisión de calor hacia el disipador."
-  },
-  {
-    "pregunta": "En un sistema informático, ¿qué es un 'controlador de dispositivo' (comúnmente llamado 'driver')?",
-    "opciones": [
-      "Un componente de hardware adicional que se instala en una ranura de expansión.",
-      "Un pequeño programa de software que enseña al Sistema Operativo cómo comunicarse y utilizar un componente de hardware específico.",
-      "El cable o bus físico que conecta un periférico con la placa base.",
-      "El usuario que tiene privilegios de administrador para hacer cambios en el sistema."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "Un driver o controlador es el software específico proporcionado normalmente por el fabricante de un hardware. Su función es traducir las instrucciones genéricas del sistema operativo a las instrucciones específicas que ese dispositivo en concreto entiende y necesita para funcionar."
-  },
-  {
-    "pregunta": "Al encender un ordenador, la BIOS/UEFI realiza una comprobación de diagnóstico inicial para verificar que el hardware básico (RAM, teclado, discos, etc.) funciona correctamente antes de cargar el Sistema Operativo. ¿Cómo se denomina a este proceso?",
-    "opciones": [
-      "PING.",
-      "BOOT.",
-      "POST (Power-On Self-Test).",
-      "SWAP."
-    ],
-    "respuesta_correcta": 2,
-    "explicacion": "El POST (Autocomprobación de Encendido) es la primera rutina que ejecuta la BIOS/UEFI. Si encuentra un error grave en la RAM o en la tarjeta gráfica, por ejemplo, el sistema se detendrá y emitirá unos pitidos o mostrará un código de error antes de intentar cargar cualquier sistema operativo."
-  },
-  {
-    "pregunta": "Al hablar de sistemas operativos modernos (como Windows, macOS o entornos de escritorio Linux), se suele decir que disponen de una GUI. ¿Qué significan estas siglas?",
-    "opciones": [
-      "General User Internet.",
-      "Graphical User Interface (Interfaz Gráfica de Usuario).",
-      "Gestor Unificado de Información.",
-      "Graphic Unit Integration (Integración de Unidad Gráfica)."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "GUI significa Graphical User Interface. Es la interfaz que permite al usuario interactuar con el sistema operativo utilizando elementos gráficos como ventanas, iconos, menús y un puntero de ratón, en contraposición a las clásicas interfaces de línea de comandos (CLI)."
-  },
-  {
-    "pregunta": "Cuando un Sistema Operativo permite cargar y ejecutar aparentemente varios programas a la vez, repartiendo el tiempo de uso del microprocesador entre ellos de forma muy rápida, se dice que es un sistema:",
-    "opciones": [
-      "Multiusuario.",
-      "Multitarea.",
-      "Multiprocesador.",
-      "De tiempo real."
-    ],
-    "respuesta_correcta": 1,
-    "explicacion": "La multitarea (multitasking) es la característica de los sistemas operativos modernos que permite ejecutar múltiples procesos 'simultáneamente'. Aunque haya una sola CPU, el SO asigna pequeñas fracciones de tiempo (cuantos) a cada programa tan rápidamente que al usuario le parece que funcionan a la vez."
-  },
-  {
-    "pregunta": "¿Qué estándar de bus de conexión se utiliza de forma mayoritaria en las placas base actuales para conectar internamente discos duros convencionales (HDD) y unidades de estado sólido (SSD) en formato de 2.5 pulgadas?",
-    "opciones": [
-      "SATA (Serial ATA).",
-      "AGP (Accelerated Graphics Port).",
-      "RJ-45.",
-      "Paralelo (LPT)."
-    ],
-    "respuesta_correcta": 0,
-    "explicacion": "La interfaz SATA es el estándar de conexión interno para unidades de almacenamiento masivo como HDD, SSD (en su formato de 2,5\") o lectores ópticos. Sustituyó al antiguo IDE/PATA. AGP era para tarjetas gráficas, RJ-45 es de red e impresoras antiguas usaban LPT."
-  }
- 
-  
-
+		{
+		"pregunta": "¿Cuál de las siguientes afirmaciones sobre la clásica arquitectura de Von Neumann es CORRECTA?",
+		"opciones": [
+		  "Separa físicamente la memoria de datos de la memoria de instrucciones, utilizando buses distintos para cada una.",
+		  "La Unidad de Control (CU) y la Unidad Aritmético-Lógica (ALU) forman conjuntamente la Unidad Central de Proceso (CPU).",
+		  "El bus de datos es exclusivamente unidireccional, mientras que el bus de direcciones es bidireccional.",
+		  "Los registros internos de la CPU forman parte del subsistema de Entrada/Salida para agilizar la comunicación con los periféricos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En la arquitectura de Von Neumann, la CPU está compuesta por la Unidad de Control (encargada de dirigir las operaciones) y la ALU (encargada de las operaciones matemáticas y lógicas). La opción 0 describe la arquitectura Harvard, no Von Neumann. La opción 2 es falsa porque el bus de datos es bidireccional y el de direcciones unidireccional."
+	  },
+	  {
+		"pregunta": "En un Sistema de Información, ¿qué elemento se considera el componente lógico que establece el vínculo fundamental entre la tecnología y los usuarios finales para asegurar la consecución de los objetivos?",
+		"opciones": [
+		  "Los metadatos almacenados en el diccionario de datos de las bases de datos relacionales.",
+		  "El middleware de integración de aplicaciones.",
+		  "Los procedimientos y reglas de negocio.",
+		  "El sistema operativo de red (NOS)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los componentes básicos de un SI son hardware, software, datos, personas y procedimientos. Los procedimientos (manuales, normas, reglas de negocio) son esenciales porque dictan cómo los usuarios (personas) interactúan con la tecnología (hardware/software) y los datos para producir información útil."
+	  },
+	  {
+		"pregunta": "Respecto a la jerarquía de memoria en la arquitectura de un ordenador microinformático, señale la afirmación correcta sobre la memoria caché:",
+		"opciones": [
+		  "La caché L1 (Nivel 1) se comparte habitualmente entre todos los núcleos de un procesador multinúcleo para mantener la coherencia general del sistema.",
+		  "Se implementa físicamente mediante memoria tipo DRAM (Dynamic RAM) debido a su alta capacidad y bajo coste de fabricación.",
+		  "Su función principal es mitigar el 'cuello de botella' de Von Neumann reduciendo los tiempos de acceso de la CPU a la memoria principal.",
+		  "Es una memoria de estado sólido no volátil que conserva los datos e instrucciones de uso frecuente tras un reinicio del sistema operativo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La caché actúa como un búfer muy rápido entre la CPU y la RAM para paliar la diferencia de velocidad entre ambas (el cuello de botella de Von Neumann). Es falsa la 0 porque la L1 es específica de cada núcleo (suele compartirse la L3). Es falsa la 1 porque se implementa con SRAM (Static RAM), no DRAM. Y es falsa la 3 porque la caché es memoria volátil."
+	  },
+	  {
+		"pregunta": "En el diseño de placas base modernas para equipos microinformáticos, ¿cuál es la tendencia arquitectónica predominante respecto a los clásicos 'Northbridge' (Puente Norte) y 'Southbridge' (Puente Sur)?",
+		"opciones": [
+		  "El Southbridge ha absorbido las funciones del Northbridge para acercar la gestión de la memoria RAM a los puertos USB y SATA.",
+		  "El Northbridge se ha integrado completamente en la CPU, quedando en la placa base un único chip (como el PCH de Intel) que asume las funciones del antiguo Southbridge.",
+		  "Ambos controladores se han externalizado a tarjetas de expansión PCIe dedicadas para reducir el sobrecalentamiento general de la placa base.",
+		  "Se ha recuperado la arquitectura de bus único integrando ambos puentes en el módulo de la memoria RAM principal."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En las arquitecturas modernas, el controlador de memoria y el controlador PCIe principal (antiguo Northbridge) se han integrado directamente en el encapsulado del procesador (CPU) para reducir la latencia. En la placa base suele quedar un único chip, denominado PCH (Platform Controller Hub) por Intel o FCH por AMD, que gestiona las conexiones más lentas (antiguo Southbridge)."
+	  },
+	  {
+		"pregunta": "Dentro de las funciones de gestión de un Sistema Operativo, ¿qué define el concepto de 'Cambio de Contexto' (Context Switch)?",
+		"opciones": [
+		  "El proceso de seguridad por el cual el sistema operativo pasa temporalmente del modo usuario al modo administrador (kernel) tras introducir credenciales válidas.",
+		  "La acción de almacenar el estado de la CPU de un proceso o hilo en ejecución para poder restaurarlo y reanudar su ejecución más adelante, cediendo la CPU a otro proceso.",
+		  "La migración automática de páginas de memoria desde la memoria física (RAM) al archivo de paginación en el disco duro cuando la memoria está saturada.",
+		  "La reasignación de letras de unidad (C:, D:, etc.) que realiza el núcleo cuando se conecta un dispositivo de almacenamiento masivo en caliente."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El cambio de contexto es fundamental en sistemas operativos multitarea. Consiste en guardar el contexto (valores de los registros, contador de programa, etc.) del proceso que actualmente ocupa la CPU en su Bloque de Control de Proceso (PCB), y cargar el contexto del siguiente proceso que va a ejecutarse."
+	  },
+	  {
+		"pregunta": "Dentro de los componentes internos de un equipo microinformático, ¿cuál es la principal ventaja de un disco de estado sólido (SSD) frente a un disco duro tradicional (HDD) magnético?",
+		"opciones": [
+		  "Su mayor capacidad de almacenamiento a un coste de fabricación mucho menor por gigabyte.",
+		  "La carencia de partes mecánicas móviles, lo que reduce drásticamente el tiempo de acceso a los datos y el consumo eléctrico.",
+		  "Que no requieren ser formateados con un sistema de archivos antes de la instalación del sistema operativo.",
+		  "Su inmunidad total a la pérdida de datos en caso de un corte repentino del suministro eléctrico."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los discos SSD utilizan memoria flash (NAND) para almacenar los datos, por lo que no tienen platos giratorios ni cabezales mecánicos como los HDD. Esto los hace mucho más rápidos en lectura/escritura, silenciosos, resistentes a golpes y con menor consumo. Las otras opciones son falsas (el HDD sigue siendo más barato por GB y ambos necesitan sistema de archivos)."
+	  },
+	  {
+		"pregunta": "¿Qué nombre recibe el bloque de instrucciones o programa de propósito específico, grabado en una memoria de tipo no volátil (como una ROM o Flash), que establece la lógica de más bajo nivel para controlar los circuitos electrónicos de un dispositivo?",
+		"opciones": [
+		  "Hardware.",
+		  "Middleware.",
+		  "Firmware.",
+		  "Shareware."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Firmware (o soporte lógico inalterable) es el programa básico que controla los circuitos electrónicos de cualquier dispositivo (como la BIOS/UEFI de una placa base o el software interno de un router). Es el puente directo entre el hardware puro y el software general."
+	  },
+	  {
+		"pregunta": "En la placa base de un equipo microinformático, ¿qué elemento físico se encarga de alojar, sostener y conectar directamente el microprocesador (CPU) con el resto de componentes?",
+		"opciones": [
+		  "El zócalo o socket.",
+		  "El chipset principal.",
+		  "La ranura de expansión PCIe (Peripheral Component Interconnect Express).",
+		  "El bus frontal (FSB)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El zócalo (socket en inglés) es el conector cuadrado soldado a la placa base donde se instala el microprocesador. Dependiendo de la marca (Intel o AMD) y la generación del procesador, el tipo de socket varía (ej. LGA 1700, AM5)."
+	  },
+	  {
+		"pregunta": "¿Cuál de las siguientes tareas NO es una de las funciones principales y propias de un Sistema Operativo?",
+		"opciones": [
+		  "Gestionar la memoria principal, asignando espacio a los programas en ejecución.",
+		  "Proporcionar una interfaz de usuario, ya sea gráfica (GUI) o de línea de comandos (CLI).",
+		  "Administrar y estructurar los archivos y directorios en los discos de almacenamiento.",
+		  "Compilar automáticamente el código fuente de los lenguajes de programación para crear ejecutables."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Compilar código es tarea de un programa específico llamado 'compilador' (o intérprete, según el lenguaje), que es un software de aplicación o desarrollo, no una función nativa de gestión del Sistema Operativo. El sistema operativo sí gestiona recursos (memoria, procesos, periféricos y archivos) y proporciona interfaz."
+	  },
+	  {
+		"pregunta": "Al hablar de los elementos constitutivos de un sistema de información, ¿a qué nos referimos concretamente con el término 'Software de Sistema' o 'Software de Base'?",
+		"opciones": [
+		  "A los programas diseñados para facilitar a los usuarios la realización de tareas específicas, como un paquete ofimático.",
+		  "Al conjunto de programas encargados del control y administración de los recursos del hardware y sobre los que se apoyan las demás aplicaciones.",
+		  "Exclusivamente a los controladores (drivers) encargados del funcionamiento de la tarjeta gráfica y de red.",
+		  "A los sistemas de información que utilizan bases de datos relacionales en la nube."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Software de Sistema (cuyo máximo exponente es el Sistema Operativo) es aquel que desvincula adecuadamente al usuario y al programador de los detalles del sistema informático en particular que se use, aislándolo especialmente del procesamiento interno, memoria, discos, puertos, etc. La opción 0 se refiere al 'Software de Aplicación'."
+	  },
+	  {
+		"pregunta": "¿Qué ocurre con los datos almacenados en la memoria RAM (Random Access Memory) cuando se apaga o reinicia el equipo microinformático?",
+		"opciones": [
+		  "Se guardan automáticamente en el disco duro para su posterior recuperación al encender.",
+		  "Se comprimen y se envían a la memoria ROM para no perder el estado del sistema.",
+		  "Se pierden de forma permanente, ya que la RAM es una memoria de tipo volátil.",
+		  "Permanecen intactos gracias a la energía suministrada por la pila de la placa base (CMOS)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La memoria RAM es volátil, lo que significa que necesita energía eléctrica constante para retener la información. Al apagar el equipo, cualquier dato o programa cargado en ella se borra. La pila de la placa base mantiene únicamente los datos básicos de configuración de la BIOS/UEFI y el reloj en tiempo real."
+	  },
+	  {
+		"pregunta": "En el interior de un equipo informático de sobremesa, ¿cuál es la función principal de la Fuente de Alimentación (PSU)?",
+		"opciones": [
+		  "Transformar la corriente alterna (CA) de la red eléctrica en las distintas tensiones de corriente continua (CC) que necesitan los componentes.",
+		  "Refrigerar el interior de la caja absorbiendo el calor generado por el microprocesador.",
+		  "Distribuir la señal de red de internet a través de los puertos RJ-45 de la placa base.",
+		  "Proporcionar energía ininterrumpida (como un SAI/UPS) durante al menos 15 minutos si hay un corte de luz."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La fuente de alimentación convierte la corriente alterna de nuestro enchufe (normalmente 230V en Europa) en corriente continua de menor voltaje (normalmente +3.3V, +5V y +12V) que es la que pueden utilizar y tolerar los componentes electrónicos del PC."
+	  },
+	  {
+		"pregunta": "Si necesitamos conectar un monitor actual y queremos transmitir tanto vídeo en alta definición como audio digital utilizando un único cable, ¿qué puerto utilizaremos preferentemente?",
+		"opciones": [
+		  "VGA (Video Graphics Array).",
+		  "HDMI (High-Definition Multimedia Interface).",
+		  "Puerto Serie (COM).",
+		  "PS/2."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El puerto HDMI permite la transmisión de vídeo y audio digital de alta definición en un solo cable. El puerto VGA (ya obsoleto en equipos nuevos) solo transmite vídeo analógico y no transmite audio. Los puertos COM y PS/2 se usaban para periféricos antiguos como ratones y teclados."
+	  },
+	  {
+		"pregunta": "Dentro de la estructura de un Sistema Operativo, ¿qué es exactamente el 'Kernel' o núcleo?",
+		"opciones": [
+		  "El programa antivirus integrado que protege al sistema desde el arranque.",
+		  "La parte central y más importante del sistema operativo, que interactúa directamente con el hardware y gestiona los recursos.",
+		  "El explorador de archivos visual que permite al usuario gestionar sus carpetas.",
+		  "El procesador de textos básico que viene preinstalado en el sistema."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Kernel es el núcleo del sistema operativo. Es el primer programa que se carga (tras el gestor de arranque) y tiene control completo sobre todo el sistema. Gestiona la memoria, los procesos y hace de intermediario entre el software (las aplicaciones) y el hardware."
+	  },
+	  {
+		"pregunta": "¿Cuál es la finalidad de aplicar pasta térmica entre el microprocesador (CPU) y su correspondiente disipador de calor?",
+		"opciones": [
+		  "Pegar de forma permanente el disipador a la CPU para que no se suelte con las vibraciones.",
+		  "Mejorar la transferencia de calor rellenando las microimperfecciones entre las dos superficies metálicas.",
+		  "Aislar eléctricamente el procesador para evitar cortocircuitos con el chasis.",
+		  "Aumentar la velocidad del reloj (Overclock) mediante aditivos de plata."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Aunque a simple vista las superficies de la CPU y el disipador parecen lisas, microscópicamente tienen imperfecciones que dejan bolsas de aire (el aire es un mal conductor térmico). La pasta térmica rellena esos huecos, mejorando enormemente la transmisión de calor hacia el disipador."
+	  },
+	  {
+		"pregunta": "En un sistema informático, ¿qué es un 'controlador de dispositivo' (comúnmente llamado 'driver')?",
+		"opciones": [
+		  "Un componente de hardware adicional que se instala en una ranura de expansión.",
+		  "Un pequeño programa de software que enseña al Sistema Operativo cómo comunicarse y utilizar un componente de hardware específico.",
+		  "El cable o bus físico que conecta un periférico con la placa base.",
+		  "El usuario que tiene privilegios de administrador para hacer cambios en el sistema."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un driver o controlador es el software específico proporcionado normalmente por el fabricante de un hardware. Su función es traducir las instrucciones genéricas del sistema operativo a las instrucciones específicas que ese dispositivo en concreto entiende y necesita para funcionar."
+	  },
+	  {
+		"pregunta": "Al encender un ordenador, la BIOS/UEFI realiza una comprobación de diagnóstico inicial para verificar que el hardware básico (RAM, teclado, discos, etc.) funciona correctamente antes de cargar el Sistema Operativo. ¿Cómo se denomina a este proceso?",
+		"opciones": [
+		  "PING.",
+		  "BOOT.",
+		  "POST (Power-On Self-Test).",
+		  "SWAP."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El POST (Autocomprobación de Encendido) es la primera rutina que ejecuta la BIOS/UEFI. Si encuentra un error grave en la RAM o en la tarjeta gráfica, por ejemplo, el sistema se detendrá y emitirá unos pitidos o mostrará un código de error antes de intentar cargar cualquier sistema operativo."
+	  },
+	  {
+		"pregunta": "Al hablar de sistemas operativos modernos (como Windows, macOS o entornos de escritorio Linux), se suele decir que disponen de una GUI. ¿Qué significan estas siglas?",
+		"opciones": [
+		  "General User Internet.",
+		  "Graphical User Interface (Interfaz Gráfica de Usuario).",
+		  "Gestor Unificado de Información.",
+		  "Graphic Unit Integration (Integración de Unidad Gráfica)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "GUI significa Graphical User Interface. Es la interfaz que permite al usuario interactuar con el sistema operativo utilizando elementos gráficos como ventanas, iconos, menús y un puntero de ratón, en contraposición a las clásicas interfaces de línea de comandos (CLI)."
+	  },
+	  {
+		"pregunta": "Cuando un Sistema Operativo permite cargar y ejecutar aparentemente varios programas a la vez, repartiendo el tiempo de uso del microprocesador entre ellos de forma muy rápida, se dice que es un sistema:",
+		"opciones": [
+		  "Multiusuario.",
+		  "Multitarea.",
+		  "Multiprocesador.",
+		  "De tiempo real."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La multitarea (multitasking) es la característica de los sistemas operativos modernos que permite ejecutar múltiples procesos 'simultáneamente'. Aunque haya una sola CPU, el SO asigna pequeñas fracciones de tiempo (cuantos) a cada programa tan rápidamente que al usuario le parece que funcionan a la vez."
+	  },
+	  {
+		"pregunta": "¿Qué estándar de bus de conexión se utiliza de forma mayoritaria en las placas base actuales para conectar internamente discos duros convencionales (HDD) y unidades de estado sólido (SSD) en formato de 2.5 pulgadas?",
+		"opciones": [
+		  "SATA (Serial ATA).",
+		  "AGP (Accelerated Graphics Port).",
+		  "RJ-45.",
+		  "Paralelo (LPT)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La interfaz SATA es el estándar de conexión interno para unidades de almacenamiento masivo como HDD, SSD (en su formato de 2,5\") o lectores ópticos. Sustituyó al antiguo IDE/PATA. AGP era para tarjetas gráficas, RJ-45 es de red e impresoras antiguas usaban LPT."
+	  },
+	  {
+		"pregunta": "¿Qué ocurre con los datos almacenados en la memoria RAM (Random Access Memory) cuando se apaga o reinicia el equipo microinformático?",
+		"opciones": [
+		  "Se guardan automáticamente en el disco duro para su posterior recuperación al encender.",
+		  "Se comprimen y se envían a la memoria ROM para no perder el estado del sistema.",
+		  "Se pierden de forma permanente, ya que la RAM es una memoria de tipo volátil.",
+		  "Permanecen intactos gracias a la energía suministrada por la pila de la placa base (CMOS)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La memoria RAM es volátil, lo que significa que necesita energía eléctrica constante para retener la información. Al apagar el equipo, cualquier dato o programa cargado en ella se borra. La pila de la placa base mantiene únicamente los datos básicos de configuración de la BIOS/UEFI y el reloj en tiempo real."
+	  },
+	  {
+		"pregunta": "En el interior de un equipo informático de sobremesa, ¿cuál es la función principal de la Fuente de Alimentación (PSU)?",
+		"opciones": [
+		  "Transformar la corriente alterna (CA) de la red eléctrica en las distintas tensiones de corriente continua (CC) que necesitan los componentes.",
+		  "Refrigerar el interior de la caja absorbiendo el calor generado por el microprocesador.",
+		  "Distribuir la señal de red de internet a través de los puertos RJ-45 de la placa base.",
+		  "Proporcionar energía ininterrumpida (como un SAI/UPS) durante al menos 15 minutos si hay un corte de luz."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La fuente de alimentación convierte la corriente alterna de nuestro enchufe (normalmente 230V en Europa) en corriente continua de menor voltaje (normalmente +3.3V, +5V y +12V) que es la que pueden utilizar y tolerar los componentes electrónicos del PC."
+	  },
+	  {
+		"pregunta": "Si necesitamos conectar un monitor actual y queremos transmitir tanto vídeo en alta definición como audio digital utilizando un único cable, ¿qué puerto utilizaremos preferentemente?",
+		"opciones": [
+		  "VGA (Video Graphics Array).",
+		  "HDMI (High-Definition Multimedia Interface).",
+		  "Puerto Serie (COM).",
+		  "PS/2."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El puerto HDMI permite la transmisión de vídeo y audio digital de alta definición en un solo cable. El puerto VGA (ya obsoleto en equipos nuevos) solo transmite vídeo analógico y no transmite audio. Los puertos COM y PS/2 se usaban para periféricos antiguos como ratones y teclados."
+	  },
+	  {
+		"pregunta": "Dentro de la estructura de un Sistema Operativo, ¿qué es exactamente el 'Kernel' o núcleo?",
+		"opciones": [
+		  "El programa antivirus integrado que protege al sistema desde el arranque.",
+		  "La parte central y más importante del sistema operativo, que interactúa directamente con el hardware y gestiona los recursos.",
+		  "El explorador de archivos visual que permite al usuario gestionar sus carpetas.",
+		  "El procesador de textos básico que viene preinstalado en el sistema."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Kernel es el núcleo del sistema operativo. Es el primer programa que se carga (tras el gestor de arranque) y tiene control completo sobre todo el sistema. Gestiona la memoria, los procesos y hace de intermediario entre el software (las aplicaciones) y el hardware."
+	  },
+	  {
+		"pregunta": "¿Cuál es la finalidad de aplicar pasta térmica entre el microprocesador (CPU) y su correspondiente disipador de calor?",
+		"opciones": [
+		  "Pegar de forma permanente el disipador a la CPU para que no se suelte con las vibraciones.",
+		  "Mejorar la transferencia de calor rellenando las microimperfecciones entre las dos superficies metálicas.",
+		  "Aislar eléctricamente el procesador para evitar cortocircuitos con el chasis.",
+		  "Aumentar la velocidad del reloj (Overclock) mediante aditivos de plata."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Aunque a simple vista las superficies de la CPU y el disipador parecen lisas, microscópicamente tienen imperfecciones que dejan bolsas de aire (el aire es un mal conductor térmico). La pasta térmica rellena esos huecos, mejorando enormemente la transmisión de calor hacia el disipador."
+	  },
+	  {
+		"pregunta": "En un sistema informático, ¿qué es un 'controlador de dispositivo' (comúnmente llamado 'driver')?",
+		"opciones": [
+		  "Un componente de hardware adicional que se instala en una ranura de expansión.",
+		  "Un pequeño programa de software que enseña al Sistema Operativo cómo comunicarse y utilizar un componente de hardware específico.",
+		  "El cable o bus físico que conecta un periférico con la placa base.",
+		  "El usuario que tiene privilegios de administrador para hacer cambios en el sistema."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un driver o controlador es el software específico proporcionado normalmente por el fabricante de un hardware. Su función es traducir las instrucciones genéricas del sistema operativo a las instrucciones específicas que ese dispositivo en concreto entiende y necesita para funcionar."
+	  },
+	  {
+		"pregunta": "Al encender un ordenador, la BIOS/UEFI realiza una comprobación de diagnóstico inicial para verificar que el hardware básico (RAM, teclado, discos, etc.) funciona correctamente antes de cargar el Sistema Operativo. ¿Cómo se denomina a este proceso?",
+		"opciones": [
+		  "PING.",
+		  "BOOT.",
+		  "POST (Power-On Self-Test).",
+		  "SWAP."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El POST (Autocomprobación de Encendido) es la primera rutina que ejecuta la BIOS/UEFI. Si encuentra un error grave en la RAM o en la tarjeta gráfica, por ejemplo, el sistema se detendrá y emitirá unos pitidos o mostrará un código de error antes de intentar cargar cualquier sistema operativo."
+	  },
+	  {
+		"pregunta": "Al hablar de sistemas operativos modernos (como Windows, macOS o entornos de escritorio Linux), se suele decir que disponen de una GUI. ¿Qué significan estas siglas?",
+		"opciones": [
+		  "General User Internet.",
+		  "Graphical User Interface (Interfaz Gráfica de Usuario).",
+		  "Gestor Unificado de Información.",
+		  "Graphic Unit Integration (Integración de Unidad Gráfica)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "GUI significa Graphical User Interface. Es la interfaz que permite al usuario interactuar con el sistema operativo utilizando elementos gráficos como ventanas, iconos, menús y un puntero de ratón, en contraposición a las clásicas interfaces de línea de comandos (CLI)."
+	  },
+	  {
+		"pregunta": "Cuando un Sistema Operativo permite cargar y ejecutar aparentemente varios programas a la vez, repartiendo el tiempo de uso del microprocesador entre ellos de forma muy rápida, se dice que es un sistema:",
+		"opciones": [
+		  "Multiusuario.",
+		  "Multitarea.",
+		  "Multiprocesador.",
+		  "De tiempo real."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La multitarea (multitasking) es la característica de los sistemas operativos modernos que permite ejecutar múltiples procesos 'simultáneamente'. Aunque haya una sola CPU, el SO asigna pequeñas fracciones de tiempo (cuantos) a cada programa tan rápidamente que al usuario le parece que funcionan a la vez."
+	  },
+	  {
+		"pregunta": "¿Qué estándar de bus de conexión se utiliza de forma mayoritaria en las placas base actuales para conectar internamente discos duros convencionales (HDD) y unidades de estado sólido (SSD) en formato de 2.5 pulgadas?",
+		"opciones": [
+		  "SATA (Serial ATA).",
+		  "AGP (Accelerated Graphics Port).",
+		  "RJ-45.",
+		  "Paralelo (LPT)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La interfaz SATA es el estándar de conexión interno para unidades de almacenamiento masivo como HDD, SSD (en su formato de 2,5\") o lectores ópticos. Sustituyó al antiguo IDE/PATA. AGP era para tarjetas gráficas, RJ-45 es de red e impresoras antiguas usaban LPT."
+	  },
+	  {
+		"pregunta": "¿Qué formato de módulo de memoria RAM es el estándar utilizado habitualmente en ordenadores portátiles y equipos compactos (mini PC) debido a su menor tamaño?",
+		"opciones": [
+		  "DIMM.",
+		  "SO-DIMM.",
+		  "SIMM.",
+		  "VRAM."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los módulos SO-DIMM (Small Outline Dual In-line Memory Module) son una versión compacta de los módulos DIMM tradicionales, diseñados específicamente para dispositivos donde el espacio es limitado, como portátiles o mini PCs. La VRAM es memoria gráfica y los SIMM están completamente obsoletos."
+	  },
+	  {
+		"pregunta": "Dentro de la Unidad Central de Proceso (CPU), ¿qué elemento es el encargado de realizar las operaciones matemáticas (sumas, restas) y lógicas (AND, OR, NOT)?",
+		"opciones": [
+		  "La Unidad de Control (CU).",
+		  "Los Registros de Propósito General.",
+		  "La Unidad Aritmético-Lógica (ALU).",
+		  "El Bus Frontal (FSB)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La ALU (Arithmetic Logic Unit) es el circuito digital dentro del procesador que calcula las operaciones aritméticas y lógicas. La Unidad de Control dirige el funcionamiento, los registros almacenan datos temporalmente y el bus es el canal de comunicación."
+	  },
+	  {
+		"pregunta": "En el contexto de los sistemas operativos y la gestión de periféricos, ¿qué significa el término 'Plug and Play' (PnP)?",
+		"opciones": [
+		  "La capacidad del sistema operativo para descargar automáticamente videojuegos compatibles con la tarjeta gráfica instalada.",
+		  "Un protocolo de red que permite conectar equipos en malla sin necesidad de un router central.",
+		  "La tecnología que permite conectar un dispositivo de hardware al ordenador y que el sistema operativo lo reconozca y configure automáticamente sin intervención manual compleja.",
+		  "El proceso por el cual el microprocesador entra en modo de bajo consumo cuando no se están utilizando periféricos de entrada."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Plug and Play (Enchufar y Usar) facilita enormemente la vida al usuario, ya que el sistema operativo es capaz de detectar un nuevo dispositivo hardware (por ejemplo, un ratón USB), buscar el controlador genérico adecuado y ponerlo a funcionar casi instantáneamente."
+	  },
+	  {
+		"pregunta": "Actualmente, la clásica BIOS de las placas base ha sido sustituida mayoritariamente por un estándar más moderno, con interfaz gráfica y soporte para ratón, mayor seguridad y capacidad para discos duros grandes. ¿Cómo se llama este estándar?",
+		"opciones": [
+		  "CMOS.",
+		  "UEFI.",
+		  "MBR.",
+		  "GRUB."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "UEFI (Unified Extensible Firmware Interface) es el firmware moderno que reemplaza a la BIOS heredada. Ofrece un arranque más rápido, soporte para particiones GPT (lo que permite discos de más de 2 TB) y características de seguridad avanzadas como Secure Boot."
+	  },
+	  {
+		"pregunta": "En los equipos informáticos actuales, ¿qué formato de conexión física es el más habitual para instalar un disco de estado sólido (SSD) de tipo NVMe directamente sobre la placa base, sin necesidad de cables?",
+		"opciones": [
+		  "SATA III.",
+		  "M.2.",
+		  "PCIe x16.",
+		  "USB-C."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El formato M.2 es una ranura situada directamente en la placa base que permite instalar tarjetas de expansión pequeñas, siendo su uso más común los SSD NVMe. Esto elimina la necesidad de cables de datos y de alimentación, ahorrando espacio y ofreciendo velocidades muy superiores al estándar SATA."
+	  },
+	  {
+		"pregunta": "¿Qué componente lógico del Sistema Operativo se encarga de organizar, nombrar, almacenar y recuperar los datos en las unidades de almacenamiento masivo?",
+		"opciones": [
+		  "El Shell o intérprete de comandos.",
+		  "El Gestor de Memoria Virtual.",
+		  "El Sistema de Archivos (File System).",
+		  "El Programador de Tareas (Scheduler)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Sistema de Archivos (como NTFS en Windows o ext4 en Linux) establece la estructura y las reglas mediante las cuales se guarda y recupera la información en un disco. Sin él, los datos serían un bloque continuo de información sin forma de distinguir dónde empieza y termina cada documento."
+	  },
+	  {
+		"pregunta": "En la jerarquía de las unidades de medida de la información, ¿cuál es la equivalencia correcta de un Byte?",
+		"opciones": [
+		  "1024 Bits.",
+		  "8 Bits.",
+		  "16 Bits.",
+		  "4 Bits."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un Byte (octeto) es la unidad fundamental de datos en los ordenadores personales y equivale exactamente a 8 bits. Un bit es la unidad mínima (un 0 o un 1). Esta es una conversión básica que todo auxiliar debe dominar."
+	  },
+	  {
+		"pregunta": "Dentro de la arquitectura de ordenadores, ¿qué componente es la GPU?",
+		"opciones": [
+		  "La unidad encargada de proveer energía eléctrica limpia y estabilizada a la placa base.",
+		  "El procesador dedicado exclusivamente a manejar la memoria RAM y el bus de datos.",
+		  "El chip especializado en el procesamiento de gráficos y operaciones de coma flotante masivas para liberar de carga a la CPU.",
+		  "El disipador térmico que se coloca encima del microprocesador."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "GPU significa Graphics Processing Unit (Unidad de Procesamiento Gráfico). Es el 'cerebro' de las tarjetas gráficas (o puede venir integrada en la CPU). Se encarga de calcular y renderizar las imágenes que vemos en pantalla."
+	  },
+	  {
+		"pregunta": "Si hablamos de las características de los sistemas operativos, ¿qué define principalmente a un sistema como GNU/Linux frente a Microsoft Windows?",
+		"opciones": [
+		  "GNU/Linux no dispone de interfaz gráfica, requiriendo siempre el uso de línea de comandos.",
+		  "GNU/Linux es un sistema de código abierto (Open Source), lo que permite a los usuarios ver y modificar su código fuente.",
+		  "Microsoft Windows es completamente gratuito para entidades públicas, mientras que Linux requiere licencias por volumen.",
+		  "Microsoft Windows solo puede instalarse en discos mecánicos, mientras que Linux está diseñado para unidades de estado sólido."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La diferencia fundamental es el modelo de licenciamiento y desarrollo. GNU/Linux es software libre y de código abierto, lo que permite a cualquier usuario o entidad auditar, modificar y distribuir su código. Windows es un sistema operativo propietario o privativo."
+	  },
+	  {
+		"pregunta": "¿Qué elemento de hardware se instala obligatoriamente junto al procesador para evitar que se destruya por exceso de temperatura tras unos pocos segundos de funcionamiento?",
+		"opciones": [
+		  "El zócalo de retención de aluminio.",
+		  "El conjunto de disipador térmico y ventilador (o refrigeración líquida).",
+		  "El chip regulador de voltaje (VRM).",
+		  "La tarjeta de expansión térmica PCIe."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los procesadores actuales generan una enorme cantidad de calor al procesar millones de instrucciones por segundo. Es absolutamente imprescindible instalar un sistema de refrigeración (normalmente un bloque metálico disipador con un ventilador) encima de la CPU, ayudado por la pasta térmica, para disipar ese calor."
+	  },
+	  {
+		"pregunta": "De los siguientes estándares de conexión física USB, ¿cuál se caracteriza por tener un diseño simétrico y reversible, lo que permite conectarlo sin importar la orientación?",
+		"opciones": [
+		  "USB Tipo A.",
+		  "Micro-USB Tipo B.",
+		  "USB Tipo C.",
+		  "USB Mini-A."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El conector USB Tipo C (USB-C) introdujo el diseño simétrico (ovalado), resolviendo el clásico problema de tener que mirar en qué posición se insertaba el cable. El USB Tipo A es el rectangular clásico, y el Micro-USB es el que usaban los móviles antiguos, ambos asimétricos."
+	  },
+	  {
+		"pregunta": "En la gestión de periféricos de un Sistema Operativo, ¿qué técnica se utiliza para almacenar temporalmente los trabajos de impresión en el disco duro o en la memoria hasta que la impresora esté libre, permitiendo al usuario seguir utilizando el ordenador sin bloqueos?",
+		"opciones": [
+		  "Paginación (Paging).",
+		  "Spooling (Simultaneous Peripheral Operations On-line).",
+		  "Swapping.",
+		  "Buffering circular."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Spooling' (o cola de impresión) es una técnica donde el sistema operativo guarda los documentos a imprimir en una zona de almacenamiento (spool). Así, la aplicación que manda a imprimir termina su tarea rápidamente y el SO va enviando los datos a la impresora poco a poco según esta pueda procesarlos."
+	  },
+	  {
+		"pregunta": "Dentro de la arquitectura de Von Neumann y la comunicación entre los componentes de la placa base, ¿qué bus se encarga de indicar la ubicación exacta de memoria en la que la CPU desea leer o escribir un dato?",
+		"opciones": [
+		  "El bus de datos.",
+		  "El bus de control.",
+		  "El bus de direcciones.",
+		  "El bus frontal (FSB)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Bus de Direcciones (Address Bus) es unidireccional (de la CPU a la memoria) y sirve para que el procesador indique en qué 'casilla' o dirección de memoria RAM quiere operar. Una vez apuntada la dirección, la información viajará por el Bus de Datos."
+	  },
+	  {
+		"pregunta": "En el contexto de la teoría de los Sistemas de Información, ¿cuál es la diferencia fundamental entre un 'Dato' y la 'Información'?",
+		"opciones": [
+		  "Son sinónimos; ambos términos se refieren a cualquier archivo almacenado en un disco duro.",
+		  "El dato es cualitativo y la información es siempre cuantitativa.",
+		  "El dato es la información estructurada en una base de datos relacional.",
+		  "El dato es un hecho aislado sin procesar, mientras que la información es un conjunto de datos procesados y estructurados que tienen un significado y utilidad para el usuario."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Un dato por sí solo (por ejemplo, el número '38') no aporta conocimiento. Cuando ese dato se procesa y contextualiza (ej. 'El paciente tiene 38 grados de fiebre'), se convierte en información útil para tomar decisiones. Esta es la base de todo Sistema de Información."
+	  },
+	  {
+		"pregunta": "En las oficinas de la Administración Pública es muy habitual conectar los servidores o equipos críticos a un dispositivo llamado SAI (o UPS en inglés). ¿Cuál es su función principal?",
+		"opciones": [
+		  "Multiplicar los puertos de red disponibles para conectar más equipos informáticos.",
+		  "Proporcionar suministro eléctrico temporal mediante baterías integradas en caso de un corte del suministro de la red eléctrica.",
+		  "Realizar copias de seguridad automáticas (backups) de los datos en la nube.",
+		  "Aislar la red local de posibles ataques externos de hackers o virus."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "SAI significa Sistema de Alimentación Ininterrumpida. Contiene baterías que, ante un corte de luz o picos severos de tensión, mantienen el equipo encendido el tiempo suficiente (normalmente entre 5 y 20 minutos) para poder guardar el trabajo y apagar el sistema operativo de forma segura sin pérdida de datos."
+	  },
+	  {
+		"pregunta": "¿Qué programa específico es el responsable de cargar en la memoria RAM el núcleo (Kernel) del Sistema Operativo una vez que la BIOS/UEFI ha finalizado con éxito sus comprobaciones de hardware?",
+		"opciones": [
+		  "El gestor de arranque (Bootloader).",
+		  "El intérprete de comandos (Shell).",
+		  "El administrador de tareas (Task Manager).",
+		  "El desfragmentador de disco."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El gestor de arranque (como GRUB en Linux o Windows Boot Manager en Microsoft) es un pequeño programa alojado en los primeros sectores del disco que toma el relevo de la BIOS/UEFI y se encarga de localizar e iniciar la carga del sistema operativo propiamente dicho en la RAM."
+	  },
+	  {
+		"pregunta": "¿Qué tipo de memoria, cuyo contenido históricamente no se borraba al apagar el equipo y venía grabada de fábrica, se utiliza en la placa base para almacenar el firmware básico, habiendo evolucionado hoy en día a variantes que sí pueden ser actualizadas (como EEPROM o Flash)?",
+		"opciones": [
+		  "RAM (Random Access Memory).",
+		  "ROM (Read Only Memory).",
+		  "Caché L3.",
+		  "Memoria Virtual."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La memoria ROM (Memoria de Solo Lectura) es no volátil. Originalmente no se podía modificar (venía programada de fábrica). Hoy en día se usan chips ROM de tipo Flash (Flash ROM) que permiten ser reprogramados o 'flasheados' por el usuario para actualizar la BIOS/UEFI, pero mantienen la característica de no perder los datos sin corriente."
+	  },
+	  {
+		"pregunta": "En los sistemas operativos de la familia Microsoft Windows, ¿cuál es el método predeterminado que utiliza el sistema para determinar con qué aplicación o programa debe abrirse un archivo cuando el usuario hace doble clic sobre él?",
+		"opciones": [
+		  "Analizando el tamaño total del archivo en bytes.",
+		  "Leyendo los metadatos ocultos en la cabecera del archivo (Magic Numbers).",
+		  "A través de la extensión del archivo, es decir, los caracteres que siguen al último punto de su nombre.",
+		  "Consultando obligatoriamente a internet en la base de datos de Microsoft Store."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Windows asocia los programas predeterminados basándose en la extensión del archivo (por ejemplo, .docx se asocia con Word, .pdf con Acrobat Reader o Edge). A diferencia de Linux, que a menudo utiliza las cabeceras internas del archivo ('magic numbers') para identificar su contenido independientemente del nombre."
+	  },
+	  {
+		"pregunta": "Cuando la memoria principal (RAM) de un equipo microinformático se llena por completo porque hay muchas aplicaciones abiertas, el Sistema Operativo utiliza temporalmente una porción del disco duro como si fuera memoria RAM. ¿Cómo se denomina a esta técnica?",
+		"opciones": [
+		  "Overclocking.",
+		  "Memoria Virtual (o paginación).",
+		  "Memoria Caché L2.",
+		  "Formateo a bajo nivel."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La memoria virtual es una técnica de gestión de memoria del SO. Consiste en mover bloques de datos (páginas) que no se están usando activamente desde la RAM al disco duro (archivo pagefile.sys en Windows o partición Swap en Linux), liberando espacio en la RAM para el programa que tiene el foco. Como el disco es más lento, un uso excesivo ralentiza el equipo."
+	  },
+	  {
+		"pregunta": "En el apartado de conectividad, toda tarjeta de interfaz de red (NIC) lleva grabado de fábrica por el fabricante un identificador único de 48 bits a nivel físico que, en teoría, es irrepetible a nivel mundial. ¿Cómo se conoce a esta dirección?",
+		"opciones": [
+		  "Dirección IP (Internet Protocol).",
+		  "Máscara de subred.",
+		  "Dirección DNS.",
+		  "Dirección MAC (Media Access Control)."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "La dirección MAC es la dirección física de la tarjeta de red (por ejemplo, 00:1A:2B:3C:4D:5E). No cambia aunque el equipo se mueva de red, a diferencia de la dirección IP (dirección lógica), que es asignada por el router o el administrador y cambia según la red a la que te conectes."
+	  },
+	  {
+		"pregunta": "¿Qué unidad de medida se utiliza en la actualidad para expresar la velocidad del reloj interno o la frecuencia de funcionamiento de un microprocesador?",
+		"opciones": [
+		  "Megabytes por segundo (MB/s).",
+		  "Gigahercios (GHz).",
+		  "Teraflops (TFLOPS).",
+		  "Revoluciones por minuto (RPM)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La frecuencia del reloj de la CPU indica cuántos ciclos de instrucción puede ejecutar por segundo y se mide en hercios (actualmente en la escala de Gigahercios, GHz). Los MB/s miden ancho de banda de transferencia, los TFLOPS el rendimiento bruto en coma flotante (común en gráficas) y las RPM la velocidad de giro de los discos duros mecánicos."
+	  },
+	  {
+		"pregunta": "En entornos Windows, ¿qué sistema de archivos es necesario utilizar para poder aplicar permisos de seguridad a nivel de archivo/carpeta de forma local y soportar archivos de más de 4 GB?",
+		"opciones": [
+		  "FAT32.",
+		  "exFAT.",
+		  "NTFS.",
+		  "ext4."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "NTFS (New Technology File System) es el sistema de archivos por defecto en Windows. Permite establecer listas de control de acceso (ACL) para dar permisos a usuarios concretos, cifrado y admite archivos muy grandes. FAT32 tiene un límite de 4 GB por archivo y no maneja permisos locales de usuario. ext4 es propio de Linux."
+	  },
+	  {
+		"pregunta": "En el cableado de red de área local (LAN) mediante cables de pares trenzados de cobre, ¿cómo se denomina al conector estándar que se inserta en la tarjeta de red del equipo microinformático?",
+		"opciones": [
+		  "RJ-11.",
+		  "RJ-45.",
+		  "BNC.",
+		  "SFP+."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El RJ-45 es el conector físico estándar para redes Ethernet sobre cable de cobre de pares trenzados (categoría 5e, 6, etc.). El RJ-11 es más pequeño y se utiliza tradicionalmente para la telefonía fija analógica. BNC es para cables coaxiales y SFP+ para fibra óptica o cables directos en servidores."
+	  },
+	  {
+		"pregunta": "¿Qué componente de la placa base permite mantener actualizados la fecha, la hora y los parámetros básicos de configuración de la BIOS/UEFI incluso cuando el ordenador está completamente desconectado de la red eléctrica?",
+		"opciones": [
+		  "El condensador principal de la fuente de alimentación.",
+		  "Un pequeño módulo de memoria flash tipo NVRAM.",
+		  "La pila de litio, habitualmente de formato CR2032.",
+		  "El puente sur (Southbridge)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las placas base incorporan una pila de botón (generalmente una CR2032 de 3 voltios) que proporciona una pequeñísima corriente constante al chip CMOS y al reloj de tiempo real (RTC). Si el ordenador se atrasa en la hora constantemente al apagarlo, es el principal síntoma de que esta pila se ha agotado."
+	  },
+	  {
+		"pregunta": "Cuando hablamos del rendimiento de una impresora, ¿qué indican las siglas PPP (o DPI en inglés)?",
+		"opciones": [
+		  "Páginas Por Periodo, es decir, la velocidad de impresión por minuto.",
+		  "Protocolo de Punto a Punto, el estándar de conexión de la impresora por red.",
+		  "Puntos Por Pulgada, que determina la resolución y calidad de la imagen impresa.",
+		  "Precio Por Página, un cálculo de rentabilidad del tóner."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "PPP (Puntos Por Pulgada) o DPI (Dots Per Inch) mide la resolución de una impresora o escáner. Cuantos más puntos de tinta sea capaz de colocar la impresora en un espacio de una pulgada cuadrada, mayor será la nitidez y el detalle de la impresión final."
+	  },
+	  {
+		"pregunta": "En las ranuras de expansión de una placa base moderna (PCI Express), podemos encontrar nomenclaturas como PCIe x1, x4, x8 o x16. ¿Qué indica exactamente el número final?",
+		"opciones": [
+		  "La versión del protocolo de transferencia (generación 1, 4, 8 o 16).",
+		  "El número de líneas o carriles de datos (lanes) simultáneos de los que dispone la ranura.",
+		  "La longitud física de la tarjeta expresada en centímetros.",
+		  "El voltaje máximo que la ranura puede suministrar a la tarjeta insertada."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El número que acompaña al factor de forma PCIe (x1, x4, etc.) indica la cantidad de 'carriles' (lanes) de datos disponibles. A mayor número, más ancho de banda. Una tarjeta gráfica potente suele requerir una ranura física PCIe x16 para aprovechar el máximo caudal de datos posible."
+	  },
+	  {
+		"pregunta": "¿Cuál es la diferencia técnica fundamental entre un software distribuido bajo licencia 'Freeware' y uno bajo licencia de 'Software Libre' (como GPL)?",
+		"opciones": [
+		  "El Freeware obliga a pagar si se usa en empresas, el Software Libre es gratuito en todos los ámbitos.",
+		  "El Freeware se distribuye gratuitamente pero no permite acceder ni modificar su código fuente, mientras que el Software Libre garantiza el acceso y modificación del código.",
+		  "Son exactamente lo mismo; ambos términos son sinónimos utilizados en distintos países.",
+		  "El Software Libre siempre requiere compilarse manualmente, mientras que el Freeware se descarga ya como ejecutable."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Freeware es software gratuito (no cuesta dinero), pero sigue siendo propietario; no tienes acceso a su código fuente. El Software Libre (Free Software) se refiere a la libertad (no al precio), otorgando al usuario las 4 libertades esenciales: usar, estudiar (ver el código), distribuir y modificar el programa."
+	  },
+	  {
+		"pregunta": "Dentro del ciclo de vida clásico del desarrollo de un Sistema de Información, ¿cuál es habitualmente la primera fase, previa al diseño y la programación?",
+		"opciones": [
+		  "El Análisis de Requisitos.",
+		  "La Implementación en el entorno de producción.",
+		  "Las pruebas unitarias y de integración.",
+		  "El mantenimiento adaptativo."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La primera fase de cualquier ciclo de vida (como el modelo en cascada) es el Análisis de Requisitos. En esta etapa se determina qué necesita exactamente la organización, qué problemas debe resolver el sistema y cuáles son las restricciones, antes de empezar a diseñar o escribir código."
+	  },
+	  {
+		"pregunta": "En un equipo con sistema operativo Windows, ¿qué atajo de teclado directo permite abrir el 'Administrador de Tareas' sin pasar previamente por la pantalla de seguridad de Windows?",
+		"opciones": [
+		  "Ctrl + Alt + Suprimir.",
+		  "Ctrl + Shift + Escape.",
+		  "Windows + R.",
+		  "Alt + F4."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Ctrl + Shift + Esc abre el Administrador de Tareas directamente. La combinación clásica Ctrl + Alt + Supr abre una pantalla de opciones de seguridad (bloquear, cambiar usuario, cerrar sesión...) desde la cual también se puede acceder al Administrador, pero no es el método más directo."
+	  },
+	  {
+		"pregunta": "¿Qué tipo de consumible utilizan las impresoras láser para plasmar la información en el papel?",
+		"opciones": [
+		  "Cartuchos de tinta líquida inyectada mediante calor.",
+		  "Cintas entintadas impactadas por agujas.",
+		  "Tóner, que es un polvo fino compuesto de plástico y pigmentos.",
+		  "Papel térmico especial que reacciona al calor."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las impresoras láser utilizan tóner. Mediante un haz láser, se dibuja la imagen en un tambor fotosensible atrayendo electrostáticamente el polvo de tóner. Luego este polvo se transfiere al papel y se fija permanentemente aplicando calor mediante un rodillo fusor."
+	  },
+	  {
+		"pregunta": "Para poder ejecutar varios Sistemas Operativos virtuales simultáneamente dentro de un único equipo físico, ¿qué tipo de software especial es imprescindible?",
+		"opciones": [
+		  "Un Bootloader.",
+		  "Un Hipervisor (Hypervisor).",
+		  "Un emulador de arquitectura ARM.",
+		  "Un sistema de contenedores tipo Docker exclusivamente."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un Hipervisor (o Monitor de Máquina Virtual) es el software que crea y ejecuta máquinas virtuales. Puede ser de Tipo 1 (Bare-metal, se instala directo sobre el hardware, como VMware ESXi o Hyper-V) o de Tipo 2 (Hosted, se instala sobre otro sistema operativo, como VirtualBox)."
+	  },
+	  {
+		"pregunta": "En la jerarquía de memorias de un equipo microinformático, ¿cuál de las siguientes opciones representa la memoria más rápida y más cercana a la Unidad de Ejecución de la CPU?",
+		"opciones": [
+		  "La memoria RAM DDR5.",
+		  "La memoria Caché L3 (Nivel 3).",
+		  "La memoria Caché L1 (Nivel 1).",
+		  "Los discos de estado sólido (SSD NVMe)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La regla es: cuanto más cerca del núcleo del procesador, más rápida y de menor tamaño es la memoria. Los registros de la CPU son los más rápidos, seguidos de la Caché L1 (integrada en cada núcleo), luego L2, L3, RAM, y finalmente el almacenamiento masivo (SSD/HDD)."
+	  },
+	  {
+		"pregunta": "En el panel trasero de una placa base típica que incorpora tarjeta de sonido, encontramos varios conectores de audio analógico (Jack 3.5mm) de colores. ¿Qué color se utiliza estandarizadamente para la salida de audio estéreo principal (altavoces frontales o auriculares)?",
+		"opciones": [
+		  "Rosa.",
+		  "Azul claro.",
+		  "Verde lima.",
+		  "Naranja."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Según el estándar PC99 de colores de puertos, el color Verde Lima es la salida de línea estéreo principal (Line-out). El Rosa es para la entrada de micrófono (Mic-in) y el Azul Claro para la entrada de línea (Line-in)."
+	  },
+	  {
+		"pregunta": "En el ámbito de los Sistemas de Información corporativos y la Administración Pública, ¿qué significan las siglas ERP?",
+		"opciones": [
+		  "Enterprise Resource Planning (Planificación de Recursos Empresariales).",
+		  "Electronic Registry Process (Proceso de Registro Electrónico).",
+		  "Encrypted Routing Protocol (Protocolo de Enrutamiento Cifrado).",
+		  "Employee Reporting Portal (Portal de Informes del Empleado)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Un ERP (Planificación de Recursos Empresariales) es un sistema de información integral que incorpora y centraliza los procesos operativos y de negocio de una organización (recursos humanos, compras, contabilidad, nóminas, etc.) en una base de datos centralizada."
+	  },
+	  {
+		"pregunta": "¿Qué es el 'Registro de Windows' (Windows Registry)?",
+		"opciones": [
+		  "Un archivo de texto plano donde se guardan los logs de errores del sistema.",
+		  "La carpeta donde se instalan por defecto todos los programas de usuario (Archivos de programa).",
+		  "Una base de datos jerárquica centralizada donde el sistema operativo y las aplicaciones almacenan su configuración y opciones de bajo nivel.",
+		  "El historial de actualizaciones aplicadas por Windows Update."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Registro de Windows es una base de datos jerárquica que almacena configuraciones de hardware, software, preferencias de usuario y ajustes críticos del núcleo operativo. Sustituyó a los antiguos archivos .ini dispersos. Se accede a él mediante la herramienta 'regedit'."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar de Informática instala una versión de Windows de 32 bits (arquitectura x86) en un equipo moderno que dispone de 16 GB de memoria RAM física instalada, ¿cuál será el resultado práctico respecto a la memoria utilizable?",
+		"opciones": [
+		  "El sistema no arrancará debido a una incompatibilidad total de arquitectura.",
+		  "El sistema operativo reconocerá y utilizará los 16 GB mediante una técnica llamada Paginación de Extensión Física.",
+		  "El sistema operativo solo será capaz de direccionar y utilizar un máximo aproximado de 4 GB de RAM.",
+		  "El equipo utilizará los primeros 8 GB para el sistema y los 8 GB restantes como memoria de vídeo dedicada."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Una limitación matemática arquitectónica de los sistemas operativos de 32 bits es que solo pueden direccionar $2^{32}$ bytes de memoria, lo que equivale exactamente a 4 GB (en la práctica, alrededor de 3.2 a 3.5 GB quedan libres para el SO, pues parte se reserva para hardware). Para usar más RAM, es obligatorio un sistema de 64 bits."
+	  },
+	  {
+		"pregunta": "Al diseñar u organizar los componentes internos, las placas base se fabrican siguiendo unos estándares de dimensiones y distribución de tornillos conocidos como 'Factores de forma'. ¿Cuál es el factor de forma estándar más común en los ordenadores de sobremesa tipo torre?",
+		"opciones": [
+		  "Mini-ITX.",
+		  "ATX (Advanced Technology eXtended).",
+		  "BTX.",
+		  "PCMCIA."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El estándar ATX (y sus variantes más pequeñas como Micro-ATX) es el formato dominante en los ordenadores de sobremesa, definido por Intel en los años 90. Define el tamaño de la placa (típicamente 305 × 244 mm), la posición de los tornillos, las ranuras traseras y los conectores de la fuente de alimentación."
+	  },
+	  {
+		"pregunta": "Cuando un sistema operativo Windows tiene problemas para arrancar debido a un driver defectuoso o malware, ¿qué función de diagnóstico permite iniciar el sistema cargando únicamente los controladores y servicios mínimos imprescindibles?",
+		"opciones": [
+		  "Modo Seguro (Safe Mode).",
+		  "Inicio Rápido (Fast Boot).",
+		  "Consola de Recuperación de comandos.",
+		  "Restaurar Sistema (System Restore)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El 'Modo Seguro' es una opción de resolución de problemas que inicia Windows en un estado básico, usando un conjunto limitado de archivos y controladores. Esto permite al técnico desinstalar el programa, driver o virus que está provocando el pantallazo azul en el inicio normal."
+	  },
+	  {
+		"pregunta": "En relación a las interfaces de línea de comandos (CLI) utilizadas habitualmente en la administración de sistemas operativos, ¿cómo se denomina el intérprete de comandos por defecto y más utilizado en los sistemas GNU/Linux modernos?",
+		"opciones": [
+		  "Command Prompt (CMD).",
+		  "PowerShell.",
+		  "Bash (Bourne Again Shell).",
+		  "MS-DOS."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Bash es el intérprete de comandos ('shell') más popular y el que viene por defecto en la inmensa mayoría de distribuciones Linux (Ubuntu, Debian, RedHat...). CMD y PowerShell son nativos de entornos Microsoft Windows."
+	  },
+	  {
+		"pregunta": "En un disco duro mecánico tradicional (HDD), la información se graba en platos magnéticos. ¿Cómo se llama el proceso de preparación inicial que crea las pistas y sectores concéntricos en el disco vacío para que el sistema operativo pueda interactuar con él posteriormente?",
+		"opciones": [
+		  "Desfragmentación.",
+		  "Formateo a bajo nivel (Low-level formatting).",
+		  "Formateo lógico o de alto nivel.",
+		  "Particionamiento de volúmenes LVM."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El formateo a bajo nivel, también llamado formato físico, es el proceso (generalmente realizado en fábrica) que marca físicamente la superficie magnética del disco dividiéndolo en pistas y sectores. El formateo a alto nivel (o lógico) es el que hacemos al instalar un sistema operativo para crear el sistema de archivos (NTFS, ext4, etc.)."
+	  },
+	  {
+		"pregunta": "En los servidores y estaciones de trabajo de la Administración, es muy común agrupar varios discos físicos para que funcionen como una sola unidad lógica. ¿Qué nivel de configuración RAID es conocido como 'Espejo' (Mirroring) y proporciona redundancia duplicando exactamente los datos de un disco en otro?",
+		"opciones": [
+		  "RAID 0.",
+		  "RAID 1.",
+		  "RAID 5.",
+		  "RAID 10."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "RAID 1 se denomina 'espejo'. Lo que se escribe en el primer disco se copia simultáneamente en el segundo. Si uno falla, el sistema sigue funcionando sin pérdida de datos. RAID 0 (Striping) mejora el rendimiento pero no da seguridad; si falla un disco, se pierde todo."
+	  },
+	  {
+		"pregunta": "Para que los programas de usuario (aplicaciones) puedan solicitar servicios de bajo nivel al núcleo (Kernel) del sistema operativo, como leer un archivo del disco o enviar datos por red, ¿qué mecanismo utilizan?",
+		"opciones": [
+		  "El gestor de arranque (Bootloader).",
+		  "Las llamadas al sistema (System Calls).",
+		  "Las interrupciones de hardware (IRQs).",
+		  "El desfragmentador de memoria."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las llamadas al sistema (System Calls) son la interfaz de programación (API) entre las aplicaciones y el núcleo. Un programa no tiene permisos directos para tocar el hardware; en su lugar, 'pide' al Kernel que lo haga por él a través de estas llamadas."
+	  },
+	  {
+		"pregunta": "En la gestión de energía de un equipo microinformático (estándar ACPI), ¿cuál es la diferencia principal del estado de 'Hibernación' frente al estado de 'Suspensión' (Sleep)?",
+		"opciones": [
+		  "La hibernación mantiene la memoria RAM encendida, mientras que la suspensión la apaga completamente.",
+		  "No hay diferencia, son dos términos comerciales para el mismo estado de bajo consumo.",
+		  "La hibernación guarda el contenido de la memoria RAM en el disco duro y apaga el equipo por completo, mientras que la suspensión requiere energía continua para mantener viva la RAM.",
+		  "La suspensión solo apaga el monitor y los discos, dejando el procesador al 100% de su capacidad."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Al hibernar, el SO vuelca todo lo que hay en la RAM a un archivo en el disco (hiberfil.sys en Windows) y corta la corriente a cero, por lo que puedes desenchufar el equipo sin perder nada. En suspensión, el equipo consume muy poca energía, pero necesita seguir alimentando la RAM; si se va la luz, pierdes el trabajo no guardado."
+	  },
+	  {
+		"pregunta": "El estándar USB (Universal Serial Bus) revolucionó la conexión de periféricos. Teóricamente, ¿hasta cuántos dispositivos permite conectar un solo controlador USB utilizando concentradores (hubs) en cadena?",
+		"opciones": [
+		  "256 dispositivos.",
+		  "127 dispositivos.",
+		  "64 dispositivos.",
+		  "Depende exclusivamente de los gigabytes de RAM del equipo."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La especificación del bus USB permite direccionar hasta 127 dispositivos lógicos en un único controlador (host). Esta es una pregunta clásica de oposiciones de informática sobre límites arquitectónicos de hardware."
+	  },
+	  {
+		"pregunta": "Según la clasificación de los periféricos informáticos, ¿cómo se clasificaría la pantalla táctil de una tableta corporativa o un cajero automático?",
+		"opciones": [
+		  "Periférico de entrada estricto.",
+		  "Periférico de salida estricto.",
+		  "Periférico mixto (de entrada y salida).",
+		  "Periférico de almacenamiento de bloque."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Una pantalla táctil es un periférico mixto (E/S). Funciona como periférico de salida al mostrar la información visualmente (como un monitor normal) y como periférico de entrada al permitir al usuario introducir comandos tocando la superficie (sustituyendo al ratón)."
+	  },
+	  {
+		"pregunta": "En el funcionamiento interno del procesador, el 'ciclo de instrucción' consta de varias fases. ¿Cuál es la primera de ellas, donde la CPU obtiene la instrucción a ejecutar desde la memoria principal?",
+		"opciones": [
+		  "Decodificación (Decode).",
+		  "Ejecución (Execute).",
+		  "Escritura de resultados (Write-back).",
+		  "Búsqueda (Fetch)."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El ciclo básico de una instrucción es: 1º Búsqueda (Fetch) de la instrucción en la memoria RAM, 2º Decodificación (Decode) para saber qué hay que hacer, 3º Ejecución (Execute) por parte de la ALU u otros componentes, y 4º Escritura (Write-back) del resultado."
+	  },
+	  {
+		"pregunta": "Históricamente, los sistemas informáticos utilizaban el estándar ASCII para representar caracteres, limitado a 128 o 256 símbolos. ¿Qué estándar de codificación universal se emplea mayoritariamente hoy en día, capaz de representar caracteres de casi todos los idiomas del mundo y emojis?",
+		"opciones": [
+		  "EBCDIC.",
+		  "Hexadecimal.",
+		  "Unicode (como UTF-8).",
+		  "Base64."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Unicode (y su implementación más común en la web y sistemas, UTF-8) es el estándar actual. Supera las limitaciones del código ASCII al utilizar longitud variable en bytes, permitiendo codificar desde letras latinas hasta kanjis japoneses o símbolos modernos."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe sustituir una placa base averiada de formato 'Micro-ATX', ¿podrá instalarla en una caja de ordenador (chasis) diseñada para el formato 'ATX' estándar?",
+		"opciones": [
+		  "No, por motivos de seguridad eléctrica los chasis ATX bloquean el encendido de placas más pequeñas.",
+		  "Sí, el estándar ATX es retrocompatible y los chasis grandes disponen de agujeros de anclaje para instalar placas Micro-ATX más pequeñas.",
+		  "Sí, pero será obligatorio instalar una fuente de alimentación especial en formato SFX.",
+		  "No, las ranuras traseras para los puertos USB y de red tienen posiciones incompatibles entre ambos formatos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los formatos de placa base están diseñados de forma modular e inteligente. Una caja grande ATX tiene los anclajes (standoffs) y el recorte trasero universal para aceptar tanto placas ATX completas como las más pequeñas Micro-ATX o Mini-ITX."
+	  },
+	  {
+		"pregunta": "En el ámbito del almacenamiento óptico, ¿cuál es la capacidad estándar teórica de un disco DVD-ROM de una sola capa y una sola cara (Single Layer / Single Sided)?",
+		"opciones": [
+		  "700 MB.",
+		  "1.44 MB.",
+		  "4.7 GB.",
+		  "25 GB."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El DVD estándar de capa simple tiene una capacidad aproximada de 4.7 GB. Como referencia útil para oposiciones: un disquete (1.44 MB), un CD (700 MB), un DVD (4.7 GB) y un Blu-Ray simple (25 GB)."
+	  },
+	  {
+		"pregunta": "En los sistemas operativos GNU/Linux, ¿cómo se denomina al usuario administrador supremo que tiene acceso total e irrestricto a todos los archivos y comandos del sistema?",
+		"opciones": [
+		  "Admin.",
+		  "Root.",
+		  "Superuser_01.",
+		  "Master."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El usuario 'root' (raíz) es el superusuario en entornos Unix/Linux. Tiene el UID (User ID) número 0. Puede borrar archivos del sistema, cambiar permisos a cualquier usuario y realizar tareas de administración crítica que usuarios normales no pueden ejecutar sin el comando 'sudo'."
+	  },
+	  {
+		"pregunta": "En la teoría general de Sistemas de Información (SI), la fase donde el sistema procesa los datos y devuelve los resultados se denomina 'Salida'. ¿Cómo se llama al mecanismo que utiliza esa salida para evaluar y corregir errores en las futuras entradas del sistema?",
+		"opciones": [
+		  "Compilación cruzada.",
+		  "Algoritmia recursiva.",
+		  "Retroalimentación (Feedback).",
+		  "Interbloqueo (Deadlock)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La retroalimentación o feedback es fundamental en un sistema de información. Consiste en utilizar las salidas resultantes para controlar, ajustar o corregir el comportamiento y las entradas del sistema en ciclos posteriores, asegurando que se cumplen los objetivos."
+	  },
+	  {
+		"pregunta": "En entornos Windows, ¿cuál es el nombre de la herramienta administrativa nativa (accesible también mediante el comando devmgmt.msc) que permite al técnico ver todo el hardware conectado, actualizar controladores y deshabilitar periféricos conflictivos?",
+		"opciones": [
+		  "El Monitor de Rendimiento.",
+		  "El Visor de Eventos.",
+		  "El Administrador de Tareas.",
+		  "El Administrador de Dispositivos."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El Administrador de Dispositivos (Device Manager) es la consola principal para gestionar todo el hardware a nivel lógico. Si un dispositivo carece de driver o falla, aparecerá allí marcado con un triángulo amarillo de advertencia."
+	  },
+	  {
+		"pregunta": "¿Qué característica de hardware y del sistema operativo permite conectar y desconectar periféricos (como discos duros USB o monitores externos) mientras el ordenador está completamente encendido y funcionando, sin que el sistema colapse?",
+		"opciones": [
+		  "Conexión en caliente (Hot-plug o Hot-swap).",
+		  "Arranque seguro (Secure Boot).",
+		  "Overclocking.",
+		  "Clustering asimétrico."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El Hot-swapping o Hot-plugging (conexión en caliente) es la capacidad de conectar o desconectar hardware sin necesidad de apagar y reiniciar el equipo. Es el estándar hoy en día gracias al USB, pero no era posible con puertos antiguos como el PS/2 o los puertos serie, que solían colgar el sistema."
+	  },
+	  {
+		"pregunta": "Hablemos de refrigeración. Si un componente de la placa base cuenta con un disipador de aluminio o cobre, pero NO tiene acoplado ningún ventilador giratorio sobre él, decimos que tiene un sistema de refrigeración:",
+		"opciones": [
+		  "Híbrido termodinámico.",
+		  "Líquido (Watercooling).",
+		  "Activo.",
+		  "Pasivo."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "La refrigeración pasiva se basa únicamente en la termodinámica, disipando el calor a través del metal (disipador) al aire del entorno, sin piezas móviles. La refrigeración activa, por el contrario, fuerza el flujo de aire mediante ventiladores o mueve líquidos mediante bombas."
+	  },
+	  {
+		"pregunta": "En el contexto del almacenamiento corporativo, además del clásico SATA, existe una interfaz orientada específicamente a servidores de alto rendimiento que destaca por su robustez, mayor tasa de operaciones por segundo y capacidad para conectar muchísimos discos en cascada. ¿Cuál es su nombre?",
+		"opciones": [
+		  "SAS (Serial Attached SCSI).",
+		  "IDE / PATA.",
+		  "AGP.",
+		  "VGA."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "SAS es la evolución en serie del antiguo estándar SCSI. Es la conexión dominante en discos duros mecánicos y SSDs para servidores de gama alta, siendo más rápida, más fiable (permite conexiones redundantes de doble puerto) y más cara que SATA."
+	  },
+	  {
+		"pregunta": "¿Cuál de los siguientes NO es considerado un 'Software de Sistema', sino un 'Software de Aplicación'?",
+		"opciones": [
+		  "Un compilador del lenguaje C++.",
+		  "Una hoja de cálculo para gestionar presupuestos.",
+		  "Un controlador (driver) de una tarjeta de red.",
+		  "El núcleo (Kernel) de Linux."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El software de aplicación (como Word, Excel o un navegador web) está diseñado para realizar tareas concretas y de interés directo para el usuario final. El software de sistema, los controladores y las herramientas de desarrollo sustentan el funcionamiento informático subyacente."
+	  },
+	  {
+		"pregunta": "Si hablamos de Sistemas Operativos, aquellos diseñados específicamente para el control de maquinaria industrial, robótica o sistemas médicos, donde el tiempo de respuesta debe ser exacto y sin retrasos impredecibles, se denominan:",
+		"opciones": [
+		  "Sistemas Operativos de Tiempo Real (RTOS).",
+		  "Sistemas Operativos por Lotes (Batch).",
+		  "Sistemas Operativos Monousuario.",
+		  "Sistemas Operativos de Red."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Los RTOS (Real-Time Operating Systems) garantizan que una instrucción se procese dentro de un margen de tiempo estricto. Si un sensor de un coche indica que hay que frenar o disparar el airbag, el sistema no puede quedarse 'pensando' o atendiendo la cola de impresión de la radio."
+	  },
+	  {
+		"pregunta": "A nivel interno, la CPU consta de la Unidad de Control, la ALU y los Registros. ¿Cómo se comunican estos elementos entre sí de forma interna en el encapsulado del procesador?",
+		"opciones": [
+		  "A través de cables coaxiales blindados.",
+		  "Mediante conexiones inalámbricas por infrarrojos.",
+		  "A través de los buses internos de la CPU.",
+		  "Por medio de la memoria secundaria de la placa base."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los componentes internos de la CPU se comunican mediante los 'buses internos', que son pistas microscópicas grabadas en el silicio. Estos son mucho más rápidos que los buses externos (como el Front Side Bus o el bus de memoria) que comunican la CPU con la placa base."
+	  },
+	  {
+		"pregunta": "Para diagnosticar problemas básicos de red desde la interfaz de línea de comandos en Windows (CMD), ¿qué orden tecleará el Auxiliar de Informática para enviar paquetes de prueba a otro equipo y comprobar si responde?",
+		"opciones": [
+		  "ipconfig",
+		  "ping",
+		  "chkdsk",
+		  "format"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El comando 'ping' envía paquetes de eco ICMP a una dirección IP o dominio y espera una respuesta, comprobando así si hay conectividad a nivel de red básica. 'ipconfig' sirve para ver nuestra propia dirección IP, 'chkdsk' chequea errores en disco y 'format' borra datos."
+	  },
+	  {
+		"pregunta": "Y para terminar el tema: En la arquitectura clásica, el 'Cuello de botella de Von Neumann' se refiere a:",
+		"opciones": [
+		  "El límite de revoluciones físicas que puede alcanzar un disco duro mecánico antes de fragmentarse.",
+		  "La limitación de ancho de banda y latencia en el canal de comunicación entre la CPU y la memoria principal, ya que la CPU procesa datos mucho más rápido de lo que la memoria puede suministrarlos.",
+		  "La restricción de calentamiento que sufren los ordenadores portátiles frente a los de sobremesa.",
+		  "El número máximo de direcciones IP que se pueden otorgar en una red local bajo protocolo IPv4."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El cuello de botella de Von Neumann es el principal defecto de esta arquitectura: como los datos y las instrucciones se comparten en la misma memoria y viajan por el mismo bus hacia la CPU, y la CPU es muchísimo más rápida que la RAM, el procesador pasa gran parte de su tiempo 'ocioso' esperando a que lleguen los datos para trabajar."
+	  }
   ],
+  
+  
+  
   "2": [
     {
       "pregunta": "¿Cuál es la máscara de subred por defecto para una red de Clase C?",

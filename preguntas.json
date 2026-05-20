@@ -3650,11 +3650,897 @@
   
    "5": [
   
+		{
+		"pregunta": "¿Cuál es la diferencia técnica fundamental entre 'Multiprogramación' y 'Multiprocesamiento'?",
+		"opciones": [
+		  "Son sinónimos exactos en la arquitectura moderna de ordenadores.",
+		  "La multiprogramación permite tener varios programas en la memoria principal compitiendo por una única CPU, mientras que el multiprocesamiento implica la existencia de dos o más CPUs físicas trabajando simultáneamente.",
+		  "El multiprocesamiento es exclusivo de los sistemas operativos de Apple, mientras que la multiprogramación es de Windows.",
+		  "La multiprogramación ejecuta procesos en el disco duro y el multiprocesamiento en la memoria RAM."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es una pregunta clásica. La multiprogramación maximiza el uso de una sola CPU (mientras un programa espera a leer del disco, la CPU ejecuta otro). El multiprocesamiento requiere hardware adicional: múltiples procesadores (o núcleos) reales ejecutando instrucciones de forma verdaderamente paralela."
+	  },
+	  {
+		"pregunta": "En la gestión de procesos de un Sistema Operativo, ¿qué es el PCB (Process Control Block o Bloque de Control de Proceso)?",
+		"opciones": [
+		  "Una estructura de datos del núcleo del SO que almacena toda la información crítica sobre un proceso específico (su estado, contador de programa, registros, memoria asignada, etc.).",
+		  "Un chip de hardware integrado en la placa base encargado de asignar la prioridad de los procesos.",
+		  "El bloque de memoria caché L1 reservado exclusivamente para los procesos del Administrador.",
+		  "Un protocolo de red que controla la transmisión de paquetes entre procesos remotos."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El PCB es el 'DNI' o el expediente de un proceso. El sistema operativo mantiene un PCB por cada proceso que se está ejecutando. Cuando el SO pausa un proceso para ejecutar otro, guarda el estado exacto de ese proceso en su PCB para poder reanudarlo más tarde exactamente donde lo dejó."
+	  },
+	  {
+		"pregunta": "Los procesos en un sistema operativo pasan por diferentes estados durante su ciclo de vida. Según el modelo básico de 3 estados (Listo, En Ejecución, Bloqueado), ¿cuál de las siguientes transiciones de estado es IMPOSIBLE que ocurra de forma directa?",
+		"opciones": [
+		  "De 'En Ejecución' a 'Bloqueado/Espera'.",
+		  "De 'Listo' a 'En Ejecución'.",
+		  "De 'Bloqueado/Espera' directamente a 'En Ejecución'.",
+		  "De 'En Ejecución' a 'Listo'."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un proceso 'Bloqueado' (porque está esperando a que el usuario pulse una tecla o a que el disco duro lea un archivo) no puede pasar directamente a 'En Ejecución' cuando el evento ocurre. Debe pasar obligatoriamente al estado 'Listo' y ponerse a la cola, esperando a que el planificador (Scheduler) le vuelva a conceder su turno de CPU."
+	  },
+	  {
+		"pregunta": "En los algoritmos de planificación de procesos, ¿cuál es la característica principal del algoritmo 'Round Robin' (Turno Rotatorio)?",
+		"opciones": [
+		  "Asigna la CPU permanentemente al proceso más corto hasta que este termine.",
+		  "Asigna a cada proceso un intervalo de tiempo fijo y máximo de uso de la CPU, denominado 'Quantum'. Si el proceso no termina en ese tiempo, es expulsado y devuelto al final de la cola de listos.",
+		  "Ejecuta los procesos estrictamente en el orden en el que llegaron (FIFO), sin posibilidad de interrupción.",
+		  "Solo se utiliza en sistemas operativos monousuario carentes de entorno gráfico."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Round Robin es el algoritmo de tiempo compartido por excelencia. Reparte la CPU equitativamente. El 'Quantum' es ese pequeño trozo de tiempo (ej. 10 milisegundos). Al acabar su quantum, el proceso se pausa y pasa el siguiente, dando la ilusión al usuario de que todos los programas funcionan a la vez."
+	  },
+	  {
+		"pregunta": "¿Cómo se denomina a la técnica o interfaz de programación que permite a un proceso de usuario (como un procesador de textos) solicitar de forma segura un servicio privilegiado al núcleo del Sistema Operativo (como crear un archivo o acceder a la red)?",
+		"opciones": [
+		  "Interrupción de hardware (IRQ).",
+		  "Llamada al sistema (System Call).",
+		  "Cambio de contexto (Context Switch).",
+		  "Spooling."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las Llamadas al Sistema (System Calls) son la puerta de enlace entre el software de usuario y el hardware. Los programas normales no pueden tocar el disco duro directamente por seguridad; deben hacer una 'System Call' pidiéndole al Kernel del SO que lo haga por ellos."
+	  },
+	  {
+		"pregunta": "Dentro de la estructura de un Sistema Operativo, para evitar que un programa malicioso o mal programado pueda apagar el ordenador o borrar la memoria de otros programas, los procesadores modernos ofrecen dos modos de ejecución a nivel de hardware. ¿Cuáles son?",
+		"opciones": [
+		  "Modo Local y Modo Red.",
+		  "Modo Seguro y Modo Normal.",
+		  "Modo Usuario (User mode) y Modo Supervisor/Núcleo (Kernel mode).",
+		  "Modo Gráfico (GUI) y Modo Consola (CLI)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La protección dual del procesador divide la ejecución. Las aplicaciones del usuario corren en 'Modo Usuario', con instrucciones limitadas. Si necesitan hacer algo crítico, hacen una llamada al sistema, y la CPU cambia al 'Modo Kernel' (donde todo está permitido), ejecuta la tarea de forma segura y devuelve el control bajando de nuevo al Modo Usuario."
+	  },
+	  {
+		"pregunta": "Al estudiar la gestión de procesos, encontramos los conceptos de 'Proceso' y de 'Hilo' (Thread o proceso ligero). ¿Cuál es la principal diferencia entre ellos?",
+		"opciones": [
+		  "Un proceso siempre es creado por el usuario, un hilo siempre es creado por el hardware.",
+		  "Los procesos comparten todos la misma zona de memoria de forma nativa, los hilos están totalmente aislados unos de otros.",
+		  "Un proceso tiene su propio espacio de memoria aislado e independiente. Los hilos, sin embargo, coexisten dentro del mismo proceso y comparten su memoria y recursos, siendo más rápidos de crear y cambiar.",
+		  "Un hilo no puede ejecutarse en procesadores multinúcleo, un proceso sí."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un proceso es como una casa cerrada (con su propia memoria). Un hilo es como una habitación dentro de esa casa. Si un programa (proceso) tiene 4 hilos, los 4 comparten la misma memoria y pueden comunicarse instantáneamente entre ellos. Crear un hilo nuevo 'cuesta' muchos menos recursos al SO que crear un proceso nuevo."
+	  },
+	  {
+		"pregunta": "En el contexto de la concurrencia y la multitarea, ¿qué ocurre exactamente durante un 'Cambio de Contexto' (Context Switch)?",
+		"opciones": [
+		  "El usuario cambia de una sesión local a una sesión de escritorio remoto.",
+		  "El SO detiene el proceso actual en la CPU, guarda su estado (sus registros, contador) en su PCB, carga el estado del siguiente proceso desde el PCB de este, y lo pone en ejecución.",
+		  "La memoria RAM vuelca temporalmente todo su contenido al archivo de paginación del disco duro.",
+		  "El sistema cambia el idioma del teclado de forma dinámica según la aplicación."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El cambio de contexto es la maniobra que hace el planificador para cambiar de un proceso a otro. Es una operación crítica: durante el cambio de contexto la CPU no está haciendo trabajo útil de los programas (overhead), solo labores de administración, por lo que debe ser muy rápido."
+	  },
+	  {
+		"pregunta": "Uno de los algoritmos de planificación más básicos es el FCFS (First-Come, First-Served / Primero en llegar, primero en servirse) o FIFO. ¿Cuál es su principal problema o desventaja en un entorno multiprogramado?",
+		"opciones": [
+		  "Que no funciona en sistemas operativos de 64 bits.",
+		  "El 'Efecto Convoy': si un proceso muy largo y pesado acapara la CPU, todos los procesos cortos que llegaron detrás de él tendrán que esperar muchísimo tiempo bloqueando el sistema.",
+		  "Que provoca inanición infinita sistemática en todos los procesos.",
+		  "Que asigna Quantums demasiado pequeños, sobrecargando la CPU."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El algoritmo FCFS es justo (el primero que llega se atiende), pero ineficiente. Si llega un proceso que tarda 1 hora, y detrás llegan 100 procesos que tardan 1 milisegundo, los 100 procesos rápidos tendrán que esperar una hora (Efecto Convoy). Por eso no se usa en sistemas interactivos modernos."
+	  },
+	  {
+		"pregunta": "¿Qué nombre recibe el escenario crítico de concurrencia donde el resultado final de una operación depende exclusivamente del orden exacto y la sincronización en la que varios procesos o hilos acceden y modifican una variable compartida simultáneamente sin control?",
+		"opciones": [
+		  "Condición de Carrera (Race Condition).",
+		  "Interbloqueo (Deadlock).",
+		  "Paginación bajo demanda.",
+		  "Segmentación de memoria."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Una condición de carrera ocurre cuando dos hilos leen la misma variable, le suman 1 y la guardan. Si no hay mecanismos de sincronización (como semáforos o bloqueos mutuos/mutex), los hilos se 'pisan' entre ellos y el resultado final será erróneo e impredecible."
+	  },
+	  {
+		"pregunta": "Hablemos de catástrofes en Sistemas Operativos. ¿Qué es un 'Interbloqueo', 'Abrazo Mortal' o 'Deadlock'?",
+		"opciones": [
+		  "Cuando la CPU se sobrecalienta y el sistema apaga la placa base de emergencia.",
+		  "Una situación en la que un proceso acapara la CPU y se niega a liberarla, provocando un pantallazo azul.",
+		  "Una situación donde un conjunto de procesos se quedan esperando indefinidamente porque cada proceso tiene asignado un recurso que el otro necesita, y ninguno está dispuesto a soltarlo.",
+		  "Cuando dos usuarios intentan iniciar sesión con la misma contraseña a la vez."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El interbloqueo es el atasco de tráfico perfecto. El Proceso A tiene la impresora e intenta usar el escáner. El Proceso B tiene el escáner e intenta usar la impresora. Como ninguno suelta lo que ya tiene hasta que no consiga lo que le falta, ambos se quedan bloqueados para siempre."
+	  },
+	  {
+		"pregunta": "Para evitar las 'Condiciones de Carrera' y proteger las secciones críticas del código en la programación concurrente, Edsger Dijkstra propuso un mecanismo de sincronización clásico basado en una variable entera que indica el número de recursos disponibles, sobre la que se aplican operaciones atómicas P y V (Wait y Signal). ¿De qué mecanismo hablamos?",
+		"opciones": [
+		  "Round Robin.",
+		  "Semáforos.",
+		  "Tubos (Pipes).",
+		  "Sockets de red."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los semáforos en informática son exactamente como los de la calle. Si el semáforo está en verde (valor > 0), el proceso entra a usar el recurso y pone el semáforo en rojo. Cualquier otro proceso que intente entrar verá el rojo (Wait) y se dormirá hasta que el primer proceso termine y vuelva a ponerlo en verde (Signal)."
+	  },
+	  {
+		"pregunta": "Existen dos filosofías principales para diseñar la estructura del núcleo (Kernel) de un Sistema Operativo. Aquella arquitectura que mantiene el Kernel en el tamaño mínimo indispensable (gestionando solo procesos y memoria básica) y mueve casi todos los servicios (sistemas de archivos, drivers) al espacio de usuario para mejorar la seguridad y estabilidad, se denomina:",
+		"opciones": [
+		  "Núcleo Monolítico.",
+		  "Microkernel (Micronúcleo).",
+		  "Núcleo Híbrido.",
+		  "Exokernel."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En el Microkernel, si falla el controlador de la tarjeta gráfica, solo se reinicia ese servicio (porque corre en espacio de usuario), pero el sistema no colapsa. En un núcleo Monolítico (como Linux tradicional), todos los servicios corren en el espacio del núcleo, por lo que si falla un driver de vídeo, provoca un 'Kernel Panic' y el sistema entero se cuelga."
+	  },
+	  {
+		"pregunta": "En la evolución histórica de los sistemas operativos, ¿qué característica diferencial introdujeron los 'Sistemas de Tiempo Compartido' (Time-Sharing)?",
+		"opciones": [
+		  "Fueron los primeros en utilizar tarjetas perforadas de cartón.",
+		  "Permitieron que múltiples usuarios estuvieran conectados simultáneamente a través de terminales interactuando directamente con el ordenador central, dando la ilusión a cada uno de tener el ordenador en exclusiva.",
+		  "Obligaban a ejecutar los trabajos por lotes (Batch), sin interacción del usuario tras lanzar el programa.",
+		  "Eran sistemas que solo funcionaban en red local desconectados de internet."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Antes del tiempo compartido, metías tus tarjetas, te ibas a tomar un café y volvías a por el resultado (Batch). El Tiempo Compartido (impulsado por sistemas como Multics y UNIX) permitió la interactividad: varios usuarios tecleando a la vez y el SO repartiendo fracciones de segundo entre ellos para responderles al instante."
+	  },
+	  {
+		"pregunta": "En un sistema con Multitarea 'Apropiativa' o 'Preemptiva' (como Windows moderno o Linux), ¿qué poder fundamental tiene el Sistema Operativo sobre los procesos?",
+		"opciones": [
+		  "El SO solo puede pedir educadamente al proceso que ceda la CPU, dependiendo de la buena fe del programador de dicho proceso.",
+		  "El SO tiene la capacidad de expulsar forzosamente a un proceso de la CPU (apropiarse de ella) por causas de tiempo, prioridad o interrupciones, sin que el proceso pueda oponerse.",
+		  "El SO asigna una CPU exclusiva para cada proceso sin necesidad de interrumpirlos.",
+		  "El SO solo puede expulsar a procesos de otros usuarios, no los del usuario administrador."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La Multitarea Apropiativa es lo que evita que un programa 'colgado' bloquee todo el ordenador (como pasaba en Windows 3.1 o Mac OS 9, que usaban multitarea cooperativa). En la apropiativa, el Kernel es el jefe absoluto: si se acaba tu tiempo o llega alguien más prioritario, te saca de la CPU a la fuerza."
+	  },
+	  {
+		"pregunta": "Si aplicamos el algoritmo de planificación SJF (Shortest Job First / El trabajo más corto primero), ¿qué problema grave y sostenido puede ocurrir con los procesos que requieren mucho tiempo de CPU para finalizar?",
+		"opciones": [
+		  "Interbloqueo o Deadlock inminente con la impresora.",
+		  "Inanición (Starvation).",
+		  "Sobrecalentamiento del procesador (Thermal Throttling).",
+		  "Fragmentación interna de la memoria RAM."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "SJF es ideal matemáticamente para reducir el tiempo medio de espera. Pero si el sistema recibe constantemente un goteo de procesos muy cortos, estos irán siempre colándose por delante en la cola. El proceso largo y pesado nunca llegará a ejecutarse, muriendo de 'hambre' (inanición)."
+	  },
+	  {
+		"pregunta": "Dentro de los componentes funcionales, el Sistema Operativo dispone de un programa específico que interactúa directamente con el usuario, leyendo los comandos que este teclea (o interpretando sus clics de ratón) y traduciéndolos para el núcleo. ¿Cómo se denomina genéricamente a este componente?",
+		"opciones": [
+		  "Kernel.",
+		  "BIOS.",
+		  "Shell (Intérprete de comandos / Interfaz).",
+		  "Spooler."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El 'Shell' es la cáscara, la capa exterior del SO que envuelve al 'Kernel' (núcleo). Puede ser de texto (CLI, como bash en Linux o CMD en Windows) o gráfico (GUI, como el Explorador de Windows o el entorno GNOME)."
+	  },
+	  {
+		"pregunta": "Teniendo en cuenta los estados de un proceso, ¿por qué motivo principal un proceso que está 'En Ejecución' (ocupando la CPU) pasaría automáticamente al estado de 'Bloqueado' (Espera)?",
+		"opciones": [
+		  "Porque ha agotado su 'quantum' de tiempo máximo asignado por el algoritmo Round Robin.",
+		  "Porque el usuario ha pulsado el botón de minimizar ventana.",
+		  "Porque el proceso ha solicitado una operación de Entrada/Salida (ej. pedir al usuario que introduzca una contraseña o leer del disco) y debe esperar a que el hardware lento responda antes de poder continuar operando.",
+		  "Porque el proceso ha terminado sus instrucciones y debe ser eliminado de la memoria."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Si el proceso agota su tiempo (quantum), pasa a estado 'Listo' (porque está dispuesto a seguir calculando, pero no le dejan). Si necesita leer del disco, pasa a estado 'Bloqueado' porque, aunque le dieran la CPU, no podría avanzar hasta no tener los datos del disco duro."
+	  },
+	  {
+		"pregunta": "¿Qué afirmación define mejor a los 'Sistemas Operativos de Tiempo Real' (RTOS)?",
+		"opciones": [
+		  "Son sistemas que ajustan automáticamente la hora mundial sincronizándose con servidores NTP atómicos.",
+		  "Son sistemas diseñados para entornos críticos donde las operaciones y el procesamiento deben completarse inexcusablemente dentro de un límite de tiempo estricto y predecible (restricciones de tiempo temporales).",
+		  "Son sistemas operativos optimizados para renderizar videojuegos de realidad virtual a 120 FPS fijos.",
+		  "Son los sistemas operativos de los servidores web que permiten ver páginas instantáneamente."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un RTOS (Real Time Operating System) se usa en frenos ABS, robótica médica o control aéreo. Su característica principal no es la 'velocidad extrema', sino la 'predictibilidad extrema'. Si el airbag debe dispararse en 15 milisegundos, el SO debe garantizar matemáticamente que ese hilo se ejecutará en ese tiempo, sin que un antivirus o un cambio de contexto lo retrase."
+	  },
+	  {
+		"pregunta": "La técnica denominada 'Spooling' (Simultaneous Peripheral Operations On-Line) nació en los primeros Sistemas Operativos para solventar un problema específico de rendimiento. ¿Cuál es su concepto básico?",
+		"opciones": [
+		  "Multiplicar por dos la velocidad de giro de los discos duros magnéticos.",
+		  "Utilizar el disco duro (u otra memoria intermedia rápida) como un búfer o almacén temporal para los datos que van dirigidos a periféricos muy lentos (como impresoras), liberando así a la CPU y al programa para que puedan seguir trabajando al instante.",
+		  "Descargar actualizaciones de seguridad de Windows en segundo plano sin interrumpir al usuario.",
+		  "Unir dos ordenadores mediante un cable serie para que compartan la memoria RAM."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Sin spooling, si mandabas a imprimir un libro, tu programa se quedaba 'congelado' esperando horas mientras la impresora, que era lentísima, imprimía página a página. Con el spooling (como la cola de impresión actual), el SO guarda el libro rápido en el disco y le dice a tu programa 'listo, puedes seguir trabajando'. Luego, el SO envía los datos a la impresora poco a poco a la velocidad que esta tolere."
+	  },
+	  {
+		"pregunta": "Dentro de la planificación de la CPU, ¿cuál es la función específica del módulo conocido como 'Despachador' (Dispatcher)?",
+		"opciones": [
+		  "Elegir qué proceso de la cola de listos es el más prioritario matemáticamente.",
+		  "Cargar el sistema operativo en la memoria RAM durante el arranque del equipo.",
+		  "Dar el control de la CPU al proceso que ha sido seleccionado previamente por el planificador, realizando el cambio de contexto y saltando a la instrucción adecuada.",
+		  "Eliminar de la memoria los procesos que han entrado en estado de interbloqueo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Planificador (Scheduler) es el 'cerebro' que decide QUIÉN va a usar la CPU a continuación. El Despachador (Dispatcher) es el 'músculo' que hace el trabajo físico: realiza el cambio de contexto, cambia al modo usuario y pone el contador de programa en el lugar correcto para que el proceso empiece a correr."
+	  },
+	  {
+		"pregunta": "En la gestión de memoria virtual, existe una situación catastrófica en la que el Sistema Operativo pasa más tiempo intercambiando páginas entre la memoria RAM y el disco duro que ejecutando instrucciones útiles, provocando que el rendimiento del equipo caiga en picado. ¿Cómo se denomina este fenómeno?",
+		"opciones": [
+		  "Fragmentación interna.",
+		  "Hiperpaginación o Thrashing.",
+		  "Interbloqueo o Deadlock.",
+		  "Fuga de memoria (Memory Leak)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Thrashing' (Hiperpaginación o sobrepaginación) ocurre cuando la RAM física está tan llena que el SO tiene que sacar una página al disco para meter otra que necesita ahora mismo. Inmediatamente después, necesita la página que acaba de sacar, y vuelve a leer del disco. El disco no para de rascar y el ordenador se congela."
+	  },
+	  {
+		"pregunta": "Si un Sistema Operativo utiliza un algoritmo de planificación por Prioridades, existe el riesgo de que los procesos con prioridad muy baja nunca lleguen a ejecutarse si no paran de entrar procesos más importantes, muriendo de inanición. ¿Qué técnica utilizan los S.O. para solucionar esto?",
+		"opciones": [
+		  "El Envejecimiento (Aging), que aumenta gradualmente la prioridad de los procesos que llevan mucho tiempo esperando en el sistema.",
+		  "El Round Robin, que asigna a todos la misma prioridad exacta.",
+		  "La Paginación bajo demanda.",
+		  "El algoritmo del Banquero."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El Envejecimiento (Aging) es la solución a la inanición. Si un proceso de prioridad baja lleva 10 minutos esperando, el SO le sube la prioridad un punto. A las horas, su prioridad será tan alta que el SO se verá obligado a ejecutarlo, garantizando que todos los programas acaben procesándose."
+	  },
+	  {
+		"pregunta": "En el contexto de la sincronización de procesos, ¿qué es un 'Mutex' (Mutual Exclusion / Exclusión Mutua)?",
+		"opciones": [
+		  "Un virus que infecta dos procesos a la vez impidiendo su ejecución.",
+		  "Un algoritmo de planificación que da el mismo tiempo de CPU a todos los procesos.",
+		  "Un mecanismo de bloqueo (cerrojo) que se utiliza para asegurar que solo un hilo o proceso pueda acceder a una sección crítica de código o recurso compartido en un momento dado.",
+		  "Una llamada al sistema para matar un proceso que no responde."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Un Mutex es como la llave del baño de una gasolinera. Solo hay una llave. El hilo que tiene la llave (adquiere el mutex) entra a la sección crítica (el baño) y hace su trabajo. Los demás hilos que intenten entrar verán que no hay llave y se quedarán esperando en la puerta hasta que el primero salga y la devuelva."
+	  },
+	  {
+		"pregunta": "Para que se produzca un Interbloqueo (Deadlock) entre procesos, deben cumplirse simultáneamente cuatro condiciones necesarias (conocidas como las condiciones de Coffman). ¿Cuál de las siguientes NO es una de esas cuatro condiciones?",
+		"opciones": [
+		  "Exclusión mutua.",
+		  "Retención y espera.",
+		  "Apropiación (Preemption) permitida de recursos.",
+		  "Espera circular."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Las cuatro condiciones son: 1) Exclusión mutua (el recurso no se puede compartir). 2) Retención y espera (tengo un recurso y pido otro). 3) NO apropiación (el SO no te puede quitar el recurso a la fuerza). 4) Espera circular. Por tanto, que la apropiación esté permitida EVITA el deadlock, no lo causa."
+	  },
+	  {
+		"pregunta": "En los sistemas operativos basados en Unix o GNU/Linux, ¿qué llamada al sistema (System Call) clásica se utiliza para crear un nuevo proceso, el cual nace siendo un clon exacto (hijo) del proceso original (padre)?",
+		"opciones": [
+		  "exec()",
+		  "fork()",
+		  "spawn()",
+		  "createProcess()"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La llamada `fork()` crea un proceso nuevo. El proceso hijo es una copia casi idéntica del padre, con su propia memoria clonada, pero con un PID (Identificador de Proceso) diferente. Inmediatamente después del fork, lo habitual es que el hijo ejecute la llamada `exec()` para reemplazar su memoria con un programa totalmente nuevo."
+	  },
+	  {
+		"pregunta": "Cuando hablamos de 'Sección Crítica' en la programación concurrente, nos referimos a:",
+		"opciones": [
+		  "La zona del disco duro donde se guarda el registro de arranque (MBR).",
+		  "Un fragmento de código donde un proceso accede y modifica variables, archivos o recursos compartidos con otros procesos, pudiendo causar inconsistencias si se interrumpe.",
+		  "La parte del núcleo del Sistema Operativo que no puede ser actualizada sin reiniciar el equipo.",
+		  "El espacio de memoria RAM reservado para la tarjeta gráfica."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La Sección Crítica es esa parte del código de un programa donde se toca algo que es de todos (por ejemplo, sumar dinero en una cuenta bancaria compartida). Es vital que cuando un proceso entra en su sección crítica, ningún otro proceso pueda entrar en la suya para evitar que los datos se corrompan (Condición de carrera)."
+	  },
+	  {
+		"pregunta": "En un entorno de planificación, el algoritmo SRTF (Shortest Remaining Time First / Tiempo Restante Más Corto Primero) es la versión apropiativa (preemptive) del algoritmo SJF. ¿Qué característica especial tiene?",
+		"opciones": [
+		  "Asigna siempre la CPU al proceso que lleva más tiempo esperando.",
+		  "Si mientras se ejecuta un proceso largo, llega a la cola un proceso nuevo que necesita menos tiempo del que le falta al proceso actual, el SO expulsa al actual y pone a ejecutar al nuevo.",
+		  "Garantiza que ningún proceso sufrirá inanición.",
+		  "Divide el tiempo en quantums iguales para todos los procesos cortos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "SRTF evalúa continuamente. Si el Proceso A le quedan 10 segundos, y de repente llega el Proceso B que solo tarda 2 segundos, el SO le 'roba' (apropiación) la CPU al Proceso A y se la da al B porque su 'tiempo restante' es menor. Es brutalmente eficiente, pero requiere saber por adelantado cuánto va a durar cada programa."
+	  },
+	  {
+		"pregunta": "En Linux, si un proceso hijo termina su ejecución llamando a `exit()`, pero el proceso padre aún no ha leído su estado de salida (con la llamada `wait()`), el hijo permanece en la tabla de procesos ocupando una entrada, aunque ya esté muerto. ¿Cómo se denomina a este proceso?",
+		"opciones": [
+		  "Proceso Huérfano (Orphan).",
+		  "Proceso Zombi (Zombie).",
+		  "Proceso Demonio (Daemon).",
+		  "Proceso Durmiente (Sleeping)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un proceso 'Zombi' (marcado con una 'Z' en los comandos como `top` o `ps`) está muerto (ya no ocupa memoria ni CPU), pero no puede desaparecer del todo porque el padre tiene que 'recoger su cadáver' (leer cómo murió). Si el padre es un programa mal programado y no lo lee, el zombi se queda ahí para siempre hasta que el sistema se reinicie o se mate al padre."
+	  },
+	  {
+		"pregunta": "Para prevenir interbloqueos, Edsger Dijkstra diseñó un famoso algoritmo que simula a un banquero que nunca presta dinero si eso le impide satisfacer las necesidades máximas de todos sus clientes, manteniendo el sistema en un 'estado seguro'. ¿Cuál es el nombre de este algoritmo?",
+		"opciones": [
+		  "Algoritmo FIFO.",
+		  "Algoritmo del Banquero.",
+		  "Algoritmo de Dekker.",
+		  "Algoritmo de Peterson."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Algoritmo del Banquero de Dijkstra se usa para Evitar (Avoidance) los interbloqueos. Antes de conceder un recurso (memoria, impresora) a un proceso, el SO calcula si al dárselo existirá alguna secuencia posible para que todos terminen. Si dárselo lleva a un 'estado inseguro', el SO le deniega el recurso y le obliga a esperar."
+	  },
+	  {
+		"pregunta": "Los hilos de ejecución (Threads) pueden implementarse a nivel de usuario o a nivel de núcleo (Kernel). ¿Cuál es el principal problema de los Hilos a nivel de Usuario (User-level threads)?",
+		"opciones": [
+		  "Son extremadamente lentos de crear en comparación con los hilos del núcleo.",
+		  "Requieren que el programador escriba el código en lenguaje ensamblador.",
+		  "Si un solo hilo del programa hace una llamada bloqueante (ej. esperar que el disco duro lea un archivo), el Sistema Operativo bloqueará el proceso entero, parando a todos los demás hilos de ese programa.",
+		  "No permiten utilizar variables compartidas."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Como los hilos de usuario son gestionados por una librería y el Kernel del SO no sabe que existen (el Kernel solo ve 1 proceso normal), si uno de tus hilos se bloquea leyendo el disco, el Kernel pausa todo el proceso. Los hilos a nivel de núcleo solucionan esto, porque el SO los conoce a todos uno a uno."
+	  },
+	  {
+		"pregunta": "¿Cómo se comunican internamente dos procesos aislados distintos que se están ejecutando en el mismo sistema operativo? A este concepto se le conoce como IPC (Inter-Process Communication).",
+		"opciones": [
+		  "Solamente mediante el envío de correos electrónicos a través del protocolo SMTP.",
+		  "El SO no permite bajo ninguna circunstancia que dos procesos se comuniquen, por seguridad.",
+		  "Utilizando mecanismos gestionados por el SO como la Memoria Compartida (Shared Memory), Tuberías (Pipes) o Paso de Mensajes (Message Passing).",
+		  "Pausando uno de los procesos y obligando al usuario a copiar y pegar datos con el ratón."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "IPC (Comunicación Entre Procesos) es fundamental. Un ejemplo son los Pipes en Linux (`ls | grep 'texto'`), donde la salida del proceso `ls` va directamente a la entrada del proceso `grep`. La memoria compartida es el método de IPC más rápido, ya que ambos leen de la misma parte de la RAM."
+	  },
+	  {
+		"pregunta": "Cuando un Sistema Operativo moderno distribuye dinámicamente los hilos de ejecución entre múltiples procesadores físicos o núcleos (cores) para que trabajen verdaderamente a la vez, y además todos los procesadores comparten la misma memoria RAM y el control del sistema, estamos hablando de un sistema:",
+		"opciones": [
+		  "Asimétrico (AMP).",
+		  "Multiprocesamiento Simétrico (SMP - Symmetric Multiprocessing).",
+		  "Sistemas Distribuidos.",
+		  "Clúster Beowulf."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En el Multiprocesamiento Simétrico (SMP), que es lo que tienen todos nuestros PC y móviles actuales de varios núcleos, todos los núcleos son 'iguales'. Cualquiera puede ejecutar tareas del SO o del usuario, y todos ven la misma memoria RAM principal, repartiéndose la carga de forma equitativa."
+	  },
+	  {
+		"pregunta": "La diferencia clave entre un Programa y un Proceso es conceptual. ¿Cómo se suele definir formalmente esta diferencia en sistemas operativos?",
+		"opciones": [
+		  "Un programa es un archivo ejecutable estático en disco (entidad pasiva), mientras que un proceso es ese mismo programa cuando ha sido cargado en memoria y se está ejecutando (entidad activa).",
+		  "Un proceso es el código fuente escrito por el programador, y el programa es el código ya compilado.",
+		  "Un programa está formado por hilos, mientras que un proceso está formado por variables.",
+		  "No existe diferencia, son sinónimos técnicos."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Esta es la definición de manual. 'Microsoft Word.exe' guardado en tu disco duro es un Programa (un puñado de bytes muertos). Cuando le haces doble clic, el SO lo sube a la RAM, le asigna un PCB y el procesador empieza a ejecutarlo; en ese momento, ha nacido un Proceso."
+	  },
+	  {
+		"pregunta": "Uno de los algoritmos de planificación más complejos e inteligentes que usan los Sistemas Operativos modernos es el de 'Colas multinivel con retroalimentación' (Multilevel Feedback Queue). ¿Cuál es su gran ventaja operativa?",
+		"opciones": [
+		  "Asigna el 100% de la CPU al antivirus, ignorando al resto de programas.",
+		  "Permite que un proceso cambie de cola (y por tanto de prioridad) dinámicamente según su comportamiento: si consume mucha CPU, se le baja a una cola de menor prioridad; si interactúa mucho con el usuario, se le sube.",
+		  "No utiliza el concepto de 'Quantums', permitiendo ejecuciones infinitas.",
+		  "Solo funciona en sistemas sin interfaz gráfica de usuario."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Este algoritmo es el que da la sensación de que el PC va fluido. Si abres un renderizado de vídeo (chupa mucha CPU sin parar), el SO detecta que es pesado y lo baja de prioridad (a una cola más lenta). Si estás moviendo el ratón o tecleando (mucha E/S), te pone en la cola más alta para que la pantalla responda al instante."
+	  },
+	  {
+		"pregunta": "En el contexto del Sistema Operativo, ¿qué es un 'Demonio' (Daemon) en sistemas Unix/Linux, equivalente a un 'Servicio' en Windows?",
+		"opciones": [
+		  "Un malware (virus) indetectable que roba contraseñas.",
+		  "Un proceso del sistema que se ejecuta en segundo plano de forma continua, sin estar asociado a ninguna terminal interactiva, a la espera de eventos o solicitudes (como servidores web o gestores de impresión).",
+		  "Un algoritmo de planificación que se encarga de matar procesos colgados.",
+		  "La partición del disco duro donde se guardan los archivos borrados de la papelera."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los demonios (identificados a menudo porque su nombre termina en 'd', como `httpd`, `sshd`, `systemd`) son programas fantasma. Arrancan con el ordenador, no tienen ventanas y se quedan en la sombra vigilando y trabajando hasta que los apagues o el equipo se apague."
+	  },
+	  {
+		"pregunta": "A nivel de hardware, para poder crear mecanismos de exclusión mutua efectivos (como los semáforos o los cerrojos/locks), los procesadores modernos incorporan instrucciones especiales de máquina que leen y modifican una variable de memoria en un solo paso indivisible (no pueden ser interrumpidas a medias). ¿Cómo se denomina genéricamente a este tipo de instrucciones?",
+		"opciones": [
+		  "Instrucciones Atómicas (como Test-And-Set o Compare-And-Swap).",
+		  "Instrucciones de Punto Flotante.",
+		  "Llamadas al sistema.",
+		  "Peticiones de Interrupción (IRQ)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "En la programación concurrente, la atomicidad es sagrada. Una instrucción atómica garantiza que la operación (ej: comprobar si el cerrojo está libre y, si lo está, bloquearlo) se hace de un plumazo físico en la CPU. Ningún otro hilo puede colarse 'en medio' de esa comprobación, evitando las condiciones de carrera."
+	  },
+	  {
+		"pregunta": "El 'Grado de multiprogramación' de un sistema informático se define como:",
+		"opciones": [
+		  "El número de lenguajes de programación distintos (C++, Java, Python) instalados en el ordenador.",
+		  "El número total de núcleos físicos que posee el microprocesador.",
+		  "El número de procesos que se encuentran simultáneamente alojados en la memoria principal compitiendo por la ejecución.",
+		  "El nivel de privilegios que tiene el usuario actual."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Grado de Multiprogramación mide cuántos procesos hay subidos en la RAM listos para funcionar a la vez. Si la RAM es pequeña, el grado será bajo. El planificador de largo plazo (en los SO antiguos) decidía qué programas entraban a la RAM para controlar este grado y no saturar el sistema."
+	  },
+	  {
+		"pregunta": "Al desarrollar programas compatibles con distintos sistemas operativos UNIX/Linux, los programadores utilizan una norma estándar que define la Interfaz de Programación de Aplicaciones (API) básica que el SO debe proporcionar (como la forma de abrir un archivo o crear un proceso). ¿Cómo se llama este estándar IEEE que garantiza la portabilidad del código fuente?",
+		"opciones": [
+		  "Win32.",
+		  "POSIX (Portable Operating System Interface).",
+		  "DirectX.",
+		  "TCP/IP."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "POSIX es el estándar que dice: 'Si tú programas tu aplicación usando estos comandos de sistema estándar, tu código funcionará igual si lo compilas en Ubuntu, en macOS o en Solaris'. Define cómo deben funcionar las llamadas al sistema, los hilos, y las utilidades de consola."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe solucionar un problema donde el Sistema Operativo está en un estado de 'Inanición' (Starvation) en su gestor de procesos, debe entender que esto NO es un interbloqueo (Deadlock) porque:",
+		"opciones": [
+		  "En el interbloqueo el ordenador se apaga físicamente, en la inanición solo se borra la RAM.",
+		  "En el interbloqueo, los procesos están paralizados eternamente esperando unos por otros. En la inanición, el sistema sigue funcionando y ejecutando otros procesos, pero un proceso concreto nunca consigue su turno debido a su baja prioridad u otras reglas del algoritmo.",
+		  "En el interbloqueo intervienen las impresoras, y en la inanición solo intervienen discos duros.",
+		  "Son sinónimos exactos, solo cambia la traducción al español."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Es vital diferenciar ambos. En el Deadlock (interbloqueo) la situación es un empate mortal, los procesos atascados están congelados sin remedio. En la inanición (starvation), el SO está vivo y coleando, repartiendo CPU a todo el mundo... excepto a ti, porque tu proceso es tan poco prioritario que siempre se le cuela alguien. El proceso está 'hambriento' pero no bloqueado."
+	  },
+	  {
+		"pregunta": "Históricamente, los sistemas operativos antiguos como Windows 3.1 o Mac OS 9 utilizaban un modelo de 'Multitarea Cooperativa'. ¿Cuál era el gran defecto de este modelo frente a la actual Multitarea Apropiativa (Preemptiva)?",
+		"opciones": [
+		  "Que no soportaban interfaz gráfica de usuario (GUI).",
+		  "Que el Sistema Operativo no podía expulsar a un proceso de la CPU a la fuerza. Si un programa se colgaba o entraba en un bucle infinito y no cedía voluntariamente el control, todo el ordenador se bloqueaba.",
+		  "Que solo permitía la ejecución de programas de 16 bits.",
+		  "Que los procesos debían pagar una licencia al núcleo para poder ejecutarse."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En la multitarea cooperativa, el control lo tienen los programas: el SO confía en que cada programa, de vez en cuando, ceda la CPU (yield) para que otros trabajen. Si un programa falla o es egoísta, el sistema entero muere. La multitarea apropiativa moderna le da el poder absoluto al SO para cortar el paso a cualquier programa a la fuerza."
+	  },
+	  {
+		"pregunta": "Cuando estudiamos los 'Hilos' (Threads) de un proceso, sabemos que comparten la mayor parte de los recursos de su 'proceso padre' para ser más ligeros y rápidos. Sin embargo, hay elementos que NO comparten y que son exclusivos e independientes para cada hilo. ¿Cuáles son?",
+		"opciones": [
+		  "El código del programa y las variables globales.",
+		  "Los archivos abiertos y las conexiones de red.",
+		  "El espacio de memoria dinámico (Heap).",
+		  "El Contador de Programa (PC), el conjunto de registros de la CPU y su propia Pila (Stack)."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "Para que dos hilos puedan hacer dos cosas distintas a la vez sin pisarse, cada uno necesita saber por qué línea de código va (Contador de Programa) y necesita un sitio de memoria privada para sus cálculos temporales y llamadas a funciones (la Pila o Stack). Todo lo demás (archivos, variables globales, código) lo comparten."
+	  },
+	  {
+		"pregunta": "Dentro de la arquitectura del Sistema Operativo, existen distintos tipos de 'Planificadores' (Schedulers). ¿Cuál es la función principal del 'Planificador a Medio Plazo'?",
+		"opciones": [
+		  "Decidir qué proceso de la cola de listos es el siguiente en entrar a la CPU.",
+		  "Decidir qué programas almacenados en el disco duro son admitidos en la memoria RAM para empezar a existir como procesos.",
+		  "Encargarse del 'Swapping' o intercambio: saca procesos temporalmente de la memoria RAM hacia el disco duro si hay saturación, y los vuelve a traer a la RAM cuando las condiciones mejoran.",
+		  "Planificar las actualizaciones de Windows Update a medio plazo."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El planificador a Corto Plazo decide quién usa la CPU segundo a segundo. El planificador a Largo Plazo decide quién entra a la RAM al abrir un programa. El de Medio Plazo es el 'gestor de crisis': si la RAM se llena, suspende procesos enteros, los manda al disco (swap out) para liberar espacio, y cuando la RAM se vacía, los vuelve a meter (swap in)."
+	  },
+	  {
+		"pregunta": "Si un Sistema Operativo configura el algoritmo de planificación 'Round Robin' (Turno Rotatorio) con un 'Quantum' de tiempo excesivamente GRANDE, ¿qué comportamiento adoptará en la práctica este algoritmo?",
+		"opciones": [
+		  "Provocará hiperpaginación en la memoria caché.",
+		  "Se comportará exactamente igual que el algoritmo FCFS (Primero en llegar, primero en servirse), ya que casi todos los procesos terminarán antes de que expire su turno.",
+		  "Provocará inanición segura en los procesos más largos.",
+		  "El sistema se reiniciará por desbordamiento de búfer."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Si en Round Robin le das a cada proceso 1 hora de CPU (quantum enorme), el proceso A entra, tarda 2 segundos y se va. El B entra, tarda 5 segundos y se va. Como a nadie se le corta el turno a la fuerza, el algoritmo pierde su interactividad y se convierte en una simple cola de supermercado (FIFO/FCFS)."
+	  },
+	  {
+		"pregunta": "Por el contrario, ¿qué ocurre si en el algoritmo 'Round Robin' configuramos un 'Quantum' excesivamente PEQUEÑO (por ejemplo, de 1 microsegundo)?",
+		"opciones": [
+		  "El rendimiento será óptimo e instantáneo para el usuario.",
+		  "El procesador perderá la inmensa mayoría de su tiempo útil realizando 'Cambios de Contexto' (Overhead) en lugar de ejecutar las instrucciones reales de los programas.",
+		  "Los programas consumirán menos memoria RAM.",
+		  "El sistema ignorará las interrupciones de hardware por completo."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El cambio de contexto (pausar un proceso, guardar sus registros, cargar el otro) tarda un tiempo X. Si el quantum es tan pequeño que el tiempo de CPU dado al proceso es igual al tiempo que se tarda en hacer el cambio, el procesador se pasará la vida organizando papeles y no ejecutando programas. Es el llamado 'Overhead' excesivo."
+	  },
+	  {
+		"pregunta": "Para gestionar la concurrencia, en las clases de Sistemas Operativos se estudian problemas clásicos que modelan situaciones reales. ¿Cómo se llama el problema teórico que describe una situación donde varios procesos generan datos que se guardan en un búfer de tamaño fijo, y otros procesos deben ir retirando esos datos sin que el búfer se desborde o se intente leer si está vacío?",
+		"opciones": [
+		  "El problema de los Filósofos Comensales.",
+		  "El problema del Productor-Consumidor.",
+		  "El problema de los Lectores-Escritores.",
+		  "El problema de la Torre de Hanoi."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Productor-Consumidor es el modelo clásico para explicar la sincronización y los semáforos. Si la cola de impresión (el búfer) está llena, el programa de Word (el Productor) debe dormirse y esperar. Si la cola de impresión está vacía, la impresora (el Consumidor) debe dormirse hasta que haya hojas que imprimir."
+	  },
+	  {
+		"pregunta": "En un Sistema Operativo UNIX/Linux, el administrador teclea el comando 'top' o 'htop' en la consola. ¿Para qué sirven estas herramientas nativas?",
+		"opciones": [
+		  "Para comprobar si el servidor web Apache está instalado.",
+		  "Para monitorizar en tiempo real el uso de la CPU, la RAM y la lista de todos los procesos activos, pudiendo enviarles señales (como matarlos).",
+		  "Para mostrar gráficamente la topología de la red local.",
+		  "Para poner un proceso concreto en la prioridad más alta (top priority)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El comando 'top' (y su versión más visual y moderna 'htop') es el equivalente al Administrador de Tareas de Windows en el mundo Linux. Es la herramienta principal para que un administrador detecte si hay un proceso zombi o qué programa se está comiendo toda la memoria del servidor."
+	  },
+	  {
+		"pregunta": "Para entender la comunicación entre el software y el hardware: cuando un programa en ejecución intenta realizar una acción prohibida, como dividir un número por cero o acceder a una zona de memoria que no le pertenece, la CPU genera un evento que detiene el programa y avisa al Sistema Operativo. ¿Cómo se llama técnicamente este evento?",
+		"opciones": [
+		  "Una Interrupción de Hardware (IRQ).",
+		  "Un Excepción o Trampa (Trap), que es una interrupción síncrona generada por software.",
+		  "Un Llamado a la API.",
+		  "Un Spooling."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Las Interrupciones (hardware) ocurren de forma asíncrona, por ejemplo, cuando pulsas una tecla o mueves el ratón. Las Excepciones o Traps son síncronas: ocurren exactamente en el momento en que el código de un programa falla (división por cero, fallo de página). Ambas obligan a la CPU a saltar al código del Kernel para resolver el problema."
+	  },
+	  {
+		"pregunta": "El algoritmo de planificación 'SJF' (Shortest Job First / Trabajo más corto primero) es teóricamente el mejor algoritmo posible para minimizar el tiempo de espera promedio de todos los procesos. Sin embargo, raramente se implementa en estado puro en sistemas de propósito general. ¿Por qué?",
+		"opciones": [
+		  "Porque está patentado por Microsoft y Linux no puede usarlo.",
+		  "Porque es matemáticamente imposible que el Sistema Operativo sepa de antemano exactamente cuánto tiempo de CPU va a necesitar cada proceso antes de ejecutarlo.",
+		  "Porque gasta demasiada electricidad en los procesadores Intel.",
+		  "Porque provoca que los procesos cortos sufran inanición."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "SJF funciona ordenando la cola de programas del más corto al más largo. El problema en la vida real es que el SO no es adivino: no sabe si un proceso va a durar 2 milisegundos o 5 horas hasta que no termina. Solo se puede usar mediante estimaciones basadas en su comportamiento pasado."
+	  },
+	  {
+		"pregunta": "En el modelo básico de la Multiprogramación, ¿cuál de estas opciones describe el objetivo principal por el cual se diseñó este concepto histórico?",
+		"opciones": [
+		  "Permitir al usuario ver películas y escuchar música a la vez en alta definición.",
+		  "Maximizar el porcentaje de utilización de la CPU, asegurándose de que el procesador nunca esté inactivo mientras haya procesos en memoria listos para ejecutarse, aprovechando los tiempos muertos de Entrada/Salida.",
+		  "Crear interfaces gráficas de usuario con ventanas superpuestas.",
+		  "Aumentar la capacidad de los discos duros magnéticos."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En la prehistoria informática la CPU era carísima. Si un programa paraba para leer datos de una cinta, la CPU se quedaba quieta (tiempo ocioso). La multiprogramación nació para que, en ese milisegundo que el programa A lee la cinta, la CPU salte al programa B y siga trabajando sin descanso."
+	  },
+	  {
+		"pregunta": "Dentro de los mecanismos de sincronización de procesos concurrentes, ¿cuál es la diferencia clave entre un 'Semáforo Binario' y un 'Mutex' (Exclusión Mutua), dado que ambos parecen funcionar igual (solo toman los valores 0 o 1)?",
+		"opciones": [
+		  "No existe ninguna diferencia, son términos inventados por distintos fabricantes de software para lo mismo.",
+		  "El Mutex incluye el concepto de 'Propiedad' (Ownership): solo el hilo que bloqueó el Mutex puede desbloquearlo. El Semáforo Binario no tiene propiedad; un hilo puede bloquearlo y un hilo distinto puede desbloquearlo.",
+		  "El Mutex funciona en la memoria caché L1 y el Semáforo en el disco duro.",
+		  "El Semáforo Binario solo funciona en redes LAN y el Mutex en equipos locales."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es una pregunta para nota. En un Mutex, si tú cierras la puerta con llave, solo tú puedes abrirla (Ownership). En un semáforo (aunque sea de 0 y 1), un hilo puede ejecutar la operación Wait (ponerlo en rojo), y un hilo totalmente distinto puede ejecutar Signal (ponerlo en verde). El Mutex protege el código, el Semáforo sincroniza tareas."
+	  },
+	  {
+		"pregunta": "¿Qué nombre recibe el mecanismo arquitectónico de un procesador y su Sistema Operativo que permite a los dispositivos de hardware periféricos (como discos duros o tarjetas de red) transferir grandes bloques de datos directamente hacia o desde la memoria RAM, sin que la CPU principal tenga que intervenir byte a byte?",
+		"opciones": [
+		  "Overclocking.",
+		  "Direct Memory Access (DMA / Acceso Directo a Memoria).",
+		  "Paginación multinivel.",
+		  "Hyper-Threading."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Sin DMA, para copiar un giga del disco a la RAM, la CPU tendría que leer y escribir cada bit, paralizando el ordenador. Con DMA (Acceso Directo a Memoria), la CPU le dice al chip DMA: 'Cópíame 1 GB del disco a esta dirección de RAM y avísame cuando acabes'. La CPU se desentiende y sigue ejecutando programas, y el chip DMA hace el trabajo sucio."
+	  },
+	  {
+		"pregunta": "En un Sistema Operativo multiproceso, para solucionar el problema de la fragmentación externa en la memoria RAM principal, se utiliza universalmente una técnica de gestión de memoria que divide el espacio de direcciones lógicas en bloques de tamaño fijo iguales a los marcos físicos de la memoria. ¿Cuál es esta técnica?",
+		"opciones": [
+		  "Paginación (Paging).",
+		  "Segmentación estática.",
+		  "Particiones dinámicas de tamaño variable.",
+		  "Asignación contigua pura."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La Paginación evita la fragmentación externa (huecos inútiles repartidos por la RAM). Divide la memoria física en 'Marcos' (ej. 4KB) y la memoria lógica de los programas en 'Páginas' (de 4KB). Así, un programa puede almacenarse en bloques de 4KB desperdigados por toda la RAM, sin requerir un bloque gigante y continuo de espacio libre."
+	  },
+	  {
+		"pregunta": "En el contexto de la Paginación, el procesador cuenta con una pequeña y ultrarrápida memoria caché dedicada exclusivamente a almacenar las últimas traducciones de direcciones lógicas (páginas) a direcciones físicas (marcos) para no tener que consultar la lenta tabla de páginas en la RAM constantemente. ¿Cuáles son sus siglas?",
+		"opciones": [
+		  "CMOS.",
+		  "TLB (Translation Lookaside Buffer).",
+		  "ALU.",
+		  "FPU."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El TLB (Translation Lookaside Buffer) es vital. Sin él, para cada dato que el programa quiere leer, la CPU tendría que hacer dos accesos a RAM: uno para buscar en qué parte de la RAM real está el dato (Tabla de páginas) y otro para leer el dato. El TLB guarda las últimas búsquedas, acelerando brutalmente el proceso."
+	  },
+	  {
+		"pregunta": "En el diseño de sistemas multiprocesador (múltiples CPUs reales físicas), la arquitectura tradicional de los ordenadores de escritorio es SMP (Multiprocesamiento Simétrico). Sin embargo, existió la arquitectura ASMP (Multiprocesamiento Asimétrico). ¿Qué definía a la ASMP?",
+		"opciones": [
+		  "Las CPUs operaban a distinta temperatura según la carcasa.",
+		  "Había una CPU 'Maestra' (Master) que se encargaba exclusivamente de ejecutar el Sistema Operativo y repartir el trabajo, y otras CPUs 'Esclavas' (Slaves) que solo podían ejecutar código de programas de usuario.",
+		  "Las CPUs se conectaban entre sí por Wi-Fi interno.",
+		  "Una CPU gestionaba solo los números pares y otra los impares."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El ASMP es como un jefe y sus obreros: el jefe (Procesador Maestro) hace la administración y el papeleo del SO, y los obreros (Procesadores Esclavos) calculan el software. El problema es que el Maestro se convertía en un cuello de botella. En el SMP moderno (Simétrico), todos los núcleos son iguales y pueden ejecutar rutinas del Kernel."
+	  },
+	  {
+		"pregunta": "Cuando un Sistema Operativo moderno carga un archivo ejecutable (.exe o binario) en memoria para crear un nuevo proceso, NO copia de golpe todo el archivo desde el disco a la RAM. Solo carga lo indispensable y va trayendo el resto del código conforme se necesita. ¿Cómo se llama esta técnica fundamental de la Memoria Virtual?",
+		"opciones": [
+		  "Caching preventivo.",
+		  "Paginación bajo demanda (Demand Paging).",
+		  "Over-provisioning de memoria.",
+		  "Asignación indexada asíncrona."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La Paginación bajo demanda es la razón por la que puedes tener abiertos Photoshop, Chrome y Word a la vez en un PC con poca RAM. El SO engaña a los programas: solo carga en RAM el 'trozo' (página) de código que se va a ejecutar en este mismo milisegundo. Si el programa intenta usar una herramienta que no está cargada, salta un 'Fallo de Página' (Page Fault) y el SO va a buscarla al disco rápidamente."
+	  },
+	  {
+		"pregunta": "Al analizar el rendimiento de un sistema y sus colas de planificación, ¿qué métrica se conoce como 'Tiempo de Retorno' o 'Tiempo de Estancia' (Turnaround time) de un proceso?",
+		"opciones": [
+		  "El tiempo que tarda el proceso desde que entra por primera vez a la CPU hasta que sale por primera vez.",
+		  "El tiempo total transcurrido desde que se crea o llega el proceso al sistema hasta que finaliza completamente y se borra de la memoria.",
+		  "La suma del tiempo que el proceso pasa en la CPU, excluyendo las esperas.",
+		  "El tiempo que tarda el usuario en cerrar la ventana del programa."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Turnaround time = Tiempo total de vida del proceso en el sistema. Incluye todo: el tiempo que pasó esperando en la cola, el tiempo que tardó en cargar de disco, el tiempo ejecutándose y el tiempo en colas de I/O, hasta su destrucción final."
+	  },
+	  {
+		"pregunta": "En los sistemas Windows, los procesos se organizan mediante un árbol de dependencias, pero en UNIX/Linux esta estructura es mucho más estricta: todos los procesos descienden directa o indirectamente de un único 'súper-proceso' original que arranca el núcleo, el cual tiene siempre el PID 1. ¿Cómo se suele llamar este proceso en Linux?",
+		"opciones": [
+		  "root.",
+		  "init (o systemd en sistemas modernos).",
+		  "kernel_task.",
+		  "explorer.exe."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En Linux, el proceso 'init' (o su sucesor 'systemd') es el primero que respira. Tiene el Process ID (PID) número 1. Todos los demás programas (la red, la interfaz gráfica, tus aplicaciones) nacen haciendo 'fork()' a partir de él. Si matas al proceso 1, matas el sistema operativo."
+	  },
+	  {
+		"pregunta": "Al estudiar la concurrencia, el 'Problema de los Filósofos Comensales' es un ejemplo clásico inventado por Dijkstra para ilustrar qué problemas de sincronización?",
+		"opciones": [
+		  "La latencia de la red en sistemas distribuidos en la nube.",
+		  "Los errores de desbordamiento en operaciones aritméticas de coma flotante.",
+		  "El Interbloqueo (Deadlock) y la Inanición (Starvation) cuando múltiples procesos compiten por un número limitado de recursos compartidos exclusivos.",
+		  "Los fallos térmicos en servidores agrupados en racks."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Cinco filósofos sentados en una mesa redonda con 5 tenedores. Para comer espaguetis necesitan coger 2 tenedores (uno con cada mano). Si todos cogen a la vez su tenedor derecho, ninguno puede coger el izquierdo, y no quieren soltar el suyo. Resultado: Interbloqueo absoluto (Deadlock), nadie come y mueren de hambre."
+	  },
+	  {
+		"pregunta": "Según la clasificación general de los Sistemas Operativos, ¿dónde encajaría perfectamente el sistema operativo de un teléfono móvil actual (como Android o iOS)?",
+		"opciones": [
+		  "Sistema por Lotes (Batch) y Monotarea.",
+		  "Sistema Operativo de Tiempo Real duro (Hard RTOS).",
+		  "Sistema Operativo Monousuario y Multitarea (concurrente).",
+		  "Sistema Operativo Centralizado Mainframe."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Android e iOS son SO modernos que permiten ejecutar múltiples aplicaciones a la vez en segundo plano (Multitarea), pero están diseñados para ser operados por una sola persona física al mismo tiempo desde su pantalla táctil (Monousuario). Un servidor Windows o Linux es Multiusuario y Multitarea."
+	  },
+	  {
+		"pregunta": "En la arquitectura de Windows NT (la base de todos los Windows modernos), ¿cuál es el componente de software fundamental que oculta las diferencias físicas del hardware al resto del sistema operativo, permitiendo que el mismo núcleo funcione en distintas placas base y procesadores sin modificar su código base?",
+		"opciones": [
+		  "La API Win32.",
+		  "El registro de Windows (regedit).",
+		  "La HAL (Hardware Abstraction Layer o Capa de Abstracción de Hardware).",
+		  "El gestor de arranque Bootmgr."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La HAL (Hardware Abstraction Layer) es la pieza clave de la portabilidad. Es una capa de código (habitualmente el archivo hal.dll) que se comunica directamente con el hardware físico. El resto del Sistema Operativo se comunica con la HAL, por lo que si cambia la placa base, solo cambia la HAL, no todo el Sistema Operativo."
+	  },
+	  {
+		"pregunta": "En las técnicas de Entrada/Salida (E/S), existe un método muy ineficiente en el que la CPU debe preguntar constantemente y en bucle al periférico si ha terminado su trabajo o si tiene datos nuevos, perdiendo ciclos de reloj valiosos. ¿Cómo se denomina esta técnica, que fue reemplazada por las Interrupciones?",
+		"opciones": [
+		  "Spooling.",
+		  "DMA (Acceso Directo a Memoria).",
+		  "Paginación bajo demanda.",
+		  "Polling (Sondeo o Espera Activa)."
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "El 'Polling' o Sondeo es el equivalente a un niño en el coche preguntando continuamente '¿Ya hemos llegado?'. La CPU gasta su tiempo preguntando a la tarjeta de red. En el sistema de Interrupciones, la CPU se olvida del tema y es la tarjeta de red la que 'avisa' (interrumpe) a la CPU solo cuando hay datos listos."
+	  },
+	  {
+		"pregunta": "Al gestionar la memoria virtual en sistemas Windows, el sistema operativo utiliza un archivo físico oculto en el disco duro para almacenar (paginar) temporalmente los datos de la memoria RAM que no caben o no se están usando activamente. ¿Cómo se llama habitualmente este archivo en la raíz del disco?",
+		"opciones": [
+		  "hiberfil.sys",
+		  "pagefile.sys",
+		  "ntoskrnl.exe",
+		  "swap.img"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El archivo `pagefile.sys` es el archivo de paginación de Windows (el equivalente a la partición 'swap' en Linux). El sistema operativo lo utiliza como una extensión de la memoria RAM, moviendo allí las 'páginas' de los programas que están minimizados o inactivos para dejar la RAM rápida libre para el programa actual."
+	  },
+	  {
+		"pregunta": "En la planificación en sistemas multiprocesador modernos (SMP), el Sistema Operativo intenta que un proceso o hilo vuelva a ejecutarse siempre en el mismo núcleo físico (Core) en el que se ejecutó su última vez. ¿Por qué motivo técnico se utiliza esta técnica, conocida como 'Afinidad del Procesador' (Processor Affinity)?",
+		"opciones": [
+		  "Porque mover un proceso de núcleo requiere reiniciar el ordenador.",
+		  "Para aprovechar los datos del proceso que probablemente aún sigan guardados en la Memoria Caché L1/L2 de ese núcleo en concreto, evitando tener que volver a traerlos desde la RAM principal y mejorando el rendimiento.",
+		  "Porque los núcleos pares solo aceptan procesos del sistema y los impares procesos de usuario.",
+		  "Para evitar el sobrecalentamiento del puente norte (Northbridge)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La Afinidad del Procesador es vital para el rendimiento. Si un hilo se ejecutó en el 'Core 0' hace unos milisegundos, es muy probable que gran parte de su información siga en la caché L1/L2 exclusiva de ese Core 0. Si el planificador lo mandara al 'Core 1', habría que limpiar las cachés y volver a traerlo todo de la lenta memoria RAM principal."
+	  },
+	  {
+		"pregunta": "Dentro de los mecanismos de Comunicación Entre Procesos (IPC) proporcionados por el Sistema Operativo, ¿qué diferencia principal existe entre las tuberías anónimas (Pipes) y las tuberías con nombre (Named Pipes)?",
+		"opciones": [
+		  "Las tuberías anónimas son mucho más lentas y propensas a errores.",
+		  "Las tuberías con nombre solo funcionan en sistemas operativos de 16 bits.",
+		  "Las tuberías anónimas solo sirven para comunicar procesos emparentados (ej. un proceso padre y su proceso hijo), mientras que las tuberías con nombre permiten la comunicación entre procesos totalmente independientes, e incluso entre procesos en ordenadores distintos a través de la red.",
+		  "Las tuberías con nombre exigen almacenar los datos permanentemente en el disco duro magnético."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los 'Pipes' normales (la barra vertical `|` en la consola de Linux) solo viven mientras viven los comandos emparentados que las usan. Las 'Named Pipes' (Tuberías con nombre) son un archivo especial en el sistema: cualquier proceso que sepa su nombre puede conectarse a ella para leer o escribir, permitiendo comunicación entre programas inconexos."
+	  },
+	  {
+		"pregunta": "En la gestión de la memoria principal, una de las técnicas históricas era la 'Asignación Dinámica mediante Particiones Variables', que asignaba a cada programa exactamente el tamaño que pedía. ¿Qué problema clásico e insoluble generaba este sistema con el paso del tiempo?",
+		"opciones": [
+		  "Fragmentación Externa.",
+		  "Thrashing (Hiperpaginación).",
+		  "Condiciones de carrera.",
+		  "Fugas de memoria (Memory Leaks)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Al cargar y descargar procesos de distintos tamaños continuamente, iban quedando 'huecos' libres entre ellos. Al final, podías tener 500 MB libres en total, pero repartidos en cien trocitos de 5 MB. Si un programa nuevo pedía 10 MB seguidos, el sistema no podía cargarlo aunque tuviera 500 MB libres en total. Esto es la Fragmentación Externa (solucionada hoy día con la Paginación)."
+	  },
+	  {
+		"pregunta": "El algoritmo de planificación HRRN (Highest Response Ratio Next o Tasa de Respuesta Más Alta Primero) busca solucionar el gran problema del algoritmo SJF (que los procesos largos sufren inanición). ¿Qué factor clave introduce la fórmula matemática del HRRN para elegir al siguiente proceso?",
+		"opciones": [
+		  "Asigna prioridad basada únicamente en los privilegios del usuario logueado.",
+		  "Considera tanto el tiempo estimado de ejecución como el tiempo que el proceso lleva esperando en la cola (introduciendo el concepto de envejecimiento), logrando que cuanto más espere un proceso, más suba su prioridad.",
+		  "Expulsa a los procesos de forma apropiativa si consumen más de 50 Megabytes de RAM.",
+		  "Multiplica el Quantum por el número de hilos del proceso."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "HRRN utiliza la fórmula (Tiempo de espera + Tiempo de ejecución estimado) / Tiempo de ejecución estimado. Al principio, un proceso corto da un número altísimo (prioridad alta). Pero si un proceso largo lleva horas esperando, su 'Tiempo de espera' será tan grande que el resultado de la fórmula superará a todos, obligando a la CPU a ejecutarlo y evitando la inanición."
+	  },
+	  {
+		"pregunta": "En sistemas operativos tipo UNIX/Linux, al visualizar los procesos con comandos como 'ps' o 'top', existe un estado de proceso representado por la letra 'D' (Uninterruptible Sleep / Sueño Ininterrumpible). ¿Por qué un proceso en este estado concreto no puede ser 'matado' (kill -9) ni interrumpido por el usuario?",
+		"opciones": [
+		  "Porque es un proceso zombi y ya está muerto.",
+		  "Porque es el proceso Kernel principal (PID 1) y el sistema colapsaría.",
+		  "Porque el proceso está bloqueado esperando que un hardware (normalmente el disco duro) termine una operación crítica, y si el SO lo interrumpiera a la fuerza en ese instante, los datos de lectura/escritura quedarían corruptos y el hardware en estado inconsistente.",
+		  "Porque el proceso ha sido infectado por un Rootkit."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El estado 'D' es muy temido por los administradores de sistemas. Cuando un proceso pide datos al disco y se queda en estado D, se blinda contra cualquier señal (incluso el implacable SIGKILL/kill -9). Lo hace para proteger la integridad del disco. Si el disco falla o se atasca, el proceso se queda en estado D para siempre (colgado), obligando a menudo a reiniciar todo el servidor."
+	  },
+	  {
+		"pregunta": "Para resolver los problemas de sincronización en la programación concurrente de forma estructurada y menos propensa a fallos humanos que los clásicos Semáforos, los lenguajes modernos y sistemas operativos implementan el concepto de 'Monitor'. ¿Qué es un Monitor?",
+		"opciones": [
+		  "La pantalla táctil del usuario que manda señales de interrupción.",
+		  "Un programa demonio que vigila la temperatura de la CPU y la bloquea si sube demasiado.",
+		  "Una estructura de software (tipo de dato abstracto) que encapsula en un solo paquete las variables compartidas y los métodos para acceder a ellas, garantizando automáticamente que solo un proceso/hilo pueda estar activo ejecutando el código dentro del monitor al mismo tiempo.",
+		  "El registro de eventos de Windows (Event Viewer)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los Monitores (propuestos por Hoare) ocultan la complejidad. En lugar de que el programador tenga que acordarse de poner un 'Semáforo Rojo' al entrar y 'Semáforo Verde' al salir de cada función (arriesgándose a olvidar uno y causar un Interbloqueo), el Monitor funciona como una habitación con una sola llave automática: el compilador/SO se encarga de dar y quitar la llave para que solo un hilo esté dentro a la vez."
+	  },
+	  {
+		"pregunta": "¿A qué nos referimos cuando hablamos del 'Modelo del Conjunto de Trabajo' (Working Set Model) utilizado por el gestor de memoria virtual del Sistema Operativo?",
+		"opciones": [
+		  "Al número mínimo de periféricos que necesita un sistema para arrancar.",
+		  "Al conjunto de páginas de memoria RAM que un proceso está utilizando activamente o ha utilizado en el pasado más reciente, siendo el mínimo indispensable que necesita tener en RAM para funcionar fluidamente sin provocar Thrashing (hiperpaginación).",
+		  "Al grupo de hilos del Sistema Operativo que ejecutan tareas en segundo plano.",
+		  "A la partición de recuperación oculta en el disco duro."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Working Set' se basa en el principio de cercanía espacial y temporal. Si estás editando una foto en Photoshop, el programa tiene gigas de código, pero tu 'Working Set' actual son solo las páginas del pincel que usas y la zona de la foto que estás tocando. El SO debe garantizar que el 'Working Set' completo del programa quepa en la RAM física, o el sistema entrará en hiperpaginación."
+	  },
+	  {
+		"pregunta": "Cuando un proceso necesita ejecutar una instrucción privilegiada del Sistema Operativo (como escribir un archivo), realiza una Llamada al Sistema (System Call). Este evento provoca una transición en el procesador. En relación al rendimiento, ¿qué afirmación sobre esta transición es correcta?",
+		"opciones": [
+		  "Un 'Cambio de Modo' (de Modo Usuario a Modo Kernel para atender la llamada) es mucho más rápido y menos costoso para la CPU que realizar un 'Cambio de Contexto' (Context Switch) completo entre dos procesos diferentes.",
+		  "El Cambio de Contexto es instantáneo, mientras que el Cambio de Modo requiere reiniciar la ALU del procesador.",
+		  "Ambos procesos tardan exactamente lo mismo porque requieren volcar el contenido completo de la RAM al disco duro.",
+		  "Una Llamada al Sistema no provoca ningún cambio de modo en los procesadores de 64 bits."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Cambiar de Modo Usuario a Kernel (Mode Switch) es rápido: el mismo proceso sigue en la CPU, solo que ahora se le concede permiso para ejecutar código del SO. Sin embargo, el Cambio de Contexto (Context Switch) implica desalojar al proceso A, guardar todos sus registros, vaciar cachés TLB y cargar todo el contexto del proceso B, lo cual penaliza mucho más el rendimiento."
+	  },
+	  {
+		"pregunta": "En el clásico 'Problema de los Lectores y Escritores' para la sincronización de procesos concurrentes que acceden a una base de datos o archivo compartido, ¿cuál es la regla fundamental de exclusión que el Sistema Operativo debe garantizar para evitar la corrupción de datos?",
+		"opciones": [
+		  "Que solo pueda haber 1 lector a la vez, pero infinitos escritores simultáneos.",
+		  "Que se permita que múltiples Lectores lean simultáneamente (ya que no alteran los datos), pero si un Escritor quiere acceder, debe tener acceso exclusivo y no puede haber ni otros lectores ni otros escritores dentro de la sección crítica.",
+		  "Que los Lectores tengan siempre prohibido el acceso a la sección crítica.",
+		  "Que todo proceso que entre se quede con el recurso asignado para siempre."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En el problema de Lectores/Escritores, si 100 personas quieren consultar el saldo (Lectores) a la vez, no hay peligro, se les deja pasar a todos. Pero si una persona quiere ingresar o retirar dinero (Escritor), es vital parar el sistema: hay que echar a los lectores, dejar entrar al escritor en solitario para que cambie el saldo (exclusión mutua total), y cuando acabe, volver a dejar entrar al resto."
+	  },
+	  {
+		"pregunta": "¿Qué sucede a nivel funcional (mecánica del Sistema Operativo) cuando un proceso de usuario sufre un 'Fallo de Página' (Page Fault) en un sistema con memoria virtual paginada?",
+		"opciones": [
+		  "El programa falla irremediablemente y Windows muestra un Pantallazo Azul (BSOD).",
+		  "El hardware de gestión de memoria (MMU) lanza una interrupción al detectar que la página no está en RAM. El SO detiene temporalmente el proceso, busca la página requerida en el disco duro, la carga en un marco libre de la RAM, y por último, reanuda el proceso en la instrucción que falló.",
+		  "El procesador ignora la página y continúa leyendo ceros para no perder rendimiento.",
+		  "El sistema cambia el estilo de partición del disco duro de MBR a GPT."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Un 'Fallo de Página' no es un error informático malo o un cuelgue. Es un mecanismo completamente normal y constante de la memoria virtual. Ocurre cuando el programa intenta usar un dato que está paginado en el disco duro (pagefile.sys). El SO pausa el programa, hace de recadero yendo al disco, sube el dato a la RAM y le dice al programa 'Ya lo tienes, continúa'."
+	  },
+	  {
+		"pregunta": "Para poder prevenir una de las cuatro condiciones necesarias del interbloqueo o Deadlock (concretamente, la 'Espera Circular'), una de las técnicas de prevención de diseño utilizadas en Sistemas Operativos consiste en:",
+		"opciones": [
+		  "Imponer una jerarquía u ordenación numérica estricta a todos los tipos de recursos del sistema, obligando a todos los procesos a solicitar los recursos siempre en un orden estrictamente ascendente, impidiendo que el ciclo se cierre.",
+		  "Formatear los discos duros regularmente.",
+		  "Apagar el equipo cuando se detecte más de un 90% de uso de CPU.",
+		  "Crear un nuevo hilo de ejecución por cada recurso libre."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La Espera Circular (A espera por B, B espera por C, C espera por A) es la base del atasco. Si el SO enumera los recursos (1. Impresora, 2. Escáner, 3. Disco) y obliga por ley a que, si necesitas varios, debes pedirlos en orden de menor a mayor (1º Impresora, 2º Escáner). De este modo, es matemáticamente imposible que un proceso que tiene el Disco (3) se quede esperando por la Impresora (1), rompiendo el círculo mortal."
+	  },
+	  {
+		"pregunta": "En las arquitecturas modernas (como la extendida x86-64), ¿cuál es el tamaño por defecto más utilizado y estandarizado para una 'Página' individual de memoria virtual, considerado históricamente el mejor equilibrio entre el desperdicio (fragmentación interna) y el tamaño de las tablas de páginas en RAM?",
+		"opciones": [
+		  "512 Bytes.",
+		  "4 Kilobytes (4 KB).",
+		  "1 Gigabyte (1 GB).",
+		  "32 Megabytes (32 MB)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El tamaño de página estándar de la inmensa mayoría de sistemas x86 es de 4 KB (4096 bytes). Aunque existen páginas enormes (Huge Pages de 2MB o 1GB para servidores de bases de datos), 4 KB ha sido el estándar dorado: es lo suficientemente pequeño para no desperdiciar RAM si un programa necesita poco espacio, y lo suficientemente grande para que la tabla de páginas no ocupe más que el propio programa."
+	  },
+	  {
+		"pregunta": "En el diseño de sistemas operativos, ¿qué es exactamente un 'Spooler' de impresión (por ejemplo, el servicio Spoolsv.exe en Windows)?",
+		"opciones": [
+		  "Un driver gráfico para renderizar colores CMYK.",
+		  "Un proceso o demonio que gestiona el acceso concurrente a un dispositivo dedicado (exclusivo) y lento, almacenando los trabajos de todos los usuarios en un área de almacenamiento intermedio (como el disco duro) y enviándolos a la impresora uno a uno.",
+		  "Un cable físico que conecta dos ordenadores para que compartan la misma impresora.",
+		  "Un virus que duplica los documentos confidenciales."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La impresora es un dispositivo no compartible (no puede imprimir la línea 1 del usuario A y la línea 2 del usuario B al mismo tiempo). El Spooler soluciona esto: acepta los documentos de todos los usuarios a la vez al instante, engañándoles para que crean que ya están imprimiendo. El Spooler guarda todo en el disco (spooling) y él se encarga de enviárselo pacientemente a la impresora."
+	  },
+	  {
+		"pregunta": "Al diseñar un sistema operativo para usar Hilos (Threads) a nivel de núcleo (Kernel-level threads) en lugar de usar los antiguos hilos a nivel de usuario, el sistema obtiene una ventaja demoledora en entornos multiprocesador (SMP). ¿Cuál es?",
+		"opciones": [
+		  "Que no consumen ningún Megabyte de RAM.",
+		  "Que el núcleo del sistema operativo es totalmente consciente de la existencia de cada uno de los hilos de un proceso, pudiendo así coger 4 hilos de una misma aplicación pesada y asignarlos a 4 procesadores (núcleos físicos) distintos para que se ejecuten en paralelo matemáticamente real.",
+		  "Que los hilos del núcleo son invisibles para los antivirus.",
+		  "Que el usuario no puede borrarlos jamás."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Si los hilos son de Usuario (gestionados por librerías tipo Pthreads básicas), el SO solo ve un proceso global. Si tienes 8 núcleos en la CPU, el SO manda ese proceso entero a un solo núcleo. Si los hilos son de Kernel, el SO es capaz de coger ese único programa (Photoshop), detectar que tiene 10 hilos, y repartirlos por los 8 núcleos de tu CPU para exprimir toda la potencia."
+	  },
+	  {
+		"pregunta": "Cuando se habla de Multitarea en Windows o en Linux, se utiliza habitualmente un sistema de planificación basado en 'Colas Multinivel con Retroalimentación'. En este modelo dinámico, si un proceso agota repetidamente la totalidad del 'Quantum' de CPU asignado sin bloquearse voluntariamente, ¿qué acción punitiva suele tomar el planificador con él?",
+		"opciones": [
+		  "Le aumenta la prioridad como premio a su esfuerzo constante.",
+		  "Baja su prioridad moviéndolo a una cola inferior (penalizándolo), asumiendo que es un proceso intensivo en CPU ('CPU-bound') que se pasará horas calculando y que, por tanto, no requiere alta prioridad ni interactividad inmediata con el usuario.",
+		  "Lo elimina del sistema (kill) por abusar del tiempo de CPU.",
+		  "Lo envía directamente al disco duro a través de red."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El algoritmo de retroalimentación asume que: si gastas todo tu tiempo sin parar (como un programa comprimiendo un ZIP), eres un proceso matemático pesado; te pongo en una cola de baja prioridad con un turno más largo para que calcules de fondo. Si usas muy poco tiempo de tu Quantum y te bloqueas (porque estás esperando a que el usuario pulse una tecla), te subo la prioridad a tope para que la interfaz se note fluida e instantánea."
+	  },
+	  {
+		"pregunta": "En el ámbito de la multiprogramación, ¿a qué llamamos 'Grado de Multiprogramación' y qué planificador clásico se encarga de controlarlo en los sistemas grandes o por lotes?",
+		"opciones": [
+		  "Es el nivel de permisos que tiene el usuario Root; controlado por el Planificador a Corto Plazo.",
+		  "Es el número de programas que están instalados en el disco C:; controlado por el Planificador a Medio Plazo.",
+		  "Es el número total de procesos que se han cargado y residen simultáneamente en la memoria RAM principal compitiendo por recursos; es controlado habitualmente por el Planificador a Largo Plazo.",
+		  "Es la cantidad de procesadores que tiene la placa base; no puede controlarse por software."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Grado de Multiprogramación es cuántos procesos hay subidos a la RAM a la vez. El Planificador a Largo Plazo (hoy en día menos prominente en PCs pero vital en Mainframes) era el portero de discoteca: solo dejaba pasar a la RAM a nuevos procesos si creía que el equipo podía con ellos sin saturarse (sin provocar Thrashing). Controlaba la 'cantidad de aforo'."
+	  },
+	  {
+		"pregunta": "Y para finalizar el Tema 5: A nivel de seguridad y aislamiento de procesos, los Sistemas Operativos utilizan dos registros especiales de hardware en el procesador (el Registro Base y el Registro Límite) cuando asignan memoria a un programa de usuario. ¿Para qué sirven exactamente?",
+		"opciones": [
+		  "Para medir la temperatura de la memoria RAM (Base) y establecer el límite antes de apagarse.",
+		  "Para cifrar las comunicaciones con las tarjetas de red de 1 Gigabit.",
+		  "Para establecer el principio y el final exacto de la zona de memoria física asignada a un proceso, de modo que si este programa intenta leer o escribir una dirección de memoria fuera de esos límites (intentando espiar o pisar la memoria de otro programa o del SO), el procesador aborta la acción instantáneamente generando un fallo.",
+		  "Para marcar a qué disco duro debe enviarse el archivo de paginación del sistema."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El Registro Base y Límite son la muralla de seguridad (aislamiento de memoria). Si al Proceso A se le asigna memoria desde la dirección 1000 (Base) hasta la 2000 (Límite). Si el Proceso A intenta hacer trampas y leer la dirección 2005 (donde están guardadas las contraseñas del Proceso B), el hardware de la CPU lo detecta y lo 'mata' por violación de acceso (Segmentation Fault)."
+	  }
+  
+  
+  
   ],
   
   
 
   "6": [
+  
+  
+  
   
   ], 
 

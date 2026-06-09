@@ -4538,9 +4538,886 @@
   
 
   "6": [
-  
-  
-  
+		{
+		"pregunta": "Para poder instalar Windows 11 en un equipo de escritorio, Microsoft endureció enormemente los requisitos mínimos de hardware respecto a Windows 10. Además de requerir un procesador de 64 bits compatible y 4 GB de RAM, ¿qué dos características de seguridad en la placa base son absolutamente obligatorias para una instalación estándar oficial?",
+		"opciones": [
+		  "Lector de huellas dactilares y BitLocker preactivado.",
+		  "Arranque Seguro (Secure Boot) y un chip TPM (Módulo de Plataforma Segura) versión 2.0.",
+		  "Conexión de red Gigabit Ethernet y TPM versión 1.2.",
+		  "Firmware BIOS Legacy y soporte para virtualización Hyper-V."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es la pregunta estrella de Windows 11. Para instalarlo de forma oficial, la placa base debe tener firmware UEFI con el Arranque Seguro activado (Secure Boot) y un chip TPM 2.0 (que cifra claves por hardware). Muchos equipos potentes de hace unos años se quedaron fuera de Windows 11 por no tener este chip o tener la versión 1.2."
+	  },
+	  {
+		"pregunta": "Durante la fase de configuración inicial (OOBE - Out of Box Experience) al instalar la edición 'Windows 11 Home' en un equipo nuevo, ¿cuál de las siguientes restricciones impone Microsoft de forma predeterminada?",
+		"opciones": [
+		  "Es obligatorio tener conexión a Internet y utilizar una Cuenta de Microsoft; no permite crear una cuenta local directamente.",
+		  "Obliga a instalar el paquete de Office 365 antes de mostrar el escritorio.",
+		  "Permite omitir la conexión a red pulsando en 'No tengo Internet' y crear una cuenta local sin problemas.",
+		  "Requiere una cuenta de dominio de Active Directory corporativo."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "A diferencia de versiones anteriores o de la edición 'Pro' (que lo permitió en sus primeras versiones), Windows 11 Home exige estrictamente conectividad a Internet y el inicio de sesión con una Cuenta de Microsoft (@outlook, @hotmail) para finalizar la instalación. Crear una cuenta local directamente no se ofrece como opción a menos que se usen comandos de consola para bypasear el requisito."
+	  },
+	  {
+		"pregunta": "Una de las novedades visuales más destacadas de Windows 11 es la reorganización de la Barra de Tareas. Por defecto, el botón de Inicio y los iconos de los programas están centrados. ¿Es posible volver a la alineación clásica a la izquierda?",
+		"opciones": [
+		  "No, Microsoft eliminó por completo la alineación a la izquierda en Windows 11.",
+		  "Sí, pero requiere modificar el Registro de Windows de forma manual.",
+		  "Sí, se puede cambiar desde Configuración > Personalización > Barra de tareas > Comportamiento de la barra de tareas.",
+		  "Sí, simplemente arrastrando el botón de Inicio con el ratón hacia la izquierda."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Aunque la alineación central es la 'marca de la casa' de Windows 11, Microsoft incluyó la opción oficial para los usuarios más clásicos. Entrando en la Configuración de Personalización, el 'Comportamiento de la barra de tareas' permite elegir entre alineación 'Centro' o 'Izquierda'."
+	  },
+	  {
+		"pregunta": "En Windows 11, Microsoft ha introducido una función de interfaz llamada 'Snap Layouts' (Diseños de acoplamiento) que facilita enormemente organizar varias ventanas en la pantalla. ¿Cómo se despliega visualmente el menú de esta herramienta usando el ratón?",
+		"opciones": [
+		  "Haciendo doble clic derecho en cualquier parte del fondo de escritorio.",
+		  "Pausando (sin hacer clic) el puntero del ratón sobre el botón de 'Maximizar/Restaurar' de cualquier ventana abierta.",
+		  "Agitando la ventana rápidamente de un lado a otro.",
+		  "Arrastrando la ventana a la esquina inferior derecha de la pantalla."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los 'Snap Layouts' son una evolución del clásico 'Aero Snap'. Al dejar el ratón un segundo sobre el botón cuadrado de Maximizar de una ventana (o pulsando la tecla Win + Z), se despliega una cuadrícula visual que te permite elegir exactamente en qué parte y proporción de la pantalla quieres encajar esa ventana y las demás."
+	  },
+	  {
+		"pregunta": "Como Auxiliar, la rapidez con el teclado es vital. ¿Cuál es el atajo de teclado nativo en Windows 11 para abrir directamente la aplicación moderna de 'Configuración' (Settings)?",
+		"opciones": [
+		  "Tecla Windows + C.",
+		  "Tecla Windows + S.",
+		  "Tecla Windows + I.",
+		  "Tecla Windows + X."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El atajo 'Windows + I' (de Settings / Información) abre al instante el panel de Configuración moderno. 'Win + S' abre la Búsqueda (Search), 'Win + C' abría Cortana/Copilot, y 'Win + X' abre el Menú de Enlace Rápido (el que sale al hacer clic derecho en el botón de Inicio)."
+	  },
+	  {
+		"pregunta": "En la gestión de redes de Windows 11, cuando un usuario conecta su portátil por primera vez a la red Wi-Fi de una cafetería, el sistema le pregunta sobre el tipo de red. Si el usuario elige configurar el perfil de red como 'Público', ¿qué medida de seguridad aplica Windows de inmediato?",
+		"opciones": [
+		  "Cifra todo el tráfico HTTP mediante una VPN de Microsoft.",
+		  "Desactiva la detección de redes (Network Discovery) y el uso compartido de archivos e impresoras, ocultando el equipo para el resto de ordenadores de esa red.",
+		  "Abre el puerto 3389 para permitir Escritorio Remoto por si necesita asistencia.",
+		  "Apaga el Firewall de Windows Defender para evitar conflictos de conexión."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Perfil de Red 'Público' asume que estás en una red hostil (un aeropuerto, una cafetería). Para protegerte, el Firewall de Windows se vuelve muy restrictivo: cierra los puertos de compartición de archivos e impide que tu equipo sea 'visible' al escanear la red. El perfil 'Privado' se usa en casa u oficina, donde sí quieres ver la impresora compartida o el NAS."
+	  },
+	  {
+		"pregunta": "Para la administración de sistemas a través de líneas de comandos, Windows 11 incluye de forma predeterminada una aplicación moderna que unifica y reemplaza a la antigua consola negra (cmd.exe) y a PowerShell tradicional, permitiendo usar pestañas múltiples, perfiles y aceleración gráfica. ¿Cómo se llama esta aplicación?",
+		"opciones": [
+		  "Windows Command Center.",
+		  "Windows Terminal.",
+		  "Azure Cloud Shell.",
+		  "Bash for Windows."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Windows Terminal es la nueva interfaz de línea de comandos por defecto en Windows 11. Es una maravilla para los técnicos porque en una misma ventana puedes tener una pestaña con el Símbolo del sistema antiguo (CMD), otra con PowerShell, y otra con Ubuntu (WSL), todo totalmente personalizable."
+	  },
+	  {
+		"pregunta": "En el Administrador de Dispositivos (devmgmt.msc), un Auxiliar observa que la tarjeta de red tiene un pequeño icono de un triángulo amarillo con un signo de exclamación (!). ¿Qué indica este símbolo estandarizado?",
+		"opciones": [
+		  "El dispositivo está deshabilitado voluntariamente por el usuario.",
+		  "El dispositivo funciona perfectamente, pero está consumiendo demasiada energía.",
+		  "El dispositivo tiene un problema lógico (como un controlador faltante, corrupto o en conflicto) y no está funcionando correctamente.",
+		  "El dispositivo no es compatible con Plug and Play."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El triángulo amarillo con exclamación es el símbolo universal de Windows para 'El hardware está pinchado, pero el software no sabe cómo hablar con él'. Casi siempre se soluciona instalando o actualizando el Driver (controlador). Si el dispositivo estuviera deshabilitado manualmente, tendría una flecha gris (o roja en versiones antiguas) apuntando hacia abajo."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar necesita crear, eliminar o redimensionar particiones en el disco duro desde un entorno gráfico en Windows 11 sin instalar programas de terceros, ¿qué complemento (snap-in) de la Consola de Administración de Microsoft (MMC) debe ejecutar?",
+		"opciones": [
+		  "taskmgr.exe (Administrador de Tareas).",
+		  "diskmgmt.msc (Administrador de Discos).",
+		  "services.msc (Servicios locales).",
+		  "sysdm.cpl (Propiedades del sistema)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Administrador de Discos (diskmgmt.msc) es la herramienta nativa con interfaz gráfica de Windows para lidiar con el almacenamiento. Permite dar formato, asignar letras de unidad, reducir volúmenes e inicializar discos nuevos. Es la versión gráfica del comando `diskpart`."
+	  },
+	  {
+		"pregunta": "Windows 11 incorpora una función de seguridad integrada diseñada para cifrar completamente la unidad de almacenamiento y evitar que alguien pueda extraer el disco duro físico del portátil y leer sus datos conectándolo a otro ordenador. ¿Cuál es el nombre de esta característica?",
+		"opciones": [
+		  "Windows Defender Credential Guard.",
+		  "BitLocker Drive Encryption.",
+		  "NTFS File Compression.",
+		  "AppLocker."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "BitLocker es la herramienta de cifrado de volumen completo de Microsoft (disponible en las versiones Pro, Enterprise y Education). Trabaja junto con el chip TPM de la placa base. Si alguien roba tu portátil y saca el disco, al conectarlo a su PC solo verá datos cifrados indescifrables si no tiene la clave de recuperación de 48 dígitos."
+	  },
+	  {
+		"pregunta": "Dentro de las opciones de protección y recuperación del sistema de Windows 11, ¿cuál es el comportamiento exacto de la herramienta 'Restaurar Sistema' (System Restore) cuando el usuario decide volver a un 'Punto de restauración' de la semana pasada?",
+		"opciones": [
+		  "Restaura el sistema operativo a su estado de fábrica, borrando absolutamente todos los programas y documentos personales.",
+		  "Revierte el Registro de Windows, los controladores y los programas instalados al estado de esa fecha, PERO mantiene intactos los archivos personales del usuario (como documentos de Word, fotos o descargas recientes).",
+		  "Recupera únicamente los documentos borrados de la papelera de reciclaje, sin tocar el Registro de Windows.",
+		  "Descarga una nueva imagen de Windows 11 desde la nube de Microsoft y la instala."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Esta es una duda muy común de los usuarios. 'Restaurar Sistema' es una máquina del tiempo selectiva. Deshace instalaciones de drivers o programas conflictivos (que suelen ser los que cuelgan el PC), pero está programado expresamente para ignorar y NO borrar las carpetas de usuario (Documentos, Imágenes, Escritorio), para que no pierdas tu trabajo de esa semana."
+	  },
+	  {
+		"pregunta": "El Control de Cuentas de Usuario (UAC) en Windows 11 es la barrera que pide permiso cuando un programa intenta hacer cambios administrativos. Cuando salta esta ventana, el resto de la pantalla se oscurece y no se puede interactuar con ella. ¿Cómo se denomina técnicamente a esta medida de seguridad?",
+		"opciones": [
+		  "Escritorio Seguro (Secure Desktop).",
+		  "Aislamiento de núcleo (Core Isolation).",
+		  "Pantalla de Bloqueo Dinámico.",
+		  "Shadow Copy."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El 'Secure Desktop' (Escritorio Seguro) es una capa de seguridad vital. Cuando salta el UAC, Windows no oscurece la pantalla por estética, sino que traslada el cuadro de diálogo a una sesión de escritorio especial aislada, paralizando tu escritorio normal. Esto impide que un virus malicioso pueda hacer 'clic' automáticamente en 'Sí, conceder permisos' usando scripts, ya que el virus no tiene acceso a ese escritorio seguro."
+	  },
+	  {
+		"pregunta": "Si un ordenador con Windows 11 sufre reinicios continuos debido a un controlador de tarjeta gráfica defectuoso, ¿cómo puede el Auxiliar forzar el arranque en 'Modo Seguro' desde la pantalla de inicio de sesión de Windows antes de poner la contraseña?",
+		"opciones": [
+		  "Pulsando F8 ininterrumpidamente mientras carga la BIOS.",
+		  "Haciendo clic en el botón de Encendido de la esquina inferior derecha, manteniendo pulsada la tecla MAYÚS (Shift) y haciendo clic en 'Reiniciar'.",
+		  "Escribiendo 'safe mode' en el recuadro de la contraseña.",
+		  "Desconectando el ratón y el teclado simultáneamente."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En Windows 11 (y 10), el clásico truco de pulsar F8 durante el arranque es tan rápido gracias a los SSD que el sistema apenas lo detecta y viene desactivado por defecto. El método infalible es pulsar Shift + Reiniciar en cualquier menú de apagado de Windows; esto lanza el Entorno de Recuperación (WinRE) donde podemos navegar hasta 'Configuración de inicio' y elegir el Modo Seguro."
+	  },
+	  {
+		"pregunta": "Para mejorar la gestión del almacenamiento y tener redundancia sin necesidad de usar tarjetas controladoras RAID por hardware, Windows 11 incluye una característica nativa por software que permite agrupar varios discos físicos en un 'grupo' y luego crear discos virtuales sobre ellos (como si fueran volúmenes RAID 1 o RAID 5). ¿Cómo se llama esta función en el Panel de Control?",
+		"opciones": [
+		  "Historial de Archivos.",
+		  "Espacios de Almacenamiento (Storage Spaces).",
+		  "Carpetas de Trabajo (Work Folders).",
+		  "OneDrive Sync."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Los 'Espacios de almacenamiento' (Storage Spaces) son la solución de almacenamiento definido por software de Microsoft. Permiten coger 3 discos duros distintos (incluso de distinto tamaño o USB), agruparlos en un 'Grupo de almacenamiento', y crear encima un disco virtual con paridad (para que si uno se rompe, no se pierdan datos), actuando como un NAS casero."
+	  },
+	  {
+		"pregunta": "En la gestión de actualizaciones a través de Windows Update, Windows 11 incluye una tecnología diseñada para ahorrar ancho de banda de Internet en redes corporativas o domésticas. Permite que un PC descargue la actualización y luego la comparta (como un protocolo P2P o Torrent) con los otros ordenadores de la misma red local. ¿Qué nombre recibe esta tecnología?",
+		"opciones": [
+		  "Optimización de distribución (Delivery Optimization).",
+		  "Windows Server Update Services (WSUS).",
+		  "BranchCache.",
+		  "DirectAccess."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "La Optimización de Distribución (Delivery Optimization) es fantástica en una oficina sin WSUS. Si tienes 20 equipos que deben bajar un parche de 1 GB, en lugar de descargar 20 GB de internet saturando la red externa, el primer PC lo descarga de Microsoft y luego se lo pasa rápidamente por la red de área local (LAN) a sus 19 compañeros."
+	  },
+	  {
+		"pregunta": "Si necesitas abrir el 'Administrador de Tareas' de forma instantánea y directa en Windows 11 sin pasar por la pantalla de seguridad de Ctrl+Alt+Supr, ¿qué atajo de teclado a una sola mano usarías?",
+		"opciones": [
+		  "Ctrl + Alt + Esc.",
+		  "Ctrl + Shift + Esc.",
+		  "Tecla Windows + T.",
+		  "Alt + Tab."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Este es el 'atajo ninja' de los técnicos. 'Ctrl + Shift + Esc' abre inmediatamente el Administrador de Tareas en tu escritorio actual. 'Ctrl+Alt+Supr' es una interrupción por hardware que abre una pantalla intermedia de seguridad donde tienes que volver a hacer clic para elegir el Administrador de Tareas."
+	  },
+	  {
+		"pregunta": "Para desarrolladores y técnicos, Windows 11 incluye un entorno opcional integrado y nativo (sin necesidad de instalar VirtualBox o VMware de terceros) que permite ejecutar binarios y comandos de distribuciones de Linux (como Ubuntu) directamente interactuando con el sistema de archivos de Windows. ¿Cuáles son las siglas de este subsistema?",
+		"opciones": [
+		  "WSA (Windows Subsystem for Android).",
+		  "WSL (Windows Subsystem for Linux).",
+		  "Hyper-V Core.",
+		  "BashEnv."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "WSL (actualmente en su versión WSL 2) ha revolucionado el uso de Windows en informática técnica. Permite abrir una terminal y ejecutar comandos de Linux (grep, awk, apt-get) a máxima velocidad, utilizando una máquina virtual ultra-ligera gestionada por el propio Windows sin el consumo masivo de memoria de una VM tradicional."
+	  },
+	  {
+		"pregunta": "Como técnica de protección de archivos de usuario, Windows 11 incluye la herramienta 'Historial de Archivos' (File History). A diferencia de 'Restaurar Sistema', ¿cuál es el propósito específico del Historial de Archivos?",
+		"opciones": [
+		  "Reparar el registro de Windows de entradas corruptas.",
+		  "Hacer copias de seguridad de las carpetas personales del usuario (Documentos, Escritorio, Imágenes) en una unidad externa, manteniendo un control de versiones que permite recuperar un archivo tal y como estaba hace 3 horas o hace 3 meses.",
+		  "Borrar el rastro (historial) de los archivos temporales de navegación para liberar espacio.",
+		  "Sincronizar obligatoriamente todo el disco C: con la nube de Azure."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Historial de Archivos es el equivalente al 'Time Machine' de Apple. Conectas un disco externo USB, y Windows copia allí en segundo plano y continuamente tus documentos. Si te equivocas editando un Word y le das a guardar, puedes hacer clic derecho -> Versiones anteriores, y recuperar la versión del texto que tenías esta mañana antes de fastidiarlo."
+	  },
+	  {
+		"pregunta": "Al intentar ejecutar un programa antiguo que el técnico descargó de Internet, la pantalla completa de Windows 11 se vuelve azul con el mensaje 'Windows protegió su PC' e impide la ejecución porque el programa proviene de un editor desconocido. ¿Qué filtro de seguridad basado en la reputación en la nube acaba de actuar?",
+		"opciones": [
+		  "Windows SmartScreen.",
+		  "BitLocker To Go.",
+		  "Filtro InPrivate de Edge.",
+		  "User Account Control (UAC)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Microsoft Defender SmartScreen bloquea descargas y ejecuciones de archivos que la nube de Microsoft considera 'poco habituales' o potencialmente peligrosos por carecer de firmas digitales confiables. No es un antivirus que detecte código maligno, sino un filtro de reputación ('nadie en el mundo ha ejecutado este archivo, mejor lo bloqueo por si acaso')."
+	  },
+	  {
+		"pregunta": "En caso de que el sistema operativo esté infectado con malware persistente que el antivirus no puede eliminar desde Windows, Windows 11 ofrece la herramienta 'Microsoft Defender Offline'. ¿Cómo funciona este método de limpieza profundo?",
+		"opciones": [
+		  "Desconecta la tarjeta de red (Offline) y busca los virus en modo avión.",
+		  "Envía un reporte offline a Microsoft por correo electrónico.",
+		  "Reinicia el PC y carga un entorno de Windows mínimo y limpio directamente desde una partición de rescate antes de que el Sistema Operativo principal y el malware arranquen, analizando y eliminando los rootkits atrincherados.",
+		  "Cifra los virus dentro de una carpeta protegida para que no actúen."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los rootkits o virus muy avanzados se cargan en la RAM antes que el propio antivirus, ocultándose o protegiendo sus archivos para no ser borrados. Defender Offline soluciona esto reiniciando el ordenador y escaneando el disco C: 'desde fuera' antes de que el virus tenga oportunidad de despertar y defenderse."
+	  },
+	  {
+		"pregunta": "Un usuario llama quejándose de que no tiene acceso a Internet ni a las carpetas compartidas de la Junta. Al abrir una consola de comandos (CMD) en su equipo Windows 11 y teclear 'ipconfig', el Auxiliar observa que la dirección IPv4 asignada al adaptador de red es 169.254.15.22. ¿Qué diagnostica el Auxiliar inmediatamente?",
+		"opciones": [
+		  "Que el equipo ha sido infectado por un troyano de red.",
+		  "Que la tarjeta de red Gigabit está transmitiendo a velocidad reducida (10 Mbps).",
+		  "Que el equipo no ha podido contactar con ningún servidor DHCP para obtener una IP válida, por lo que Windows le ha autoasignado una dirección APIPA para intentar comunicarse al menos en red local.",
+		  "Que la dirección IP es perfectamente válida y pertenece a una VLAN privada de clase A."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El rango 169.254.x.x pertenece a la función APIPA (Automatic Private IP Addressing). Cuando un PC con Windows está configurado para obtener IP automáticamente (DHCP) pero el servidor DHCP está caído o el cable de red del usuario va a un switch sin conexión, Windows se autoasigna esta IP de emergencia."
+	  },
+	  {
+		"pregunta": "En la gestión de la seguridad e inicio de sesión, Windows 11 fomenta el uso de 'Windows Hello'. Si un departamento adquiere cámaras web USB estándar de alta resolución (4K) para que los usuarios puedan iniciar sesión con reconocimiento facial, ¿qué problema técnico se encontrarán?",
+		"opciones": [
+		  "Que Windows Hello Facial requiere obligatoriamente una cámara con sensor de infrarrojos (IR) para crear un mapa de profundidad 3D y evitar que se engañe al sistema con una fotografía plana.",
+		  "Que Windows Hello no funciona a resoluciones superiores a 1080p por motivos de ancho de banda.",
+		  "Que las cámaras USB externas están bloqueadas por el TPM 2.0.",
+		  "No habrá ningún problema, Windows Hello funciona con cualquier cámara web si se instalan los drivers."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Windows Hello no se fía de las cámaras RGB normales porque alguien podría poner una foto tuya impresa delante de la lente y desbloquear el PC. Requiere cámaras especializadas con sensores Infrarrojos que miden la profundidad del rostro y funcionan incluso en total oscuridad."
+	  },
+	  {
+		"pregunta": "Al compartir una carpeta en la red local desde un equipo con Windows 11, intervienen dos capas de seguridad distintas: los 'Permisos de recurso compartido' (Share permissions) y los 'Permisos de seguridad NTFS' (Security permissions). Si a un usuario se le otorga Control Total en los permisos compartidos, pero solo permiso de Lectura en la pestaña NTFS, ¿qué podrá hacer el usuario al acceder por la red?",
+		"opciones": [
+		  "Podrá modificar y borrar archivos, ya que el permiso de recurso compartido predomina al entrar por red.",
+		  "El sistema arrojará un error de conflicto y no le dejará entrar a la carpeta.",
+		  "Solo podrá leer los archivos, ya que cuando se combinan ambos tipos de permisos, Windows aplica siempre la restricción más severa (el permiso más restrictivo).",
+		  "Podrá modificar archivos, pero los cambios solo se guardarán en su propio disco local."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Esta es la regla de oro de los permisos en Windows. Para acceder a un archivo por red, debes atravesar la 'puerta' de la red (permisos compartidos) y luego la 'puerta' del disco duro (permisos NTFS). Si la red te da llaves para todo, pero el disco duro solo te deja mirar, solo podrás mirar. El permiso efectivo final es siempre el más restrictivo de la combinación de ambos."
+	  },
+	  {
+		"pregunta": "Como Auxiliar, la rapidez con el teclado es esencial para bloquear el equipo al levantarse del puesto y cumplir con la Ley de Protección de Datos. ¿Cuál es el atajo de teclado maestro nativo en Windows para bloquear instantáneamente la sesión sin cerrarla?",
+		"opciones": [
+		  "Tecla Windows + B.",
+		  "Tecla Windows + L.",
+		  "Alt + F4.",
+		  "Ctrl + Shift + L."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El atajo 'Windows + L' (de Lock / Bloquear) envía el equipo inmediatamente a la pantalla de bloqueo de usuario, exigiendo contraseña o Windows Hello para volver a entrar y dejando los programas abiertos en segundo plano. Alt + F4 cierra programas, Win + B selecciona la bandeja del sistema."
+	  },
+	  {
+		"pregunta": "Tras instalar una actualización de controladores de una tarjeta gráfica de forma manual mediante el Administrador de Dispositivos, el usuario experimenta pantallazos azules. Para solucionarlo sin formatear, el Auxiliar entra en las propiedades de la tarjeta gráfica y utiliza el botón 'Revertir al controlador anterior' (Roll Back Driver). ¿Qué hace exactamente esta función?",
+		"opciones": [
+		  "Borra el controlador actual y descarga uno genérico de los servidores de Microsoft Update.",
+		  "Desinstala el controlador actual y restaura inmediatamente la versión específica del controlador que estaba instalada justo antes de la última actualización.",
+		  "Restaura todo el sistema operativo a la fecha en que se compró el ordenador.",
+		  "Crea un punto de restauración antes de borrar la tarjeta gráfica."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Windows siempre guarda una copia de seguridad del driver antiguo cuando instalas uno nuevo sobre el mismo dispositivo. El botón 'Revertir' (Roll Back) elimina el driver problemático y vuelve a poner el viejo en cuestión de segundos. El botón se pondrá gris si nunca has actualizado el driver de ese componente."
+	  },
+	  {
+		"pregunta": "En entornos corporativos y Administraciones Públicas, Windows 11 Enterprise dispone de una función de seguridad avanzada que permite crear políticas (listas blancas o negras) para impedir que los usuarios ejecuten programas específicos (.exe), scripts o instaladores (.msi) basándose en la firma del editor, el hash del archivo o la ruta. ¿Cómo se llama esta herramienta?",
+		"opciones": [
+		  "Windows Defender Credential Guard.",
+		  "AppLocker.",
+		  "BitLocker.",
+		  "DirectAccess."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "AppLocker (el sucesor moderno de las Políticas de Restricción de Software o SRP) es la herramienta de control de aplicaciones. Permite al administrador de la Junta crear una regla que diga: 'Solo se pueden ejecutar los programas instalados en la carpeta Archivos de Programa o los firmados por Microsoft. Todo lo que el usuario descargue en la carpeta Descargas queda bloqueado'."
+	  },
+	  {
+		"pregunta": "El comando 'ping' es esencial para comprobar la conectividad de red. En Windows, de forma predeterminada, si tecleas 'ping 192.168.1.1', el sistema envía 4 paquetes ICMP y se detiene. ¿Qué parámetro o modificador debes añadir para que el comando haga 'ping' de forma continua e ininterrumpida hasta que el usuario lo cancele pulsando Ctrl+C?",
+		"opciones": [
+		  "ping -c",
+		  "ping /all",
+		  "ping -t",
+		  "ping -loop"
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El comando `ping -t [dirección IP]` es un salvavidas cuando estás reparando un cable o reiniciando un servidor y necesitas ver en qué momento exacto vuelve la conexión. Se quedará haciendo ping de forma continua. (Nota: en Linux, el comportamiento por defecto del comando ping ya es continuo y el parámetro -c sirve para limitarlo)."
+	  },
+	  {
+		"pregunta": "Para la protección y recuperación del sistema en Windows 11, se puede crear una 'Unidad de recuperación' (Recovery Drive) en un pendrive USB. Si durante la creación marcamos la casilla 'Hacer una copia de seguridad de los archivos del sistema en la unidad de recuperación', ¿qué ventaja fundamental obtendremos si el disco duro del PC se corrompe por completo?",
+		"opciones": [
+		  "Podremos recuperar todos nuestros documentos personales de Word, Excel y fotos.",
+		  "El pendrive incluirá la imagen de instalación completa y nos permitirá reinstalar Windows 11 desde cero usando esa unidad, además de ofrecer las herramientas de reparación.",
+		  "Podremos saltarnos la contraseña de la BIOS.",
+		  "El pendrive servirá como memoria RAM adicional para reparar el equipo más rápido."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Una Unidad de Recuperación básica solo incluye el entorno WinRE (Símbolo del sistema, Reparación de inicio). Pero si marcas 'Hacer copia de los archivos de sistema', Windows copia al USB la imagen entera del sistema operativo (unos 8-16 GB). Esto te permite no solo reparar, sino realizar la acción 'Recuperar desde una unidad', reinstalando Windows limpio aunque el disco duro esté destrozado."
+	  },
+	  {
+		"pregunta": "Windows 11 fomenta la productividad y la gestión de múltiples ventanas mediante los 'Escritorios Virtuales', permitiendo al usuario crear un escritorio para el 'Trabajo' y otro para el 'Ocio'. ¿Cuál es el atajo de teclado para abrir la vista 'Vista de Tareas' (Task View) y gestionar estos escritorios?",
+		"opciones": [
+		  "Alt + Tab.",
+		  "Tecla Windows + D.",
+		  "Tecla Windows + Tab.",
+		  "Ctrl + Alt + Flechas direccionales."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "La combinación 'Win + Tab' despliega la Vista de Tareas a pantalla completa, donde puedes ver todas tus ventanas abiertas en miniatura y, en la parte inferior, la barra para crear, renombrar y eliminar distintos Escritorios Virtuales. 'Alt + Tab' sirve para cambiar rápidamente entre ventanas del escritorio actual."
+	  },
+	  {
+		"pregunta": "A nivel de arquitectura de particiones, Windows 11 requiere instalarse obligatoriamente en un disco particionado en formato GPT (Tabla de particiones GUID) para equipos modernos con UEFI. ¿Cuál es la ventaja técnica más importante de GPT frente al clásico MBR (Master Boot Record) en términos de tamaño de partición?",
+		"opciones": [
+		  "GPT soporta discos duros de hasta 9 Zettabytes, superando el límite inamovible de 2.2 Terabytes del formato MBR.",
+		  "GPT permite crear particiones formateadas en sistemas de archivos de Apple (APFS) de forma nativa.",
+		  "GPT comprime automáticamente todos los archivos un 50% por hardware.",
+		  "GPT restringe el disco a un máximo de 4 particiones primarias."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El formato MBR, creado en los años 80, utiliza direcciones de 32 bits, lo que limita físicamente a poder direccionar un máximo de 2.2 Terabytes. Cualquier disco mayor de 2TB debe inicializarse forzosamente en GPT (que usa 64 bits y permite hasta 128 particiones primarias en Windows) para poder aprovechar toda su capacidad."
+	  },
+	  {
+		"pregunta": "Al intentar diagnosticar un equipo, el usuario nos informa de que su ordenador no encuentra una impresora que acaba de conectar por red local. En la 'Configuración de red avanzada' de Windows 11, ¿qué interruptor debemos comprobar que esté activado para que el equipo pueda ver y ser visto por otros dispositivos en la red LAN?",
+		"opciones": [
+		  "El Aislamiento de núcleo.",
+		  "La Detección de redes (Network Discovery).",
+		  "El protocolo IPv6.",
+		  "El servidor proxy inverso."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La 'Detección de redes' es un servicio de Windows. Si está desactivado, el PC actúa en 'Modo Ciego y Furtivo': no muestra en el Explorador los NAS, impresoras o PCs de la red local, y tampoco responde a peticiones de otros PCs para mostrar sus propias carpetas compartidas. Es lo primero que hay que revisar al solucionar problemas de compartición."
+	  },
+	  {
+		"pregunta": "Una avería frecuente de software ocurre cuando un apagón corrompe el MBR o el Boot Configuration Data (BCD) del disco, lanzando un error antes de que cargue el logotipo de Windows. Si arrancamos con un USB y entramos en el Entorno de Recuperación (WinRE), ¿qué herramienta automática debemos usar primero para intentar que Windows repare este sector lógico y vuelva a arrancar?",
+		"opciones": [
+		  "Restaurar sistema.",
+		  "Reparación de inicio (Startup Repair).",
+		  "Desinstalar actualizaciones.",
+		  "Configuración de firmware UEFI."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La 'Reparación de Inicio' (anteriormente llamada Reparación automática) es un script inteligente de Microsoft que escanea el disco, detecta que falta el registro de arranque o que el archivo BCD está corrupto, y utiliza utilidades de consola por detrás (como bootrec) para reescribirlos automáticamente en un par de minutos, salvando al usuario sin perder datos."
+	  },
+	  {
+		"pregunta": "En la Administración de Dispositivos, al solucionar un problema con un escáner antiguo que fue desconectado, el Auxiliar necesita desinstalar su controlador. Sin embargo, al no estar conectado, el escáner no aparece en la lista de dispositivos. ¿Qué acción debe realizar en el menú superior para poder verlo y borrarlo?",
+		"opciones": [
+		  "Hacer clic en Acción > Buscar cambios de hardware.",
+		  "Hacer clic en Ver > Mostrar dispositivos ocultos.",
+		  "Actualizar las directivas de grupo con gpupdate /force.",
+		  "Hacer clic en Acción > Añadir hardware heredado (Legacy)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Windows guarda un registro de todos los dispositivos que se han conectado alguna vez ('Dispositivos fantasma'), pero los esconde para no ensuciar la lista si no están físicamente conectados. Activando 'Ver > Mostrar dispositivos ocultos', aparecerán atenuados (en gris semi-transparente) y podrás desinstalarlos para limpiar conflictos de drivers."
+	  },
+	  {
+		"pregunta": "Al requerir asistencia técnica remota, Windows 11 incluye una aplicación nativa que permite a un Auxiliar tomar el control de la pantalla de un usuario de la Junta sin necesidad de instalar programas de terceros (como TeamViewer o AnyDesk). Ambas partes solo necesitan iniciar sesión y compartir un código de 6 dígitos. ¿Cómo se llama esta App?",
+		"opciones": [
+		  "Escritorio Remoto (RDP).",
+		  "Asistencia rápida (Quick Assist).",
+		  "Windows Remote Management.",
+		  "Copilot Connect."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La 'Asistencia rápida' (Quick Assist) es la herramienta de soporte técnico por excelencia incluida en Windows. El técnico genera un código de seguridad de 6 dígitos y se lo dicta por teléfono al usuario. El usuario introduce el código en su App, concede permiso, y el técnico toma el control del ratón y la pantalla a través de la nube de Microsoft."
+	  },
+	  {
+		"pregunta": "En seguridad de sistemas, Windows 11 de 64 bits impone una directiva de seguridad muy estricta a nivel de núcleo para evitar la instalación de drivers maliciosos (Rootkits). ¿En qué consiste el 'Uso obligatorio de controladores firmados' (Driver Signature Enforcement)?",
+		"opciones": [
+		  "El usuario debe firmar un documento PDF de Microsoft antes de instalar un hardware.",
+		  "Todo archivo .sys (controlador) debe contener una firma digital criptográfica de un certificado emitido por una autoridad certificadora de confianza o aprobada por Microsoft (WHQL) para que el núcleo de Windows permita su carga en memoria.",
+		  "Los drivers deben descargarse exclusivamente desde la Microsoft Store.",
+		  "Los drivers solo pueden instalarse con la cuenta oculta de 'Super Administrador'."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En los antiguos Windows de 32 bits podías instalar cualquier driver. En las versiones de 64 bits modernas, el Kernel rechaza frontalmente cualquier driver (archivos .sys, .inf) que haya sido modificado o no posea una firma digital auténtica del fabricante. Si tienes un periférico industrial muy antiguo sin driver firmado, tendrás que reiniciar Windows en modo avanzado y desactivar esta protección temporalmente."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar necesita averiguar la ruta completa que siguen los paquetes de datos a través de los distintos enrutadores (saltos o hops) de Internet hasta llegar al servidor de la sede central, ¿qué comando de diagnóstico de red de Windows utilizará en la consola?",
+		"opciones": [
+		  "netstat",
+		  "nslookup",
+		  "tracert (Trace Route)",
+		  "ipconfig /displaydns"
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El comando `tracert` (Trace Route) envía paquetes ICMP modificando gradualmente su 'Tiempo de vida' (TTL). Esto obliga a cada router por el que pasa a 'devolver un mensaje', mostrando en pantalla una lista de todos los 'saltos' (nodos) y el tiempo en milisegundos que tarda entre ellos hasta llegar al destino. Es vital para saber en qué router intermedio se corta la conexión."
+	  },
+	  {
+		"pregunta": "Para analizar problemas de cuellos de botella y lentitud del sistema de forma mucho más profunda que con el Administrador de Tareas, Windows 11 incluye una herramienta avanzada que muestra gráficos en tiempo real y permite ver qué archivo exacto está leyendo el disco duro o qué dirección IP está consumiendo un proceso específico. ¿Cómo se llama esta herramienta?",
+		"opciones": [
+		  "Monitor de confiabilidad.",
+		  "Monitor de recursos (resmon.exe).",
+		  "Visor de Eventos.",
+		  "Información del sistema (msinfo32)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Monitor de Recursos (resmon.exe) es la lupa del administrador de sistemas. Mientras el Administrador de tareas te dice 'El disco está al 100%', el Monitor de Recursos te dice: 'El disco está al 100% porque el proceso MsMpEng.exe (Antivirus) está leyendo el archivo C:\\Descargas\\video.mp4 a 50 MB/s'. Da el detalle forense necesario para diagnosticar."
+	  },
+	  {
+		"pregunta": "Para agilizar el trabajo en la terminal (CMD) y los scripts (.bat), Windows utiliza 'Variables de Entorno' globales. Si un técnico quiere acceder de forma rápida al directorio principal del usuario que ha iniciado sesión actualmente (por ejemplo, C:\\Users\\Auxiliar), ¿qué variable de entorno estándar debe usar entre signos de porcentaje?",
+		"opciones": [
+		  "%SYSTEMROOT%",
+		  "%TEMP%",
+		  "%APPDATA%",
+		  "%USERPROFILE%"
+		],
+		"respuesta_correcta": 3,
+		"explicacion": "La variable `%USERPROFILE%` redirige siempre a la carpeta raíz del perfil del usuario actual, independientemente de cómo se llame el usuario. `%SYSTEMROOT%` redirige a la carpeta de Windows, `%TEMP%` a los archivos temporales y `%APPDATA%` a la carpeta oculta Roaming de configuración de aplicaciones."
+	  },
+	  {
+		"pregunta": "En la 'Configuración del Control de Cuentas de Usuario' (UAC), existe un control deslizante con varios niveles de seguridad. Si se ajusta al nivel mínimo absoluto ('No notificarme nunca'), ¿qué ocurre a nivel de seguridad en el sistema?",
+		"opciones": [
+		  "El usuario perderá todos los permisos de administrador y se convertirá en usuario estándar.",
+		  "El sistema se comportará como Windows XP: cualquier programa (incluidos virus o malware encubierto) que intente realizar cambios profundos en el sistema o instalar software lo hará automáticamente sin que salte ninguna advertencia en pantalla ni se pida permiso.",
+		  "El ordenador se bloqueará automáticamente cada 5 minutos.",
+		  "Aumenta la seguridad, ya que Windows rechaza automáticamente todos los cambios."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Bajar el UAC al mínimo es un riesgo de seguridad crítico. El UAC es la barrera que te dice: 'Oye, que este programa quiere instalar algo'. Si lo apagas, un virus que abras accidentalmente por correo electrónico se instalará en silencio total y tomará el control del registro de Windows y los archivos de sistema sin que te des cuenta."
+	  },
+	  {
+		"pregunta": "En relación con los Firewall (Cortafuegos), Windows Defender Firewall gestiona la seguridad clasificando la red a la que estás conectado en tres 'Perfiles de red' principales. ¿Cuáles son estos tres perfiles de seguridad?",
+		"opciones": [
+		  "Doméstico, Trabajo y Centro de Datos.",
+		  "Perfil de Dominio, Perfil Privado y Perfil Público.",
+		  "Redes Cableadas, Redes Inalámbricas y Redes Virtuales (VPN).",
+		  "Nivel Bajo, Nivel Medio y Nivel Alto."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Firewall de Windows aplica reglas distintas según el perfil. El Perfil de Dominio se activa automáticamente cuando el equipo detecta que está conectado a la red de un Active Directory corporativo. El Perfil Privado es para casas (red de confianza). El Perfil Público es para aeropuertos/cafeterías (bloqueo estricto)."
+	  },
+	  {
+		"pregunta": "En el Administrador de Tareas rediseñado de Windows 11, Microsoft introdujo una nueva característica visual representada por el icono de una pequeña hoja verde junto a ciertos procesos. ¿Qué indica exactamente este 'Modo Eficiencia'?",
+		"opciones": [
+		  "Que el programa es ecológico y apaga la pantalla cuando no se usa.",
+		  "Que el proceso está siendo ejecutado en un entorno de máquina virtual.",
+		  "Que Windows ha reducido deliberadamente la prioridad de la CPU para ese proceso en segundo plano, limitando su consumo de energía y recursos para mejorar la duración de la batería y el rendimiento general.",
+		  "Que el programa ha superado el análisis del antivirus Windows Defender."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El 'Modo Eficiencia' (Efficiency Mode) es una novedad importante. Windows 11 detecta aplicaciones que están en segundo plano y consumiendo recursos (o el usuario lo activa manualmente) y las estrangula, dándoles baja prioridad de CPU para que el equipo no se caliente ni gaste batería inútilmente."
+	  },
+	  {
+		"pregunta": "Para cumplir con el requisito obligatorio de UEFI en Windows 11, muchos técnicos necesitan convertir discos duros antiguos que estaban particionados en MBR hacia el nuevo formato GPT. ¿Qué herramienta de línea de comandos de Microsoft permite hacer esta conversión en un disco de sistema en vivo sin perder los datos ni tener que formatear?",
+		"opciones": [
+		  "diskpart (comando clean).",
+		  "mbr2gpt.exe",
+		  "convert.exe",
+		  "format C: /fs:gpt"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La herramienta `mbr2gpt.exe` (ejecutada desde el entorno WinRE o desde una consola con privilegios) es una utilidad oficial que modifica la tabla de particiones de MBR a GPT sin tocar ni destruir los archivos del usuario. Es el paso previo y fundamental para poder cambiar la BIOS a modo UEFI puro e instalar Windows 11."
+	  },
+	  {
+		"pregunta": "Un Auxiliar necesita bloquear el uso de puertos USB extraíbles en un ordenador de la Junta para evitar el robo de información. Para no tener que tocar el registro a mano, ¿qué consola de administración integrada en las versiones Pro y Enterprise debe utilizar para aplicar esta política a nivel local?",
+		"opciones": [
+		  "Editor de directivas de grupo local (gpedit.msc).",
+		  "Administrador de credenciales.",
+		  "Visor de eventos (eventvwr.msc).",
+		  "Monitor de rendimiento (perfmon.exe)."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El Editor de Directivas de Grupo Local (`gpedit.msc`) es la herramienta maestra para administrar políticas en un PC sin dominio. Permite configurar miles de reglas del sistema, como desactivar Cortana, bloquear pendrives, forzar el fondo de pantalla o impedir que los usuarios abran el Panel de Control."
+	  },
+	  {
+		"pregunta": "Al analizar la seguridad y auditoría de un equipo, si el Auxiliar sospecha que alguien ha intentado iniciar sesión con una contraseña incorrecta varias veces durante el fin de semana, ¿en qué apartado del Visor de Eventos (Event Viewer) quedarán registrados estos intentos fallidos?",
+		"opciones": [
+		  "En el registro de 'Aplicación'.",
+		  "En el registro de 'Sistema'.",
+		  "En el registro de 'Seguridad' (Security).",
+		  "En el registro de 'Instalación' (Setup)."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El registro de 'Seguridad' es el que audita los inicios de sesión. Un inicio de sesión correcto generará un evento de 'Auditoría correcta' (típicamente el ID 4624), y un inicio fallido por mala contraseña generará una 'Auditoría de errores' (ID 4625). El registro de Sistema guarda errores de hardware o drivers."
+	  },
+	  {
+		"pregunta": "En versiones anteriores de Windows, para deshabilitar los programas que arrancan automáticamente al encender el PC, se utilizaba la utilidad 'msconfig'. ¿Dónde se gestionan y deshabilitan de forma nativa los programas de inicio en Windows 11?",
+		"opciones": [
+		  "En el Editor del Registro exclusivamente.",
+		  "En la pestaña 'Aplicaciones de arranque' del Administrador de Tareas (Task Manager) o desde Configuración > Aplicaciones > Inicio.",
+		  "En el Panel de Control > Herramientas Administrativas > Servicios.",
+		  "En la carpeta oculta C:\\Windows\\Boot."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Microsoft movió la gestión del arranque de programas fuera de `msconfig`. En Windows 10 y 11, la forma más rápida y oficial es abrir el Administrador de Tareas, ir al icono de 'Aplicaciones de arranque' y hacer clic derecho -> Deshabilitar sobre los programas chupones como Spotify o Skype."
+	  },
+	  {
+		"pregunta": "Windows 11 introduce funciones de seguridad basadas en virtualización (VBS). Dentro de 'Seguridad de Windows' > 'Seguridad del dispositivo', existe una opción llamada 'Aislamiento de núcleo' y su subfunción 'Integridad de memoria' (HVCI). ¿Para qué sirve exactamente esta capa de seguridad?",
+		"opciones": [
+		  "Para que la memoria RAM se refrigere apagando núcleos de la CPU.",
+		  "Para evitar que el malware de bajo nivel (rootkits) inyecte código malicioso en procesos de alta seguridad del núcleo, aislando estos procesos en un entorno virtualizado por hardware.",
+		  "Para borrar los virus directamente de la memoria caché del navegador Edge.",
+		  "Para cifrar los archivos PDF que se descargan de internet."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "La Integridad de Memoria (HVCI) utiliza la tecnología de virtualización del procesador (VTx/AMD-V) para crear una 'burbuja' hipersegura. Así, si un virus o un driver modificado intenta modificar el Kernel de Windows en la memoria, choca contra esta burbuja virtualizada y el sistema rechaza la ejecución del código."
+	  },
+	  {
+		"pregunta": "Si abrimos el Explorador de Archivos de Windows 11 e intentamos acceder desde un equipo a la ruta de red secreta `\\\\192.168.1.50\\C$`, ¿qué estamos intentando abrir?",
+		"opciones": [
+		  "Una carpeta compartida oculta configurada por el usuario.",
+		  "El Recurso Compartido Administrativo por defecto de la unidad C: del otro equipo, accesible únicamente si proporcionamos credenciales de un usuario Administrador local de esa máquina.",
+		  "La Papelera de Reciclaje en red del equipo destino.",
+		  "Un puerto de red bloqueado por el Firewall."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "En Windows, cualquier recurso compartido que termine en el símbolo del dólar (`$`) está oculto. Por defecto, Windows crea recursos compartidos administrativos para todas las raíces de los discos (C$, D$) y para la carpeta Windows (ADMIN$). No se ven navegando por la red, hay que teclear la ruta exacta, y solo los administradores pueden entrar."
+	  },
+	  {
+		"pregunta": "Al intentar reparar un problema de red complejo en la consola de comandos (CMD), un técnico necesita ver no solo su dirección IP, sino un listado de todos los puertos TCP y UDP que su ordenador tiene abiertos y qué procesos (PIDs) están estableciendo conexiones activas hacia Internet. ¿Qué comando utilizará?",
+		"opciones": [
+		  "netstat -ano",
+		  "ipconfig /all",
+		  "tracert 8.8.8.8",
+		  "ping localhost"
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El comando `netstat` (Network Statistics) muestra las conexiones activas. El parámetro `-a` muestra todos los puertos, `-n` muestra las direcciones IP en formato numérico (evitando resolver nombres, lo que lo hace muy rápido) y `-o` añade una columna con el PID (ID del Proceso) para que luego vayas al Administrador de Tareas y veas qué programa exacto está usando ese puerto."
+	  },
+	  {
+		"pregunta": "En el ecosistema de seguridad de Windows 11, ¿por qué Microsoft afirma que iniciar sesión con un 'PIN de Windows Hello' de 4 números es más seguro que usar una contraseña alfanumérica larga de 16 caracteres de nuestra cuenta de Microsoft?",
+		"opciones": [
+		  "Porque los hackers no saben hackear números, solo letras.",
+		  "Porque el PIN está encriptado en los servidores de la nube de Azure.",
+		  "Porque el PIN es local, está atado físicamente al chip TPM de ese dispositivo concreto y nunca viaja por la red ni a servidores externos. Un atacante que robe tu PIN no podrá iniciar sesión desde otro ordenador del mundo.",
+		  "Es falso, una contraseña siempre es más segura que un PIN a nivel técnico."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Esta es la clave de la seguridad moderna. Si te roban (phishing) la contraseña de tu cuenta de Microsoft, pueden entrar a tu correo desde Rusia. Si alguien te ve teclear tu PIN de Windows, NO puede hacer nada a menos que robe también físicamente TU portátil, porque el PIN no sirve para entrar en la web, solo desbloquea la llave criptográfica guardada en el hardware (TPM) de tu ordenador."
+	  },
+	  {
+		"pregunta": "Un usuario reporta que no puede acceder a una web interna de la Junta (`http://intranet.junta`). Sin embargo, haciendo ping a la IP del servidor sí llega. El Auxiliar sospecha de un fallo del servidor DNS. ¿Qué herramienta de consola de Windows le permite realizar consultas manuales a los registros DNS para ver si el nombre se está resolviendo correctamente?",
+		"opciones": [
+		  "ipconfig /flushdns",
+		  "nslookup",
+		  "telnet",
+		  "route print"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "`nslookup` (Name Server Lookup) es la herramienta para testear servidores DNS. Si escribes `nslookup intranet.junta`, la herramienta le pregunta al servidor DNS configurado: '¿Qué IP tiene esto?'. Si el DNS falla, te dará error, confirmando que el problema es de resolución de nombres y no de conexión física."
+	  },
+	  {
+		"pregunta": "Para la resolución de problemas (troubleshooting) con el 'Menú contextual' al hacer clic derecho sobre un archivo en Windows 11. El usuario se queja de que el nuevo menú de Windows 11 está simplificado y no muestra las opciones de su descompresor o de su antivirus antiguo. ¿Qué atajo de teclado abre directamente el menú contextual 'clásico' completo de Windows 10?",
+		"opciones": [
+		  "Mayús (Shift) + Clic derecho.",
+		  "Ctrl + Alt + Clic derecho.",
+		  "Tecla Windows + Clic derecho.",
+		  "F12 + Clic derecho."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Windows 11 introdujo un menú contextual minimalista. Para ver las opciones de programas antiguos, hay que hacer clic en 'Mostrar más opciones'. Sin embargo, el atajo para saltarse el menú nuevo y abrir el clásico de toda la vida directamente es mantener pulsado `Shift` (Mayús) al hacer el clic derecho (o pulsar Shift + F10 teniendo el archivo seleccionado)."
+	  },
+	  {
+		"pregunta": "Un Auxiliar decide descargar el software de instalación de una impresora, pero este viene sin un instalador ejecutable (ni .exe ni .msi), sino que consiste en una carpeta con varios archivos sueltos. ¿Qué extensión tiene el pequeño archivo de texto vital que contiene la estructura, información y directivas que Windows necesita para saber cómo instalar ese controlador?",
+		"opciones": [
+		  ".sys",
+		  ".dll",
+		  ".inf (Setup Information)",
+		  ".bat"
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los controladores (drivers) se componen básicamente de archivos .sys (el código del núcleo) y archivos .inf. El archivo `.inf` es un archivo de texto de instrucciones. Cuando le das a 'Actualizar controlador' en Windows y eliges 'Buscar en mi equipo', Windows busca el archivo .inf para saber dónde debe copiar cada cosa y qué claves de registro crear."
+	  },
+	  {
+		"pregunta": "En la opción 'Restablecer este equipo' (Reset this PC) de Windows 11, diseñada para solucionar problemas graves sin un USB de instalación, existen dos grandes opciones. Si el usuario selecciona 'Conservar mis archivos', ¿cuál es el resultado de la acción?",
+		"opciones": [
+		  "Se reinstala Windows, se borran absolutamente todos los programas instalados y configuraciones, pero se mantienen a salvo las carpetas personales del usuario (Documentos, Imágenes, Escritorio).",
+		  "Se reinstala Windows manteniendo los programas instalados, pero borrando los archivos personales.",
+		  "Se crea un archivo comprimido ZIP con las fotos del usuario y luego se formatea el disco C:.",
+		  "Es idéntico a crear un Punto de Restauración del Sistema."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Esta función es ideal para un PC infectado de virus o muy inestable. 'Conservar mis archivos' te da un Windows recién salido de la fábrica y desinstala todo el software y bloatware (Office, Chrome, el Antivirus de terceros), pero no borra tus fotos ni tus documentos personales."
+	  },
+	  {
+		"pregunta": "Durante una reparación de red debido a un malware que secuestró las direcciones web, el Auxiliar necesita forzar a Windows para que la dirección 'www.google.es' apunte localmente a la IP 127.0.0.1 bloqueando el acceso. ¿En qué archivo de sistema, sin extensión, debe incluir esta regla para sobreescribir la resolución DNS externa?",
+		"opciones": [
+		  "lmhosts",
+		  "hosts (C:\\Windows\\System32\\drivers\\etc\\hosts)",
+		  "dns.config",
+		  "resolv.conf"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El archivo `hosts` es una reliquia de la historia de Internet, pero sigue mandando por encima de todo. Antes de que Windows pregunte al DNS por una web, mira este archivo de texto local. Si tú escribes `127.0.0.1 www.facebook.com` en este archivo, el ordenador jamás podrá entrar a Facebook, porque resolverá la web hacia sí mismo. Es muy usado para bloquear telemetría o publicidad a nivel de sistema."
+	  },
+	  {
+		"pregunta": "Al implementar Windows 11 de forma masiva en la Junta, ya no es necesario crear una imagen 'pesada' de Windows con todos los programas y drivers instalados usando Ghost o Acronis. Microsoft introdujo un servicio basado en la nube que permite enviar un portátil nuevo directamente de la fábrica al usuario, y que este se auto-configure con los programas y políticas de la empresa al iniciar sesión con su correo corporativo. ¿Cómo se llama este servicio?",
+		"opciones": [
+		  "Windows Autopilot.",
+		  "Windows Server Update Services (WSUS).",
+		  "BitLocker To Go.",
+		  "Microsoft Deployment Toolkit (MDT) Offline."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Windows Autopilot es la revolución del despliegue moderno. El departamento de TI ya no 'toca' el portátil. El distribuidor asocia el número de serie de la máquina al Azure de la Junta. Cuando el usuario enciende el portátil (que tiene un Windows Home/Pro limpio) y pone su email, Autopilot toma el control, sube la licencia a Enterprise, bloquea la cuenta y baja todas las configuraciones remotamente mediante Intune."
+	  },
+	  {
+		"pregunta": "Un equipo tiene problemas persistentes de conexión (redes no identificadas, IP falsa, el adaptador no responde). Si borrar la caché DNS no funciona, la acción más contundente en la consola para restaurar la pila completa de protocolos TCP/IP del sistema operativo a su estado de fábrica es:",
+		"opciones": [
+		  "ipconfig /release",
+		  "netsh int ip reset",
+		  "sfc /scannow",
+		  "ping 127.0.0.1 -t"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El comando `netsh int ip reset` (seguido habitualmente de `netsh winsock reset` para reparar el catálogo de sockets) es el 'martillazo' que reconstruye toda la configuración interna de la red en el Registro de Windows. Tras reiniciar, las tarjetas de red funcionarán como si acabaras de instalar Windows desde cero."
+	  },
+	  {
+		"pregunta": "Si un Auxiliar debe recuperar una clave de recuperación de BitLocker que un usuario no guardó y este equipo de Windows 11 está conectado con una cuenta corporativa en la nube de Microsoft (Azure AD/Entra ID), ¿dónde debe buscar el administrador informático esta clave?",
+		"opciones": [
+		  "En el archivo oculto C:\\bootmgr.",
+		  "En la pegatina pegada en la parte inferior del portátil.",
+		  "En el panel de administración de dispositivos del portal en la nube de Azure AD / Microsoft Entra.",
+		  "En el Administrador de Dispositivos local del equipo bloqueado."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Cuando un equipo se une a Azure Active Directory (ahora Microsoft Entra ID) y se activa BitLocker, por defecto la clave de recuperación de 48 dígitos de ese equipo hace una copia de seguridad (escrow) automáticamente en la nube. El administrador puede entrar al portal de Microsoft 365/Azure, buscar el equipo y leer la clave para salvar al usuario."
+	  },
+	  {
+		"pregunta": "Para la comodidad de los usuarios con dificultades visuales, Windows 11 agrupa todas las opciones de Lupa, Narrador, Contraste alto y tamaño de texto en un apartado específico. ¿Cuál es el atajo rápido de teclado para abrir este Centro de Accesibilidad (Accessibility)?",
+		"opciones": [
+		  "Tecla Windows + A.",
+		  "Tecla Windows + U.",
+		  "Tecla Windows + V.",
+		  "Ctrl + Alt + A."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El atajo 'Windows + U' (de Utility Manager / Utilidades) abre al instante el menú de Accesibilidad en la Configuración. 'Windows + A' abre el centro de Acciones rápidas (Wi-Fi, Volumen), y 'Windows + V' abre el maravilloso Historial del Portapapeles múltiple."
+	  },
+	  {
+		"pregunta": "El Administrador de Discos de Windows 11 advierte formalmente a los usuarios que dejan de dar soporte a un tipo de disco que Microsoft introdujo en Windows 2000, recomendando usar 'Espacios de almacenamiento' en su lugar para configuraciones por software. ¿A qué tipo de discos nos referimos, que se utilizaban para crear volúmenes distribuidos o reflejados en el pasado?",
+		"opciones": [
+		  "Discos Básicos.",
+		  "Discos MBR.",
+		  "Discos Dinámicos.",
+		  "Discos Extraíbles."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "Los 'Discos Dinámicos' fueron la forma antigua de hacer RAID por software en Windows. Microsoft los ha declarado obsoletos (deprecated) en Windows 10/11. Aunque aún funcionan, la recomendación oficial es dejar los discos como 'Básicos' y utilizar la función moderna de 'Espacios de Almacenamiento' (Storage Spaces) si quieres agrupar discos."
+	  },
+	  {
+		"pregunta": "En las Propiedades del Sistema de Windows 11, apartado Opciones Avanzadas > Rendimiento, existe una opción vital para optimizar el rendimiento del ordenador. Permite elegir cómo reparte el SO el tiempo del procesador. ¿Cuáles son las dos únicas opciones que ofrece Windows en esta pestaña?",
+		"opciones": [
+		  "Optimizar para CPU de 32 bits u optimizar para CPU de 64 bits.",
+		  "Ajustar para obtener la mejor apariencia o ajustar para obtener el mejor rendimiento.",
+		  "Optimizar el rendimiento de 'Programas' (aplicaciones en primer plano) o de 'Servicios en segundo plano' (background services).",
+		  "Ajustar para juegos de vídeo o ajustar para ofimática."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "En la pestaña 'Opciones avanzadas' del Rendimiento, la programación del procesador da a elegir entre 'Programas' (Windows le da quantums cortos y alta prioridad al programa de la ventana activa, ideal para tu PC de escritorio) y 'Servicios en segundo plano' (Windows reparte el tiempo equitativamente en quantums más largos, ideal para un Windows Server que nadie está tocando físicamente pero que reparte archivos a 100 personas por red)."
+	  },
+	  {
+		"pregunta": "Cuando un equipo con Windows 11 empieza a fallar, dar pantallazos azules o no abrir aplicaciones nativas, el Auxiliar debe comprobar la integridad de los archivos del núcleo del sistema. ¿Qué comando de consola verifica y reemplaza automáticamente los archivos de sistema corruptos utilizando una caché local oculta?",
+		"opciones": [
+		  "chkdsk /f",
+		  "sfc /scannow",
+		  "bootrec /fixmbr",
+		  "format C:"
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Comprobador de Archivos de Sistema (SFC - System File Checker) es la primera línea de defensa. Al ejecutar `sfc /scannow` como administrador, Windows revisa uno a uno todos los archivos de sistema protegidos (.dll, .exe del núcleo). Si encuentra uno corrupto, lo sobreescribe con una copia sana guardada en la carpeta oculta WinSxS."
+	  },
+	  {
+		"pregunta": "Si el comando SFC del caso anterior no puede reparar los archivos porque el propio 'almacén de componentes' de Windows (la imagen base) está dañado, el Auxiliar debe utilizar una herramienta más potente que puede conectarse a Windows Update para descargar los archivos sanos e inyectarlos. ¿Cuál es este comando?",
+		"opciones": [
+		  "DISM (Deployment Image Servicing and Management).",
+		  "Diskpart.",
+		  "Sysprep.",
+		  "Robocopy."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El comando DISM es el 'cirujano mayor' de Windows. La sintaxis clásica para reparar el almacén es `DISM /Online /Cleanup-Image /RestoreHealth`. Si SFC falla, ejecutas DISM para que repare el almacén interno bajando los archivos de internet y, acto seguido, vuelves a pasar SFC, que ahora sí podrá reparar el sistema."
+	  },
+	  {
+		"pregunta": "Para la administración remota de equipos en la red local de la Junta, se utiliza habitualmente la herramienta nativa 'Conexión a Escritorio Remoto' (RDP). Si un Firewall de hardware intermedio está bloqueando la conexión, ¿qué puerto TCP debe solicitar el Auxiliar que abran los administradores de red?",
+		"opciones": [
+		  "Puerto 21.",
+		  "Puerto 80.",
+		  "Puerto 3389.",
+		  "Puerto 443."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El puerto 3389 (TCP y también UDP en versiones modernas) es el puerto estándar e histórico del protocolo RDP (Remote Desktop Protocol) de Microsoft. El 21 es FTP, el 80 es HTTP y el 443 es HTTPS."
+	  },
+	  {
+		"pregunta": "En un portátil corporativo protegido con BitLocker y el chip TPM 2.0, el usuario enciende el equipo y, en lugar de cargar Windows, aparece una pantalla azul de BitLocker pidiendo la clave de recuperación de 48 dígitos. ¿Qué evento físico suele disparar esta medida de seguridad extrema de forma automática?",
+		"opciones": [
+		  "Que el usuario haya introducido mal la contraseña de Windows 3 veces.",
+		  "Que el equipo haya detectado un cambio significativo en el hardware (como actualizar la BIOS o cambiar la placa base) o una alteración en el orden de arranque.",
+		  "Que el antivirus haya encontrado un troyano en la memoria RAM.",
+		  "Que la batería del portátil esté por debajo del 5%."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El chip TPM mide la integridad del hardware en cada arranque. Si detecta que has actualizado la BIOS, cambiado el disco a otro PC o alterado el Secure Boot, asume que alguien está intentando hackear la máquina y 'bloquea' la entrega de la clave de descifrado, obligando a introducir la larguísima clave de recuperación manual para demostrar que eres el dueño legítimo."
+	  },
+	  {
+		"pregunta": "Para probar programas sospechosos o abrir archivos de dudosa procedencia sin poner en riesgo el sistema operativo anfitrión, Windows 11 Pro y Enterprise incluyen una característica nativa y ligera basada en virtualización que crea un escritorio temporal y seguro. ¿Cómo se llama esta herramienta?",
+		"opciones": [
+		  "Windows Sandbox (Espacio aislado de Windows).",
+		  "Microsoft Defender Application Guard.",
+		  "Hyper-V Core.",
+		  "Aislamiento de red."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Windows Sandbox es una maravilla técnica. Te abre un Windows 11 dentro de tu Windows 11 en un par de segundos. Puedes meterle virus, borrar el registro o abrir ejecutables extraños; es un entorno totalmente hermético. Cuando cierras la ventana de Sandbox, el entorno se destruye completamente, sin dejar rastro en tu equipo real."
+	  },
+	  {
+		"pregunta": "Al acceder a la BIOS/UEFI de un equipo moderno, a veces el tiempo de arranque es tan rápido que es imposible pulsar la tecla F2 o Supr a tiempo. Windows 11 permite reiniciar el PC y ordenar a la placa base que entre directamente en la BIOS de forma automática. ¿Desde dónde se lanza esta orden?",
+		"opciones": [
+		  "Desde Configuración > Sistema > Recuperación > Inicio avanzado (Reiniciar ahora) > Solucionar problemas > Configuración de firmware UEFI.",
+		  "Desde el Panel de Control clásico > Opciones de energía > Configuración de UEFI.",
+		  "Haciendo clic derecho en el botón de Inicio y seleccionando 'BIOS Setup'.",
+		  "No es posible, hay que desconectar el disco duro físicamente para forzar el fallo y entrar en BIOS."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El 'Inicio Avanzado' de Windows carga el entorno WinRE. Desde ahí, la opción 'Configuración de firmware UEFI' manda una señal a la placa base para que, en el siguiente reinicio, detenga la carga del sistema operativo y abra la interfaz de la BIOS directamente, ahorrando el tener que aporrear teclas."
+	  },
+	  {
+		"pregunta": "Como defensa específica contra el Ransomware, la aplicación 'Seguridad de Windows' incluye una función que, si se activa, impide que aplicaciones no autorizadas modifiquen los archivos contenidos en las carpetas Documentos, Imágenes y Escritorio. ¿Cómo se llama esta función?",
+		"opciones": [
+		  "Acceso controlado a carpetas (Controlled folder access).",
+		  "Cifrado de unidad BitLocker.",
+		  "Filtro SmartScreen.",
+		  "Historial de archivos."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El 'Acceso controlado a carpetas' es una barrera anti-ransomware vital. Cuando está activo, solo los programas que están en una 'lista blanca' (como Word o Photoshop) pueden guardar cosas en tus carpetas personales. Si un virus .exe desconocido intenta cifrar tus fotos, Windows Defender lo bloquea en seco y te avisa."
+	  },
+	  {
+		"pregunta": "En el Administrador de Discos, un usuario tiene un disco C: y un disco D: en el mismo disco físico. Quiere reducir el disco D: en 50 GB y añadir ese espacio para ampliar el disco C:. Tras reducir D:, la opción 'Extender volumen' en C: aparece atenuada (deshabilitada). ¿Cuál es el motivo técnico estricto de esta limitación de Windows?",
+		"opciones": [
+		  "Que no se puede extender la partición donde está instalado el sistema operativo (C:).",
+		  "Que para usar 'Extender volumen', el espacio libre (No asignado) debe estar contiguo y situado exactamente a la DERECHA de la partición que se desea ampliar.",
+		  "Que el disco C: es NTFS y el espacio libre no tiene formato.",
+		  "Que la operación requiere formatear primero el disco C:."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Es la limitación más frustrante del Administrador de Discos de Windows. Solo sabe empujar el final de una partición hacia adelante. Si reduces D:, el espacio 'No asignado' se crea a la derecha de D:. Como C: está a la izquierda de D:, el espacio libre no 'toca' el borde derecho de C:, por lo que Windows no puede fusionarlo sin usar software de terceros (como Partition Magic o AOMEI) que mueva físicamente la partición D: hacia el final del disco."
+	  },
+	  {
+		"pregunta": "En el Administrador de Tareas de Windows 11, la pestaña 'Aplicaciones de arranque' no solo permite deshabilitar programas, sino que muestra una columna útil para decidir qué deshabilitar llamada 'Impacto de inicio'. ¿En qué se basa Windows para catalogar un programa con impacto 'Alto', 'Medio' o 'Bajo'?",
+		"opciones": [
+		  "En el precio de la licencia del software.",
+		  "En el uso de CPU y en las lecturas/escrituras de disco duro que realiza la aplicación durante los primeros compases del arranque de Windows.",
+		  "En la cantidad de datos que descarga de Internet.",
+		  "En el número de ventanas emergentes que muestra al usuario."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "Windows cronometra cuánto tiempo de procesador roba un programa y cuántos megabytes lee del disco duro mientras tú intentas ver el escritorio. Si el programa exige muchos recursos justo al arrancar, lo marca como impacto 'Alto', sugiriendo que deshabilitarlo acelerará notablemente el encendido del PC."
+	  },
+	  {
+		"pregunta": "La característica 'Inicio rápido' (Fast Startup), activada por defecto en Windows 11, hace que el equipo encienda mucho más veloz. Sin embargo, en el servicio técnico suele recomendarse desactivarla temporalmente si hay fallos raros de drivers. ¿Cómo consigue esta velocidad el Inicio rápido?",
+		"opciones": [
+		  "Al pulsar 'Apagar', cierra la sesión del usuario pero no apaga el Kernel ni los drivers, sino que los guarda en el disco duro (hibernación parcial). Al encender, vuelca ese estado a la RAM en lugar de cargar todo desde cero.",
+		  "Carga Windows en la memoria caché L3 del procesador antes del apagado.",
+		  "Omite la verificación de virus en el sector de arranque de la BIOS.",
+		  "Mantiene el disco duro girando a bajas revoluciones aunque el equipo se desenchufe."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El Inicio rápido es un híbrido entre el apagado tradicional y la hibernación. Por eso, si un driver está 'colgado' o un dispositivo USB no responde, pulsar 'Apagar' no lo soluciona, porque al encender, el driver se carga exactamente en el mismo estado colgado. Para limpiar los drivers de verdad, hay que usar el botón 'Reiniciar' o apagar con la tecla Shift."
+	  },
+	  {
+		"pregunta": "El 'Editor del Registro' (regedit.exe) estructura la configuración de Windows en grandes carpetas llamadas claves raíz o 'Hives'. Si necesitamos modificar una política que afecte EXCLUSIVAMENTE al usuario que ha iniciado sesión actualmente, sin tocar al resto de usuarios del mismo PC, ¿en qué clave raíz debemos realizar la modificación?",
+		"opciones": [
+		  "HKEY_LOCAL_MACHINE (HKLM).",
+		  "HKEY_CURRENT_USER (HKCU).",
+		  "HKEY_CLASSES_ROOT (HKCR).",
+		  "HKEY_USERS (HKU)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "HKEY_CURRENT_USER almacena la configuración de la sesión activa (fondo de pantalla, configuración de Word, unidades de red del usuario). Modificar aquí no afecta a nadie más. HKEY_LOCAL_MACHINE guarda la configuración global del hardware, drivers y software del equipo entero, afectando a todos."
+	  },
+	  {
+		"pregunta": "Para la comodidad de navegación e interactividad, el 'Explorador de Archivos' (File Explorer) de Windows 11 introdujo finalmente una característica visual muy demandada durante años por la comunidad de usuarios, que ya era un estándar en los navegadores web. ¿Cuál es?",
+		"opciones": [
+		  "La navegación por pestañas (Tabs), permitiendo tener múltiples carpetas abiertas en una sola ventana.",
+		  "El bloqueo de publicidad (AdBlock).",
+		  "La navegación en formato de realidad virtual 3D.",
+		  "La interfaz de línea de comandos en la barra de búsqueda."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Una de las mayores actualizaciones de productividad de Windows 11 fue incluir pestañas en el Explorador de Archivos. Ahora puedes tener C:, D:, y la carpeta de red abiertas en la misma ventana, moviendo archivos entre pestañas con facilidad."
+	  },
+	  {
+		"pregunta": "Al revisar el Visor de Eventos (Event Viewer) por apagones espontáneos, el técnico se encuentra con múltiples errores críticos con la etiqueta 'Kernel-Power' y el ID de evento 41. ¿Qué indica exactamente este famoso registro de error?",
+		"opciones": [
+		  "Que la batería del ratón inalámbrico está a punto de agotarse.",
+		  "Que el sistema se reinició sin apagarse limpiamente primero (por ejemplo, corte de luz física, pulsación larga del botón de encendido o pantallazo azul crítico).",
+		  "Que el procesador no soporta virtualización por hardware.",
+		  "Que la licencia de Windows no es original."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El Error 41 (Kernel-Power) es el grito de Windows diciendo: 'Me estaba ejecutando y de repente, oscuridad'. El SO no pudo registrar qué falló porque se le cortó el suministro antes de poder escribir un log. Suele indicar problemas con la fuente de alimentación, cortes de luz, sobrecalentamientos severos o reinicios forzados por el usuario."
+	  },
+	  {
+		"pregunta": "Windows 11 incluye una función automática que monitoriza el espacio libre en el disco duro. Si el equipo se queda sin espacio, esta función entra en acción borrando silenciosamente archivos temporales de la papelera, de descargas antiguas y cachés del sistema para mantener el PC funcionando. ¿Cómo se llama esta herramienta en la Configuración?",
+		"opciones": [
+		  "Desfragmentador de disco.",
+		  "Sensor de almacenamiento (Storage Sense).",
+		  "Windows Defender Cleanup.",
+		  "Liberador de espacio en disco heredado (cleanmgr)."
+		],
+		"respuesta_correcta": 1,
+		"explicacion": "El 'Sensor de almacenamiento' es la evolución moderna y automática del antiguo Liberador de espacio. Si lo activas en Configuración > Sistema > Almacenamiento, Windows se autogestionará, borrando basura cuando detecte que el disco C: se está llenando, evitando que las actualizaciones fallen por falta de espacio."
+	  },
+	  {
+		"pregunta": "En entornos de red corporativos donde se necesita establecer una conexión VPN hacia la Junta desde el exterior, existen protocolos nativos en Windows 11. ¿Qué protocolo de VPN de Microsoft es muy popular porque encapsula el tráfico PPP dentro del puerto HTTPS (TCP 443), logrando atravesar la inmensa mayoría de los firewalls y proxies de hoteles o aeropuertos?",
+		"opciones": [
+		  "PPTP (Point-to-Point Tunneling Protocol).",
+		  "L2TP/IPsec.",
+		  "SSTP (Secure Socket Tunneling Protocol).",
+		  "IKEv2."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "El SSTP fue creado por Microsoft para solucionar los problemas de PPTP y L2TP (que suelen ser bloqueados en redes públicas porque usan puertos específicos como el 1723 o ESP). SSTP se disfraza de tráfico web seguro normal (HTTPS por el puerto 443). Si en una red de hotel puedes abrir un banco web, también podrás conectarte a la VPN por SSTP."
+	  },
+	  {
+		"pregunta": "A diferencia de las actualizaciones normales, a veces Microsoft publica grandes saltos de versión (por ejemplo, de Windows 10 a Windows 11, o la actualización 22H2 a la 23H2). Cuando se actualiza 'sobre' el sistema anterior sin formatear (In-Place Upgrade), ¿en qué carpeta gigante se guarda una copia completa del Windows antiguo por si el usuario desea arrepentirse y retroceder?",
+		"opciones": [
+		  "C:\\Windows.old",
+		  "C:\\ProgramData\\Backup",
+		  "C:\\RecoveryImage",
+		  "C:\\Users\\Default\\AppHistory"
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Al hacer un cambio mayor, Windows crea la carpeta `Windows.old` en la raíz de C:, conteniendo todo el sistema operativo anterior y los archivos de programa. Ocupa muchísimos gigas, pero permite usar la opción 'Volver a la versión anterior' en Configuración. Si pasan 10 días, el Sensor de almacenamiento la borra automáticamente para recuperar el espacio."
+	  },
+	  {
+		"pregunta": "Si intentamos instalar Windows 11 en un PC antiguo que no cumple los requisitos de TPM 2.0 ni CPU compatible, el instalador (ISO oficial) nos detendrá en la primera pantalla con el mensaje 'Este equipo no puede ejecutar Windows 11'. Sin embargo, los técnicos pueden usar un atajo (Shift + F10) para abrir el Editor del Registro en plena instalación y saltarse este bloqueo. ¿Qué clave principal se suele crear para esto?",
+		"opciones": [
+		  "BypassTPMCheck y BypassSecureBootCheck en HKLM\\SYSTEM\\Setup\\MoSetup.",
+		  "DisableAntivirusCheck en HKLM\\Software.",
+		  "AllowLegacyBIOS en HKCU\\System.",
+		  "SkipOOBECheck en HKEY_CLASSES_ROOT."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "Aunque Microsoft no lo soporta oficialmente, dejaron una 'puerta trasera' en el instalador. Creando claves DWORD llamadas `BypassTPMCheck` y `BypassSecureBootCheck` en la rama `MoSetup` (o `LabConfig` en el instalador base) a valor 1, el instalador ignora los requisitos de hardware e instala Windows 11 en cualquier patata de PC de hace 10 años."
+	  },
+	  {
+		"pregunta": "Para la instalación de software corporativo sin la intervención del usuario, el Auxiliar debe ejecutar el instalador de forma silenciosa. Si dispone de un paquete de instalación estándar de Microsoft en formato '.msi', ¿qué parámetro de consola se usa universalmente para que se instale en segundo plano sin mostrar ninguna interfaz gráfica ni botones de 'Siguiente'?",
+		"opciones": [
+		  "/quiet o /qn",
+		  "/silent",
+		  "/h (hidden)",
+		  "/background"
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El formato de instalación de Microsoft (MSI) procesado por `msiexec.exe` utiliza el parámetro `/q` (quiet). La variante `/qn` significa 'Quiet No UI' (Silencioso sin interfaz). Es el comando básico que usan herramientas como SCCM o Intune para desplegar software a 500 equipos de la Junta sin que el usuario note nada."
+	  },
+	  {
+		"pregunta": "En las directivas de seguridad locales de Windows (secpol.msc), existe una política muy común en la Administración llamada 'Umbral de bloqueo de cuenta' (Account lockout threshold). ¿Qué previene exactamente esta directiva?",
+		"opciones": [
+		  "Ataques de fuerza bruta (Brute Force) o adivinación de contraseñas.",
+		  "La inyección SQL en bases de datos.",
+		  "El robo de sesión de cookies de los navegadores.",
+		  "La creación de cuentas de administrador ocultas."
+		],
+		"respuesta_correcta": 0,
+		"explicacion": "El umbral de bloqueo estipula el número de intentos fallidos. Si se configura a '3', si un hacker (o un programa automatizado) intenta adivinar tu contraseña y falla 3 veces seguidas, la cuenta de Windows se bloquea y arroja el mensaje 'La cuenta referenciada está actualmente bloqueada y no puede iniciar sesión'. Se previene así que un script pruebe 10.000 contraseñas por minuto."
+	  },
+	  {
+		"pregunta": "Para poner el punto final al Tema 6: Windows 11 tiene requisitos muy estrictos de almacenamiento para su instalación. ¿Cuál es el espacio mínimo libre en disco físico que exige Microsoft oficialmente para permitir la instalación de Windows 11 de 64 bits?",
+		"opciones": [
+		  "16 GB.",
+		  "32 GB.",
+		  "64 GB.",
+		  "128 GB."
+		],
+		"respuesta_correcta": 2,
+		"explicacion": "A diferencia de Windows 10 (que pedía 32 GB), el requisito estricto de instalación de Windows 11 es contar con una unidad de almacenamiento de, al menos, 64 Gigabytes. Esto se debe al peso creciente de las actualizaciones, el archivo de paginación y las funciones de hibernación/arranque rápido."
+	  }
   
   ], 
 

@@ -1865,7 +1865,7 @@
 		"explicacion": "La tableta gráfica (como las de la marca Wacom) es el periférico rey para el dibujo digital y el retoque fotográfico. El lápiz (stylus) suele usar resonancia electromagnética, por lo que no necesita batería, y transmite a la pantalla no solo la posición X e Y, sino cientos de niveles de presión e incluso la inclinación de la mano."
 	  },
 	  {
-		"pregunta": "Para finalizar el Tema 2: Si conectas a un equipo moderno un periférico con conector azul claro y observas que su interior tiene exactamente 9 pines metálicos (5 en una fila y 4 debajo) envueltos en un chasis metálico en forma de 'D', te encuentras ante un puerto heredado o 'Legacy' destinado a comunicaciones en serie. ¿Cuál es su nombre técnico?",
+		"pregunta": "Si conectas a un equipo moderno un periférico con conector azul claro y observas que su interior tiene exactamente 9 pines metálicos (5 en una fila y 4 debajo) envueltos en un chasis metálico en forma de 'D', te encuentras ante un puerto heredado o 'Legacy' destinado a comunicaciones en serie. ¿Cuál es su nombre técnico?",
 		"opciones": [
 		  "RJ11.",
 		  "VGA / DE-15.",
@@ -4520,7 +4520,7 @@
 		"explicacion": "El Grado de Multiprogramación es cuántos procesos hay subidos a la RAM a la vez. El Planificador a Largo Plazo (hoy en día menos prominente en PCs pero vital en Mainframes) era el portero de discoteca: solo dejaba pasar a la RAM a nuevos procesos si creía que el equipo podía con ellos sin saturarse (sin provocar Thrashing). Controlaba la 'cantidad de aforo'."
 	  },
 	  {
-		"pregunta": "Y para finalizar el Tema 5: A nivel de seguridad y aislamiento de procesos, los Sistemas Operativos utilizan dos registros especiales de hardware en el procesador (el Registro Base y el Registro Límite) cuando asignan memoria a un programa de usuario. ¿Para qué sirven exactamente?",
+		"pregunta": "A nivel de seguridad y aislamiento de procesos, los Sistemas Operativos utilizan dos registros especiales de hardware en el procesador (el Registro Base y el Registro Límite) cuando asignan memoria a un programa de usuario. ¿Para qué sirven exactamente?",
 		"opciones": [
 		  "Para medir la temperatura de la memoria RAM (Base) y establecer el límite antes de apagarse.",
 		  "Para cifrar las comunicaciones con las tarjetas de red de 1 Gigabit.",
@@ -6741,7 +6741,7 @@
     "explicacion": "El comando `whoami` (literalmente, ¿quién soy yo?) es la forma más rápida y directa de que el sistema te responda con el nombre de usuario activo (ej. 'root' o 'pepe'). También se puede usar el comando `id`, que además te mostrará tu número UID y los grupos a los que perteneces."
   },
   {
-    "pregunta": "Para finalizar el Bloque 2 del Tema 8: En Linux, cuando borras un archivo con el comando 'rm', este no va a ninguna Papelera de Reciclaje. ¿Existe alguna forma de que el comando 'rm' te pida confirmación obligatoriamente antes de borrar cada archivo, para evitar desastres por escribir mal un comando?",
+    "pregunta": "En Linux, cuando borras un archivo con el comando 'rm', este no va a ninguna Papelera de Reciclaje. ¿Existe alguna forma de que el comando 'rm' te pida confirmación obligatoriamente antes de borrar cada archivo, para evitar desastres por escribir mal un comando?",
     "opciones": [
       "No, 'rm' siempre borra instantáneamente sin preguntar.",
       "Sí, utilizando el parámetro interactivo '-i' (rm -i archivo.txt).",
@@ -7848,7 +7848,7 @@
     "explicacion": "La integración entre Exchange (Outlook) y Teams es total. Al ponerte como 'Fuera de la oficina', Teams chupa ese estado y cambia tu icono. Si un compañero intenta abrir un chat contigo, Teams le avisa antes de que escriba: 'Pepe está fuera de la oficina y regresará mañana', ahorrando frustraciones."
   },
   {
-    "pregunta": "Para finalizar el Bloque 3: Un equipo de trabajo tiene un canal de Teams con mucha actividad y varios archivos. El administrador decide archivar el Equipo (Archived Team) porque el proyecto ha finalizado. ¿Qué implicación directa tiene esto para los miembros del equipo?",
+    "pregunta": "Un equipo de trabajo tiene un canal de Teams con mucha actividad y varios archivos. El administrador decide archivar el Equipo (Archived Team) porque el proyecto ha finalizado. ¿Qué implicación directa tiene esto para los miembros del equipo?",
     "opciones": [
       "El equipo se elimina y no se puede recuperar.",
       "El equipo desaparece de la lista activa, y tanto los chats como los archivos de SharePoint pasan a estado de 'Solo lectura' (no se pueden enviar mensajes ni modificar documentos nuevos), preservando todo como un registro histórico inmutable.",
@@ -9621,7 +9621,7 @@
     "explicacion": "Históricamente, los PDFs antiguos se bloqueaban con RC4 de 40 o 128 bits (que hoy en día un PC moderno revienta por fuerza bruta en segundos usando software para saltarse contraseñas de PDF). Las versiones recientes de Acrobat Reader imponen como medida de alta seguridad el cifrado AES-256. Si le pones una buena contraseña a un PDF cifrado en AES-256, es matemáticamente inquebrantable con la tecnología computacional actual."
   },
   {
-    "pregunta": "Para finalizar el Bloque 3 del Tema 11: Un Auxiliar de Informática necesita automatizar una tarea pesada en el servidor. Tiene que convertir una carpeta con 500 archivos de audio WAV a formato MP3, y recortar los primeros 10 segundos de 50 vídeos institucionales usando un script por lotes (.bat). ¿Qué potentísima herramienta de línea de comandos, de código abierto y sin interfaz gráfica visual, es la reina indiscutible y el motor mundial para esta tarea de procesamiento multimedia?",
+    "pregunta": "Un Auxiliar de Informática necesita automatizar una tarea pesada en el servidor. Tiene que convertir una carpeta con 500 archivos de audio WAV a formato MP3, y recortar los primeros 10 segundos de 50 vídeos institucionales usando un script por lotes (.bat). ¿Qué potentísima herramienta de línea de comandos, de código abierto y sin interfaz gráfica visual, es la reina indiscutible y el motor mundial para esta tarea de procesamiento multimedia?",
     "opciones": [
       "Windows Media Player.",
       "FFmpeg.",
@@ -14941,7 +14941,7 @@
     "explicacion": "La cabecera `COOP` (Política de Apertura de Origen Cruzado) es un blindaje de bajo nivel del sistema operativo. Si tu web abre una ventana emergente y está protegida con `COOP: same-origin`, el navegador corta el cordón umbilical entre los procesos de ambas ventanas en la memoria RAM. Evita que un código malicioso en la ventana secundaria aproveche fallos físicos de diseño de los chips de la CPU (Spectre) para husmear y leer los datos de la ventana principal de la Junta."
   },
   {
-    "pregunta": "Para finalizar el Bloque 3 del Tema 17: Al programar un portal web oficial, un Auxiliar de Informática comete un error de sintaxis y escribe la siguiente cabecera HTTP de seguridad: `Cache-Control: no-store`. ¿Qué orden drástica e inapelable recibirá el navegador del ciudadano al leer esta directiva?",
+    "pregunta": "Al programar un portal web oficial, un Auxiliar de Informática comete un error de sintaxis y escribe la siguiente cabecera HTTP de seguridad: `Cache-Control: no-store`. ¿Qué orden drástica e inapelable recibirá el navegador del ciudadano al leer esta directiva?",
     "opciones": [
       "Le prohíbe taxativamente guardar el archivo en cualquier tipo de caché (ya sea en el disco duro o en la memoria RAM volátil), obligando al navegador a descargar el documento íntegro directamente desde el servidor central de la Junta en absolutamente cada clic.",
       "Le obliga a almacenar el archivo en la caché local del disco durante un año entero.",
@@ -15608,7 +15608,7 @@
     "explicacion": "El `Aging Time` (por defecto suele estar configurado en 300 segundos / 5 minutos en la mayoría de fabricantes) evita que la tabla de memoria del switch se sature con fantasmas del pasado. Si un funcionario se lleva su portátil a casa a las 15:00, la MAC de su equipo se queda grabada en el switch. A los 5 minutos sin emitir un solo bit, el temporizador de envejecimiento llega a cero y el switch borra la fila para liberar memoria RAM."
   },
   {
-    "pregunta": "Para finalizar el Bloque 2 del Tema 18: Al analizar las ventajas históricas del rendimiento de las redes LAN, se estudia el concepto de 'Determinismo'. ¿Qué significa que una tecnología de red sea 'Determinista' (como Token Ring o FDDI) frente al modelo 'Probabilístico' de Ethernet?",
+    "pregunta": "Al analizar las ventajas históricas del rendimiento de las redes LAN, se estudia el concepto de 'Determinismo'. ¿Qué significa que una tecnología de red sea 'Determinista' (como Token Ring o FDDI) frente al modelo 'Probabilístico' de Ethernet?",
     "opciones": [
       "Significa que la velocidad de la red cambia dependiendo de la temperatura del edificio.",
       "Significa que es matemáticamente posible calcular e indicar con total exactitud el tiempo máximo que tardará un ordenador en tener permiso legal para transmitir sus datos por el cable, garantizando que no existirán colisiones bajo ninguna circunstancia de carga de trabajo.",
@@ -16048,7 +16048,7 @@
     "explicacion": "El tráfico Multicast es engañoso: a nivel de Capa 2, como su MAC no pertenece a nadie en concreto, el switch por defecto actúa como un loco y envía el vídeo de la rueda de prensa por TODAS las bocas de la oficina, colapsando los ordenadores que estaban trabajando en Word. Al activar `IGMP Snooping`, el switch se vuelve listo: intercepta las peticiones secretas ('snooping' = espiar) de las suscripciones. Así, el switch crea un mapa de suscriptores y entrega el vídeo de 10 Megabits por segundo solo a los 3 despachos que pidieron verlo."
   },
   {
-    "pregunta": "Para finalizar el Tema 18: La movilidad continua (Roaming) de los usuarios que caminan por los pasillos de la Administración con sus portátiles requiere que pasen de una antena Wi-Fi (AP) a otra sin que se corten las videollamadas. El estándar base WPA-Enterprise (802.1X) es muy lento autenticando y causaría cortes de varios segundos en la llamada. ¿Qué enmienda del IEEE soluciona esto permitiendo un Roaming Transparente BSS de alta velocidad?",
+    "pregunta": "La movilidad continua (Roaming) de los usuarios que caminan por los pasillos de la Administración con sus portátiles requiere que pasen de una antena Wi-Fi (AP) a otra sin que se corten las videollamadas. El estándar base WPA-Enterprise (802.1X) es muy lento autenticando y causaría cortes de varios segundos en la llamada. ¿Qué enmienda del IEEE soluciona esto permitiendo un Roaming Transparente BSS de alta velocidad?",
     "opciones": [
       "IEEE 802.11w (PMF).",
       "IEEE 802.11r (Fast BSS Transition).",
@@ -17172,7 +17172,7 @@
     "explicacion": "AutoFirma es la aplicación oficial reina de la administración electrónica en España. Funciona como un servidor local en segundo plano en el PC del usuario. Cuando una web de la Junta quiere que firmes un trámite, le manda una orden especial al navegador invocando el protocolo local `afirma://`. Esto despierta el programa AutoFirma instalado en Windows, el cual abre la ventana flotante para elegir tu certificado, procesa las matemáticas de la firma en local y le devuelve los bytes firmados a la web de forma transparente."
   },
   {
-    "pregunta": "Para finalizar el Bloque 1 del Tema 20: Un Auxiliar de Informática instala un certificado digital `.pfx` en un ordenador Windows ejecutando el asistente habitual. ¿Dónde se almacenará físicamente el certificado para que pueda ser utilizado de forma nativa por navegadores como Microsoft Edge o Google Chrome y qué consola gráfica lo administra?",
+    "pregunta": "Un Auxiliar de Informática instala un certificado digital `.pfx` en un ordenador Windows ejecutando el asistente habitual. ¿Dónde se almacenará físicamente el certificado para que pueda ser utilizado de forma nativa por navegadores como Microsoft Edge o Google Chrome y qué consola gráfica lo administra?",
     "opciones": [
       "En una carpeta compartida de red de solo lectura administrada por WSUS.",
       "En el Almacén de Certificados de Windows (carpeta Personal de los certificados del usuario), administrado gráficamente mediante la consola MMC ejecutando el comando `certmgr.msc`.",
@@ -21153,7 +21153,7 @@
     "explicacion": "El TREBEP es un 'Estatuto Básico' (la Constitución del funcionario). Dicta las reglas mínimas del juego (ej: 22 días de vacaciones para todos). Luego, cada parlamento autonómico (la Asamblea de Extremadura) elabora su propia Ley de Función Pública autonómica para entrar al detalle, pero siempre respetando ese suelo o límite mínimo que marca el Estado."
   },
   {
-    "pregunta": "Para finalizar tu gran repaso: Como Auxiliar de Informática, pasas mucho tiempo reparando equipos físicos. Si en el desempeño de tu puesto cometes una negligencia grave y rompes un servidor de 20.000 euros, ¿qué responsabilidad te puede exigir la Administración (Art. 54)?",
+    "pregunta": "Como Auxiliar de Informática, pasas mucho tiempo reparando equipos físicos. Si en el desempeño de tu puesto cometes una negligencia grave y rompes un servidor de 20.000 euros, ¿qué responsabilidad te puede exigir la Administración (Art. 54)?",
     "opciones": [
       "Ninguna, los funcionarios son irresponsables patrimonialmente.",
       "Te descontarán de tu nómina obligatoriamente el 50% de la reparación de forma directa.",
@@ -21830,13 +21830,1552 @@
     "respuesta_correcta": 1,
     "explicacion": "Principio legal inquebrantable (Art. 14.5). La prevención es 'gratis' para ti. El empresario gana dinero con tu trabajo, y la Administración da su servicio gracias a ti. Por tanto, son ellos los que tienen que abrir la cartera y pagar las sillas buenas, los cursos, la evaluación médica y cualquier dispositivo de protección. Si te cobran un céntimo, están violando la LPRL."
   },
-  
-  queda el bloque 4 y 5
+  {
+    "pregunta": "Como Auxiliar de Informática, la silla de tu oficina no puede ser cualquiera. Según el Anexo del Real Decreto 488/1997 sobre PVD, ¿qué características ergonómicas obligatorias debe cumplir el asiento de trabajo?",
+    "opciones": [
+      "Debe ser de cuero sintético y con reposabrazos fijos.",
+      "Debe ser estable, proporcionando libertad de movimiento y una postura confortable. La altura del asiento deberá ser regulable y el respaldo deberá ser reclinable y su altura ajustable.",
+      "Debe tener exactamente 4 ruedas para evitar vuelcos.",
+      "El respaldo debe ser fijo en un ángulo de 90 grados para mantener la espalda recta."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Pregunta de examen 100% práctica. La ergonomía exige adaptabilidad. Tu silla tiene que poder subir y bajar (para adaptar tus pies al suelo y tus codos a la mesa) y el respaldo tiene que poder inclinarse y subir o bajar para recoger la zona lumbar. Además, por normativa técnica de estabilidad, las sillas de oficina con ruedas deben tener una base de 5 radios (5 patas), no 4."
+  },
+  {
+    "pregunta": "Siguiendo con los equipos para el informático (RD 488/1997), hablemos del teclado. ¿Cuál es el requisito normativo de diseño del teclado para evitar la fatiga en brazos y manos?",
+    "opciones": [
+      "Debe estar integrado físicamente en la pantalla (tipo portátil clásico) para ahorrar espacio.",
+      "Debe ser inclinable e independiente de la pantalla para permitir que el trabajador adopte una postura cómoda que no provoque cansancio en brazos o manos.",
+      "Las teclas deben ser brillantes para reflejar la luz del techo.",
+      "Debe ser completamente plano y sin capacidad de inclinación."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Esta es la razón por la que trabajar 8 horas con un ordenador portátil directamente sobre la mesa incumple la normativa de PRL. El teclado TIENE que ser independiente de la pantalla. Si no lo es, o te acercas mucho a la pantalla (dañando la vista y cervicales) o te alejas (estirando los brazos). Además, la superficie del teclado debe ser mate para evitar reflejos."
+  },
+  {
+    "pregunta": "Otro clásico de la oficina: el reposapiés. ¿La Administración está obligada a proporcionar un reposapiés a todos los informáticos de la plantilla por defecto?",
+    "opciones": [
+      "Sí, es obligatorio que cada mesa incluya uno de fábrica.",
+      "No. Se pondrá un reposapiés a disposición exclusiva de quienes lo deseen o cuando la altura de la silla no permita al trabajador descansar los pies planos sobre el suelo con comodidad.",
+      "Solo es obligatorio para mujeres embarazadas.",
+      "Está prohibido usar reposapiés porque causa tropiezos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El reposapiés no es un regalo universal. Si eres alto y al ajustar tu silla a la altura de la mesa (codos a 90 grados) tus pies apoyan firmemente en el suelo, no necesitas reposapiés. Pero si eres más bajito y, al subir la silla para llegar al teclado, los pies te quedan colgando o apoyados solo en la punta, la Administración está OBLIGADA a comprarte un reposapiés para evitar la compresión de los muslos."
+  },
+  {
+    "pregunta": "Hemos visto que el trabajador tiene derecho a paralizar su trabajo ante un 'riesgo grave e inminente'. Pero, ¿qué ocurre si el jefe de servicio minimiza el riesgo y ordena seguir trabajando? ¿Pueden los representantes de los trabajadores (Delegados de Prevención) tomar cartas en el asunto?",
+    "opciones": [
+      "No, la decisión final es exclusivamente del jefe de servicio.",
+      "Sí. Si el empresario no adopta medidas, los representantes legales de los trabajadores podrán acordar, por MAYORÍA de sus miembros, la paralización de la actividad de los trabajadores afectados por dicho riesgo.",
+      "Sí, pero solo si traen a un notario.",
+      "Solo pueden hacerlo si llaman previamente a la policía."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El Artículo 21.3 de la LPRL otorga este 'superpoder' a los sindicatos/representantes. Si el techo del CPD se está rajando, el jefe dice que 'no pasa nada', y los trabajadores tienen miedo de desobedecer una orden directa, los representantes se reúnen de urgencia y por mayoría ordenan parar el trabajo. Este acuerdo debe comunicarse inmediatamente a la empresa y a la Autoridad Laboral."
+  },
+  {
+    "pregunta": "¿Quién es la 'Autoridad' externa y máxima encargada de vigilar y controlar que la Administración Pública y las empresas cumplan con la Ley de Prevención de Riesgos Laborales?",
+    "opciones": [
+      "La Guardia Civil.",
+      "La Inspección de Trabajo y Seguridad Social (ITSS).",
+      "El Defensor del Pueblo.",
+      "El Tribunal de Cuentas."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La ITSS es el cuerpo de inspectores del Estado (Art. 9 LPRL). Son los que pueden presentarse de improviso en las oficinas de la Junta, pedir la evaluación de riesgos, medir la luz y, si ven que hay peligro o incumplimiento, levantar un acta de infracción."
+  },
+  {
+    "pregunta": "Cuando una empresa privada incumple la LPRL, la Inspección de Trabajo le pone una multa económica. Pero si es una Consejería de la Administración Pública la que comete una infracción grave en PRL, ¿se le impone una multa económica en euros?",
+    "opciones": [
+      "Sí, exactamente igual que a la empresa privada.",
+      "Sí, pero la multa la pagan los funcionarios de su bolsillo.",
+      "No. Cuando la Inspección detecta un incumplimiento en la Administración Pública, en lugar de una multa económica, formula un 'Requerimiento' al órgano competente para que subsane las anomalías, pudiendo exigirse responsabilidades disciplinarias al cargo público responsable.",
+      "La Inspección de Trabajo no puede entrar en edificios públicos."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Al igual que con Protección de Datos, el Estado no se multa económicamente a sí mismo (sacar dinero del Ministerio de Hacienda para dárselo al Ministerio de Trabajo es absurdo). La Inspección emite un Requerimiento oficial. Si el Director General lo ignora, se le puede abrir un expediente disciplinario o derivar en responsabilidades penales."
+  },
+  {
+    "pregunta": "El artículo 27 de la LPRL trata la 'Protección de los menores'. Si la Administración contrata como Auxiliar en prácticas a un joven de 17 años, ¿qué limitación preventiva absoluta tiene este trabajador?",
+    "opciones": [
+      "Debe trabajar siempre en turno de noche.",
+      "No podrá ser empleado en puestos de trabajo que presenten riesgos específicos para su seguridad, su salud o su desarrollo, prohibiéndose tareas que superen sus fuerzas o entrañen peligros tóxicos o eléctricos graves.",
+      "Ninguna, un trabajador de 17 años es igual a uno de 40.",
+      "Solo puede trabajar 4 horas al día."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los menores de 18 años están hiper-protegidos. Antes de incorporar a un menor de edad, el empresario debe efectuar una evaluación de los puestos teniendo en cuenta los riesgos específicos para el desarrollo físico y psicológico de los jóvenes. Trabajos peligrosos, insalubres, nocturnos o levantar servidores muy pesados están prohibidos para ellos."
+  },
+  {
+    "pregunta": "Hablemos de los equipos que compra la Administración. Según el artículo 41 de la LPRL (Obligaciones de los fabricantes, importadores y suministradores), si la Junta compra un servidor que emite gases tóxicos al calentarse, ¿quién tiene la obligación inicial de garantizar que ese servidor es seguro antes de venderlo?",
+    "opciones": [
+      "El informático que lo desembala.",
+      "El fabricante, importador o suministrador está obligado a asegurar que los equipos no constituyan un peligro para la salud de los trabajadores, proporcionando información y marcados CE sobre sus riesgos.",
+      "El sindicato de la empresa fabricante.",
+      "El Ministerio de Medio Ambiente."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La prevención empieza en la fábrica. La LPRL exige que quien fabrica, importa o vende una máquina en España, debe diseñarla con sistemas de seguridad (ej: carcasas que eviten atrapamientos, aislamientos eléctricos) e incluir un manual de instrucciones claro sobre los peligros residuales."
+  },
+  {
+    "pregunta": "En el trabajo ofimático (CAU, programación), a veces los servidores o el aire acondicionado hacen un ruido constante y molesto, aunque no llegue a dejarte sordo. Según los principios de ergonomía ambiental, ¿qué problema de salud laboral causa el ruido continuo moderado en una oficina?",
+    "opciones": [
+      "Pérdida auditiva neurosensorial profunda.",
+      "Aumento de la carga mental, dificultad para la concentración, fatiga psicológica, estrés y problemas de comunicación verbal.",
+      "Rotura de tímpano por impacto.",
+      "Ninguno, el cuerpo se acostumbra."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "En la obra, un ruido de 90 decibelios te deja sordo (riesgo de seguridad física). En una oficina de informática, un ventilador de rack sonando a 60 decibelios todo el día no te dejará sordo, pero te destrozará la concentración. Es un riesgo higiénico y ergonómico que provoca fatiga mental, dolores de cabeza y errores en el código. Los CPDs ruidosos deben estar aislados de la zona de puestos de trabajo."
+  },
+  {
+    "pregunta": "La 'Carga Mental' es el gran enemigo del informático. ¿Qué factores del puesto de trabajo influyen directamente en la aparición de fatiga mental?",
+    "opciones": [
+      "La cantidad y complejidad de la información que se debe procesar, el tiempo disponible para hacerlo (presión de tiempo) y el nivel de atención sostenida requerida.",
+      "Exclusivamente el tamaño del monitor.",
+      "El peso del ordenador portátil en la mochila.",
+      "La calidad del café de la máquina."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "Si estás en el CAU, con el teléfono sonando, 5 incidencias VIP abiertas, mirando dos pantallas y con un jefe pidiendo resultados en 5 minutos, tu cerebro se satura. Eso es la 'Carga mental': la exigencia de procesamiento cognitivo de tu puesto de trabajo. Para prevenirla se recomienda rotación de tareas y pausas pautadas."
+  },
+  {
+    "pregunta": "Hemos visto que el reconocimiento médico general es voluntario. Sin embargo, el artículo 22 de la LPRL marca excepciones donde el reconocimiento pasa a ser OBLIGATORIO para el trabajador. ¿Cuál de estos es un caso donde te pueden obligar a pasar el reconocimiento médico?",
+    "opciones": [
+      "Cuando la empresa quiera saber si fumes para ahorrar en seguros.",
+      "Cuando la realización de los reconocimientos sea imprescindible para evaluar los efectos de las condiciones de trabajo sobre tu salud, o para verificar si tu estado de salud puede constituir un peligro para ti mismo, para los demás trabajadores o para otras personas.",
+      "Nunca te pueden obligar bajo ningún concepto constitucional.",
+      "Cuando lleves más de dos años sin coger una baja."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Excepción importantísima al principio de voluntariedad. Si la Administración nota que de repente 5 informáticos de tu misma sala cogen la baja por problemas de visión grave, puede obligarte a pasar el reconocimiento para evaluar si el entorno (la iluminación del local) os está dejando ciegos. También es obligatorio en trabajos de riesgo para terceros (pilotos, cirujanos, policías)."
+  },
+  {
+    "pregunta": "A nivel documental (Art. 23 LPRL), ¿qué relación de datos tiene la obligación de conservar la Administración respecto a los daños a la salud de sus empleados?",
+    "opciones": [
+      "Una relación de todos los catarros y gripes de los empleados.",
+      "Una relación de los accidentes de trabajo y enfermedades profesionales que hayan causado al trabajador una incapacidad laboral superior a UN DÍA de trabajo.",
+      "Solo el registro de las horas extra realizadas.",
+      "El historial de navegación por internet de los accidentados."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Como vimos antes, si el accidente te impide venir a trabajar al día siguiente (> 1 día de incapacidad), hay obligación ineludible de notificarlo. Y además, la Administración tiene que conservar el documento de ese accidente de forma física o digital a disposición de la Autoridad Laboral."
+  },
+  {
+    "pregunta": "Si eres informático y tienes reconocido el teletrabajo al 100% desde tu casa, ¿se aplica la Ley de Prevención de Riesgos Laborales al espacio físico de trabajo dentro de tu propio domicilio?",
+    "opciones": [
+      "No, el domicilio privado es inviolable y la ley laboral no aplica.",
+      "Sí, la Administración debe evaluar los riesgos. Generalmente se hace mediante un cuestionario de autoevaluación que rellena el trabajador, ya que el servicio de prevención solo puede visitar el domicilio si el trabajador da su consentimiento expreso.",
+      "Sí, la empresa puede enviar inspectores a casa sin avisar.",
+      "Solo aplica si tienes un accidente mientras usas el teclado."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El teletrabajo ha generado mucha casuística. Sigues teniendo derecho a la PRL (te tienen que dar pantalla, silla, reposapiés si hace falta...). Pero como tu casa es inviolable por la Constitución, la Administración no puede mandar al técnico de prevención a medirte la luz por sorpresa. Te mandan un formulario detallado, tú lo rellenas, y si detectan fallos, te aconsejan cómo colocar tu escritorio."
+  },
+  {
+    "pregunta": "Un concepto vital en la prevención moderna es el 'Incidente' o 'Accidente Blanco'. Imagina que un servidor rack de 30kg se cae de la mesa, pero por centímetros no te aplasta el pie. No hay lesiones físicas, solo un susto. Según la gestión preventiva, ¿qué debe hacerse con este suceso?",
+    "opciones": [
+      "Ignorarlo porque nadie ha salido herido y el servidor sigue funcionando.",
+      "Debe ser comunicado, registrado e investigado de la misma forma que un accidente, ya que es un fallo en el sistema preventivo que podría haber causado daños graves a la salud.",
+      "Multar al empleado por no llevar zapatos de punta de acero.",
+      "Darle el día libre al trabajador para que se relaje."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El 'Casi accidente' o 'Incidente'. En PRL es un regalo del destino. La máquina ha fallado, las medidas de amarre han fallado, pero por azar nadie ha resultado herido. Tienes la obligación de investigarlo para arreglar la estantería del rack HOY, antes de que mañana se caiga de nuevo y le parta la pierna a otro compañero."
+  },
+  {
+    "pregunta": "Los Delegados de Prevención, como representantes de los trabajadores, necesitan tiempo para revisar instalaciones y reunirse con la Administración. ¿El tiempo empleado por los Delegados en las reuniones del Comité de Seguridad y Salud se descuenta de su crédito de horas sindicales?",
+    "opciones": [
+      "Sí, todas las labores preventivas consumen sus horas sindicales.",
+      "No. El tiempo dedicado a las reuniones del Comité de Seguridad y Salud será considerado SIEMPRE como tiempo de trabajo efectivo, y no se descontará del crédito de horas mensuales que dispongan como representantes sindicales.",
+      "Las reuniones se deben hacer en el tiempo de descanso del bocadillo.",
+      "Depende de si la reunión dura más de 2 horas."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Art. 37 LPRL. Los delegados sindicales tienen unas 'bolsas de horas' para hacer sus cosas sindicales. Pero el legislador protege la prevención. Si el Delegado está reunido con la Administración en el Comité o acompañando al inspector de trabajo, la ley dice que eso es 'trabajar por la empresa' y se considera tiempo efectivo de trabajo, sin gastar sus horas sindicales."
+  },
+  {
+    "pregunta": "En Ergonomía de PVD, además de la pantalla y el teclado, el mobiliario incluye el atril o portadocumentos. Si trabajas introduciendo datos de expedientes en papel al ordenador, ¿cómo debe ser el atril según la normativa técnica?",
+    "opciones": [
+      "Fijo en el borde de la mesa.",
+      "Estable, regulable y colocado de tal modo que se reduzcan al mínimo los movimientos incómodos de la cabeza y los ojos (idealmente a la misma altura y distancia visual que la pantalla).",
+      "Transparente para que pase la luz.",
+      "No se permite el uso de papel en puestos informáticos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El 'Síndrome del oficinista'. Si tienes el papel en la mesa y miras al monitor, estás haciendo un movimiento de 'asentimiento' (cuello arriba y abajo) miles de veces al día, destrozando las cervicales y obligando al ojo a enfocar distancias distintas. El portadocumentos se pone al lado del monitor, a la misma altura, para que solo tengas que mover los globos oculares de izquierda a derecha."
+  },
+  {
+    "pregunta": "Al diseñar un Equipo de Protección Individual (EPI) o al asignarlo a un trabajador, ¿cuál de los siguientes es un requisito técnico indispensable exigido por la normativa (RD 773/1997)?",
+    "opciones": [
+      "Debe ser compartido por toda la plantilla para ahorrar.",
+      "No debe suponer por sí mismo un riesgo adicional o generar molestias innecesarias, y debe responder a las condiciones existentes en el lugar de trabajo y a la ergonomía del trabajador.",
+      "Debe ser pesado y rígido para garantizar la protección.",
+      "Debe estar certificado exclusivamente en Estados Unidos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Un EPI mal elegido mata. Si para limpiar un ordenador con aire comprimido te dan unas gafas de protección tan empañadas o rayadas que no ves nada y te tropiezas con las escaleras, el EPI se ha convertido en un riesgo en sí mismo. El EPI tiene que ser ergonómico y adaptar su talla al trabajador concreto."
+  },
+  {
+    "pregunta": "Para coordinar las actuaciones en caso de un incendio en la Junta (Medidas de emergencia del Art. 20), la Administración debe designar personal interno y establecer relaciones con servicios externos. ¿A qué servicios externos se refiere la Ley?",
+    "opciones": [
+      "A las empresas de reparto de comida y catering.",
+      "Exclusivamente a las empresas de mantenimiento informático.",
+      "A los servicios externos de primeros auxilios, asistencia médica de urgencia, salvamento y lucha contra incendios (ej. 112, bomberos, ambulancias).",
+      "A los sindicatos con sede en otras ciudades."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "El Plan de Emergencias no acaba en la puerta del edificio. La Administración tiene la obligación de tener coordinados y actualizados los protocolos de actuación con los bomberos, policía y emergencias sanitarias, garantizando que saben cómo acceder al edificio o dónde cortar la luz general si el centro de datos arde."
+  },
+  {
+    "pregunta": "Si un Auxiliar de Informática está expuesto a un riesgo que requiere formación específica en PRL, la LPRL (Art. 19) especifica que esta formación debe cumplir ciertas características cualitativas. ¿Cómo debe ser esta formación preventiva?",
+    "opciones": [
+      "Solamente teórica, mediante la lectura de un manual general el primer día.",
+      "Teórica y práctica, suficiente y adecuada, centrada específicamente en el puesto de trabajo o función de cada trabajador, y debe adaptarse a la aparición de nuevos riesgos.",
+      "Online y voluntaria fuera de la jornada laboral.",
+      "Exclusiva sobre cómo usar el extintor de incendios."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "No vale con darle al informático nuevo un tocho de 500 páginas que diga 'Manual de Prevención General de la Junta' y decirle que firme. La formación tiene que ser específica para su puesto (pantallas, postura, riesgo eléctrico en cuartos de comunicaciones) y tiene que reciclarse si las condiciones o la tecnología cambian."
+  },
+  {
+    "pregunta": "Y la pregunta final para cerrar el Tema 24. Si la Inspección de Trabajo detecta que la Administración Pública no ha hecho la Evaluación de Riesgos ni el Plan de Prevención, incurriendo en una infracción grave (Art. 45), formula un requerimiento. Si el responsable público ignora este requerimiento reiteradamente, ¿qué debe hacer la Inspección?",
+    "opciones": [
+      "Cerrar la comunidad autónoma.",
+      "Poner el hecho en conocimiento del superior jerárquico del responsable que ha incumplido, así como de los órganos de representación del personal, pudiendo proponer la exigencia de responsabilidad disciplinaria.",
+      "Pagar de sus propios fondos privados la evaluación de riesgos.",
+      "Emitir un indulto administrativo automático."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El inspector no se rinde. Si manda un requerimiento al Jefe de Servicio y este pasa de él, el inspector 'escala' el problema: le manda el requerimiento al Consejero (el jefe del jefe), avisa a la Junta de Personal (los sindicatos), y pide que se le abra un expediente sancionador al Jefe de Servicio por pasividad grave. Si la cosa sigue igual o hay peligro de muerte, el inspector podría llegar a ordenar la paralización del trabajo de forma ejecutiva."
+  },
+  {
+    "pregunta": "Como Auxiliar de Informática, la temperatura de tu oficina es fuente inagotable de discusiones. Según el Real Decreto 486/1997 sobre lugares de trabajo, ¿cuál es la temperatura legal obligatoria en locales donde se realicen trabajos sedentarios propios de oficina?",
+    "opciones": [
+      "Estará comprendida entre los 15 y los 20 grados.",
+      "Estará comprendida entre los 17 y los 27 grados centígrados.",
+      "Estará comprendida entre los 20 y los 30 grados centígrados.",
+      "La que decida el Jefe de Servicio por mayoría."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Pregunta de examen numérico puro. En trabajos de oficina (sedentarios), la ley marca la horquilla de `17 a 27 ºC`. Ojo, si fuera un trabajo físico (ej. los ordenanzas moviendo cajas o en un almacén), la horquilla baja y debe estar entre los 14 y los 25 ºC para compensar el calor corporal del esfuerzo."
+  },
+  {
+    "pregunta": "Siguiendo con el ambiente de tu oficina. La sequedad del aire en los cuartos de servidores y oficinas cerradas afecta a los ojos y vías respiratorias. ¿Qué niveles de humedad relativa exige el RD 486/1997 para estos lugares de trabajo?",
+    "opciones": [
+      "Entre el 10% y el 20%.",
+      "Exactamente al 50%.",
+      "Estará comprendida entre el 30% y el 70% (limitándose al 50% mínimo si hay riesgo por electricidad estática).",
+      "Entre el 70% y el 90%."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Otra cifra para memorizar. La humedad en la oficina debe estar entre el `30% y el 70%`. Pero fíjate en el matiz técnico: en los CPDs y oficinas donde hay mucho ordenador y moqueta, se genera mucha electricidad estática. En esos casos, la ley dice que el límite inferior sube al `50%` para evitar calambrazos que puedan dañar los equipos o asustar al trabajador."
+  },
+  {
+    "pregunta": "El nivel de iluminación es vital para no destrozarnos la vista al teclear. ¿Cuál es el nivel mínimo de iluminación (medido en lux) exigido para zonas donde se ejecutan tareas con exigencias visuales altas, como el trabajo continuado en ordenadores?",
+    "opciones": [
+      "100 lux.",
+      "200 lux.",
+      "500 lux.",
+      "1000 lux."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "La luz se mide en luxes. Para un pasillo o zona de paso basta con 50 o 100 lux. Pero para tu mesa de trabajo, donde estás leyendo expedientes y mirando una pantalla (exigencia visual alta), el RD 486/1997 exige un mínimo de `500 luxes`. Si tu oficina está en penumbra, incumple la normativa de PRL."
+  },
+  {
+    "pregunta": "Volvemos al RD 488/1997 (Pantallas de Visualización de Datos). Respecto a la mesa o superficie de trabajo del informático, ¿qué dos características físicas son legalmente obligatorias para evitar fatiga y reflejos?",
+    "opciones": [
+      "Debe ser de cristal transparente y de tamaño reducido.",
+      "Debe ser de material poco reflectante (mate) y tener las dimensiones suficientes para permitir una colocación flexible de la pantalla, teclado y documentos.",
+      "Debe ser de madera maciza pulida brillante.",
+      "Debe estar anclada al suelo de forma inamovible."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Una mesa de cristal muy bonita puede ser un infierno ergonómico. La normativa exige superficies MATES (para que no te rebote la luz del fluorescente en los ojos) y suficientemente grandes para que puedas apoyar los antebrazos y colocar el monitor a la distancia correcta (mínimo 40 cm)."
+  },
+  {
+    "pregunta": "La ergonomía no se aplica solo a la silla y al teclado. El RD 488/1997 habla también de la 'Ergonomía del Software' (la interfaz de los programas). Según la ley, al diseñar un programa para la Administración, este debe ser:",
+    "opciones": [
+      "Lo más complejo posible para evitar que los ciudadanos lo entiendan.",
+      "Adecuado a la tarea, fácil de utilizar y adaptado al nivel de conocimientos y experiencia del usuario, no utilizando sistemas de control cuantitativo o cualitativo sin que los trabajadores lo sepan.",
+      "En blanco y negro exclusivamente.",
+      "En idioma inglés por defecto."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "¡Ojo a este detalle que pocos estudian! Hacer un software mal diseñado, con letra microscópica, colores estridentes o que obligue al usuario a hacer 20 clics para guardar un archivo, es un incumplimiento de la LPRL porque genera 'Carga Mental' y fatiga. El software también debe ser ergonómico."
+  },
+  {
+    "pregunta": "Para la vigilancia de la salud, el artículo 22 de la LPRL exige reconocimientos periódicos. Sin embargo, ¿en qué momento OBLIGA la ley expresamente a la Administración a ofrecerte un examen de salud independientemente de la periodicidad normal?",
+    "opciones": [
+      "Antes de irte de vacaciones.",
+      "Tras la asignación de tareas específicas con nuevos riesgos, o al reincorporarte al trabajo tras una ausencia prolongada por motivos de salud.",
+      "Cada vez que cambies de silla.",
+      "Al cumplir tu primer trienio."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Si te pegas 6 meses de baja médica por una operación de espalda, la Administración no puede dejarte entrar el primer día y sentarte a levantar cajas de servidores. Tiene la obligación legal de pasarte por el médico de empresa para evaluar si, tras esa ausencia prolongada, sigues siendo 'Apto' o necesitas que te adapten el puesto temporalmente."
+  },
+  {
+    "pregunta": "En cuanto a los primeros auxilios (Art. 20 LPRL), todo centro de trabajo debe disponer de material para curas. ¿Qué exigencia impone el RD 486/1997 sobre la ubicación y señalización del botiquín de primeros auxilios en la Administración?",
+    "opciones": [
+      "Debe estar cerrado con llave y la llave la guarda el director.",
+      "Debe estar en un lugar claramente señalizado, de fácil acceso y el material debe revisarse periódicamente para reponer lo usado o caducado.",
+      "Debe guardarse en el cuarto de la limpieza sin señalizar.",
+      "Solo es obligatorio si el edificio tiene más de 1.000 empleados."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Un botiquín caducado o bajo llave es inútil en una emergencia. La ley exige que esté señalizado (cruz blanca sobre fondo verde), accesible para todos (nada de candados) y que haya una persona designada encargada de revisar que las gasas o el betadine no estén caducados."
+  },
+  {
+    "pregunta": "El artículo 15 de la LPRL enumera los 'Principios de la Acción Preventiva'. ¿Cuál de los siguientes es el principio número uno y más básico que debe aplicar siempre la Administración antes que cualquier otro?",
+    "opciones": [
+      "Dar equipos de protección individual a todos.",
+      "Combatir los riesgos en su origen.",
+      "Evitar los riesgos.",
+      "Sustituir lo peligroso por lo que entrañe poco o ningún peligro."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Esta es la jerarquía pura del artículo 15. Primer mandamiento: 'Evitar los riesgos' (si un servidor viejo da calambres y no sirve de mucho, apágalo y quítalo). Segundo mandamiento, si no puedes evitarlo: 'Evaluar los riesgos que no se puedan evitar'. Y tercer mandamiento: 'Combatir los riesgos en su origen'."
+  },
+  {
+    "pregunta": "A veces la Junta contrata a trabajadores a través de Empresas de Trabajo Temporal (ETT). Si un informático de una ETT viene a trabajar a tu Consejería, ¿quién es el principal responsable de asegurar sus condiciones de seguridad y protección en ese edificio?",
+    "opciones": [
+      "Exclusivamente la Empresa de Trabajo Temporal.",
+      "La Administración Pública (la empresa usuaria), que es la responsable de las condiciones de ejecución del trabajo y de la protección en materia de seguridad e higiene durante el tiempo que trabaje allí.",
+      "El propio trabajador temporal.",
+      "El fabricante de su ordenador."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El que cede al trabajador (ETT) le da la formación previa, el contrato y el reconocimiento médico. Pero el que recibe al trabajador (Empresa Usuaria / Junta) es quien le sienta en la silla, le manda las tareas y es el responsable absoluto de que no se le caiga el techo encima. La Junta no puede lavarse las manos diciendo 'como es de ETT, no es mi problema'."
+  },
+  {
+    "pregunta": "En informática se dan casos de acoso laboral (Mobbing). A efectos de Prevención de Riesgos Laborales, el Mobbing o acoso psicológico se clasifica dentro de la familia de:",
+    "opciones": [
+      "Riesgos higiénicos.",
+      "Riesgos de seguridad en el trabajo.",
+      "Riesgos psicosociales.",
+      "Riesgos biológicos."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "La prevención no es solo ponerse un casco. Los 'Riesgos Psicosociales' engloban todo lo que daña tu salud mental: el estrés crónico, el burnout, la carga mental excesiva, y por supuesto, el acoso laboral o sexual. La Administración está obligada a tener un Protocolo anti-acoso integrado en su Plan de Prevención."
+  },
+  {
+    "pregunta": "Si ocurre un accidente laboral grave en la Consejería (ej. una caída por las escaleras con rotura de pierna), la LPRL obliga a realizar una 'Investigación del accidente'. ¿Cuál es la finalidad técnica y preventiva de investigar un accidente que ya ha ocurrido?",
+    "opciones": [
+      "Buscar excusas para despedir al trabajador.",
+      "Descubrir las causas reales o 'causas raíz' que lo han provocado, con el fin de corregirlas y evitar que el mismo accidente se vuelva a repetir en el futuro.",
+      "Ahorrarse el pago de la mutua.",
+      "Cumplir un trámite burocrático inútil."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "En prevención, no se investiga para señalar con el dedo al culpable (eso lo hace el juez). Se investiga para aprender. Si te has caído por la escalera, hay que saber si fue porque faltaba una banda antideslizante, porque había poca luz o porque ibas corriendo. Al encontrar la causa raíz, se arregla (se pone más luz), y salvamos al siguiente compañero."
+  },
+  {
+    "pregunta": "Los Delegados de Prevención son intocables por su labor. Según la LPRL, ¿qué garantías y protección laboral tienen los Delegados de Prevención en la Administración?",
+    "opciones": [
+      "Cobran el triple que un funcionario normal.",
+      "Gozan de las mismas garantías que los representantes de los trabajadores (ej. protección contra el despido o traslados forzosos por el ejercicio de sus funciones, y derecho a un crédito de horas).",
+      "No pueden ser sancionados nunca por ningún motivo, aunque dejen de trabajar.",
+      "Solo tienen garantía durante su primer mes en el cargo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Nadie querría ser el que le dice al Jefe de la Junta 'tienes esto mal y te voy a denunciar a la Inspección' si no tuviera un escudo. La ley otorga a los Delegados de Prevención inmunidad sindical: la Administración no puede despedirles, bajarles el sueldo, ni trasladarles como represalia por ser 'molestos' exigiendo medidas de seguridad."
+  },
+  {
+    "pregunta": "En el RD 488/1997 sobre PVD se mencionan las 'Radiaciones' emitidas por el monitor. A día de hoy, con las pantallas planas, ¿qué establece la normativa técnica sobre las radiaciones de las pantallas informáticas?",
+    "opciones": [
+      "Que producen cáncer a los 5 años obligatoriamente.",
+      "Toda radiación (excepto la parte visible del espectro electromagnético) deberá reducirse a niveles insignificantes desde el punto de vista de la protección de la seguridad y de la salud de los trabajadores.",
+      "Que los informáticos deben usar trajes de plomo.",
+      "Que las radiaciones son beneficiosas para la salud ocular."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los antiguos monitores 'de culo' (tubo de rayos catódicos) emitían más radiación, pero incluso entonces la ley exigía blindarlos. Hoy, con los monitores LED/LCD, las radiaciones electromagnéticas (no ionizantes) son estadísticamente insignificantes y no suponen riesgo para la salud, aunque persiste el riesgo higiénico de la fatiga visual."
+  },
+  {
+    "pregunta": "Respecto al Plan de Autoprotección y Emergencias (Art. 20), para asegurar que el personal sabe evacuar el edificio, la normativa técnica suele exigir la realización periódica de simulacros de emergencia. ¿Con qué frecuencia mínima debe realizarse un simulacro de evacuación?",
+    "opciones": [
+      "Una vez cada 5 años.",
+      "Al menos una vez al año.",
+      "Una vez al mes obligatoriamente.",
+      "Solo cuando entre personal nuevo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Según el Documento Básico de Seguridad en Caso de Incendio y normativas de autoprotección vinculadas a la PRL, todo edificio administrativo público debe testear su plan de emergencia ejecutando un simulacro de evacuación total `al menos una vez al año`. Esto permite cronometrar tiempos y comprobar que las alarmas y protocolos funcionan."
+  },
+  {
+    "pregunta": "El artículo 33 define el derecho a la consulta. Además de consultar las nuevas tecnologías, ¿qué otro nombramiento organizativo dentro de la prevención debe ser consultado previamente a los representantes de los trabajadores?",
+    "opciones": [
+      "El nombramiento del Director General de la Consejería.",
+      "La designación de los trabajadores encargados de las medidas de emergencia, primeros auxilios y la modalidad del servicio de prevención a adoptar.",
+      "La contratación del servicio de limpieza de cristales.",
+      "El menú de la máquina expendedora de café."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La participación de los trabajadores llega al diseño del sistema. Si la Junta va a designar a 'Pepe y a María' como los encargados de apagar fuegos (primeros auxilios/emergencias), o si la Junta decide contratar a 'Fremap' como servicio de prevención ajeno, ANTES de firmar, tienen que pedir la opinión (consulta) a los Delegados de Prevención."
+  },
+  {
+    "pregunta": "Para la protección frente al ruido, el RD 286/2006 marca unos límites de decibelios. Si en un cuarto de impresoras masivo el ruido diario equivalente supera el valor de exposición que da lugar a una acción (80 dB), ¿cuál es la primera medida inmediata que debe ofrecer el empresario?",
+    "opciones": [
+      "Despedir al trabajador.",
+      "Poner a disposición de los trabajadores protectores auditivos individuales (tapones o cascos), y asegurar formación e información sobre el riesgo.",
+      "Comprar auriculares con música para tapar el ruido.",
+      "Insonorizar el cuarto al 100% en el plazo de 24 horas."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los niveles de ruido tienen 'escalones'. Cuando se superan los 80 dB(A) (valor inferior de acción), el empresario ya tiene que encender las alarmas: informar al trabajador del peligro, ofrecerle voluntariamente tapones/cascos y hacerle un control médico de oído. Si pasara de los 85 dB(A) (valor superior), el uso de los cascos ya sería OBLIGATORIO por ley."
+  },
+  {
+    "pregunta": "Al igual que el ruido, en un trabajo frente al ordenador existe riesgo de sedentarismo y posturas forzadas. Si trabajas con el portátil de la Junta en un tren durante un viaje oficial, ¿qué normativa te ampara?",
+    "opciones": [
+      "La normativa de tráfico ferroviario exclusivamente.",
+      "Ninguna, al salir del edificio pierdes los derechos preventivos.",
+      "La Ley de Prevención de Riesgos Laborales, ya que el riesgo derivado de la actividad encomendada por el empresario se mantiene independientemente del lugar físico donde se ejecute la tarea ocasional.",
+      "Las leyes aéreas internacionales."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "El puesto de trabajo no es solo tu escritorio en la Junta. Es cualquier lugar donde realices la actividad laboral. Si el jefe te manda a Cáceres en tren y te dice que vayas adelantando un informe en el portátil, ese asiento de tren es, a efectos legales en ese momento, tu puesto de trabajo amparado por la LPRL."
+  },
+  {
+    "pregunta": "Hemos visto que la empresa facilita los Equipos de Protección Individual (EPIs). ¿Qué obligación tiene el trabajador respecto al estado físico de esos equipos una vez entregados?",
+    "opciones": [
+      "Guardarlos de recuerdo en su casa.",
+      "Cuidarlos y mantenerlos en buen estado, y colocar el equipo en su lugar después de usarlo, informando de inmediato sobre cualquier defecto o daño que reduzca su protección.",
+      "Lavar las mascarillas desechables para ahorrar dinero.",
+      "No tiene obligaciones, el mantenimiento es exclusivo de la empresa."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El Art. 29 obliga al empleado al mantenimiento básico y sentido común. Si a un informático de redes le dan un arnés anticaídas para trabajar en un falso techo, y ve que la cuerda está deshilachada, su obligación es dejar de usarlo inmediatamente y exigir uno nuevo al servicio de prevención."
+  },
+  {
+    "pregunta": "La LPRL menciona el 'Principio de Adaptación del trabajo a la persona' (Art. 15.1.d). Este principio ataca la monotonía y la repetitividad. ¿Cómo puede un jefe de informática aplicar este principio a un trabajador del CAU que solo atiende llamadas estresantes?",
+    "opciones": [
+      "Haciéndole trabajar de pie.",
+      "Mediante la rotación de tareas (ej. intercalar atención telefónica con reparación de hardware en taller) y organizando el trabajo para atenuar el trabajo monótono y repetitivo, reduciendo así los efectos en la salud.",
+      "Obligándole a coger el teléfono con la mano izquierda.",
+      "Prohibiéndole hablar con sus compañeros."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La rotación de puestos es una medida preventiva organizativa estrella. Atenuar la monotonía evita lesiones por movimientos repetitivos (físico) y reduce el estrés y la desmotivación (psicosocial). Adaptar el trabajo a la persona significa evitar que te conviertas en un robot haciendo el mismo movimiento 8 horas al día."
+  },
+  {
+    "pregunta": "Para terminar este titánico repaso del Tema 24. A la hora de redactar toda esta documentación (el Plan, la Evaluación, los protocolos), ¿la Administración Pública tiene que enseñar esta documentación a la Autoridad Laboral?",
+    "opciones": [
+      "Solo si la Autoridad lo pide por favor.",
+      "Sí, el empresario está obligado a elaborar, conservar y tener a disposición de la Autoridad Laboral toda la documentación relativa al Plan, Evaluación, medidas preventivas, controles de salud y relación de accidentes.",
+      "No, es documentación interna secreta.",
+      "Solo se enseña a los ciudadanos que lo soliciten por transparencia."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El artículo 23 impone la obligación documental permanente. Cuando el Inspector de Trabajo entra por la puerta de tu Consejería, lo primero que dice es: 'Buenos días, enséñeme la Evaluación de Riesgos y el Plan de Emergencias'. Si no tienes los papeles encima de la mesa y firmados al día, la infracción (y el Requerimiento) están garantizados."
+  }
   
   ], 
   
   
     "25": [
+  
+  {
+    "pregunta": "Para trabajar en la Junta de Extremadura, es vital conocer la normativa de referencia en materia de Igualdad autonómica. ¿Cuál es la ley extremeña fundamental que regula esta materia?",
+    "opciones": [
+      "La Ley Orgánica 3/2007, de 22 de marzo.",
+      "La Ley 8/2011, de 23 de marzo, de Igualdad entre mujeres y hombres y contra la violencia de género en Extremadura.",
+      "La Ley 1/2004, de 28 de diciembre.",
+      "El Real Decreto 311/2022, de 3 de mayo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Pregunta de regalo para calentar motores. Aunque a nivel nacional existen leyes orgánicas (la 3/2007 de Igualdad y la 1/2004 de Violencia de Género), en el temario de la Junta de Extremadura nos exigen nuestra ley autonómica: la Ley 8/2011. Grábate el año y el número, porque a veces los tribunales solo cambian la fecha para despistar."
+  },
+  {
+    "pregunta": "Según el artículo 1 de la Ley 8/2011, ¿cuál es el objeto principal de esta ley en Extremadura?",
+    "opciones": [
+      "Garantizar que las mujeres cobren más que los hombres en la empresa privada.",
+      "Hacer efectivo el derecho de igualdad de trato y de oportunidades entre mujeres y hombres, y prevenir y erradicar la violencia de género en la Comunidad Autónoma.",
+      "Crear cuotas obligatorias exclusivas para el empleo público.",
+      "Regular los divorcios en el ámbito autonómico."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El objeto de la ley tiene una doble vertiente. Por un lado, buscar la igualdad REAL y efectiva (no solo sobre el papel) entre mujeres y hombres, y por otro, la lucha activa para prevenir y erradicar la lacra de la violencia de género. Es un 'dos por uno' normativo en nuestra comunidad."
+  },
+  {
+    "pregunta": "La Ley define varios tipos de discriminación. Si una disposición legal o una práctica administrativa es, en apariencia, totalmente neutra (no nombra ni a hombres ni a mujeres), pero en la práctica ocasiona una desventaja particular a las mujeres frente a los hombres. ¿De qué tipo de discriminación hablamos?",
+    "opciones": [
+      "Discriminación directa.",
+      "Discriminación indirecta.",
+      "Acoso discriminatorio.",
+      "Acción positiva."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "¡Ojo a esto que cae muchísimo! La discriminación DIRECTA es cuando dices 'solo contrato hombres'. La discriminación INDIRECTA es más sutil: pones una norma que parece neutral (ej: 'Para este puesto de informática hay que medir más de 1,80m'). Como por genética hay muchas menos mujeres que midan eso, esa norma neutra genera una desventaja brutal e injustificada para el sexo femenino."
+  },
+  {
+    "pregunta": "Por el contrario, ¿cómo define la ley extremeña la 'Discriminación directa'?",
+    "opciones": [
+      "Cualquier diferencia de trato en el ámbito privado.",
+      "La situación en la que una persona sea, haya sido o pudiera ser tratada de manera menos favorable que otra en situación análoga, por razón de su sexo.",
+      "Otorgar ventajas a las mujeres para compensar desventajas históricas.",
+      "Tener un comportamiento físico de naturaleza sexual indeseada."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La discriminación directa no tiene rodeos. Tratas peor a María que a Juan simplemente por el hecho de que María es mujer, estando los dos en la misma situación (por ejemplo, pagándole menos sueldo por hacer exactamente el mismo trabajo en el mismo departamento)."
+  },
+  {
+    "pregunta": "Un concepto fundamental en las leyes de igualdad es el de 'Acción positiva'. ¿Qué significa exactamente este término en la gestión de la Administración Pública?",
+    "opciones": [
+      "Discriminar a los hombres de forma permanente.",
+      "Son medidas temporales, que no se considerarán discriminatorias, dirigidas a corregir situaciones patentes de desigualdad de hecho de las mujeres respecto a los hombres, para hacer efectiva la igualdad constitucional.",
+      "Sonríe siempre en el puesto de trabajo.",
+      "Subir el sueldo a todas las empleadas públicas un 10% de forma vitalicia."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Las acciones positivas (o discriminación positiva) son la 'muleta' para arreglar una injusticia histórica. La ley permite favorecer temporalmente a las mujeres (ej: en planes de contratación o subvenciones) para equilibrar la balanza. Ojo, la ley recalca que NO se consideran discriminatorias, y que deben ser temporales (cuando se logre la igualdad real, la medida se retira)."
+  },
+  {
+    "pregunta": "Llegamos a la piedra angular de esta ley: La 'Transversalidad de género' (también llamada Mainstreaming). ¿Qué exige este principio a la Junta de Extremadura?",
+    "opciones": [
+      "Que los hombres y las mujeres se sienten alternativamente en las oficinas.",
+      "La integración de la perspectiva de género en la elaboración, ejecución y seguimiento de TODAS las políticas y acciones desarrolladas por los poderes públicos extremeños, a todos los niveles.",
+      "Que solo haya consejeras mujeres en el Gobierno regional.",
+      "Crear una Consejería aislada que se encargue exclusivamente de las mujeres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La transversalidad significa que la igualdad no es cosa de un solo departamento o de una 'Concejalía de la Mujer'. Significa que la igualdad tiene que cruzar ('atravesar transversalmente') TODO lo que hace la Junta: desde hacer una ley de agricultura, hasta diseñar un software informático de becas. Todo tiene que analizarse con las gafas de la perspectiva de género puestas."
+  },
+  {
+    "pregunta": "Para garantizar la transversalidad de la que hablábamos, la ley impone un trámite obligatorio a la Administración. Todo proyecto de ley o reglamento que apruebe la Junta de Extremadura debe ir acompañado obligatoriamente de un documento. ¿Cuál es?",
+    "opciones": [
+      "Un Informe de Impacto de Género.",
+      "Un Informe de Viabilidad Económica Internacional.",
+      "Un Certificado del Ministerio de Sanidad.",
+      "Una encuesta popular ciudadana."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "Trámite letal si te lo saltas. Si el Consejero de Educación saca un nuevo Decreto sobre colegios, en la carpeta del expediente tiene que haber, por ley, un 'Informe de Impacto de Género'. Si no está ese informe (que evalúa si esa nueva norma perjudica o beneficia a la igualdad entre hombres y mujeres), la ley es nula de pleno derecho."
+  },
+  {
+    "pregunta": "Como futuro informático, cuando programes páginas web oficiales o redactes manuales de usuario, la Ley 8/2011 te obliga a aplicar el principio de 'Uso no sexista del lenguaje'. ¿En qué se traduce esta obligación en la Administración extremeña?",
+    "opciones": [
+      "En eliminar todas las palabras terminadas en 'o'.",
+      "En utilizar un lenguaje y unas imágenes que no oculten, subordinen o infravaloren a las mujeres, erradicando el uso sexista tanto en la redacción de normas como en las comunicaciones, páginas web y formularios administrativos.",
+      "En dirigirse siempre a la ciudadanía utilizando el femenino plural por defecto.",
+      "En que está prohibido usar el idioma castellano clásico."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "No es una 'recomendación' lingüística, es una OBLIGACIÓN legal de tu puesto. En un formulario web (HTML) que programes para la Junta, tienes que cuidar que las opciones, textos e imágenes de la página sean inclusivos. Nada de poner 'Nombre del interesado' asumiendo el masculino universal; debes usar lenguaje inclusivo ('Persona interesada') o desdoblamientos cuando sea necesario."
+  },
+  {
+    "pregunta": "A la hora de nombrar altos cargos en la Junta o formar tribunales de oposición, la ley impone el criterio de 'Representación equilibrada' o 'Presencia equilibrada'. Según la ley extremeña y estatal, ¿qué porcentajes matemáticos definen la presencia equilibrada de mujeres y hombres?",
+    "opciones": [
+      "Exactamente un 50% de hombres y un 50% de mujeres, sin excepción.",
+      "Ninguno de los sexos debe tener una presencia superior al 60% ni inferior al 40%.",
+      "Al menos un 75% de mujeres para compensar desigualdades.",
+      "Un mínimo del 30% de mujeres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "¡El dato numérico más preguntado de la historia de este tema! El 40-60. La ley entiende que el 50-50 matemático a veces es imposible (si el tribunal son 5 personas, no puedes partir a uno por la mitad). Por eso te da una horquilla: el sexo menos representado (sea el hombre o la mujer) NUNCA puede bajar del 40%, y el más representado NUNCA puede pasar del 60%."
+  },
+  {
+    "pregunta": "Dentro de la Administración autonómica, la Ley 8/2011 obliga a crear unas estructuras orgánicas específicas en TODAS y cada una de las Consejerías de la Junta de Extremadura para velar por la igualdad. ¿Cómo se denominan estas estructuras?",
+    "opciones": [
+      "Comités de Ciberseguridad Femenina.",
+      "Unidades para la Igualdad entre Mujeres y Hombres.",
+      "Inspecciones de Género.",
+      "Tribunales de Inquisición Laboral."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Como la igualdad es transversal, no puede estar solo en la Consejería de Asuntos Sociales. La ley ordena crear 'Unidades para la Igualdad' en cada Consejería (Sanidad, Agricultura, Hacienda...). Son el equipo interno encargado de asesorar, recopilar datos segregados por sexo y asegurarse de que su propia Consejería cumple con la Ley de Igualdad."
+  },
+  {
+    "pregunta": "Los Presupuestos de la Comunidad Autónoma de Extremadura son la ley más importante del año. Según el principio de transversalidad, ¿qué deben incorporar obligatoriamente estos presupuestos anuales?",
+    "opciones": [
+      "Una partida económica exclusiva para hombres.",
+      "La perspectiva de género en todo su proceso, debiendo ir acompañados de un informe de impacto de género que analice las partidas de gasto e ingreso desde el enfoque de igualdad.",
+      "Una reducción de impuestos a las mujeres.",
+      "Un anexo prohibiendo la contratación temporal."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El dinero mueve el mundo. No sirve de nada hacer leyes muy bonitas si el dinero público se gasta de forma discriminatoria. El Proyecto de Presupuestos tiene que incluir un 'Informe de impacto de género' que analice, por ejemplo, si el dinero invertido en fomento del empleo está llegando equitativamente a mujeres y a hombres."
+  },
+  {
+    "pregunta": "Entramos en el ámbito de la Violencia de Género en la Ley 8/2011. La ley extremeña de violencia de género tiene un ámbito más amplio que la ley estatal 1/2004. En Extremadura, ¿qué abarca el concepto de 'Violencia de Género'?",
+    "opciones": [
+      "Exclusivamente la violencia ejercida por la pareja o expareja.",
+      "Toda violencia ejercida sobre las mujeres por el mero hecho de serlo, incluyendo no solo el ámbito de la pareja, sino también la violencia intrafamiliar, violencia en el ámbito laboral (acoso sexual), trata de mujeres y mutilación genital femenina.",
+      "Cualquier pelea entre un hombre y una mujer en la calle.",
+      "Solo las lesiones físicas que requieran hospitalización."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "¡Mucho cuidado con esto! La Ley Orgánica estatal 1/2004 define la violencia de género básicamente como la ejercida por la pareja o expareja. PERO la Ley 8/2011 Extremeña amplía el abanico enormemente: aquí también es Violencia de Género el acoso sexual de un jefe a su empleada, la trata con fines de explotación sexual o la mutilación genital. Extremadura protege todos estos casos bajo el paraguas de la violencia de género."
+  },
+  {
+    "pregunta": "En cuanto a los Derechos de las mujeres en situación de violencia de género, el Título V establece el derecho a la 'Atención Integral y Efectiva'. ¿Qué servicios mínimos comprende este derecho a la atención integral?",
+    "opciones": [
+      "Únicamente alojamiento gratuito en hoteles de lujo.",
+      "Información, asesoramiento jurídico, asistencia psicológica y social, apoyo sociolaboral y acogida (alojamiento seguro) para ellas y sus hijos e hijas.",
+      "Solo información mediante un folleto en papel.",
+      "Un billete de avión para abandonar el país."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La Junta de Extremadura garantiza que la víctima no está sola. La Atención Integral significa 'cubrir todas sus necesidades básicas de emergencia': desde darle un abogado gratis para el juicio, un psicólogo para el trauma, ayudarla a encontrar trabajo para que sea independiente económicamente, y si corre peligro, meterla a ella y a sus niños en una Casa de Acogida secreta."
+  },
+  {
+    "pregunta": "Para tener acceso a los derechos, ayudas económicas y servicios sociolaborales autonómicos previstos en la Ley 8/2011, la víctima necesita acreditar legalmente que sufre 'Situación de Violencia de Género'. ¿Cuál de las siguientes vías es VÁLIDA en Extremadura para acreditar esta situación?",
+    "opciones": [
+      "Solo es válida una Sentencia Judicial firme condenatoria.",
+      "Una sentencia condenatoria, una orden de protección, un informe del Ministerio Fiscal, o, como peculiaridad autonómica, un Informe de los servicios sociales de atención a mujeres víctimas de la Administración Autonómica o Local.",
+      "Un certificado médico privado.",
+      "Una simple declaración jurada verbal de la vecina."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Esta es la clave del sistema extremeño. Los juzgados tardan mucho. Una mujer no puede esperar meses a tener una sentencia firme para entrar en una casa de acogida o recibir una ayuda económica. Por eso, en Extremadura, el informe de los trabajadores sociales (la Red de Oficinas de Igualdad o Servicios Sociales) es un documento oficial y suficiente para acreditar que es víctima y 'abrir la puerta' a todos sus derechos y ayudas."
+  },
+  {
+    "pregunta": "El Derecho a la Información (Art. 41) es básico para las víctimas de violencia de género. ¿Qué característica impone la ley sobre cómo debe facilitarse esta información a las mujeres?",
+    "opciones": [
+      "Debe darse exclusivamente por correo postal certificado.",
+      "La información debe ser veraz, clara, accesible, en formato comprensible y, en caso de mujeres con discapacidad, se debe garantizar mediante el uso de lenguajes o medios adaptados (ej. lengua de signos o braille).",
+      "Solo se dará en inglés para proteger la privacidad.",
+      "Se cobrará una tasa de 10 euros por la consulta."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "No puedes darle a la víctima el BOE para que lo lea. Tienes que informarla de sus derechos en un lenguaje claro que ella entienda, en el momento que lo necesite, de forma gratuita y, si es sorda o tiene otra discapacidad, la Administración está obligada a ponerle los medios tecnológicos o humanos (intérprete) necesarios para que entienda todas sus opciones."
+  },
+  {
+    "pregunta": "La Junta de Extremadura puede ser un agente activo en los tribunales cuando ocurre una tragedia por violencia de género. Según la Ley 8/2011, ¿en qué casos está legitimada y obligada la Junta de Extremadura para 'personarse' (actuar judicialmente) como acusación popular en un juicio?",
+    "opciones": [
+      "En todos los casos de insultos verbales.",
+      "En los procedimientos penales por violencia de género en los que se cause la muerte o lesiones graves a mujeres o a sus hijos/as menores, cuando el hecho ocurra en Extremadura o la víctima resida aquí.",
+      "En los casos de divorcio contencioso.",
+      "En ningún caso, es competencia exclusiva del abogado privado de la víctima."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La Junta no se queda de brazos cruzados si asesinan a una extremeña o le causan lesiones graves. La Administración regional, a través de sus abogados (Letrados de la Junta), se presenta en el juzgado como 'Acción Popular' para pedir cárcel para el maltratador, defendiendo así el interés de toda la sociedad extremeña en la erradicación del machismo."
+  },
+  {
+    "pregunta": "A nivel del uso de las tecnologías de la información (TIC) —muy ligado a tu futuro puesto—, la Ley 8/2011 tiene un artículo sobre Sociedad de la Información. ¿Qué deber impone la ley a la Junta de Extremadura en este ámbito?",
+    "opciones": [
+      "Prohibir el acceso a internet a los menores de edad.",
+      "Promover la inclusión de las mujeres en la sociedad de la información, fomentando su acceso a las TIC y promoviendo la alfabetización digital para reducir la brecha digital de género.",
+      "Obligar a las mujeres a trabajar exclusivamente en el sector informático.",
+      "Regalar un ordenador portátil a cada ciudadana."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Aquí entra en juego tu negociado. La brecha digital de género existe (históricamente las mujeres han tenido menos acceso o formación en carreras STEM y tecnologías avanzadas). La Junta está obligada legalmente a crear programas, cursos y aulas de alfabetización digital para asegurar que las mujeres, especialmente en el entorno rural extremeño, dominen las nuevas tecnologías al mismo nivel."
+  },
+  {
+    "pregunta": "En Extremadura, el organismo rector que impulsa, coordina y vigila las políticas de igualdad a nivel superior es el Instituto de la Mujer de Extremadura (IMEX). ¿Qué tipo de entidad pública es el IMEX?",
+    "opciones": [
+      "Una empresa privada subcontratada.",
+      "Un ente público o instituto administrativo dependiente orgánicamente de la Consejería que tenga atribuidas las competencias en materia de igualdad.",
+      "Un sindicato laboral independiente.",
+      "Un ministerio del Gobierno Central en Madrid."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El IMEX (Instituto de la Mujer de Extremadura) es la 'fuerza ejecutora' de la ley. Es un organismo de la Junta de Extremadura que diseña campañas, coordina a los psicólogos, mantiene las casas de acogida y lidera toda la red de asistencia a las víctimas de violencia de género en toda la región."
+  },
+  {
+    "pregunta": "Dentro del concepto de Violencia de Género de la Ley 8/2011, se incluye el 'Acoso Sexual' en el trabajo. Según la ley, ¿cómo se define jurídicamente el acoso sexual?",
+    "opciones": [
+      "Cualquier broma que se haga en la oficina, sea del tipo que sea.",
+      "Cualquier comportamiento, verbal o físico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.",
+      "Invitar a un compañero a tomar un café una vez.",
+      "Pagar menos sueldo por hacer el mismo trabajo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Cuidado con la distinción: 'Acoso por razón de sexo' es menospreciar a alguien por ser mujer (ej: decirle 'vete a fregar'). El 'Acoso Sexual' implica una naturaleza o connotación sexual (tocamientos, comentarios de índole sexual no deseados, presiones para conseguir favores sexuales). Es una forma directa de violencia de género penalizada y proscrita en la Administración."
+  },
+  {
+    "pregunta": "La ley exige a la Junta de Extremadura planificar el futuro. Para ello, el Gobierno de la Comunidad Autónoma debe aprobar de forma periódica un documento estratégico de carácter global. ¿Cómo se llama este documento?",
+    "opciones": [
+      "El Diccionario de Género Oficial.",
+      "El Plan Estratégico para la Igualdad entre Mujeres y Hombres de Extremadura.",
+      "El Plan de Infraestructuras Tecnológicas.",
+      "El Manifiesto Sindical Autónomo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Toda política seria necesita un mapa. La Junta aprueba periódicamente el 'Plan Estratégico para la Igualdad'. Es un documento donde se marcan los objetivos a conseguir en los próximos 4 o 5 años: cuántas empresas queremos que implanten planes de igualdad, cómo vamos a reducir la brecha salarial, y qué medidas educativas en los colegios extremeños se van a tomar."
+  },
+  {
+    "pregunta": "Como opositor a Auxiliar de Informática, te enfrentarás a un Tribunal de Selección. Según la Ley 8/2011, ¿qué composición de género debe tener obligatoriamente el tribunal que corrija tu examen?",
+    "opciones": [
+      "Debe estar formado íntegramente por mujeres para favorecer la acción positiva.",
+      "Debe respetar el principio de presencia equilibrada de mujeres y hombres, salvo por razones fundadas y objetivas debidamente motivadas.",
+      "La composición se elige por sorteo puro, independientemente del sexo.",
+      "Debe haber siempre un 50% exacto de mujeres y hombres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Vuelve a aparecer el famoso principio de 'Presencia Equilibrada' (el 40%-60%). La Junta no puede nombrar un tribunal de 5 informáticos hombres. Tiene que buscar mujeres funcionarias del cuerpo de informática para equilibrar el tribunal. Si es absolutamente imposible (porque no hubiera mujeres en esa especialidad, algo rarísimo hoy en día), tendrían que emitir un informe motivando legalmente esa excepción."
+  },
+  {
+    "pregunta": "La Junta de Extremadura, como la mayor empresa de la región, debe dar ejemplo. ¿Qué instrumento organizativo propio y obligatorio le exige la ley para garantizar la igualdad entre sus propios empleados públicos?",
+    "opciones": [
+      "Un Plan de Igualdad para las empleadas y empleados públicos de la Administración de la Comunidad Autónoma.",
+      "Un sindicato exclusivo para las mujeres funcionarias.",
+      "Un fondo de pensiones privado.",
+      "Un estatuto de vestimenta no sexista en la oficina."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "La Junta no solo legisla para los demás, sino para su propia casa. Debe negociar con los sindicatos y aprobar un 'Plan de Igualdad' interno. En ese plan se analizan cosas como: ¿por qué los informáticos de niveles altos (Jefes de Servicio) son mayoría hombres? ¿Cómo facilitamos el teletrabajo? Y se proponen medidas concretas para arreglarlo."
+  },
+  {
+    "pregunta": "Un concepto vital en el empleo público es la 'Corresponsabilidad'. ¿En qué se diferencia la corresponsabilidad de la simple 'conciliación' de la vida familiar y laboral?",
+    "opciones": [
+      "En que la corresponsabilidad exige que la Junta pague guarderías privadas a todo el mundo.",
+      "En que la conciliación busca que la persona pueda trabajar y cuidar, mientras que la corresponsabilidad implica el reparto equitativo de las tareas de cuidado y del hogar entre mujeres y hombres, evitando que recaigan solo en la mujer.",
+      "Es exactamente lo mismo, son sinónimos legales.",
+      "En que la corresponsabilidad significa trabajar más horas por el mismo sueldo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La ley extremeña insiste mucho en esto. Si la Junta da permisos de paternidad/maternidad o reducción de jornada, y SOLO lo piden las mujeres informáticas, la 'conciliación' existe, pero se está hundiendo la carrera profesional de esas mujeres. El objetivo de la ley es fomentar la 'corresponsabilidad': que tus compañeros hombres también cojan reducciones de jornada y asuman la mitad del peso de los cuidados."
+  },
+  {
+    "pregunta": "Dentro de la Administración (ej. en tu oficina del CAU), si se produce una situación de acoso sexual, ¿cuál es la obligación ineludible de la Administración de la Comunidad Autónoma según la Ley 8/2011?",
+    "opciones": [
+      "Despedir inmediatamente a ambos implicados para evitar problemas.",
+      "Negociar con los representantes del personal un Protocolo de actuación para la prevención del acoso sexual y del acoso por razón de sexo, que incluya medidas de prevención y un procedimiento ágil y confidencial de denuncia.",
+      "Publicar los hechos en el DOE para avergonzar al culpable.",
+      "Dejarlo en manos del jefe de servicio exclusivamente."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El Protocolo Anti-Acoso es obligatorio. La Junta no puede improvisar si una funcionaria denuncia a un compañero. Tiene que haber un procedimiento escrito, negociado con los sindicatos, que proteja a la víctima, garantice el secreto, separe físicamente a agresor y víctima de forma cautelar y actúe con rapidez."
+  },
+  {
+    "pregunta": "Imagínate que eres el informático encargado de redactar el pliego técnico para comprar 500 ordenadores para la Junta. Según la Ley 8/2011 sobre 'Contratos de las Administraciones Públicas', ¿qué puede incluir la Junta en ese contrato para fomentar la igualdad en las empresas privadas?",
+    "opciones": [
+      "Comprar solo ordenadores de color rosa.",
+      "Condiciones especiales de ejecución (cláusulas sociales) orientadas a promover la igualdad, como exigir que la empresa adjudicataria aplique medidas de conciliación o tenga un Plan de Igualdad.",
+      "Obligar a que la empresa fabricante esté liderada por una mujer.",
+      "La ley prohíbe mezclar igualdad con compra de ordenadores."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Es la famosa 'Contratación Pública Responsable'. La Junta tiene tanto poder económico que usa sus contratos como premio. Si una empresa privada quiere vendernos servidores o limpiar nuestros edificios, en los pliegos se introducen 'cláusulas sociales'. Si la empresa tiene un buen Plan de Igualdad o contrata a mujeres víctimas de violencia de género, gana puntos en la licitación."
+  },
+  {
+    "pregunta": "La Junta de Extremadura otorga un reconocimiento público oficial a aquellas empresas privadas de la región que destaquen por aplicar políticas de igualdad en sus plantillas. ¿Cómo se llama este distintivo?",
+    "opciones": [
+      "Medalla de Oro al Mérito Igualitario.",
+      "Marca de Excelencia en Igualdad.",
+      "Premio de la Mujer Trabajadora Extremeña.",
+      "Certificado de Empresa Feminista."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La 'Marca de Excelencia en Igualdad' es un galardón que da la Junta. Una empresa privada (por ejemplo, una consultora informática de Mérida) lo solicita, la Junta comprueba que de verdad pagan lo mismo a hombres y mujeres y no tienen techos de cristal, y les otorga este distintivo que luego pueden usar en su publicidad y les da ventajas en subvenciones."
+  },
+  {
+    "pregunta": "En el ámbito de la Educación, la ley promueve un modelo educativo basado en el desarrollo integral de la persona al margen de los estereotipos de género. ¿Cómo denomina la ley a este pilar de la educación?",
+    "opciones": [
+      "Educación segregada.",
+      "Coeducación.",
+      "Androcentrismo escolar.",
+      "Formación igualitaria intensiva."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La 'Coeducación' no es simplemente juntar a niños y niñas en la misma clase (eso es enseñanza mixta). La Coeducación es educar activamente en la igualdad, enseñando a los niños a expresar sus emociones y a las niñas a liderar proyectos, eliminando los estereotipos de 'niño azul-bruto, niña rosa-delicada'. Es la base para erradicar el machismo desde la base."
+  },
+  {
+    "pregunta": "Respecto a los materiales escolares (libros de texto o el software educativo que puedas mantener como informático), ¿qué exigencia impone la Ley 8/2011 a las editoriales y centros educativos?",
+    "opciones": [
+      "Que los libros sean gratuitos para las niñas.",
+      "La eliminación de los prejuicios y estereotipos sexistas o discriminatorios en los libros de texto y materiales didácticos, fomentando el uso de un lenguaje inclusivo y la visibilización de la aportación de las mujeres a la historia y la ciencia.",
+      "Que no haya imágenes de hombres en los libros de historia.",
+      "Que los materiales se editen en color neutro."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Si coges un libro de ciencias antiguo, casi todos los ejemplos son de científicos hombres. La ley obliga a la Consejería de Educación a vigilar que los nuevos libros (o los recursos web de la plataforma educativa Educarex) visibilicen a mujeres como Marie Curie o Ada Lovelace, y que no perpetúen el estereotipo de 'la mamá en la cocina y el papá leyendo el periódico'."
+  },
+  {
+    "pregunta": "En el ámbito de la Salud, la ley obliga a aplicar la perspectiva de género. Esto no es solo una cuestión de trato amable. ¿Qué implicación médica directa tiene la perspectiva de género en la investigación y atención sanitaria en Extremadura?",
+    "opciones": [
+      "Que las mujeres no tienen que pagar medicamentos.",
+      "Reconocer que hay diferencias biológicas y sociales (morbilidad diferencial), por lo que se debe investigar cómo afectan las enfermedades y los fármacos de forma diferente a mujeres y a hombres.",
+      "Separar los hospitales en pabellones de hombres y de mujeres.",
+      "Solo ofrecer mamografías."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Un ejemplo clínico real: durante años, los síntomas del infarto se estudiaron en hombres (dolor en el brazo izquierdo). Cuando una mujer infartada llegaba a urgencias con dolor de estómago y náuseas (síntomas femeninos comunes), se la mandaba a casa por 'ansiedad'. La ley exige investigar con perspectiva de género porque un mismo fármaco o enfermedad no actúa igual en la biología masculina que en la femenina."
+  },
+  {
+    "pregunta": "Hablemos de los órganos creados por la ley. Existe un órgano colegiado en Extremadura que sirve de cauce para la participación activa de las asociaciones de mujeres en el diseño de las políticas de la Junta. ¿Cuál es?",
+    "opciones": [
+      "El Senado Femenino de Extremadura.",
+      "El Consejo de Participación de las Mujeres.",
+      "La Asamblea de Igualdad y Equidad.",
+      "El Comité de Sabias de la Comunidad."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El 'Consejo de Participación de las Mujeres' es la voz de la calle dentro de la Administración. Es el foro donde las asociaciones feministas, sindicales y organizaciones de mujeres se sientan con la Junta para debatir, proponer medidas o criticar si una política no está funcionando."
+  },
+  {
+    "pregunta": "Existe otro órgano diferente, cuya función no es política, sino técnica: se encarga de recopilar datos estadísticos, hacer estudios, analizar indicadores y evaluar el impacto de las leyes en materia de género. ¿Cómo se llama este órgano?",
+    "opciones": [
+      "Instituto de Estadística de Género.",
+      "Observatorio de la Igualdad o de Género.",
+      "Centro de Datos Femeninos.",
+      "Oficina de Control y Auditoría Machista."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Ojo con confundir ambos órganos. El Consejo es para que las asociaciones HABLEN (participación ciudadana). El Observatorio es para que los técnicos ESTUDIEN (recopilan estadísticas, miden la brecha salarial, elaboran el mapa de la violencia). Son los 'ojos' de la Junta para ver si las medidas de igualdad están funcionando en números reales."
+  },
+  {
+    "pregunta": "En cuanto a los hijos e hijas de las mujeres que sufren violencia de género, ¿cómo los considera legalmente la Ley 8/2011 de Extremadura?",
+    "opciones": [
+      "Como testigos colaterales sin derechos propios.",
+      "Como víctimas directas de la violencia de género, garantizándoles el derecho a la asistencia psicológica, social y educativa especializada.",
+      "Como dependientes económicos exclusivamente.",
+      "No los menciona, la ley es solo para mujeres adultas."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Avance clave en el derecho moderno. Antes, si un padre pegaba a una madre, se decía que los niños 'presenciaban' el hecho. La ley extremeña, adelantándose a otras normas, dejó claro que un niño que vive en un hogar con violencia machista ES una víctima directa del maltrato psicológico (y a veces físico), y por tanto, tiene derecho a sus propios psicólogos y a entrar en la casa de acogida con su madre."
+  },
+  {
+    "pregunta": "Una funcionaria Auxiliar de Informática de la Junta acredita ser víctima de violencia de género y necesita alejarse de su agresor, pero su plaza fija está en Mérida. Según el Estatuto Básico del Empleado Público y la normativa de igualdad, ¿qué derecho especial tiene?",
+    "opciones": [
+      "Solo tiene derecho a pedir la cuenta y renunciar a su plaza.",
+      "Derecho a la movilidad geográfica o traslado a otro puesto de trabajo de características análogas en otra localidad, sin necesidad de que haya vacante publicada.",
+      "Derecho a trabajar con un escolta dentro de la oficina.",
+      "No tiene ningún derecho laboral, es un problema personal."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Protección laboral a la víctima. Si una funcionaria necesita huir a Cáceres o Badajoz porque el agresor conoce su ruta al trabajo en Mérida, la Junta le garantiza un 'traslado exprés' por violencia de género, conservando su plaza, su nivel y su sueldo. Es un mecanismo de protección vital."
+  },
+  {
+    "pregunta": "Además de la movilidad, ¿qué otro derecho laboral ampara a una funcionaria víctima de violencia de género si el maltrato le impide asistir al trabajo con normalidad?",
+    "opciones": [
+      "Se le descuentan las horas de su sueldo sin excepción.",
+      "Las faltas de asistencia totales o parciales (retrasos) motivadas por su situación física o psicológica tendrán la consideración de justificadas, si así lo determinan los servicios sociales o de salud.",
+      "Se le obliga a coger vacaciones.",
+      "Se le despide temporalmente hasta que se recupere."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Si una víctima no puede ir a trabajar un martes porque ha pasado la noche en urgencias por una paliza, o porque está hundida psicológicamente tras un ataque, esas horas NO se le pueden descontar de la nómina, ni se le abre un expediente disciplinario. Presentando el informe de la trabajadora social o médico, se consideran ausencias plenamente justificadas por violencia de género."
+  },
+  {
+    "pregunta": "La publicidad institucional de la Junta de Extremadura (carteles, spots en Canal Extremadura, etc.) está sometida a la ley de igualdad. ¿Qué prohíbe expresamente la Ley 8/2011 en este ámbito?",
+    "opciones": [
+      "Emitir anuncios de más de 30 segundos.",
+      "Realizar, promover o financiar campañas publicitarias que atenten contra la dignidad de las mujeres, las cosifiquen o utilicen mensajes sexistas que refuercen estereotipos de género.",
+      "Contratar actores masculinos.",
+      "Poner música en los anuncios institucionales."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La Junta no puede gastar dinero público en anuncios donde, por ejemplo, para vender turismo aparezca la mujer solo como un 'adorno' en bikini junto a la piscina (cosificación), o donde en una campaña de conciliación solo salgan madres cuidando bebés y ningún padre. La publicidad tiene que ser un motor de cambio, no de retroceso."
+  },
+  {
+    "pregunta": "En el mundo laboral y de prevención de riesgos (que acabamos de ver en el tema anterior), las mujeres sufren riesgos diferentes (ej. durante el embarazo o lactancia). La Ley 8/2011 obliga a integrar la perspectiva de género en:",
+    "opciones": [
+      "La edad de jubilación.",
+      "Las Evaluaciones de Riesgos Laborales, analizando los riesgos específicos que afecten diferencialmente a trabajadoras y trabajadores.",
+      "La compra exclusiva de sillas ergonómicas rosas.",
+      "Las multas de tráfico in itinere."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Tema cruzado con prevención. Un puesto con exposición a productos químicos puede no ser letal para un hombre adulto, pero ser teratogénico (causar malformaciones) en una trabajadora embarazada. La evaluación de riesgos tiene que poner las 'gafas violetas' y evaluar no solo el puesto, sino quién se sienta en él."
+  },
+  {
+    "pregunta": "A nivel procesal y judicial (y administrativo), cuando hay una denuncia por discriminación por razón de sexo (ej. 'me han echado por quedarme embarazada'), rige un principio procesal especial llamado 'Inversión de la Carga de la Prueba'. ¿Qué significa esto?",
+    "opciones": [
+      "Que el juez tiene que probarlo todo.",
+      "Que cuando la persona trabajadora aporta indicios razonables de discriminación por sexo, corresponde a la persona demandada (el jefe/empresa) probar que su actuación tuvo causas objetivas y no discriminatorias.",
+      "Que las pruebas documentales no sirven, solo los testigos.",
+      "Que la mujer tiene que aportar vídeos de la discriminación."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Excepción jurídica enorme. En derecho normal, el que acusa tiene que demostrarlo. Pero la discriminación es muy difícil de probar (un jefe nunca te da un papel que ponga 'te despido por estar embarazada'). Así que la ley dice: si la trabajadora aporta indicios lógicos de discriminación, se invierten los papeles. Ahora es la empresa la que tiene que sudar en el juicio para demostrar que la despidió por motivos laborales reales y no por machismo. (Ojo: esto aplica en lo laboral, NUNCA en derecho penal/delitos)."
+  },
+  {
+    "pregunta": "Para la atención de proximidad a mujeres, Extremadura cuenta con una red de profesionales distribuidos por mancomunidades y ayuntamientos que hacen la atención primaria en igualdad y violencia. ¿Cómo se conoce a esta red?",
+    "opciones": [
+      "Cuerpos de Seguridad Femenina de Extremadura.",
+      "Red de Oficinas de Igualdad y de Violencia de Género.",
+      "Puntos de Encuentro Patriarcal.",
+      "Comisarías de Género."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Las Oficinas de Igualdad y Violencia de Género están repartidas por toda Extremadura (Mancomunidades, grandes ciudades). Son la primera 'puerta' a la que llama una mujer de un pueblo que sufre maltrato o que quiere asesorarse sobre sus derechos. Allí hay abogadas, psicólogas y agentes de igualdad que hacen esa primera valoración y la conectan con el IMEX."
+  },
+  {
+    "pregunta": "La Formación del personal de la Junta de Extremadura (esos cursos que harás en la Escuela de Administración Pública, la SAP) está también regulada en esta ley. ¿A quién se dirige de forma 'prioritaria' la formación en igualdad?",
+    "opciones": [
+      "Solo a las mujeres ordenanzas.",
+      "Al personal que ocupe puestos de responsabilidad técnica o política, personal de recursos humanos y miembros de tribunales de selección, para garantizar que aplican el principio de igualdad.",
+      "A los funcionarios a punto de jubilarse.",
+      "Exclusivamente al personal informático de los hospitales."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Todos deben formarse, pero la ley pone el foco en los que mandan y deciden. Si el de Recursos Humanos no sabe lo que es la discriminación indirecta, el sistema falla. Si un miembro del tribunal de oposiciones es machista, el sistema falla. Por eso es obligatorio darles 'gafas de género' mediante formación específica a los altos cargos y personal de RRHH."
+  },
+  {
+    "pregunta": "Si una mujer víctima de violencia de género, a causa de dicha violencia, carece de ingresos y recursos para ser independiente, la Ley 8/2011 prevé apoyos económicos. ¿Cuál es el objetivo principal de las ayudas económicas autonómicas para estas víctimas?",
+    "opciones": [
+      "Pagarles unas vacaciones en el extranjero.",
+      "Garantizar sus necesidades básicas y facilitar su autonomía, integración sociolaboral y recuperación integral (ej. ayudas para pagar el alquiler al irse de casa del agresor).",
+      "Comprar un coche de lujo a su nombre.",
+      "Pagar las multas de tráfico de su expareja."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El dinero ata a muchas mujeres a sus maltratadores ('Si me voy, no tengo para dar de comer a mis hijos'). Las ayudas económicas de la Junta (que gestiona el IMEX) son ayudas de emergencia social. Sirven para pagar la fianza de un piso nuevo, comprar en el supermercado y darle un respiro económico mientras los orientadores laborales le encuentran un trabajo que le dé la libertad definitiva."
+  },
+  {
+    "pregunta": "En el bloque anterior vimos el 'Acoso Sexual'. Ahora bien, ¿cómo define exactamente la Ley 8/2011 el 'Acoso por razón de sexo'?",
+    "opciones": [
+      "Cualquier acercamiento físico no consentido en el entorno de trabajo.",
+      "Cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo.",
+      "Pagar menos sueldo a una persona sin justificación.",
+      "Despedir a una mujer por quedarse embarazada."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Ojo a la diferencia que a los tribunales les encanta. El 'Acoso Sexual' tiene un componente carnal o sexual. El 'Acoso por razón de sexo' NO tiene por qué ser sexual. Es cuando se ataca la dignidad de la persona solo por ser hombre o mujer (ej: hacer chistes machistas constantes en la oficina o decirle a una compañera 'tú no sirves para la informática porque eso es cosa de tíos'). Ambos crean un entorno hostil y están penalizados."
+  },
+  {
+    "pregunta": "Dentro de la Administración, para que los datos sean reales y útiles, la Ley 8/2011 impone un principio estadístico fundamental a la Junta de Extremadura. ¿Qué obligación tienen todos los registros, encuestas y estadísticas oficiales que elabore la Junta?",
+    "opciones": [
+      "Deben publicarse en inglés y en castellano.",
+      "Deben incluir sistemáticamente la variable de sexo en los datos, es decir, desglosar y desagregar los datos por hombres y mujeres para poder visibilizar las diferencias y brechas existentes.",
+      "Deben ocultar el sexo de las personas para proteger su identidad.",
+      "Deben realizarse exclusivamente a mujeres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Es la 'Desagregación de datos por sexo'. Si la Junta hace una estadística de 'Usuarios de la Sede Electrónica' y pone que hay 100.000 usuarios, no nos sirve para evaluar la igualdad. Tiene que decir obligatoriamente cuántos son hombres y cuántas son mujeres para saber si existe una brecha digital de género que haya que corregir."
+  },
+  {
+    "pregunta": "Si un Auxiliar de Informática que trabaja en un Centro de Salud (SES) descubre indicios fundados de que una ciudadana está sufriendo violencia de género, ¿qué deber ineludible le impone su condición de empleado público?",
+    "opciones": [
+      "No hacer nada para no invadir su privacidad.",
+      "Comunicarlo a las autoridades competentes (Fuerzas y Cuerpos de Seguridad o Ministerio Fiscal) y a los servicios especializados de atención a las víctimas.",
+      "Llamar al maltratador para pedirle explicaciones.",
+      "Publicarlo en sus redes sociales personales para pedir ayuda."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los empleados públicos tenemos el deber de denuncia. Si, arreglando un ordenador en una consulta, escuchas o ves algo que evidencia un caso de violencia de género, no puedes mirar hacia otro lado. Tienes la obligación legal y moral de ponerlo en conocimiento de los protocolos del SES y de las autoridades."
+  },
+  {
+    "pregunta": "En el ámbito de la Salud, la Ley extremeña exige una postura proactiva. ¿Qué herramienta organizativa deben aplicar los centros sanitarios (SES) para detectar la violencia de género antes de que llegue la denuncia judicial?",
+    "opciones": [
+      "Protocolos de detección precoz de la violencia de género en urgencias y atención primaria.",
+      "Cámaras de vigilancia en las salas de espera.",
+      "Tests psicológicos obligatorios anuales a todas las pacientes.",
+      "Preguntar a los maridos por el estado de sus mujeres."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "La sanidad es la principal puerta de entrada. Muchas mujeres maltratadas van al médico por lesiones, ansiedad o depresión sin atreverse a denunciar. La ley obliga a que existan protocolos de 'cribado' (detección precoz) para que los médicos y enfermeros sepan hacer las preguntas adecuadas y detecten el maltrato encubierto."
+  },
+  {
+    "pregunta": "En caso de emergencia extrema, cuando la mujer y sus hijos corren peligro de muerte o agresiones graves, la Junta de Extremadura dispone de una red de recursos de alojamiento. ¿Qué recurso es el destinado a la acogida inmediata y de urgencia?",
+    "opciones": [
+      "Los hoteles rurales concertados.",
+      "Las Casas de la Mujer o Espacios de Acogida, que ofrecen un alojamiento seguro y protegido de forma temporal.",
+      "Los pabellones polideportivos municipales.",
+      "Pisos de alquiler libre pagados por un año."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La Red de Acogida de Extremadura es clave. Cuando una mujer huye de madrugada de su casa con lo puesto, la Junta tiene centros de emergencia (cuya ubicación es secreta para que el maltratador no pueda ir a buscarla) donde se les da refugio inmediato, manutención y atención psicológica 24 horas."
+  },
+  {
+    "pregunta": "Extremadura es una región con un alto componente rural. La Ley 8/2011 dedica especial atención a las mujeres rurales. ¿Qué figura legal y administrativa promueve la Junta para fomentar la igualdad económica de las mujeres en el campo?",
+    "opciones": [
+      "La prohibición de que las mujeres conduzcan tractores.",
+      "El fomento de la 'Titularidad Compartida' de las explotaciones agrarias, para que el trabajo de las mujeres sea reconocido legal y económicamente y no quede como una simple 'ayuda familiar'.",
+      "La creación de guarderías exclusivas para mujeres agricultoras.",
+      "Eximir de impuestos a las mujeres rurales de por vida."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Historicamente, la finca, el ganado y los tractores estaban a nombre del marido, pero la mujer trabajaba en el campo tanto o más que él sin cotizar y como 'ayuda familiar'. Si se divorciaban o él moría, ella se quedaba sin nada. La 'Titularidad Compartida' asegura que las mujeres coticen a la Seguridad Social y sean co-dueñas de su medio de vida."
+  },
+  {
+    "pregunta": "La televisión y radio públicas de Extremadura (Canal Extremadura - CEXMA) están atadas por esta ley. ¿Qué prohibición impone la Ley 8/2011 a las emisiones de los medios de comunicación públicos autonómicos?",
+    "opciones": [
+      "Prohíbe emitir películas anteriores a 1990.",
+      "Prohíbe la difusión de contenidos o publicidad que atenten contra la dignidad de la mujer, que utilicen el cuerpo femenino como mero objeto desvinculado del producto, o que justifiquen la violencia de género.",
+      "Prohíbe contratar presentadores masculinos en horario de máxima audiencia.",
+      "Prohíbe hablar de violencia de género antes de las 10 de la noche."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los medios públicos educan. CEXMA no puede emitir publicidad machista, ni cosificadora, ni programas que perpetúen estereotipos denigrantes. Además, están obligados a fomentar una imagen igualitaria, plural y no estereotipada de mujeres y hombres en su programación."
+  },
+  {
+    "pregunta": "Las empresas privadas que contratan con la Junta también sienten el peso de esta ley. ¿Qué ocurre con las empresas privadas de Extremadura de más de 50 trabajadores respecto a los Planes de Igualdad?",
+    "opciones": [
+      "Son voluntarios si la empresa recibe subvenciones.",
+      "Están obligadas a elaborar y aplicar un Plan de Igualdad (por la normativa estatal enlazada con la autonómica), y la Junta fomentará y exigirá este cumplimiento en la contratación y subvenciones públicas.",
+      "Están exentas de la Ley de Igualdad.",
+      "Solo tienen que enviar un email anual a la Junta prometiendo cumplir la ley."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La normativa ha ido endureciéndose. Hoy en día, si una empresa informática de más de 50 trabajadores quiere pujar por un contrato de la Junta, tiene que tener aprobado su Plan de Igualdad. Si no lo tiene, se queda fuera de los concursos públicos y de las subvenciones."
+  },
+  {
+    "pregunta": "Para coordinar todas las actuaciones entre sanidad, educación, policía, juzgados y servicios sociales frente a un caso de maltrato, la Ley 8/2011 crea un órgano interinstitucional específico. ¿Cómo se denomina?",
+    "opciones": [
+      "La Comisaría Virtual de Igualdad.",
+      "La Comisión de Coordinación contra la Violencia de Género.",
+      "El Grupo Operativo de Género (GOG).",
+      "El Tribunal Regional de Violencia."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Cuando una mujer denuncia, se activan muchos frentes (policía, psicólogos, ayudas del IMEX, medidas escolares para los hijos). Si esos organismos no hablan entre sí, la víctima sufre 'victimización secundaria' (tener que contar su drama 20 veces). La Comisión de Coordinación asegura que todos los recursos actúen como un solo bloque."
+  },
+  {
+    "pregunta": "El artículo relativo a la educación (Transversalidad en el ámbito educativo) impone la existencia de una figura clave en todos los consejos escolares o centros educativos sostenidos con fondos públicos. ¿Cuál es?",
+    "opciones": [
+      "Un policía en cada colegio.",
+      "La figura del/la representante o Coordinador/a de Igualdad en los consejos escolares, encargado/a de impulsar medidas coeducativas y de prevención de la violencia de género.",
+      "Un profesor que solo enseñe sobre feminismo.",
+      "Un inspector externo del IMEX semanalmente."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los centros educativos tienen que tener a una persona (un profesor o miembro del consejo) designado específicamente para velar por la Igualdad. Se encarga de vigilar que no haya machismo en los patios, impulsar actividades el 8 de marzo y promover la resolución pacífica de conflictos entre los alumnos."
+  },
+  {
+    "pregunta": "En cuanto a los Agresores, la Ley 8/2011 asume que el castigo penal corresponde a los jueces, pero la Administración también tiene un papel preventivo. ¿Qué tipo de programas promueve la Junta dirigidos a los hombres maltratadores?",
+    "opciones": [
+      "Programas para pagarles una indemnización si se portan bien.",
+      "Programas voluntarios de rehabilitación y reeducación psicosocial orientados a erradicar las conductas violentas y prevenir la reincidencia, sin que esto sustituya las condenas penales.",
+      "Programas de trabajos forzados en la agricultura.",
+      "Ninguno, la Junta no puede interactuar con los agresores."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Aunque la prioridad absoluta es la víctima, la ley entiende que si no reeducas al maltratador, cuando salga de la cárcel o tenga otra pareja, volverá a maltratar. Por eso, el IMEX y los servicios sociales pueden organizar (o derivar a) terapias de reeducación conductual para machistas, siempre que no sirvan como excusa para eludir la pena de cárcel."
+  },
+  {
+    "pregunta": "En materia de Cultura y Deporte, la Junta de Extremadura debe fomentar la igualdad. ¿Qué práctica deportiva prohíbe o no subvencionará la Administración Autonómica según esta ley?",
+    "opciones": [
+      "Los deportes de contacto físico.",
+      "Aquellas competiciones, pruebas o actividades deportivas que discriminen, establezcan premios desiguales entre categorías masculinas y femeninas, o utilicen la imagen de la mujer como reclamo sexual.",
+      "El fútbol femenino profesional.",
+      "Los deportes que no se jueguen en equipo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Se acabó lo de dar un coche al ganador del torneo masculino y un juego de toallas a la ganadora del torneo femenino. Si el torneo quiere apoyo institucional, infraestructuras o dinero de la Junta de Extremadura, los premios tienen que ser idénticos y el trato igualitario."
+  },
+  {
+    "pregunta": "El 'Uso del tiempo' es un concepto avanzado que recoge la ley extremeña. ¿Qué busca la Junta con las políticas de 'racionalización de horarios'?",
+    "opciones": [
+      "Obligar a todos a trabajar en turno de noche.",
+      "Impulsar horarios laborales, comerciales y de servicios que faciliten la conciliación y la corresponsabilidad, adaptando los tiempos de trabajo a los ritmos de la vida personal y familiar (evitando jornadas partidas interminables).",
+      "Reducir las vacaciones a la mitad.",
+      "Que el reloj de todos los ordenadores sea exactamente el mismo."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El modelo español clásico de salir a las 14:00, parar 3 horas a comer y salir de la oficina a las 19:30 es nefasto para conciliar. La Junta promueve (tanto en sus propias oficinas como impulsándolo en las empresas privadas) la jornada continuada, flexibilidad horaria en las entradas y salidas, y el teletrabajo para que puedas recoger a tus hijos del colegio sin renunciar a tu carrera profesional."
+  },
+  {
+    "pregunta": "El fomento del empleo femenino es prioridad. Si una empresa extremeña contrata a una mujer que ha acreditado ser víctima de violencia de género, ¿qué apoyo específico contempla la legislación autonómica?",
+    "opciones": [
+      "Ninguno, las empresas privadas no pueden recibir ayudas públicas.",
+      "Subvenciones, bonificaciones en las cuotas sociales y ayudas directas a la contratación, para incentivar a las empresas a darles una oportunidad laboral que les proporcione independencia económica.",
+      "El Estado le paga el sueldo íntegro durante 10 años.",
+      "La empresa queda exenta de cumplir la normativa de riesgos laborales."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Una mujer maltratada necesita salir de ese círculo, y la llave es el dinero propio. La Junta incentiva a las empresas (mediante el SEXPE y otras consejerías) dando dinero ('subvenciones a fondo perdido') a la empresa que le haga un contrato indefinido a una mujer que acredite ser víctima de violencia de género."
+  },
+  {
+    "pregunta": "Las fechas simbólicas están institucionalizadas en la Ley 8/2011. ¿Cuáles son los dos Días Internacionales clave que la Junta de Extremadura está obligada a conmemorar con actividades y campañas oficiales?",
+    "opciones": [
+      "El 1 de mayo y el 12 de octubre.",
+      "El 8 de marzo (Día Internacional de las Mujeres) y el 25 de noviembre (Día Internacional de la Eliminación de la Violencia contra la Mujer).",
+      "El 14 de febrero y el 1 de enero.",
+      "El 8 de agosto y el 25 de septiembre."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Pregunta muy fácil de memorizar pero que cae habitualmente. El `8M` (Día de las Mujeres) y el `25N` (Día contra la violencia machista). En esas dos fechas, todas las Consejerías, desde Educación hasta Agricultura, están obligadas por ley a lanzar campañas de visibilización y repulsa."
+  },
+  {
+    "pregunta": "La ley no puede ser papel mojado, hay que evaluar si funciona. ¿Qué obligación periódica tiene la Junta de Extremadura (el Gobierno autonómico) ante la Asamblea de Extremadura (el Parlamento) respecto a esta ley?",
+    "opciones": [
+      "Ninguna, una vez aprobada la ley se aplica sola.",
+      "Remitir un Informe periódico de Evaluación sobre la aplicación y efectividad de la Ley, detallando el grado de cumplimiento de los planes de igualdad y las acciones contra la violencia de género.",
+      "Pedir perdón públicamente.",
+      "Disolver la Asamblea si no hay igualdad real en 5 años."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Es el mecanismo de rendición de cuentas (Accountability). El Gobierno (que es quien ejecuta y gasta el presupuesto) tiene que ir a la Asamblea (donde están los diputados de todos los partidos) y presentar un informe diciendo: 'Con esta ley hemos bajado la brecha salarial un 2% y hemos atendido a 500 mujeres en las oficinas de igualdad'. Si los datos son malos, la Asamblea le exige que corrija el rumbo."
+  },
+  {
+    "pregunta": "Dentro del Empleo Público, la Ley 8/2011 establece medidas sobre los permisos de maternidad/paternidad para evitar la penalización femenina. Si una opositora da a luz justo el día del examen de informática de la Junta de Extremadura, ¿qué protección legal le ampara?",
+    "opciones": [
+      "Pierde el derecho a examinarse y debe esperar a la siguiente convocatoria.",
+      "Deberá preverse en las bases la adaptación o aplazamiento de las pruebas para las mujeres embarazadas que se encuentren de parto o en los primeros días del puerperio, asegurando el principio de igualdad de oportunidades.",
+      "Se le aprueba directamente la oposición por compasión.",
+      "Debe ir a examinarse al hospital."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Un clásico de las garantías en las oposiciones modernas. Estar embarazada o de parto no es una enfermedad, pero te incapacita físicamente ese día. La Junta no puede excluirte. El tribunal aplazará tu examen (o te mandará a miembros del tribunal al hospital si tú estás dispuesta y el médico lo autoriza) para que puedas ejercer tu derecho al empleo público sin ser penalizada por tu maternidad."
+  },
+  {
+    "pregunta": "Hablemos de urbanismo y ordenación del territorio. Sí, la Ley de Igualdad también llega aquí. ¿Cómo se aplica la perspectiva de género cuando la Administración regional o local diseña un nuevo barrio, un parque o un edificio público?",
+    "opciones": [
+      "Pintando los edificios públicos con colores neutros.",
+      "Evitando crear zonas oscuras, pasadizos peligrosos o barreras arquitectónicas, y diseñando espacios seguros y accesibles que tengan en cuenta las necesidades de cuidado (ej. aceras anchas para carritos) y la prevención de agresiones sexuales.",
+      "Construyendo parques exclusivos para mujeres.",
+      "Solo se aplica a la construcción de polideportivos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Es el 'Urbanismo con perspectiva de género'. Si diseñas un parque muy bonito pero sin farolas, o un túnel peatonal muy largo y oscuro, estás creando un 'punto negro' donde las mujeres no van a pasar por la noche por miedo a agresiones sexuales (limitando su libertad de movimiento). La ley obliga a que los arquitectos y aparejadores públicos eviten estos diseños peligrosos."
+  },
+  {
+    "pregunta": "En las subvenciones públicas que otorga la Junta (ej. para modernización tecnológica de pymes), la Ley 8/2011 incluye cláusulas de valoración. ¿Qué significa que se incluyan 'criterios de desempate' por razón de género en una subvención?",
+    "opciones": [
+      "Que los hombres nunca pueden recibir subvenciones.",
+      "Que en caso de que dos proyectos tengan la misma puntuación técnica, se dará preferencia al proyecto de la empresa que acredite mayor porcentaje de mujeres en plantilla o mejores medidas de conciliación.",
+      "Que el dinero se sortea a cara o cruz.",
+      "Que se obliga a las mujeres a montar empresas informáticas."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Es una forma indirecta de fomentar la igualdad. Si yo, como Junta, tengo 10.000 euros para repartir y dos empresas empatan a 90 puntos técnicos en su proyecto; la ley me dice que use el 'desempate social'. La empresa que tenga un plan de igualdad y un 50% de mujeres directivas, se lleva el dinero antes que la empresa que no lo tiene."
+  },
+  {
+    "pregunta": "Y para rematar este bloque y el Tema 25 de Igualdad: Ante cualquier duda técnica, jurídica o procedimental sobre cómo aplicar la Ley 8/2011 en las diferentes políticas, ¿cuál es el organismo de referencia y asesoramiento experto en la Junta de Extremadura?",
+    "opciones": [
+      "El Tribunal Superior de Justicia de Extremadura.",
+      "El Instituto de la Mujer de Extremadura (IMEX).",
+      "La Inspección de Trabajo.",
+      "La Secretaría General de Informática."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El IMEX es el centro de mando. Si el Jefe de Informática no sabe cómo hacer que una base de datos web sea inclusiva, o si la Consejería de Hacienda no sabe cómo redactar el informe de impacto de género de sus presupuestos, no se lo inventan: llaman a las técnicas del IMEX, que son las verdaderas especialistas y asesoras en la materia."
+  },
+  {
+    "pregunta": "Como Auxiliar de Informática vas a ver muchos títulos y nombramientos en la Intranet de la Junta. Según el artículo 27 de la Ley 8/2011 sobre lenguaje administrativo, ¿qué obligación existe respecto a la denominación de las profesiones y cargos?",
+    "opciones": [
+      "Se debe usar siempre el neutro inglés.",
+      "Las denominaciones de las profesiones, oficios o cargos públicos deben figurar obligatoriamente en femenino cuando la persona que los desempeñe sea una mujer (ej. 'la Jefa de Servicio', 'la Técnica').",
+      "Se mantendrá la denominación masculina clásica por tradición histórica.",
+      "Se prohíbe el uso de títulos en los documentos de la Junta."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El lenguaje construye realidades. La ley extremeña prohíbe explícitamente seguir usando el masculino genérico para nombrar cargos ocupados por mujeres. Si María aprueba tu misma oposición, en su nombramiento del DOE debe poner 'Auxiliar' o 'Técnica', y en la puerta de su despacho debe poner 'Jefa de Sección', no 'Jefe de Sección'."
+  },
+  {
+    "pregunta": "Imagina que en la Universidad de Extremadura (UEx) se están diseñando nuevos grados y másteres. ¿Qué obligación impone la Ley 8/2011 al sistema universitario extremeño en materia de igualdad?",
+    "opciones": [
+      "Ninguna, la Universidad es totalmente autónoma e independiente de esta ley.",
+      "Fomentar la creación de una Facultad de la Mujer.",
+      "Integrar la perspectiva de género en los planes de estudio e impulsar la investigación especializada en materia de igualdad y estudios de género.",
+      "Obligar a que todos los rectores sean mujeres alternativamente."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "La Universidad no es un ente aislado. La ley obliga a la UEx a que sus investigaciones (científicas, médicas o sociológicas) tengan perspectiva de género, y a que en los planes de estudio se visibilice el trabajo de las mujeres investigadoras que la historia ha ocultado."
+  },
+  {
+    "pregunta": "Además de la investigación, a nivel organizativo, ¿qué estructura específica exige la ley que se cree dentro de la Universidad de Extremadura para velar por estas políticas?",
+    "opciones": [
+      "Una Unidad de Igualdad.",
+      "Un Consejo de Estudiantes Feministas.",
+      "Una Policía Universitaria de Género.",
+      "Un Tribunal de Acoso."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "Al igual que las Consejerías de la Junta tienen su 'Unidad para la Igualdad', la Universidad de Extremadura está obligada legalmente a contar con su propia 'Unidad de Igualdad'. Esta unidad asesora al Rectorado, vigila que no haya acoso en los campus y promueve la paridad en las cátedras."
+  },
+  {
+    "pregunta": "Abordemos las necesidades básicas. Si una mujer víctima de violencia de género tiene que huir de su casa y carece de medios para alquilar un piso, el Título V de la Ley 8/2011 prevé ayudas de vivienda. ¿Qué derecho concreto tienen estas víctimas respecto a las viviendas públicas de la Junta de Extremadura?",
+    "opciones": [
+      "Se les regala una casa en propiedad.",
+      "Tienen derecho a acceder a los pisos piloto de las promociones privadas.",
+      "Se las considera un colectivo de atención prioritaria para el acceso a las viviendas de promoción pública, reservando un cupo específico para ellas.",
+      "Se les paga el 100% de la hipoteca de su casa actual."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Cuando la Administración construye viviendas sociales de protección oficial (promoción pública), la ley dice que no pueden sortearse todas por igual. Hay que crear un 'cupo reservado' y prioritario para las víctimas de violencia de género, porque necesitan un techo seguro y barato urgente para poder reconstruir su vida lejos del maltratador."
+  },
+  {
+    "pregunta": "Dentro del concepto de violencia de género, la ley extremeña reconoce varias formas. Si un maltratador le quita la tarjeta de crédito a su mujer, le prohíbe trabajar y le controla cada céntimo que gasta para que no pueda escapar, ¿qué tipo de violencia de género está ejerciendo según las definiciones sociológicas y legales?",
+    "opciones": [
+      "Violencia física menor.",
+      "Violencia económica.",
+      "Acoso laboral.",
+      "Trata de seres humanos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La violencia no es solo física (golpes) o psicológica (insultos). La 'Violencia Económica' es una de las formas más crueles de maltrato. Al privar a la mujer de recursos económicos o prohibirle trabajar, el agresor asegura que ella dependa de él al 100% para comer, impidiendo que huya."
+  },
+  {
+    "pregunta": "La Junta de Extremadura otorga muchos premios anuales (como las Medallas de Extremadura o premios literarios). Según la Ley 8/2011, ¿cómo deben formarse los jurados que otorgan estos premios públicos?",
+    "opciones": [
+      "Deben elegirse por votación popular en internet.",
+      "Deben estar compuestos mayoritariamente por mujeres siempre.",
+      "Deben respetar el principio de presencia equilibrada (40%-60%) de mujeres y hombres.",
+      "No hay reglas, los elige el Presidente de la Junta libremente."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Otra aplicación del famoso 40-60. Si la Junta organiza el Premio de Informática y Tecnología de Extremadura, el jurado de expertos no puede estar formado por 10 hombres. Si solo hay hombres en el jurado, tenderán (inconscientemente o no) a premiar currículums y estilos masculinos. La presencia equilibrada garantiza justicia en el reconocimiento."
+  },
+  {
+    "pregunta": "Hemos hablado del Observatorio de la Igualdad. ¿A qué Consejería de la Junta de Extremadura está adscrito orgánicamente el Instituto de la Mujer de Extremadura (IMEX) y sus órganos dependientes?",
+    "opciones": [
+      "A la Consejería con competencias en materia de Hacienda.",
+      "A la Presidencia de la Junta o a la Consejería que tenga atribuidas las competencias en materia de igualdad.",
+      "A la Consejería de Sanidad obligatoriamente.",
+      "Al Tribunal Superior de Justicia."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Las estructuras cambian con cada gobierno (a veces Igualdad está en Presidencia, a veces es una Consejería propia, a veces va con Servicios Sociales). Por eso la ley dice genéricamente: 'A la Consejería con competencias en materia de igualdad'. El IMEX cuelga directamente de ahí."
+  },
+  {
+    "pregunta": "Entramos en el Título VI: Infracciones y Sanciones. Sí, esta ley también castiga. Si una empresa privada de Extremadura despide a una trabajadora como represalia por haber denunciado previamente a la empresa por discriminación salarial, ¿cómo se califica esta infracción?",
+    "opciones": [
+      "Infracción leve.",
+      "Infracción grave.",
+      "Infracción muy grave.",
+      "No es infracción, el despido es libre."
+    ],
+    "respuesta_correcta": 2,
+    "explicacion": "Las represalias son lo peor que puede hacer una empresa. El 'Garantía de indemnidad' protege al trabajador. Si te quejas por discriminación y el jefe te despide en venganza, la Ley 8/2011 (en concordancia con la LISOS) lo cataloga como Infracción Muy Grave, lo que acarrea multas económicas brutales y la anulación del despido."
+  },
+  {
+    "pregunta": "Además de las multas económicas, si una empresa comete una infracción 'Muy Grave' en materia de igualdad o acoso sexual, la Junta de Extremadura puede imponerle sanciones accesorias. ¿Cuál de estas es una sanción accesoria contemplada en la ley?",
+    "opciones": [
+      "Cerrar la empresa definitivamente.",
+      "La prohibición de acceder a ayudas públicas, bonificaciones y subvenciones de la Junta de Extremadura por un período de uno a tres años.",
+      "Obligar a la empresa a cambiar de nombre comercial.",
+      "Encarcelar al responsable de Recursos Humanos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La Junta no puede meter a nadie en la cárcel (eso lo hace el juez de lo penal), pero sí puede 'cortarle el grifo'. Si tu empresa comete acoso sexual o discriminación muy grave, no solo pagas la multa, sino que la Junta te pone en la 'lista negra': durante hasta 3 años no podrás pedir ni un céntimo de subvención pública ni participar en concursos de la Administración."
+  },
+  {
+    "pregunta": "Siguiendo con el régimen sancionador, si el acoso sexual o por razón de sexo se produce dentro de la Administración Pública (ej. entre dos funcionarios), ¿a través de qué cauce se sanciona al agresor?",
+    "opciones": [
+      "A través del Código Penal exclusivamente.",
+      "Mediante la apertura de un expediente disciplinario y la aplicación del régimen sancionador del Estatuto Básico del Empleado Público (TREBEP), que lo considera falta muy grave.",
+      "Mediante un juicio de faltas vecinal.",
+      "La Administración no puede sancionar a funcionarios con plaza fija."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Se cruza el Tema 25 con el Tema 23. Como vimos, la Administración actúa como juez interno en lo laboral. Si un funcionario acosa a una compañera, Recursos Humanos le abre un expediente disciplinario por 'Falta Muy Grave' (separación del servicio/despido o suspensión firme), independientemente de que la víctima, además, le denuncie por la vía penal en el juzgado."
+  },
+  {
+    "pregunta": "Para que las víctimas de violencia de género puedan defenderse en los juicios (divorcios, custodias, juicios penales por maltrato), necesitan un abogado. Si la víctima no tiene dinero, ¿qué derecho le asiste según la legislación?",
+    "opciones": [
+      "Debe defenderse a sí misma.",
+      "Tiene derecho a la Asistencia Jurídica Gratuita en todos los procesos y procedimientos judiciales derivados de la situación de violencia de género, con independencia de sus recursos económicos iniciales.",
+      "La Junta le presta un abogado solo si el juicio es en Extremadura.",
+      "Tiene derecho a que el agresor le pague el abogado."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Principio legal inquebrantable. Normalmente, para tener 'Abogado de Oficio' gratis hay que demostrar que eres pobre. Sin embargo, a las víctimas de violencia de género se les concede la Asistencia Jurídica Gratuita DE INMEDIATO para los asuntos de la violencia, sin mirar su nómina o sus ahorros previos, para evitar que el miedo a no poder pagar un buen abogado las frene a la hora de denunciar."
+  },
+  {
+    "pregunta": "Si un Auxiliar de Informática está diseñando los formularios de recursos humanos de la Junta, y en la casilla de 'Estado Civil' incluye preguntas sobre si la persona planea quedarse embarazada pronto, ¿qué estaría incumpliendo?",
+    "opciones": [
+      "La ley de transparencia.",
+      "La prohibición de solicitar información sobre la vida privada, el estado civil, la opción sexual o la planificación familiar de las personas que aspiran a un empleo o promoción pública.",
+      "No incumple nada, es un dato estadístico legal.",
+      "El derecho al honor militar."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Discriminación en estado puro. La ley prohíbe taxativamente en las entrevistas de trabajo o procesos selectivos hacer preguntas del tipo: '¿Tienes novio?', '¿Piensas ser madre pronto?'. Esa información es del ámbito íntimo y se ha usado históricamente para descartar a las mujeres en los procesos de selección."
+  },
+  {
+    "pregunta": "La atención a los agresores existe. ¿Bajo qué principio o condición fundamental subvenciona o promueve la Junta los programas de reeducación de hombres maltratadores?",
+    "opciones": [
+      "Que el agresor se afilie a un sindicato.",
+      "Que el programa de reeducación del maltratador NO suponga, en ningún caso, una reducción o exención de la protección a la víctima, ni reste recursos económicos destinados a la asistencia de las mujeres maltratadas.",
+      "Que el agresor pague una tasa a la Junta.",
+      "Que la víctima perdone públicamente al agresor."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Se reeduca al agresor, sí, pero nunca a costa de la víctima. El presupuesto para psicólogos de agresores no puede salir de la misma 'hucha' que el de las casas de acogida si eso va a dejar a mujeres sin protección. Y por supuesto, que el hombre vaya a terapia no es excusa para quitarle a la mujer la orden de alejamiento."
+  },
+  {
+    "pregunta": "Las leyes establecen sus plazos y obligaciones. Según la Disposición Adicional de la Ley 8/2011 sobre el lenguaje, ¿cuánto tiempo dio la ley a la Administración de la Junta para adaptar todos sus documentos, formularios y programas informáticos al uso de lenguaje no sexista?",
+    "opciones": [
+      "10 años.",
+      "El plazo máximo de 1 año desde la entrada en vigor de la ley.",
+      "No dio plazo, era una recomendación a futuro.",
+      "100 días hábiles."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Estas disposiciones son carne de tribunal. La ley de 2011 dijo: 'Tenéis exactamente 1 AÑO para revisar todas las webs, PDFs, impresos de impuestos y normativas de la Junta, y quitar el masculino universal excluyente'. A día de hoy, todos los sistemas informáticos de la Junta ya deben estar adaptados."
+  },
+  {
+    "pregunta": "A nivel de coordinación de la policía y la justicia, la Ley de Extremadura hace un llamamiento a la colaboración estatal. ¿Qué sistema de bases de datos nacional deben usar coordinadamente las fuerzas de seguridad y servicios sociales para el seguimiento de los casos de violencia de género?",
+    "opciones": [
+      "El sistema RED de la Seguridad Social.",
+      "El sistema VioGén (Sistema de Seguimiento Integral en los casos de Violencia de Género) del Ministerio del Interior.",
+      "El registro civil central.",
+      "El fichero Robinson."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "VioGén es el 'gran hermano' protector de las víctimas. Es una base de datos informática a nivel nacional. Si una mujer denuncia en Mérida, el policía introduce sus datos y el sistema calcula un 'Nivel de Riesgo' (Bajo, Medio, Alto, Extremo). Si el riesgo es Alto, VioGén genera una alerta automática para que la policía le ponga vigilancia en la puerta de su casa 24 horas."
+  },
+  {
+    "pregunta": "Los huérfanos de la violencia de género son las víctimas más silenciosas. ¿Qué derecho concreto les garantiza la normativa a estos menores si su madre es asesinada por su padre?",
+    "opciones": [
+      "Solo se les cambia de colegio.",
+      "Tienen derecho a recibir apoyo psicológico gratuito, preferencia en el acceso a becas, residencias escolares y comedor, además de la pensión de orfandad correspondiente, garantizando que el asesino pierda la patria potestad.",
+      "Pasan al cuidado del agresor si este sale de la cárcel.",
+      "No tienen medidas específicas de la Junta."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Tras asesinatos terribles, nos dábamos cuenta de que los niños se quedaban desamparados. Las leyes recientes (tanto estatales como autonómicas en su aplicación) blindan a estos menores. Se les da la condición de víctima directa, apoyo económico integral y, por supuesto, se desvincula totalmente su tutela legal de las manos del hombre que ha asesinado a su madre."
+  },
+  {
+    "pregunta": "Hemos hablado del Medio Rural. ¿Qué papel estratégico juegan los Grupos de Acción Local (GAL) en Extremadura respecto a la Ley 8/2011?",
+    "opciones": [
+      "Organizar fiestas patronales.",
+      "Están obligados a incorporar la perspectiva de género en sus planes de desarrollo rural y a destinar recursos para favorecer el emprendimiento femenino en los pueblos.",
+      "Son grupos de vigilancia ciudadana paralela a la policía.",
+      "Financiar exclusivamente equipos de fútbol masculino."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Los Grupos de Acción Local son los que reparten los fondos europeos (LEADER) en los pueblos. Si la Ley de Igualdad no llega a los GAL, el dinero de Europa se lo llevarían solo los hombres para comprar tractores. La ley les obliga a fomentar que las mujeres de los pueblos monten casas rurales, cooperativas o negocios digitales (emprendimiento)."
+  },
+  {
+    "pregunta": "En las oposiciones de la Junta, ¿qué ocurre si una candidata se encuentra en periodo de lactancia natural durante el examen o curso selectivo?",
+    "opciones": [
+      "No puede examinarse.",
+      "La Administración debe facilitar el tiempo y los espacios físicos adecuados (salas de lactancia) para que la candidata pueda amamantar a su hijo o extraerse leche sin perder su derecho a participar en la prueba en condiciones de igualdad.",
+      "Solo puede llevar leche en polvo.",
+      "Debe salir fuera del recinto y pierde ese tiempo de examen."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Protección efectiva. A una opositora no se le puede 'castigar' por estar dando el pecho. Si el examen dura 4 horas, el tribunal está obligado a darle un receso controlado para la lactancia, o facilitarle una sala, y ese tiempo no se le descuenta de sus horas para hacer el examen."
+  },
+  {
+    "pregunta": "El Consejo de Participación de las Mujeres es clave para el diálogo. ¿Qué tipo de asociaciones son las que conforman principalmente y tienen asiento en este Consejo?",
+    "opciones": [
+      "Asociaciones de empresarios del metal.",
+      "Asociaciones de mujeres feministas, federaciones de mujeres rurales, áreas de la mujer de los sindicatos y otras organizaciones que trabajen por la igualdad de género en Extremadura.",
+      "Partidos políticos en exclusiva.",
+      "Clubes deportivos masculinos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El Consejo es el 'parlamento civil' de las mujeres. Allí se sientan las representantes del movimiento feminista de base, las asociaciones de mujeres de los pueblos (que son muchísimas en Extremadura) y las ramas femeninas de UGT y CCOO, para asesorar a la Junta sobre lo que de verdad se necesita a pie de calle."
+  },
+  {
+    "pregunta": "Para terminar este bloque: ¿Qué medida exige la Ley 8/2011 respecto a la 'Conciliación' en los horarios de las propias oficinas de la Administración de la Junta de Extremadura (para ti como empleado público)?",
+    "opciones": [
+      "Trabajar de lunes a domingo sin descansos.",
+      "La flexibilidad en los horarios de entrada y salida, y la promoción del teletrabajo (si el puesto lo permite) para los empleados públicos que tengan personas dependientes o menores a su cargo.",
+      "La obligación de vivir a menos de 5 km del trabajo.",
+      "Imponer turnos de noche obligatorios para las mujeres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La Junta aplica en su casa lo que predica fuera. Por eso nosotros (los empleados públicos) tenemos las 'bolsas de horas de conciliación' o la flexibilidad en el marcaje del reloj (pudiendo entrar entre las 07:30 y las 09:00). Si tienes que llevar al niño a la guardería, esta flexibilidad te salva la vida y fomenta la igualdad real."
+  },
+  {
+    "pregunta": "Como informático de la Junta vas a tener acceso a bases de datos con información muy sensible. Según la normativa de violencia de género, ¿qué principio fundamental rige el tratamiento de los datos personales y de domicilio de las mujeres víctimas y sus hijos?",
+    "opciones": [
+      "El principio de transparencia administrativa, debiendo publicarse en el DOE.",
+      "La garantía absoluta de confidencialidad y la especial protección de sus datos personales, impidiendo en todo caso que el agresor pueda conocer su paradero o domicilio.",
+      "Solo se protegen los datos si la víctima paga una tasa.",
+      "Los datos son públicos para todos los empleados de la Junta."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "¡Atención a esto que en tu puesto es vital! Si trabajas en una base de datos del SES o de Educación y ves que un expediente tiene un 'candado' o marca de violencia de género, ese domicilio está hiperprotegido. Un error informático o humano que revele dónde vive la mujer al maltratador puede costar vidas. La confidencialidad es extrema y saltársela es delito penal."
+  },
+  {
+    "pregunta": "Hemos visto que la funcionaria víctima de violencia de género tiene derecho a una 'Excedencia'. Durante los primeros 6 meses (prorrogables a 18) se le reserva el puesto de trabajo. ¿Pero qué ocurre con el cómputo de su antigüedad (trienios) durante esos meses que no está yendo a trabajar?",
+    "opciones": [
+      "Ese tiempo no cuenta para nada, se considera tiempo en blanco.",
+      "Ese periodo será computable a efectos de antigüedad, trienios, carrera profesional y derechos pasivos (jubilación).",
+      "Se le resta de los años que ya tenía trabajados.",
+      "Solo le cuenta si está dada de alta como autónoma."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La protección es integral. La Junta entiende que ella no ha pedido esa excedencia por capricho, sino para sobrevivir. Por tanto, esos meses que está fuera protegiéndose, el reloj de su carrera sigue corriendo a su favor: suma trienios y le cuenta para la jubilación exactamente igual que si estuviera sentada en la oficina tecleando."
+  },
+  {
+    "pregunta": "La Ley 8/2011 no solo habla de las Consejerías. ¿Tienen las Entidades Locales de Extremadura (Ayuntamientos y Diputaciones) la obligación legal de integrar la perspectiva de género en sus políticas y presupuestos?",
+    "opciones": [
+      "No, la ley es solo para la Junta de Extremadura.",
+      "Sí, la ley es de aplicación a todas las Administraciones Públicas extremeñas, por lo que los Ayuntamientos también deben promover planes de igualdad y aplicar la transversalidad.",
+      "Solo los Ayuntamientos de más de 50.000 habitantes.",
+      "Solo si reciben fondos europeos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La ley abarca a toda la administración de la región. El Ayuntamiento de tu pueblo, por pequeño que sea, no puede sacar unas bases de deportes donde el premio de las mujeres sea inferior al de los hombres. Todos los entes locales deben remar en la misma dirección y cumplir la normativa autonómica de igualdad."
+  },
+  {
+    "pregunta": "A veces, las mujeres sufren discriminación no solo por ser mujeres, sino por otras circunstancias añadidas (ser mujer, tener una discapacidad y vivir en un pueblo pequeño). ¿Cómo denomina la legislación a esta suma de factores de exclusión?",
+    "opciones": [
+      "Discriminación aleatoria.",
+      "Discriminación múltiple o interseccionalidad.",
+      "Discriminación inversa.",
+      "Sesgo de género simple."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Es el concepto de 'Interseccionalidad'. La ley obliga a la Junta a tener un cuidado especial con estos colectivos. No sufre las mismas barreras para encontrar trabajo una mujer joven con estudios universitarios en Badajoz capital, que una mujer gitana, mayor de 50 años y residente en una alquería de Las Hurdes. Las políticas deben adaptarse a esa discriminación múltiple."
+  },
+  {
+    "pregunta": "Si un anuncio de una empresa privada en Extremadura utiliza el cuerpo de la mujer de forma vejatoria, el Instituto de la Mujer de Extremadura (IMEX) tiene potestad para actuar. ¿Qué acción legal puede emprender el IMEX contra esa publicidad ilícita?",
+    "opciones": [
+      "Solo puede publicar una queja en sus redes sociales.",
+      "Está legitimado para exigir el cese inmediato y la rectificación de la publicidad ilícita, pudiendo acudir a los tribunales si el anunciante se niega.",
+      "No puede hacer nada, existe libertad de empresa absoluta.",
+      "Puede quemar los carteles publicitarios en la calle."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El IMEX tiene 'dientes'. Si una discoteca en Cáceres saca un cartel machista degradante, el IMEX envía un requerimiento formal exigiendo que lo retiren. Si la discoteca no hace caso, los abogados de la Junta los llevan al juzgado por publicidad ilícita sexista, y el juez ordenará retirarla y pagar las costas."
+  },
+  {
+    "pregunta": "Dentro de la red de protección en Extremadura, existen las Casas de la Mujer o Casas de Acogida. Pero, ¿cuál es el recurso previo que se utiliza para los primeros días, cuando la situación es de máximo riesgo o de madrugada?",
+    "opciones": [
+      "El Centro de Emergencia.",
+      "El Parador Nacional de Turismo.",
+      "El calabozo de la comisaría local.",
+      "La sala de espera de urgencias."
+    ],
+    "respuesta_correcta": 0,
+    "explicacion": "La ruta de acogida tiene pasos. El 'Centro de Emergencia' es la UVI de la violencia de género: una casa donde se entra a cualquier hora, estancia corta (días o semanas) hasta que pasa el peligro inminente y se hace la valoración. De ahí, si necesita seguir escondida y reconstruir su vida, pasa a la 'Casa de Acogida' (estancia media/larga)."
+  },
+  {
+    "pregunta": "En cuanto a la Salud y los Derechos Sexuales y Reproductivos, ¿qué obligación impone la Ley 8/2011 al Sistema Sanitario Público de Extremadura (SES)?",
+    "opciones": [
+      "Prohibir los métodos anticonceptivos.",
+      "Garantizar la información, educación y el acceso a los métodos de planificación familiar y al ejercicio de los derechos sexuales y reproductivos en condiciones de igualdad y respeto a la intimidad.",
+      "Cobrar los servicios de ginecología.",
+      "Informar a los maridos de las decisiones médicas de sus mujeres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La mujer es dueña de su cuerpo y de sus decisiones. La sanidad extremeña debe proveer campañas de educación afectivo-sexual para jóvenes y garantizar que las mujeres accedan a la planificación familiar libremente, sin tutelas morales ni trabas administrativas."
+  },
+  {
+    "pregunta": "Si un Jefe de Servicio se niega sistemáticamente a entregar a la Inspección de Trabajo los datos de los sueldos de sus empleados desglosados por sexo para ocultar una brecha salarial, ¿qué tipo de infracción está cometiendo según la normativa general vinculada?",
+    "opciones": [
+      "Infracción leve, es solo un despiste burocrático.",
+      "Infracción grave o muy grave por obstrucción a la labor inspectora en materia de igualdad.",
+      "No es infracción, los sueldos son secreto de Estado.",
+      "Es una acción positiva permitida."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Obstruir a un inspector de trabajo o del IMEX que te está pidiendo papeles para comprobar si discriminas a tus trabajadoras, es cavar tu propia tumba legal. La obstrucción a la inspección en temas de igualdad salarial o acoso está tipificada en la ley estatal (LISOS) y apoyada por la autonómica como infracción de altísima gravedad."
+  },
+  {
+    "pregunta": "En el diseño de portales web (algo muy tuyo), la ley impone el lenguaje inclusivo. Pero, ¿se refiere la ley únicamente a las palabras escritas?",
+    "opciones": [
+      "Sí, solo al texto. Las fotos pueden ser las que se quieran.",
+      "No, incluye expresamente la utilización de un lenguaje visual y de imágenes no sexistas, evitando los roles y estereotipos tradicionales en logotipos, fotos o ilustraciones institucionales.",
+      "Solo aplica al código fuente de la página.",
+      "Solo aplica a los vídeos de más de 5 minutos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Si te mandan montar la web de la Consejería de Infraestructuras y pones una foto de archivo de 5 ingenieros hombres debatiendo y una mujer sirviéndoles café, estás incumpliendo la Ley de Igualdad de Extremadura, aunque el texto sea impecable. La imagen comunica tanto o más que la palabra."
+  },
+  {
+    "pregunta": "El sector empresarial público también está sujeto a la ley. Si la Junta de Extremadura tiene una empresa pública (por ejemplo, GPEX o URVIPEXSA), ¿debe cumplir la regla de la representación equilibrada en su Consejo de Administración?",
+    "opciones": [
+      "No, al ser empresa funciona con reglas privadas.",
+      "Sí, los nombramientos en los consejos de administración de las empresas públicas de la Junta deben respetar el principio de presencia equilibrada (40-60%) de mujeres y hombres.",
+      "Solo si el gerente es mujer.",
+      "Están obligadas a tener un 100% de mujeres."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Lo público es público, tenga la forma jurídica que tenga. Las empresas públicas, fundaciones o consorcios donde la Junta tenga mayoría, tienen que aplicar el 40-60 en sus consejos de administración. La Administración no puede exigir a las empresas privadas lo que no cumple en sus propias empresas."
+  },
+  {
+    "pregunta": "La Inspección Educativa de la Junta de Extremadura tiene un papel fiscalizador. En materia de igualdad, ¿qué debe vigilar concretamente un inspector en los colegios e institutos?",
+    "opciones": [
+      "Que los alumnos vayan con uniforme.",
+      "Que se respete el principio de igualdad y no discriminación, supervisando los libros de texto, el desarrollo del plan de convivencia y garantizando que se aplique la coeducación.",
+      "Que solo haya profesoras en educación infantil.",
+      "Que los niños y niñas salgan al recreo a horas diferentes."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El inspector no solo mira que se den bien las matemáticas. Vigila el 'currículo oculto'. Si un colegio utiliza materiales abiertamente machistas, o no frena las conductas de acoso sexista en el patio del instituto, la inspección educativa debe intervenir y obligar a la dirección del centro a corregir la situación basándose en la Ley 8/2011."
+  },
+  {
+    "pregunta": "En cuanto a los Jóvenes y el asociacionismo, la Ley 8/2011 dedica medidas específicas. ¿Qué persigue la Junta al introducir la perspectiva de género en las políticas de Juventud?",
+    "opciones": [
+      "Prohibir que los jóvenes usen el móvil.",
+      "Fomentar relaciones afectivas basadas en el respeto, desmontar los mitos del amor romántico que justifican el control, y prevenir la violencia de género en las primeras relaciones de pareja.",
+      "Obligar a todos los jóvenes a casarse pronto.",
+      "Fomentar la segregación por sexos en los campamentos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Las estadísticas muestran un repunte preocupante de control machista en adolescentes ('enséñame el móvil', 'no te pongas esa falda'). La ley ataca esto de raíz: hay que enseñar a los jóvenes que los celos y el control no son 'amor romántico', son la primera fase de la violencia de género."
+  },
+  {
+    "pregunta": "Imagina que la Junta de Extremadura va a sacar una línea de subvenciones para apoyar económicamente a proyectos asociativos. Según esta ley, ¿a qué tipo de organizaciones se debe prestar especial apoyo técnico y financiero?",
+    "opciones": [
+      "A los clubes de cazadores.",
+      "A las asociaciones de mujeres y organizaciones feministas, considerándolas motores imprescindibles para la consecución de la igualdad real y efectiva en la sociedad civil.",
+      "A las agrupaciones de ex-presidiarios.",
+      "A las asociaciones de grandes empresarios del motor."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El 'Tercer Sector' (asociaciones sin ánimo de lucro). La ley reconoce que las leyes desde los despachos no bastan. Las asociaciones de mujeres llegan donde la Administración no puede (al barrio, al pueblo pequeño). Por eso es obligatorio darles ayudas económicas para que sigan tejiendo esa red de apoyo y empoderamiento."
+  },
+  {
+    "pregunta": "El 'Teletrabajo' es una herramienta potente. Según el espíritu de la normativa de Función Pública y de Igualdad, ¿cómo debe concederse el teletrabajo en la Junta para evitar que se convierta en una trampa machista?",
+    "opciones": [
+      "Debe darse solo a las mujeres para que se queden limpiando la casa.",
+      "Debe promoverse bajo el principio de corresponsabilidad, animando también a los hombres a solicitarlo, para evitar que el teletrabajo aísle a las mujeres de la vida presencial de la oficina y frene su carrera profesional.",
+      "Debe prohibirse totalmente porque reduce la productividad.",
+      "Debe concederse solo a quienes no tengan hijos."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El teletrabajo es un arma de doble filo. Si solo teletrabajan las mujeres informáticas para cuidar de los niños a la vez que programan, sufren sobrecarga doble y desaparecen de las reuniones donde se deciden los ascensos presenciales. La Junta debe impulsar campañas para que los hombres asuman su parte y teletrabajen también por motivos de conciliación."
+  },
+  {
+    "pregunta": "Hemos hablado del Protocolo contra el Acoso Sexual. Pero imagina que te entra un ticket (incidencia) en el CAU de un compañero que dice: 'Mi jefe de servicio me manda las tareas más inútiles y me ningunea constantemente porque, como soy mujer, dice que la informática le viene grande a las chicas'. ¿Ante qué situación estamos técnicamente?",
+    "opciones": [
+      "Acoso sexual.",
+      "Acoso por razón de sexo, sancionable como falta muy grave.",
+      "Un simple conflicto laboral sin importancia.",
+      "Discriminación indirecta permitida."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Ejemplo práctico de examen. No hay tocamientos ni insinuaciones sexuales, por tanto NO es 'Acoso Sexual'. Pero el menosprecio, la degradación de tareas y el machaque psicológico vienen motivados EXCLUSIVAMENTE porque ella es mujer en un 'mundo de hombres'. Eso es de manual: 'Acoso por razón de sexo'. Y a Recursos Humanos le falta tiempo para meterle un expediente disciplinario al jefe."
+  },
+  {
+    "pregunta": "El concepto jurídico final de las políticas de igualdad. La Constitución en su artículo 14 dice que somos iguales ante la ley (Igualdad formal). ¿Qué persigue entonces la Ley 8/2011 de Extremadura?",
+    "opciones": [
+      "Vengarse de los agravios del pasado.",
+      "Pasar de la igualdad 'formal' o legal, a la 'igualdad real y efectiva', removiendo los obstáculos económicos y sociales que impiden que esa igualdad de papel se cumpla en el día a día.",
+      "Que los papeles de la Administración sean de color violeta.",
+      "Crear una sociedad donde los hombres tengan menos derechos legales."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "Este es el 'espíritu de la ley' (relacionado con el Art. 9.2 de la Constitución). No vale con que la ley diga 'todos cobramos lo mismo'. Si luego en la realidad hay una brecha salarial del 20%, la igualdad es mentira. La ley extremeña pone herramientas para destruir los obstáculos ('techos de cristal', 'suelos pegajosos') y lograr que la igualdad sea una REALIDAD práctica."
+  },
+  {
+    "pregunta": "Si en la Junta de Extremadura se convoca una Mesa Sectorial de Negociación (donde se sientan los sindicatos y la Administración para negociar convenios), ¿qué obligación tienen estas comisiones negociadoras respecto a la igualdad?",
+    "opciones": [
+      "Ninguna, los sindicatos no tienen que cumplir la ley.",
+      "Deben velar por que los acuerdos y convenios colectivos no contengan cláusulas discriminatorias e incorporar medidas de acción positiva y corresponsabilidad.",
+      "Deben estar integradas solo por mujeres.",
+      "Deben reunirse siempre el día 8 de marzo obligatoriamente."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La negociación colectiva es donde se decide la 'letra pequeña' de nuestro trabajo. Los sindicatos y Función Pública están obligados a usar las gafas de género: revisar que los complementos de productividad no penalicen a las mujeres que hayan estado de permiso maternal, e incorporar mejoras en la conciliación."
+  },
+  {
+    "pregunta": "Para la protección de las víctimas en los pueblos, hemos mencionado a los Servicios Sociales de Base (SSB). ¿Cuál es la función principal de las trabajadoras sociales de los Ayuntamientos en esta materia?",
+    "opciones": [
+      "Arrestar al maltratador.",
+      "Constituir el primer nivel de atención, detección precoz, información y derivación de las víctimas hacia los recursos especializados de la Red de Oficinas de Igualdad y Casas de Acogida.",
+      "Darles el divorcio automático.",
+      "Emitir sentencias judiciales."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "El/la Trabajador/a Social del pueblo es el salvavidas de proximidad. No son policías ni jueces, pero son las primeras que detectan que algo va mal cuando la mujer va a pedir una ayuda para el comedor de los niños. Su labor es detectar, ganar la confianza de la víctima y acompañarla para derivarla a los especialistas del IMEX sin dejarla sola en ningún momento."
+  },
+  {
+    "pregunta": "Si la Administración impone una 'Cláusula Social' en un contrato público (ej. 'Tendrá 5 puntos extra la empresa que contrate a víctimas de violencia de género'). ¿Qué ocurre si la empresa gana el concurso gracias a esos puntos, pero luego no cumple esa promesa?",
+    "opciones": [
+      "No pasa nada, era solo para ganar el contrato.",
+      "El incumplimiento de estas condiciones especiales de ejecución se considerará infracción grave, pudiendo conllevar penalidades económicas o incluso la resolución (cancelación) del contrato público.",
+      "Se le da un aviso verbal y se olvida.",
+      "La Junta asume el coste y contrata a las víctimas ella misma."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "En la Administración no se bromea con los contratos. Si yo te doy la adjudicación de la red informática porque prometiste tener un plan de igualdad y aplicar conciliación, esa promesa se convierte en 'obligación contractual esencial'. Si luego descubro que me mentiste o no lo aplicas, te rescindo el contrato, te expulso del edificio y te pongo una multa (penalidad por incumplimiento)."
+  },
+  {
+    "pregunta": "¿Cómo se relaciona la Ley 8/2011 extremeña con el marco de Derechos Humanos internacionales y normativas superiores?",
+    "opciones": [
+      "La Ley extremeña ignora a Europa y al Estado, es totalmente independiente.",
+      "Se enmarca y desarrolla los compromisos asumidos en la Convención sobre la Eliminación de Todas las Formas de Discriminación contra la Mujer (CEDAW) de la ONU, así como las directivas de la Unión Europea y la Constitución Española.",
+      "Contradice directamente a las leyes orgánicas estatales.",
+      "Se basa en normativas del siglo XIX."
+    ],
+    "respuesta_correcta": 1,
+    "explicacion": "La ley de Extremadura no nace de una seta. Es el último eslabón de una cadena que empieza en la ONU (CEDAW), pasa por las Directivas de la Unión Europea, sigue por la Constitución Española y la Ley Orgánica 3/2007, y aterriza en las competencias de nuestro Estatuto de Autonomía. Somos parte de un esfuerzo global."
+  }
   
   ]
   

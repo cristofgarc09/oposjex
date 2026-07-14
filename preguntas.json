@@ -11174,7 +11174,7 @@
     "explicacion": "El método `.Split(caracter)` trocea un String cortando por el carácter delimitador que le indiques. El resultado se transforma instantáneamente en una colección ordenada (Array). Puedes capturarlo escribiendo `$provincias = 'Cáceres,Badajoz,Mérida'.Split(',')` y luego consultar `$provincias[1]` para obtener 'Badajoz'."
   },
   {
-    "pregunta": "Para terminar el Bloque 2 del Tema 13: En PowerShell, el carácter especial de escape (que equivale a la barra invertida `\\` de otros lenguajes de programación y que sirve para quitarle el significado especial a un metacarácter o para introducir tabulaciones y saltos de línea como `\`n`) está representado por un símbolo muy peculiar. ¿Cuál es?",
+    "pregunta": "Para terminar el Bloque 2 del Tema 13: En PowerShell, el carácter especial de escape (que equivale a la barra invertida `\\` de otros lenguajes de programación y que sirve para quitarle el significado especial a un metacarácter o para introducir tabulaciones y saltos de línea como `\n`) está representado por un símbolo muy peculiar. ¿Cuál es?",
     "opciones": [
       "La tilde de la eñe o virgulilla (~).",
       "El acento grave o comilla invertida (backtick `` ` ``).",
